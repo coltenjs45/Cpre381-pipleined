@@ -1,5 +1,5 @@
 Analysis & Synthesis report for toolflow
-Wed Oct 29 13:26:54 2025
+Wed Oct 29 16:28:19 2025
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
 
 
@@ -25,113 +25,111 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
  17. Parameter Settings for User Entity Instance: pcFetch:FetchUnit|pc_Reg:PC
  18. Parameter Settings for User Entity Instance: pcFetch:FetchUnit|mux2t1_N:MUX_JUMP
  19. Parameter Settings for User Entity Instance: pcFetch:FetchUnit|mux2t1_N:MUX_IMM
- 20. Parameter Settings for User Entity Instance: pcFetch:FetchUnit|mux2t1_N:MUX_PC
- 21. Parameter Settings for User Entity Instance: pcFetch:FetchUnit|nBit_LookaheadAdder:Add4
- 22. Parameter Settings for User Entity Instance: pcFetch:FetchUnit|nBit_LookaheadAdder:AddImm
- 23. Parameter Settings for User Entity Instance: imm_generator:ImmGen
- 24. Parameter Settings for User Entity Instance: ALUUnit:ALU
- 25. Parameter Settings for User Entity Instance: ALUUnit:ALU|and_32bit:andUnit
- 26. Parameter Settings for User Entity Instance: ALUUnit:ALU|or_32bit:orUnit
- 27. Parameter Settings for User Entity Instance: ALUUnit:ALU|xor_32bit:xorUnit
- 28. Parameter Settings for User Entity Instance: ALUUnit:ALU|nor_32t1bit:norUnit
- 29. Parameter Settings for User Entity Instance: ALUUnit:ALU|nBit_ALU:addsub
- 30. Parameter Settings for User Entity Instance: ALUUnit:ALU|nBit_ALU:addsub|OnesComp:g_B_OnesComp
- 31. Parameter Settings for User Entity Instance: ALUUnit:ALU|nBit_ALU:addsub|mux2t1_N:g_B_mux
- 32. Parameter Settings for User Entity Instance: ALUUnit:ALU|nBit_ALU:addsub|nBit_LookaheadAdder:g_Adder
- 33. Parameter Settings for User Entity Instance: ALUUnit:ALU|mux2t1_2:muxbeforeresult
- 34. Parameter Settings for User Entity Instance: mux2t1_N:lui_mux
- 35. Parameter Settings for User Entity Instance: barrel_shifter:Shifter|mux2t1_N:mux_stage0_shamt
- 36. Parameter Settings for User Entity Instance: barrel_shifter:Shifter|mux2t1_N:mux_stage1_shamt
- 37. Parameter Settings for User Entity Instance: barrel_shifter:Shifter|mux2t1_N:mux_stage2_shamt
- 38. Parameter Settings for User Entity Instance: barrel_shifter:Shifter|mux2t1_N:mux_stage3_shamt
- 39. Parameter Settings for User Entity Instance: barrel_shifter:Shifter|mux2t1_N:mux_stage4_shamt
- 40. Parameter Settings for User Entity Instance: RegFile:Registers
- 41. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:REG0
- 42. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:1:REG
- 43. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:2:REG
- 44. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:3:REG
- 45. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:4:REG
- 46. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:5:REG
- 47. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:6:REG
- 48. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:7:REG
- 49. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:8:REG
- 50. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:9:REG
- 51. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:10:REG
- 52. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:11:REG
- 53. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:12:REG
- 54. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:13:REG
- 55. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:14:REG
- 56. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:15:REG
- 57. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:16:REG
- 58. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:17:REG
- 59. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:18:REG
- 60. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:19:REG
- 61. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:20:REG
- 62. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:21:REG
- 63. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:22:REG
- 64. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:23:REG
- 65. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:24:REG
- 66. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:25:REG
- 67. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:26:REG
- 68. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:27:REG
- 69. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:28:REG
- 70. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:29:REG
- 71. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:30:REG
- 72. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:31:REG
- 73. Parameter Settings for User Entity Instance: mux2t1_N:InputBMux
- 74. Parameter Settings for User Entity Instance: mux2t1_N:ALUorBSmux
- 75. Parameter Settings for User Entity Instance: zero_extender:flagExtender
- 76. Parameter Settings for User Entity Instance: mux2t1_N:MemOrCPUmux
- 77. Port Connectivity Checks: "RegFile:Registers|nBit_Reg:REG0"
- 78. Port Connectivity Checks: "RegFile:Registers|decoder5t32:DEC"
- 79. Port Connectivity Checks: "barrel_shifter:Shifter|mux32x4t1:mux_stage4_op"
- 80. Port Connectivity Checks: "barrel_shifter:Shifter|mux32x4t1:mux_stage3_op"
- 81. Port Connectivity Checks: "barrel_shifter:Shifter|mux32x4t1:mux_stage2_op"
- 82. Port Connectivity Checks: "barrel_shifter:Shifter|mux32x4t1:mux_stage1_op"
- 83. Port Connectivity Checks: "barrel_shifter:Shifter|mux32x4t1:mux_stage0_op"
- 84. Port Connectivity Checks: "ALUUnit:ALU|mux2t1_2:muxbeforeresult"
- 85. Port Connectivity Checks: "ALUUnit:ALU"
- 86. Port Connectivity Checks: "pcFetch:FetchUnit|nBit_LookaheadAdder:AddImm"
- 87. Port Connectivity Checks: "pcFetch:FetchUnit|nBit_LookaheadAdder:Add4"
- 88. Port Connectivity Checks: "pcFetch:FetchUnit|mux2t1_N:MUX_PC"
- 89. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:31:pcDFFN"
- 90. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:30:pcDFFN"
- 91. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:29:pcDFFN"
- 92. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:28:pcDFFN"
- 93. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:27:pcDFFN"
- 94. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:26:pcDFFN"
- 95. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:25:pcDFFN"
- 96. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:24:pcDFFN"
- 97. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:23:pcDFFN"
- 98. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:22:pcDFFN"
- 99. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:21:pcDFFN"
-100. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:20:pcDFFN"
-101. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:19:pcDFFN"
-102. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:18:pcDFFN"
-103. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:17:pcDFFN"
-104. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:16:pcDFFN"
-105. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:15:pcDFFN"
-106. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:14:pcDFFN"
-107. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:13:pcDFFN"
-108. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:12:pcDFFN"
-109. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:11:pcDFFN"
-110. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:10:pcDFFN"
-111. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:9:pcDFFN"
-112. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:8:pcDFFN"
-113. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:7:pcDFFN"
-114. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:6:pcDFFN"
-115. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:5:pcDFFN"
-116. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:4:pcDFFN"
-117. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:3:pcDFFN"
-118. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:2:pcDFFN"
-119. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:1:pcDFFN"
-120. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:0:pcDFFN"
-121. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC"
-122. Port Connectivity Checks: "pcFetch:FetchUnit"
-123. Port Connectivity Checks: "controlUnit:CTRLunit"
-124. Post-Synthesis Netlist Statistics for Top Partition
-125. Elapsed Time Per Partition
-126. Analysis & Synthesis Messages
+ 20. Parameter Settings for User Entity Instance: pcFetch:FetchUnit|nBit_LookaheadAdder:Add4
+ 21. Parameter Settings for User Entity Instance: pcFetch:FetchUnit|nBit_LookaheadAdder:AddImm
+ 22. Parameter Settings for User Entity Instance: imm_generator:ImmGen
+ 23. Parameter Settings for User Entity Instance: ALUUnit:ALU
+ 24. Parameter Settings for User Entity Instance: ALUUnit:ALU|and_32bit:andUnit
+ 25. Parameter Settings for User Entity Instance: ALUUnit:ALU|or_32bit:orUnit
+ 26. Parameter Settings for User Entity Instance: ALUUnit:ALU|xor_32bit:xorUnit
+ 27. Parameter Settings for User Entity Instance: ALUUnit:ALU|nor_32t1bit:norUnit
+ 28. Parameter Settings for User Entity Instance: ALUUnit:ALU|nBit_ALU:addsub
+ 29. Parameter Settings for User Entity Instance: ALUUnit:ALU|nBit_ALU:addsub|OnesComp:g_B_OnesComp
+ 30. Parameter Settings for User Entity Instance: ALUUnit:ALU|nBit_ALU:addsub|mux2t1_N:g_B_mux
+ 31. Parameter Settings for User Entity Instance: ALUUnit:ALU|nBit_ALU:addsub|nBit_LookaheadAdder:g_Adder
+ 32. Parameter Settings for User Entity Instance: ALUUnit:ALU|mux2t1_2:muxbeforeresult
+ 33. Parameter Settings for User Entity Instance: mux2t1_N:lui_mux
+ 34. Parameter Settings for User Entity Instance: barrel_shifter:Shifter|mux2t1_N:mux_stage0_shamt
+ 35. Parameter Settings for User Entity Instance: barrel_shifter:Shifter|mux2t1_N:mux_stage1_shamt
+ 36. Parameter Settings for User Entity Instance: barrel_shifter:Shifter|mux2t1_N:mux_stage2_shamt
+ 37. Parameter Settings for User Entity Instance: barrel_shifter:Shifter|mux2t1_N:mux_stage3_shamt
+ 38. Parameter Settings for User Entity Instance: barrel_shifter:Shifter|mux2t1_N:mux_stage4_shamt
+ 39. Parameter Settings for User Entity Instance: RegFile:Registers
+ 40. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:REG0
+ 41. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:1:REG
+ 42. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:2:REG
+ 43. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:3:REG
+ 44. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:4:REG
+ 45. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:5:REG
+ 46. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:6:REG
+ 47. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:7:REG
+ 48. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:8:REG
+ 49. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:9:REG
+ 50. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:10:REG
+ 51. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:11:REG
+ 52. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:12:REG
+ 53. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:13:REG
+ 54. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:14:REG
+ 55. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:15:REG
+ 56. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:16:REG
+ 57. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:17:REG
+ 58. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:18:REG
+ 59. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:19:REG
+ 60. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:20:REG
+ 61. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:21:REG
+ 62. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:22:REG
+ 63. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:23:REG
+ 64. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:24:REG
+ 65. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:25:REG
+ 66. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:26:REG
+ 67. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:27:REG
+ 68. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:28:REG
+ 69. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:29:REG
+ 70. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:30:REG
+ 71. Parameter Settings for User Entity Instance: RegFile:Registers|nBit_Reg:\REG:31:REG
+ 72. Parameter Settings for User Entity Instance: mux2t1_N:InputBMux
+ 73. Parameter Settings for User Entity Instance: mux2t1_N:ALUorBSmux
+ 74. Parameter Settings for User Entity Instance: zero_extender:flagExtender
+ 75. Parameter Settings for User Entity Instance: mux2t1_N:MemOrCPUmux
+ 76. Port Connectivity Checks: "RegFile:Registers|nBit_Reg:REG0"
+ 77. Port Connectivity Checks: "RegFile:Registers|decoder5t32:DEC"
+ 78. Port Connectivity Checks: "barrel_shifter:Shifter|mux32x4t1:mux_stage4_op"
+ 79. Port Connectivity Checks: "barrel_shifter:Shifter|mux32x4t1:mux_stage3_op"
+ 80. Port Connectivity Checks: "barrel_shifter:Shifter|mux32x4t1:mux_stage2_op"
+ 81. Port Connectivity Checks: "barrel_shifter:Shifter|mux32x4t1:mux_stage1_op"
+ 82. Port Connectivity Checks: "barrel_shifter:Shifter|mux32x4t1:mux_stage0_op"
+ 83. Port Connectivity Checks: "ALUUnit:ALU|mux2t1_2:muxbeforeresult"
+ 84. Port Connectivity Checks: "ALUUnit:ALU"
+ 85. Port Connectivity Checks: "pcFetch:FetchUnit|nBit_LookaheadAdder:AddImm"
+ 86. Port Connectivity Checks: "pcFetch:FetchUnit|nBit_LookaheadAdder:Add4"
+ 87. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:31:pcDFFN"
+ 88. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:30:pcDFFN"
+ 89. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:29:pcDFFN"
+ 90. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:28:pcDFFN"
+ 91. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:27:pcDFFN"
+ 92. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:26:pcDFFN"
+ 93. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:25:pcDFFN"
+ 94. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:24:pcDFFN"
+ 95. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:23:pcDFFN"
+ 96. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:22:pcDFFN"
+ 97. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:21:pcDFFN"
+ 98. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:20:pcDFFN"
+ 99. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:19:pcDFFN"
+100. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:18:pcDFFN"
+101. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:17:pcDFFN"
+102. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:16:pcDFFN"
+103. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:15:pcDFFN"
+104. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:14:pcDFFN"
+105. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:13:pcDFFN"
+106. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:12:pcDFFN"
+107. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:11:pcDFFN"
+108. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:10:pcDFFN"
+109. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:9:pcDFFN"
+110. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:8:pcDFFN"
+111. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:7:pcDFFN"
+112. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:6:pcDFFN"
+113. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:5:pcDFFN"
+114. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:4:pcDFFN"
+115. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:3:pcDFFN"
+116. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:2:pcDFFN"
+117. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:1:pcDFFN"
+118. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:0:pcDFFN"
+119. Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC"
+120. Port Connectivity Checks: "pcFetch:FetchUnit"
+121. Port Connectivity Checks: "controlUnit:CTRLunit"
+122. Post-Synthesis Netlist Statistics for Top Partition
+123. Elapsed Time Per Partition
+124. Analysis & Synthesis Messages
 
 
 
@@ -158,13 +156,13 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Oct 29 13:26:53 2025           ;
+; Analysis & Synthesis Status        ; Successful - Wed Oct 29 16:28:18 2025           ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Standard Edition ;
 ; Revision Name                      ; toolflow                                        ;
 ; Top-level Entity Name              ; RISCV_Processor                                 ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 114,644                                         ;
-;     Total combinational functions  ; 48,180                                          ;
+; Total logic elements               ; 114,642                                         ;
+;     Total combinational functions  ; 48,178                                          ;
 ;     Dedicated logic registers      ; 66,560                                          ;
 ; Total registers                    ; 66560                                           ;
 ; Total pins                         ; 99                                              ;
@@ -331,16 +329,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 114,644    ;
+; Estimated Total logic elements              ; 114,642    ;
 ;                                             ;            ;
-; Total combinational functions               ; 48180      ;
+; Total combinational functions               ; 48178      ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 45804      ;
-;     -- 3 input functions                    ; 1054       ;
-;     -- <=2 input functions                  ; 1322       ;
+;     -- 4 input functions                    ; 45785      ;
+;     -- 3 input functions                    ; 1049       ;
+;     -- <=2 input functions                  ; 1344       ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 48180      ;
+;     -- normal mode                          ; 48178      ;
 ;     -- arithmetic mode                      ; 0          ;
 ;                                             ;            ;
 ; Total registers                             ; 66560      ;
@@ -353,7 +351,7 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;            ;
 ; Maximum fan-out node                        ; iCLK~input ;
 ; Maximum fan-out                             ; 66560      ;
-; Total fan-out                               ; 389827     ;
+; Total fan-out                               ; 389839     ;
 ; Average fan-out                             ; 3.39       ;
 +---------------------------------------------+------------+
 
@@ -363,28 +361,47 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                     ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                   ; Entity Name         ; Library Name ;
 +------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |RISCV_Processor                               ; 48180 (10)          ; 66560 (0)                 ; 0           ; 0            ; 0       ; 0         ; 99   ; 0            ; |RISCV_Processor                                                                                      ; RISCV_Processor     ; work         ;
-;    |ALUUnit:ALU|                               ; 157 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU                                                                          ; ALUUnit             ; work         ;
-;       |mux2t1_2:muxbeforeresult|               ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|mux2t1_2:muxbeforeresult                                                 ; mux2t1_2            ; work         ;
+; |RISCV_Processor                               ; 48178 (10)          ; 66560 (0)                 ; 0           ; 0            ; 0       ; 0         ; 99   ; 0            ; |RISCV_Processor                                                                                      ; RISCV_Processor     ; work         ;
+;    |ALUUnit:ALU|                               ; 161 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU                                                                          ; ALUUnit             ; work         ;
+;       |mux2t1_2:muxbeforeresult|               ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|mux2t1_2:muxbeforeresult                                                 ; mux2t1_2            ; work         ;
 ;          |mux2t1_dataflow:\G_NBit_MUX:0:MUXI|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|mux2t1_2:muxbeforeresult|mux2t1_dataflow:\G_NBit_MUX:0:MUXI              ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:1:MUXI|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|mux2t1_2:muxbeforeresult|mux2t1_dataflow:\G_NBit_MUX:1:MUXI              ; mux2t1_dataflow     ; work         ;
-;       |mux32x4t1:muxResult|                    ; 95 (95)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|mux32x4t1:muxResult                                                      ; mux32x4t1           ; work         ;
-;       |mux4t1:Flags_mux|                       ; 19 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|mux4t1:Flags_mux                                                         ; mux4t1              ; work         ;
-;          |andg2:U_AND1|                        ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|mux4t1:Flags_mux|andg2:U_AND1                                            ; andg2               ; work         ;
-;          |andg2:U_AND3|                        ; 13 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|mux4t1:Flags_mux|andg2:U_AND3                                            ; andg2               ; work         ;
-;          |org2:U_OR2|                          ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|mux4t1:Flags_mux|org2:U_OR2                                              ; org2                ; work         ;
-;       |nBit_ALU:addsub|                        ; 36 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub                                                          ; nBit_ALU            ; work         ;
-;          |nBit_LookaheadAdder:g_Adder|         ; 36 (36)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_LookaheadAdder:g_Adder                              ; nBit_LookaheadAdder ; work         ;
-;       |or_32bit:orUnit|                        ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|or_32bit:orUnit                                                          ; or_32bit            ; work         ;
+;          |mux2t1_dataflow:\G_NBit_MUX:1:MUXI|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|mux2t1_2:muxbeforeresult|mux2t1_dataflow:\G_NBit_MUX:1:MUXI              ; mux2t1_dataflow     ; work         ;
+;       |mux32x4t1:muxResult|                    ; 67 (67)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|mux32x4t1:muxResult                                                      ; mux32x4t1           ; work         ;
+;       |mux4t1:Flags_mux|                       ; 14 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|mux4t1:Flags_mux                                                         ; mux4t1              ; work         ;
+;          |andg2:U_AND1|                        ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|mux4t1:Flags_mux|andg2:U_AND1                                            ; andg2               ; work         ;
+;          |andg2:U_AND3|                        ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|mux4t1:Flags_mux|andg2:U_AND3                                            ; andg2               ; work         ;
+;          |org2:U_OR2|                          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|mux4t1:Flags_mux|org2:U_OR2                                              ; org2                ; work         ;
+;       |nBit_ALU:addsub|                        ; 55 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub                                                          ; nBit_ALU            ; work         ;
+;          |nBit_LookaheadAdder:g_Adder|         ; 54 (54)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_LookaheadAdder:g_Adder                              ; nBit_LookaheadAdder ; work         ;
+;       |or_32bit:orUnit|                        ; 10 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|or_32bit:orUnit                                                          ; or_32bit            ; work         ;
+;          |org2:\G1:12:U_AND|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|or_32bit:orUnit|org2:\G1:12:U_AND                                        ; org2                ; work         ;
+;          |org2:\G1:14:U_AND|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|or_32bit:orUnit|org2:\G1:14:U_AND                                        ; org2                ; work         ;
+;          |org2:\G1:16:U_AND|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|or_32bit:orUnit|org2:\G1:16:U_AND                                        ; org2                ; work         ;
+;          |org2:\G1:18:U_AND|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|or_32bit:orUnit|org2:\G1:18:U_AND                                        ; org2                ; work         ;
+;          |org2:\G1:20:U_AND|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|or_32bit:orUnit|org2:\G1:20:U_AND                                        ; org2                ; work         ;
+;          |org2:\G1:22:U_AND|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|or_32bit:orUnit|org2:\G1:22:U_AND                                        ; org2                ; work         ;
+;          |org2:\G1:24:U_AND|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|or_32bit:orUnit|org2:\G1:24:U_AND                                        ; org2                ; work         ;
+;          |org2:\G1:26:U_AND|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|or_32bit:orUnit|org2:\G1:26:U_AND                                        ; org2                ; work         ;
 ;          |org2:\G1:2:U_AND|                    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|or_32bit:orUnit|org2:\G1:2:U_AND                                         ; org2                ; work         ;
 ;          |org2:\G1:4:U_AND|                    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|or_32bit:orUnit|org2:\G1:4:U_AND                                         ; org2                ; work         ;
-;       |xor_32bit:xorUnit|                      ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|xor_32bit:xorUnit                                                        ; xor_32bit           ; work         ;
+;       |xor_32bit:xorUnit|                      ; 13 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|xor_32bit:xorUnit                                                        ; xor_32bit           ; work         ;
+;          |xorg2:\G1:0:U_AND|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|xor_32bit:xorUnit|xorg2:\G1:0:U_AND                                      ; xorg2               ; work         ;
+;          |xorg2:\G1:11:U_AND|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|xor_32bit:xorUnit|xorg2:\G1:11:U_AND                                     ; xorg2               ; work         ;
+;          |xorg2:\G1:13:U_AND|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|xor_32bit:xorUnit|xorg2:\G1:13:U_AND                                     ; xorg2               ; work         ;
+;          |xorg2:\G1:15:U_AND|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|xor_32bit:xorUnit|xorg2:\G1:15:U_AND                                     ; xorg2               ; work         ;
+;          |xorg2:\G1:17:U_AND|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|xor_32bit:xorUnit|xorg2:\G1:17:U_AND                                     ; xorg2               ; work         ;
+;          |xorg2:\G1:19:U_AND|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|xor_32bit:xorUnit|xorg2:\G1:19:U_AND                                     ; xorg2               ; work         ;
 ;          |xorg2:\G1:1:U_AND|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|xor_32bit:xorUnit|xorg2:\G1:1:U_AND                                      ; xorg2               ; work         ;
+;          |xorg2:\G1:21:U_AND|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|xor_32bit:xorUnit|xorg2:\G1:21:U_AND                                     ; xorg2               ; work         ;
+;          |xorg2:\G1:23:U_AND|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|xor_32bit:xorUnit|xorg2:\G1:23:U_AND                                     ; xorg2               ; work         ;
+;          |xorg2:\G1:25:U_AND|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|xor_32bit:xorUnit|xorg2:\G1:25:U_AND                                     ; xorg2               ; work         ;
+;          |xorg2:\G1:27:U_AND|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|xor_32bit:xorUnit|xorg2:\G1:27:U_AND                                     ; xorg2               ; work         ;
 ;          |xorg2:\G1:3:U_AND|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|xor_32bit:xorUnit|xorg2:\G1:3:U_AND                                      ; xorg2               ; work         ;
-;    |RegFile:Registers|                         ; 1343 (0)            ; 992 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|RegFile:Registers                                                                    ; RegFile             ; work         ;
+;          |xorg2:\G1:5:U_AND|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALUUnit:ALU|xor_32bit:xorUnit|xorg2:\G1:5:U_AND                                      ; xorg2               ; work         ;
+;    |RegFile:Registers|                         ; 1344 (0)            ; 992 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|RegFile:Registers                                                                    ; RegFile             ; work         ;
 ;       |decoder5t32:DEC|                        ; 47 (47)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|RegFile:Registers|decoder5t32:DEC                                                    ; decoder5t32         ; work         ;
 ;       |mux32t1:MUX1|                           ; 648 (648)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|RegFile:Registers|mux32t1:MUX1                                                       ; mux32t1             ; work         ;
-;       |mux32t1:MUX2|                           ; 648 (648)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|RegFile:Registers|mux32t1:MUX2                                                       ; mux32t1             ; work         ;
+;       |mux32t1:MUX2|                           ; 649 (649)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|RegFile:Registers|mux32t1:MUX2                                                       ; mux32t1             ; work         ;
 ;       |nBit_Reg:\REG:10:REG|                   ; 0 (0)               ; 32 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|RegFile:Registers|nBit_Reg:\REG:10:REG                                               ; nBit_Reg            ; work         ;
 ;          |dffg:\nBit_Reg:0:DFFN|               ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|RegFile:Registers|nBit_Reg:\REG:10:REG|dffg:\nBit_Reg:0:DFFN                         ; dffg                ; work         ;
 ;          |dffg:\nBit_Reg:10:DFFN|              ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|RegFile:Registers|nBit_Reg:\REG:10:REG|dffg:\nBit_Reg:10:DFFN                        ; dffg                ; work         ;
@@ -1420,12 +1437,12 @@ https://fpgasoftware.intel.com/eula.
 ;          |mux2t1_dataflow:\G_NBit_MUX:17:MUXI| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage0_shamt|mux2t1_dataflow:\G_NBit_MUX:17:MUXI ; mux2t1_dataflow     ; work         ;
 ;          |mux2t1_dataflow:\G_NBit_MUX:18:MUXI| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage0_shamt|mux2t1_dataflow:\G_NBit_MUX:18:MUXI ; mux2t1_dataflow     ; work         ;
 ;          |mux2t1_dataflow:\G_NBit_MUX:19:MUXI| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage0_shamt|mux2t1_dataflow:\G_NBit_MUX:19:MUXI ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:1:MUXI|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage0_shamt|mux2t1_dataflow:\G_NBit_MUX:1:MUXI  ; mux2t1_dataflow     ; work         ;
+;          |mux2t1_dataflow:\G_NBit_MUX:1:MUXI|  ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage0_shamt|mux2t1_dataflow:\G_NBit_MUX:1:MUXI  ; mux2t1_dataflow     ; work         ;
 ;          |mux2t1_dataflow:\G_NBit_MUX:20:MUXI| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage0_shamt|mux2t1_dataflow:\G_NBit_MUX:20:MUXI ; mux2t1_dataflow     ; work         ;
 ;          |mux2t1_dataflow:\G_NBit_MUX:21:MUXI| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage0_shamt|mux2t1_dataflow:\G_NBit_MUX:21:MUXI ; mux2t1_dataflow     ; work         ;
 ;          |mux2t1_dataflow:\G_NBit_MUX:22:MUXI| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage0_shamt|mux2t1_dataflow:\G_NBit_MUX:22:MUXI ; mux2t1_dataflow     ; work         ;
 ;          |mux2t1_dataflow:\G_NBit_MUX:23:MUXI| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage0_shamt|mux2t1_dataflow:\G_NBit_MUX:23:MUXI ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:24:MUXI| ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage0_shamt|mux2t1_dataflow:\G_NBit_MUX:24:MUXI ; mux2t1_dataflow     ; work         ;
+;          |mux2t1_dataflow:\G_NBit_MUX:24:MUXI| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage0_shamt|mux2t1_dataflow:\G_NBit_MUX:24:MUXI ; mux2t1_dataflow     ; work         ;
 ;          |mux2t1_dataflow:\G_NBit_MUX:25:MUXI| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage0_shamt|mux2t1_dataflow:\G_NBit_MUX:25:MUXI ; mux2t1_dataflow     ; work         ;
 ;          |mux2t1_dataflow:\G_NBit_MUX:26:MUXI| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage0_shamt|mux2t1_dataflow:\G_NBit_MUX:26:MUXI ; mux2t1_dataflow     ; work         ;
 ;          |mux2t1_dataflow:\G_NBit_MUX:27:MUXI| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage0_shamt|mux2t1_dataflow:\G_NBit_MUX:27:MUXI ; mux2t1_dataflow     ; work         ;
@@ -1452,7 +1469,7 @@ https://fpgasoftware.intel.com/eula.
 ;          |mux2t1_dataflow:\G_NBit_MUX:18:MUXI| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage1_shamt|mux2t1_dataflow:\G_NBit_MUX:18:MUXI ; mux2t1_dataflow     ; work         ;
 ;          |mux2t1_dataflow:\G_NBit_MUX:19:MUXI| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage1_shamt|mux2t1_dataflow:\G_NBit_MUX:19:MUXI ; mux2t1_dataflow     ; work         ;
 ;          |mux2t1_dataflow:\G_NBit_MUX:20:MUXI| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage1_shamt|mux2t1_dataflow:\G_NBit_MUX:20:MUXI ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:21:MUXI| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage1_shamt|mux2t1_dataflow:\G_NBit_MUX:21:MUXI ; mux2t1_dataflow     ; work         ;
+;          |mux2t1_dataflow:\G_NBit_MUX:21:MUXI| ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage1_shamt|mux2t1_dataflow:\G_NBit_MUX:21:MUXI ; mux2t1_dataflow     ; work         ;
 ;          |mux2t1_dataflow:\G_NBit_MUX:22:MUXI| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage1_shamt|mux2t1_dataflow:\G_NBit_MUX:22:MUXI ; mux2t1_dataflow     ; work         ;
 ;          |mux2t1_dataflow:\G_NBit_MUX:23:MUXI| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage1_shamt|mux2t1_dataflow:\G_NBit_MUX:23:MUXI ; mux2t1_dataflow     ; work         ;
 ;          |mux2t1_dataflow:\G_NBit_MUX:24:MUXI| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage1_shamt|mux2t1_dataflow:\G_NBit_MUX:24:MUXI ; mux2t1_dataflow     ; work         ;
@@ -1467,7 +1484,7 @@ https://fpgasoftware.intel.com/eula.
 ;          |mux2t1_dataflow:\G_NBit_MUX:3:MUXI|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage1_shamt|mux2t1_dataflow:\G_NBit_MUX:3:MUXI  ; mux2t1_dataflow     ; work         ;
 ;          |mux2t1_dataflow:\G_NBit_MUX:4:MUXI|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage1_shamt|mux2t1_dataflow:\G_NBit_MUX:4:MUXI  ; mux2t1_dataflow     ; work         ;
 ;          |mux2t1_dataflow:\G_NBit_MUX:5:MUXI|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage1_shamt|mux2t1_dataflow:\G_NBit_MUX:5:MUXI  ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:6:MUXI|  ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage1_shamt|mux2t1_dataflow:\G_NBit_MUX:6:MUXI  ; mux2t1_dataflow     ; work         ;
+;          |mux2t1_dataflow:\G_NBit_MUX:6:MUXI|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage1_shamt|mux2t1_dataflow:\G_NBit_MUX:6:MUXI  ; mux2t1_dataflow     ; work         ;
 ;          |mux2t1_dataflow:\G_NBit_MUX:7:MUXI|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage1_shamt|mux2t1_dataflow:\G_NBit_MUX:7:MUXI  ; mux2t1_dataflow     ; work         ;
 ;          |mux2t1_dataflow:\G_NBit_MUX:8:MUXI|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage1_shamt|mux2t1_dataflow:\G_NBit_MUX:8:MUXI  ; mux2t1_dataflow     ; work         ;
 ;          |mux2t1_dataflow:\G_NBit_MUX:9:MUXI|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage1_shamt|mux2t1_dataflow:\G_NBit_MUX:9:MUXI  ; mux2t1_dataflow     ; work         ;
@@ -1529,37 +1546,47 @@ https://fpgasoftware.intel.com/eula.
 ;          |mux2t1_dataflow:\G_NBit_MUX:30:MUXI| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage3_shamt|mux2t1_dataflow:\G_NBit_MUX:30:MUXI ; mux2t1_dataflow     ; work         ;
 ;          |mux2t1_dataflow:\G_NBit_MUX:31:MUXI| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage3_shamt|mux2t1_dataflow:\G_NBit_MUX:31:MUXI ; mux2t1_dataflow     ; work         ;
 ;          |mux2t1_dataflow:\G_NBit_MUX:3:MUXI|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage3_shamt|mux2t1_dataflow:\G_NBit_MUX:3:MUXI  ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:4:MUXI|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage3_shamt|mux2t1_dataflow:\G_NBit_MUX:4:MUXI  ; mux2t1_dataflow     ; work         ;
+;          |mux2t1_dataflow:\G_NBit_MUX:4:MUXI|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage3_shamt|mux2t1_dataflow:\G_NBit_MUX:4:MUXI  ; mux2t1_dataflow     ; work         ;
 ;          |mux2t1_dataflow:\G_NBit_MUX:5:MUXI|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage3_shamt|mux2t1_dataflow:\G_NBit_MUX:5:MUXI  ; mux2t1_dataflow     ; work         ;
 ;          |mux2t1_dataflow:\G_NBit_MUX:6:MUXI|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage3_shamt|mux2t1_dataflow:\G_NBit_MUX:6:MUXI  ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:7:MUXI|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage3_shamt|mux2t1_dataflow:\G_NBit_MUX:7:MUXI  ; mux2t1_dataflow     ; work         ;
+;          |mux2t1_dataflow:\G_NBit_MUX:7:MUXI|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage3_shamt|mux2t1_dataflow:\G_NBit_MUX:7:MUXI  ; mux2t1_dataflow     ; work         ;
 ;          |mux2t1_dataflow:\G_NBit_MUX:8:MUXI|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage3_shamt|mux2t1_dataflow:\G_NBit_MUX:8:MUXI  ; mux2t1_dataflow     ; work         ;
 ;          |mux2t1_dataflow:\G_NBit_MUX:9:MUXI|  ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage3_shamt|mux2t1_dataflow:\G_NBit_MUX:9:MUXI  ; mux2t1_dataflow     ; work         ;
 ;       |mux32x4t1:mux_stage0_op|                ; 13 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|barrel_shifter:Shifter|mux32x4t1:mux_stage0_op                                       ; mux32x4t1           ; work         ;
-;    |controlUnit:CTRLunit|                      ; 76 (76)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|controlUnit:CTRLunit                                                                 ; controlUnit         ; work         ;
-;    |imm_generator:ImmGen|                      ; 41 (41)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|imm_generator:ImmGen                                                                 ; imm_generator       ; work         ;
-;    |mem:DMem|                                  ; 22912 (22912)       ; 32768 (32768)             ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mem:DMem                                                                             ; mem                 ; work         ;
+;    |controlUnit:CTRLunit|                      ; 83 (83)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|controlUnit:CTRLunit                                                                 ; controlUnit         ; work         ;
+;    |imm_generator:ImmGen|                      ; 43 (43)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|imm_generator:ImmGen                                                                 ; imm_generator       ; work         ;
+;    |mem:DMem|                                  ; 22914 (22914)       ; 32768 (32768)             ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mem:DMem                                                                             ; mem                 ; work         ;
 ;    |mem:IMem|                                  ; 22930 (22930)       ; 32768 (32768)             ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mem:IMem                                                                             ; mem                 ; work         ;
-;    |memorySlicer:memSlicer|                    ; 19 (19)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|memorySlicer:memSlicer                                                               ; memorySlicer        ; work         ;
+;    |memorySlicer:memSlicer|                    ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|memorySlicer:memSlicer                                                               ; memorySlicer        ; work         ;
 ;    |mux2t1_N:ALUorBSmux|                       ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:ALUorBSmux                                                                  ; mux2t1_N            ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:0:MUXI|     ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:ALUorBSmux|mux2t1_dataflow:\G_NBit_MUX:0:MUXI                               ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:15:MUXI|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:ALUorBSmux|mux2t1_dataflow:\G_NBit_MUX:15:MUXI                              ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:7:MUXI|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:ALUorBSmux|mux2t1_dataflow:\G_NBit_MUX:7:MUXI                               ; mux2t1_dataflow     ; work         ;
-;    |mux2t1_N:InputBMux|                        ; 22 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux                                                                   ; mux2t1_N            ; work         ;
+;    |mux2t1_N:InputBMux|                        ; 32 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux                                                                   ; mux2t1_N            ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:0:MUXI|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:0:MUXI                                ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:10:MUXI|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:10:MUXI                               ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:11:MUXI|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:11:MUXI                               ; mux2t1_dataflow     ; work         ;
+;       |mux2t1_dataflow:\G_NBit_MUX:12:MUXI|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:12:MUXI                               ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:13:MUXI|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:13:MUXI                               ; mux2t1_dataflow     ; work         ;
+;       |mux2t1_dataflow:\G_NBit_MUX:14:MUXI|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:14:MUXI                               ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:15:MUXI|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:15:MUXI                               ; mux2t1_dataflow     ; work         ;
+;       |mux2t1_dataflow:\G_NBit_MUX:16:MUXI|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:16:MUXI                               ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:17:MUXI|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:17:MUXI                               ; mux2t1_dataflow     ; work         ;
+;       |mux2t1_dataflow:\G_NBit_MUX:18:MUXI|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:18:MUXI                               ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:19:MUXI|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:19:MUXI                               ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:1:MUXI|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:1:MUXI                                ; mux2t1_dataflow     ; work         ;
+;       |mux2t1_dataflow:\G_NBit_MUX:20:MUXI|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:20:MUXI                               ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:21:MUXI|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:21:MUXI                               ; mux2t1_dataflow     ; work         ;
+;       |mux2t1_dataflow:\G_NBit_MUX:22:MUXI|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:22:MUXI                               ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:23:MUXI|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:23:MUXI                               ; mux2t1_dataflow     ; work         ;
+;       |mux2t1_dataflow:\G_NBit_MUX:24:MUXI|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:24:MUXI                               ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:25:MUXI|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:25:MUXI                               ; mux2t1_dataflow     ; work         ;
+;       |mux2t1_dataflow:\G_NBit_MUX:26:MUXI|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:26:MUXI                               ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:27:MUXI|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:27:MUXI                               ; mux2t1_dataflow     ; work         ;
+;       |mux2t1_dataflow:\G_NBit_MUX:28:MUXI|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:28:MUXI                               ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:29:MUXI|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:29:MUXI                               ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:2:MUXI|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:2:MUXI                                ; mux2t1_dataflow     ; work         ;
+;       |mux2t1_dataflow:\G_NBit_MUX:30:MUXI|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:30:MUXI                               ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:31:MUXI|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:31:MUXI                               ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:3:MUXI|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:3:MUXI                                ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:4:MUXI|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:4:MUXI                                ; mux2t1_dataflow     ; work         ;
@@ -1568,14 +1595,14 @@ https://fpgasoftware.intel.com/eula.
 ;       |mux2t1_dataflow:\G_NBit_MUX:7:MUXI|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:7:MUXI                                ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:8:MUXI|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:8:MUXI                                ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:9:MUXI|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:InputBMux|mux2t1_dataflow:\G_NBit_MUX:9:MUXI                                ; mux2t1_dataflow     ; work         ;
-;    |mux2t1_N:MemOrCPUmux|                      ; 205 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux                                                                 ; mux2t1_N            ; work         ;
-;       |mux2t1_dataflow:\G_NBit_MUX:0:MUXI|     ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:0:MUXI                              ; mux2t1_dataflow     ; work         ;
+;    |mux2t1_N:MemOrCPUmux|                      ; 203 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux                                                                 ; mux2t1_N            ; work         ;
+;       |mux2t1_dataflow:\G_NBit_MUX:0:MUXI|     ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:0:MUXI                              ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:10:MUXI|    ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:10:MUXI                             ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:11:MUXI|    ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:11:MUXI                             ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:12:MUXI|    ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:12:MUXI                             ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:13:MUXI|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:13:MUXI                             ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:14:MUXI|    ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:14:MUXI                             ; mux2t1_dataflow     ; work         ;
-;       |mux2t1_dataflow:\G_NBit_MUX:15:MUXI|    ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:15:MUXI                             ; mux2t1_dataflow     ; work         ;
+;       |mux2t1_dataflow:\G_NBit_MUX:15:MUXI|    ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:15:MUXI                             ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:16:MUXI|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:16:MUXI                             ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:17:MUXI|    ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:17:MUXI                             ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:18:MUXI|    ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:18:MUXI                             ; mux2t1_dataflow     ; work         ;
@@ -1585,23 +1612,23 @@ https://fpgasoftware.intel.com/eula.
 ;       |mux2t1_dataflow:\G_NBit_MUX:21:MUXI|    ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:21:MUXI                             ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:22:MUXI|    ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:22:MUXI                             ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:23:MUXI|    ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:23:MUXI                             ; mux2t1_dataflow     ; work         ;
-;       |mux2t1_dataflow:\G_NBit_MUX:24:MUXI|    ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:24:MUXI                             ; mux2t1_dataflow     ; work         ;
-;       |mux2t1_dataflow:\G_NBit_MUX:25:MUXI|    ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:25:MUXI                             ; mux2t1_dataflow     ; work         ;
+;       |mux2t1_dataflow:\G_NBit_MUX:24:MUXI|    ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:24:MUXI                             ; mux2t1_dataflow     ; work         ;
+;       |mux2t1_dataflow:\G_NBit_MUX:25:MUXI|    ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:25:MUXI                             ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:26:MUXI|    ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:26:MUXI                             ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:27:MUXI|    ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:27:MUXI                             ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:28:MUXI|    ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:28:MUXI                             ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:29:MUXI|    ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:29:MUXI                             ; mux2t1_dataflow     ; work         ;
-;       |mux2t1_dataflow:\G_NBit_MUX:2:MUXI|     ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:2:MUXI                              ; mux2t1_dataflow     ; work         ;
+;       |mux2t1_dataflow:\G_NBit_MUX:2:MUXI|     ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:2:MUXI                              ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:30:MUXI|    ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:30:MUXI                             ; mux2t1_dataflow     ; work         ;
-;       |mux2t1_dataflow:\G_NBit_MUX:31:MUXI|    ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:31:MUXI                             ; mux2t1_dataflow     ; work         ;
+;       |mux2t1_dataflow:\G_NBit_MUX:31:MUXI|    ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:31:MUXI                             ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:3:MUXI|     ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:3:MUXI                              ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:4:MUXI|     ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:4:MUXI                              ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:5:MUXI|     ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:5:MUXI                              ; mux2t1_dataflow     ; work         ;
-;       |mux2t1_dataflow:\G_NBit_MUX:6:MUXI|     ; 13 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:6:MUXI                              ; mux2t1_dataflow     ; work         ;
+;       |mux2t1_dataflow:\G_NBit_MUX:6:MUXI|     ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:6:MUXI                              ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:7:MUXI|     ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:7:MUXI                              ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:8:MUXI|     ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:8:MUXI                              ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:9:MUXI|     ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:9:MUXI                              ; mux2t1_dataflow     ; work         ;
-;    |mux2t1_N:lui_mux|                          ; 33 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:lui_mux                                                                     ; mux2t1_N            ; work         ;
+;    |mux2t1_N:lui_mux|                          ; 32 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:lui_mux                                                                     ; mux2t1_N            ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:0:MUXI|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:lui_mux|mux2t1_dataflow:\G_NBit_MUX:0:MUXI                                  ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:10:MUXI|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:lui_mux|mux2t1_dataflow:\G_NBit_MUX:10:MUXI                                 ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:11:MUXI|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:lui_mux|mux2t1_dataflow:\G_NBit_MUX:11:MUXI                                 ; mux2t1_dataflow     ; work         ;
@@ -1629,7 +1656,7 @@ https://fpgasoftware.intel.com/eula.
 ;       |mux2t1_dataflow:\G_NBit_MUX:31:MUXI|    ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:lui_mux|mux2t1_dataflow:\G_NBit_MUX:31:MUXI                                 ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:3:MUXI|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:lui_mux|mux2t1_dataflow:\G_NBit_MUX:3:MUXI                                  ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:4:MUXI|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:lui_mux|mux2t1_dataflow:\G_NBit_MUX:4:MUXI                                  ; mux2t1_dataflow     ; work         ;
-;       |mux2t1_dataflow:\G_NBit_MUX:5:MUXI|     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:lui_mux|mux2t1_dataflow:\G_NBit_MUX:5:MUXI                                  ; mux2t1_dataflow     ; work         ;
+;       |mux2t1_dataflow:\G_NBit_MUX:5:MUXI|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:lui_mux|mux2t1_dataflow:\G_NBit_MUX:5:MUXI                                  ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:6:MUXI|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:lui_mux|mux2t1_dataflow:\G_NBit_MUX:6:MUXI                                  ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:7:MUXI|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:lui_mux|mux2t1_dataflow:\G_NBit_MUX:7:MUXI                                  ; mux2t1_dataflow     ; work         ;
 ;       |mux2t1_dataflow:\G_NBit_MUX:8:MUXI|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_N:lui_mux|mux2t1_dataflow:\G_NBit_MUX:8:MUXI                                  ; mux2t1_dataflow     ; work         ;
@@ -1637,109 +1664,46 @@ https://fpgasoftware.intel.com/eula.
 ;    |mux2t1_dataflow:FlagOrNot|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux2t1_dataflow:FlagOrNot                                                            ; mux2t1_dataflow     ; work         ;
 ;    |mux32x4t1:WriteBackSelectMux|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|mux32x4t1:WriteBackSelectMux                                                         ; mux32x4t1           ; work         ;
 ;    |org2:branchJump|                           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|org2:branchJump                                                                      ; org2                ; work         ;
-;    |pcFetch:FetchUnit|                         ; 162 (0)             ; 32 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit                                                                    ; pcFetch             ; work         ;
-;       |mux2t1_N:MUX_IMM|                       ; 30 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM                                                   ; mux2t1_N            ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:10:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:10:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:11:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:11:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:12:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:12:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:13:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:13:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:14:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:14:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:15:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:15:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:16:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:16:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:17:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:17:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:18:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:18:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:19:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:19:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:20:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:20:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:21:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:21:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:22:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:22:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:23:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:23:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:24:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:24:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:25:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:25:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:26:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:26:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:27:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:27:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:28:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:28:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:29:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:29:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:2:MUXI|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:2:MUXI                ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:30:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:30:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:31:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:31:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:3:MUXI|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:3:MUXI                ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:4:MUXI|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:4:MUXI                ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:5:MUXI|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:5:MUXI                ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:6:MUXI|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:6:MUXI                ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:7:MUXI|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:7:MUXI                ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:8:MUXI|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:8:MUXI                ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:9:MUXI|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:9:MUXI                ; mux2t1_dataflow     ; work         ;
-;       |mux2t1_N:MUX_JUMP|                      ; 32 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP                                                  ; mux2t1_N            ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:0:MUXI|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:0:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:10:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:10:MUXI              ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:11:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:11:MUXI              ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:12:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:12:MUXI              ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:13:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:13:MUXI              ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:14:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:14:MUXI              ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:15:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:15:MUXI              ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:16:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:16:MUXI              ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:17:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:17:MUXI              ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:18:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:18:MUXI              ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:19:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:19:MUXI              ; mux2t1_dataflow     ; work         ;
+;    |pcFetch:FetchUnit|                         ; 146 (0)             ; 32 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit                                                                    ; pcFetch             ; work         ;
+;       |mux2t1_N:MUX_IMM|                       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM                                                   ; mux2t1_N            ; work         ;
+;          |mux2t1_dataflow:\G_NBit_MUX:22:MUXI| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:22:MUXI               ; mux2t1_dataflow     ; work         ;
+;       |mux2t1_N:MUX_JUMP|                      ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP                                                  ; mux2t1_N            ; work         ;
 ;          |mux2t1_dataflow:\G_NBit_MUX:1:MUXI|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:1:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:20:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:20:MUXI              ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:21:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:21:MUXI              ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:22:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:22:MUXI              ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:23:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:23:MUXI              ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:24:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:24:MUXI              ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:25:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:25:MUXI              ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:26:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:26:MUXI              ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:27:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:27:MUXI              ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:28:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:28:MUXI              ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:29:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:29:MUXI              ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:2:MUXI|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:2:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:30:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:30:MUXI              ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:31:MUXI| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:31:MUXI              ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:3:MUXI|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:3:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:4:MUXI|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:4:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:5:MUXI|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:5:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:6:MUXI|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:6:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:7:MUXI|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:7:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:8:MUXI|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:8:MUXI               ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:9:MUXI|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:9:MUXI               ; mux2t1_dataflow     ; work         ;
-;       |mux2t1_N:MUX_PC|                        ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC                                                    ; mux2t1_N            ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:0:MUXI|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:0:MUXI                 ; mux2t1_dataflow     ; work         ;
-;          |mux2t1_dataflow:\G_NBit_MUX:1:MUXI|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:1:MUXI                 ; mux2t1_dataflow     ; work         ;
-;       |nBit_LookaheadAdder:Add4|               ; 37 (37)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|nBit_LookaheadAdder:Add4                                           ; nBit_LookaheadAdder ; work         ;
-;       |nBit_LookaheadAdder:AddImm|             ; 61 (61)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|nBit_LookaheadAdder:AddImm                                         ; nBit_LookaheadAdder ; work         ;
-;       |pc_Reg:PC|                              ; 0 (0)               ; 32 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC                                                          ; pc_Reg              ; work         ;
-;          |pc_dffg:\pc_Reg:0:pcDFFN|            ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:0:pcDFFN                                 ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:10:pcDFFN|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:10:pcDFFN                                ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:11:pcDFFN|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:11:pcDFFN                                ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:12:pcDFFN|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:12:pcDFFN                                ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:13:pcDFFN|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:13:pcDFFN                                ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:14:pcDFFN|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:14:pcDFFN                                ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:15:pcDFFN|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:15:pcDFFN                                ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:16:pcDFFN|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:16:pcDFFN                                ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:17:pcDFFN|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:17:pcDFFN                                ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:18:pcDFFN|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:18:pcDFFN                                ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:19:pcDFFN|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:19:pcDFFN                                ; pc_dffg             ; work         ;
+;       |nBit_LookaheadAdder:Add4|               ; 38 (38)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|nBit_LookaheadAdder:Add4                                           ; nBit_LookaheadAdder ; work         ;
+;       |nBit_LookaheadAdder:AddImm|             ; 74 (74)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|nBit_LookaheadAdder:AddImm                                         ; nBit_LookaheadAdder ; work         ;
+;       |pc_Reg:PC|                              ; 31 (0)              ; 32 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC                                                          ; pc_Reg              ; work         ;
+;          |pc_dffg:\pc_Reg:0:pcDFFN|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:0:pcDFFN                                 ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:10:pcDFFN|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:10:pcDFFN                                ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:11:pcDFFN|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:11:pcDFFN                                ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:12:pcDFFN|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:12:pcDFFN                                ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:13:pcDFFN|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:13:pcDFFN                                ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:14:pcDFFN|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:14:pcDFFN                                ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:15:pcDFFN|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:15:pcDFFN                                ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:16:pcDFFN|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:16:pcDFFN                                ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:17:pcDFFN|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:17:pcDFFN                                ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:18:pcDFFN|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:18:pcDFFN                                ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:19:pcDFFN|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:19:pcDFFN                                ; pc_dffg             ; work         ;
 ;          |pc_dffg:\pc_Reg:1:pcDFFN|            ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:1:pcDFFN                                 ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:20:pcDFFN|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:20:pcDFFN                                ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:21:pcDFFN|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:21:pcDFFN                                ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:20:pcDFFN|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:20:pcDFFN                                ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:21:pcDFFN|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:21:pcDFFN                                ; pc_dffg             ; work         ;
 ;          |pc_dffg:\pc_Reg:22:pcDFFN|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:22:pcDFFN                                ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:23:pcDFFN|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:23:pcDFFN                                ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:24:pcDFFN|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:24:pcDFFN                                ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:25:pcDFFN|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:25:pcDFFN                                ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:26:pcDFFN|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:26:pcDFFN                                ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:27:pcDFFN|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:27:pcDFFN                                ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:28:pcDFFN|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:28:pcDFFN                                ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:29:pcDFFN|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:29:pcDFFN                                ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:2:pcDFFN|            ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:2:pcDFFN                                 ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:30:pcDFFN|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:30:pcDFFN                                ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:31:pcDFFN|           ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:31:pcDFFN                                ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:3:pcDFFN|            ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:3:pcDFFN                                 ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:4:pcDFFN|            ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:4:pcDFFN                                 ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:5:pcDFFN|            ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:5:pcDFFN                                 ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:6:pcDFFN|            ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:6:pcDFFN                                 ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:7:pcDFFN|            ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:7:pcDFFN                                 ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:8:pcDFFN|            ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:8:pcDFFN                                 ; pc_dffg             ; work         ;
-;          |pc_dffg:\pc_Reg:9:pcDFFN|            ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:9:pcDFFN                                 ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:23:pcDFFN|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:23:pcDFFN                                ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:24:pcDFFN|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:24:pcDFFN                                ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:25:pcDFFN|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:25:pcDFFN                                ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:26:pcDFFN|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:26:pcDFFN                                ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:27:pcDFFN|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:27:pcDFFN                                ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:28:pcDFFN|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:28:pcDFFN                                ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:29:pcDFFN|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:29:pcDFFN                                ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:2:pcDFFN|            ; 2 (2)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:2:pcDFFN                                 ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:30:pcDFFN|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:30:pcDFFN                                ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:31:pcDFFN|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:31:pcDFFN                                ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:3:pcDFFN|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:3:pcDFFN                                 ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:4:pcDFFN|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:4:pcDFFN                                 ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:5:pcDFFN|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:5:pcDFFN                                 ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:6:pcDFFN|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:6:pcDFFN                                 ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:7:pcDFFN|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:7:pcDFFN                                 ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:8:pcDFFN|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:8:pcDFFN                                 ; pc_dffg             ; work         ;
+;          |pc_dffg:\pc_Reg:9:pcDFFN|            ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:9:pcDFFN                                 ; pc_dffg             ; work         ;
 +------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1792,7 +1756,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Total registers                              ; 66560 ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Synchronous Load   ; 30    ;
 ; Number of registers using Asynchronous Clear ; 1024  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 66530 ;
@@ -1815,28 +1779,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------+
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |RISCV_Processor|ALUUnit:ALU|mux32x4t1:muxResult|Mux6                                                        ;
-; 3:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |RISCV_Processor|imm_generator:ImmGen|output[21]                                                             ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |RISCV_Processor|imm_generator:ImmGen|output[16]                                                             ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |RISCV_Processor|imm_generator:ImmGen|output[2]                                                              ;
+; 3:1                ; 29 bits   ; 58 LEs        ; 58 LEs               ; 0 LEs                  ; Yes        ; |RISCV_Processor|pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:23:pcDFFN|s_Q                                   ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |RISCV_Processor|ALUUnit:ALU|mux32x4t1:muxResult|Mux22                                                       ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |RISCV_Processor|imm_generator:ImmGen|output[24]                                                             ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |RISCV_Processor|imm_generator:ImmGen|output[17]                                                             ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |RISCV_Processor|imm_generator:ImmGen|output[4]                                                              ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |RISCV_Processor|controlUnit:CTRLunit|FlagMux[0]                                                             ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |RISCV_Processor|controlUnit:CTRLunit|AndLink[1]                                                             ;
-; 5:1                ; 30 bits   ; 90 LEs        ; 60 LEs               ; 30 LEs                 ; No         ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage0_shamt|mux2t1_dataflow:\G_NBit_MUX:24:MUXI|OUTPUT ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage1_shamt|mux2t1_dataflow:\G_NBit_MUX:31:MUXI|OUTPUT ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |RISCV_Processor|controlUnit:CTRLunit|AndLink[0]                                                             ;
+; 5:1                ; 30 bits   ; 90 LEs        ; 60 LEs               ; 30 LEs                 ; No         ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage0_shamt|mux2t1_dataflow:\G_NBit_MUX:1:MUXI|OUTPUT  ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage1_shamt|mux2t1_dataflow:\G_NBit_MUX:30:MUXI|OUTPUT ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage1_shamt|mux2t1_dataflow:\G_NBit_MUX:1:MUXI|OUTPUT  ;
-; 5:1                ; 28 bits   ; 84 LEs        ; 56 LEs               ; 28 LEs                 ; No         ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage1_shamt|mux2t1_dataflow:\G_NBit_MUX:6:MUXI|OUTPUT  ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage2_shamt|mux2t1_dataflow:\G_NBit_MUX:30:MUXI|OUTPUT ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage2_shamt|mux2t1_dataflow:\G_NBit_MUX:0:MUXI|OUTPUT  ;
+; 5:1                ; 28 bits   ; 84 LEs        ; 56 LEs               ; 28 LEs                 ; No         ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage1_shamt|mux2t1_dataflow:\G_NBit_MUX:21:MUXI|OUTPUT ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage2_shamt|mux2t1_dataflow:\G_NBit_MUX:31:MUXI|OUTPUT ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage2_shamt|mux2t1_dataflow:\G_NBit_MUX:3:MUXI|OUTPUT  ;
 ; 5:1                ; 24 bits   ; 72 LEs        ; 48 LEs               ; 24 LEs                 ; No         ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage2_shamt|mux2t1_dataflow:\G_NBit_MUX:23:MUXI|OUTPUT ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; No         ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage3_shamt|mux2t1_dataflow:\G_NBit_MUX:26:MUXI|OUTPUT ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; No         ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage3_shamt|mux2t1_dataflow:\G_NBit_MUX:7:MUXI|OUTPUT  ;
-; 5:1                ; 16 bits   ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; No         ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage3_shamt|mux2t1_dataflow:\G_NBit_MUX:9:MUXI|OUTPUT  ;
-; 32:1               ; 32 bits   ; 672 LEs       ; 640 LEs              ; 32 LEs                 ; No         ; |RISCV_Processor|RegFile:Registers|mux32t1:MUX1|Mux6                                                         ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; No         ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage3_shamt|mux2t1_dataflow:\G_NBit_MUX:27:MUXI|OUTPUT ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; No         ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage3_shamt|mux2t1_dataflow:\G_NBit_MUX:4:MUXI|OUTPUT  ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; No         ; |RISCV_Processor|barrel_shifter:Shifter|mux2t1_N:mux_stage3_shamt|mux2t1_dataflow:\G_NBit_MUX:12:MUXI|OUTPUT ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 640 LEs              ; 32 LEs                 ; No         ; |RISCV_Processor|RegFile:Registers|mux32t1:MUX1|Mux24                                                        ;
 ; 32:1               ; 32 bits   ; 672 LEs       ; 640 LEs              ; 32 LEs                 ; No         ; |RISCV_Processor|RegFile:Registers|mux32t1:MUX2|Mux3                                                         ;
 ; 7:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; No         ; |RISCV_Processor|controlUnit:CTRLunit|ALUctrl                                                                ;
-; 10:1               ; 16 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; No         ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:25:MUXI|OUTPUT                             ;
+; 10:1               ; 16 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; No         ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:24:MUXI|OUTPUT                             ;
 ; 13:1               ; 7 bits    ; 56 LEs        ; 42 LEs               ; 14 LEs                 ; No         ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:13:MUXI|OUTPUT                             ;
-; 13:1               ; 6 bits    ; 48 LEs        ; 36 LEs               ; 12 LEs                 ; No         ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:6:MUXI|OUTPUT                              ;
+; 13:1               ; 6 bits    ; 48 LEs        ; 36 LEs               ; 12 LEs                 ; No         ; |RISCV_Processor|mux2t1_N:MemOrCPUmux|mux2t1_dataflow:\G_NBit_MUX:2:MUXI|OUTPUT                              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------+
 
 
@@ -1921,16 +1886,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+--------------------------------------------------------+
 ; N              ; 32    ; Signed Integer                                         ;
 +----------------+-------+--------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: pcFetch:FetchUnit|mux2t1_N:MUX_PC ;
-+----------------+-------+-------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                  ;
-+----------------+-------+-------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                        ;
-+----------------+-------+-------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -2604,15 +2559,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------+
-; Port Connectivity Checks: "pcFetch:FetchUnit|mux2t1_N:MUX_PC" ;
-+------+-------+----------+-------------------------------------+
-; Port ; Type  ; Severity ; Details                             ;
-+------+-------+----------+-------------------------------------+
-; i_d1 ; Input ; Info     ; Stuck at GND                        ;
-+------+-------+----------+-------------------------------------+
-
-
 +-----------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:31:pcDFFN" ;
 +--------+-------+----------+-------------------------------------------------------+
@@ -2925,7 +2871,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port       ; Type   ; Severity ; Details                                                                             ;
 +------------+--------+----------+-------------------------------------------------------------------------------------+
-; immtype    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; haltsignal ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +------------+--------+----------+-------------------------------------------------------------------------------------+
 
@@ -2937,17 +2882,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; boundary_port         ; 99                          ;
 ; cycloneiii_ff         ; 66560                       ;
-;     CLR               ; 30                          ;
+;     CLR               ; 1                           ;
+;     CLR SLD           ; 29                          ;
 ;     ENA               ; 65536                       ;
-;     ENA CLR           ; 994                         ;
-; cycloneiii_lcell_comb ; 48180                       ;
-;     normal            ; 48180                       ;
-;         2 data inputs ; 1322                        ;
-;         3 data inputs ; 1054                        ;
-;         4 data inputs ; 45804                       ;
+;     ENA CLR           ; 993                         ;
+;     ENA CLR SLD       ; 1                           ;
+; cycloneiii_lcell_comb ; 48178                       ;
+;     normal            ; 48178                       ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 1343                        ;
+;         3 data inputs ; 1049                        ;
+;         4 data inputs ; 45785                       ;
 ;                       ;                             ;
-; Max LUT depth         ; 57.00                       ;
-; Average LUT depth     ; 36.42                       ;
+; Max LUT depth         ; 55.00                       ;
+; Average LUT depth     ; 35.57                       ;
 +-----------------------+-----------------------------+
 
 
@@ -2956,7 +2904,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:04:34     ;
+; Top            ; 00:04:36     ;
 +----------------+--------------+
 
 
@@ -2980,7 +2928,7 @@ Info: Running Quartus Prime Analysis & Synthesis
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Wed Oct 29 13:22:03 2025
+    Info: Processing started: Wed Oct 29 16:23:25 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off toolflow -c toolflow
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -3098,10 +3046,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file /home/g
 Info (12127): Elaborating entity "RISCV_Processor" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at RISCV_Processor.vhd(56): object "s_Halt" assigned a value but never read File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 56
 Warning (10036): Verilog HDL or VHDL warning at RISCV_Processor.vhd(59): object "s_Ovfl" assigned a value but never read File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 59
-Warning (10036): Verilog HDL or VHDL warning at RISCV_Processor.vhd(214): object "s_ImmType" assigned a value but never read File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 214
-Info (12128): Elaborating entity "mem" for hierarchy "mem:IMem" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 251
-Info (12128): Elaborating entity "controlUnit" for hierarchy "controlUnit:CTRLunit" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 274
-Info (12128): Elaborating entity "pcFetch" for hierarchy "pcFetch:FetchUnit" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 295
+Info (12128): Elaborating entity "mem" for hierarchy "mem:IMem" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 250
+Info (12128): Elaborating entity "controlUnit" for hierarchy "controlUnit:CTRLunit" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 273
+Info (12128): Elaborating entity "pcFetch" for hierarchy "pcFetch:FetchUnit" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 293
 Warning (10036): Verilog HDL or VHDL warning at pcFetch.vhd(54): object "ground" assigned a value but never read File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/pcFetch.vhd Line: 54
 Info (12128): Elaborating entity "pc_Reg" for hierarchy "pcFetch:FetchUnit|pc_Reg:PC" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/pcFetch.vhd Line: 63
 Info (12128): Elaborating entity "pc_dffg" for hierarchy "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:0:pcDFFN" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/pc_Reg.vhd Line: 31
@@ -3109,8 +3056,8 @@ Warning (10492): VHDL Process Statement warning at pc_dffg.vhd(36): signal "i_IN
 Info (12128): Elaborating entity "mux2t1_N" for hierarchy "pcFetch:FetchUnit|mux2t1_N:MUX_JUMP" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/pcFetch.vhd Line: 70
 Info (12128): Elaborating entity "mux2t1_dataflow" for hierarchy "pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:0:MUXI" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/mux2t1_N.vhd Line: 43
 Info (12128): Elaborating entity "nBit_LookaheadAdder" for hierarchy "pcFetch:FetchUnit|nBit_LookaheadAdder:Add4" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/pcFetch.vhd Line: 88
-Info (12128): Elaborating entity "imm_generator" for hierarchy "imm_generator:ImmGen" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 308
-Info (12128): Elaborating entity "ALUUnit" for hierarchy "ALUUnit:ALU" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 313
+Info (12128): Elaborating entity "imm_generator" for hierarchy "imm_generator:ImmGen" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 306
+Info (12128): Elaborating entity "ALUUnit" for hierarchy "ALUUnit:ALU" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 311
 Info (12128): Elaborating entity "and_32bit" for hierarchy "ALUUnit:ALU|and_32bit:andUnit" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/ALUUnit.vhd Line: 105
 Info (12128): Elaborating entity "andg2" for hierarchy "ALUUnit:ALU|and_32bit:andUnit|andg2:\G1:0:U_AND" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/and_32bit.vhd Line: 23
 Info (12128): Elaborating entity "or_32bit" for hierarchy "ALUUnit:ALU|or_32bit:orUnit" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/ALUUnit.vhd Line: 112
@@ -3124,14 +3071,14 @@ Info (12128): Elaborating entity "invg" for hierarchy "ALUUnit:ALU|nBit_ALU:adds
 Info (12128): Elaborating entity "mux2t1_2" for hierarchy "ALUUnit:ALU|mux2t1_2:muxbeforeresult" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/ALUUnit.vhd Line: 142
 Info (12128): Elaborating entity "mux32x4t1" for hierarchy "ALUUnit:ALU|mux32x4t1:muxResult" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/ALUUnit.vhd Line: 150
 Info (12128): Elaborating entity "mux4t1" for hierarchy "ALUUnit:ALU|mux4t1:Flags_mux" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/ALUUnit.vhd Line: 164
-Info (12128): Elaborating entity "barrel_shifter" for hierarchy "barrel_shifter:Shifter" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 333
-Info (12128): Elaborating entity "RegFile" for hierarchy "RegFile:Registers" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 342
+Info (12128): Elaborating entity "barrel_shifter" for hierarchy "barrel_shifter:Shifter" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 331
+Info (12128): Elaborating entity "RegFile" for hierarchy "RegFile:Registers" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 340
 Info (12128): Elaborating entity "decoder5t32" for hierarchy "RegFile:Registers|decoder5t32:DEC" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/RegFile.vhd Line: 49
 Info (12128): Elaborating entity "mux32t1" for hierarchy "RegFile:Registers|mux32t1:MUX1" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/RegFile.vhd Line: 54
 Info (12128): Elaborating entity "nBit_Reg" for hierarchy "RegFile:Registers|nBit_Reg:REG0" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/RegFile.vhd Line: 64
 Info (12128): Elaborating entity "dffg" for hierarchy "RegFile:Registers|nBit_Reg:REG0|dffg:\nBit_Reg:0:DFFN" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/nBit_Reg.vhd Line: 31
-Info (12128): Elaborating entity "zero_extender" for hierarchy "zero_extender:flagExtender" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 370
-Info (12128): Elaborating entity "memorySlicer" for hierarchy "memorySlicer:memSlicer" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 417
+Info (12128): Elaborating entity "zero_extender" for hierarchy "zero_extender:flagExtender" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 368
+Info (12128): Elaborating entity "memorySlicer" for hierarchy "memorySlicer:memSlicer" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 415
 Info (276014): Found 2 instances of uninferred RAM logic
     Info (276007): RAM logic "mem:IMem|ram" is uninferred due to asynchronous read logic File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/mem.vhd Line: 35
     Info (276007): RAM logic "mem:DMem|ram" is uninferred due to asynchronous read logic File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/mem.vhd Line: 35
@@ -3164,14 +3111,14 @@ Warning (21074): Design contains 22 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "iInstAddr[29]" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 30
     Warning (15610): No output dependent on input pin "iInstAddr[30]" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 30
     Warning (15610): No output dependent on input pin "iInstAddr[31]" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 30
-Info (21057): Implemented 114809 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 114806 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 67 input pins
     Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 114710 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 30 warnings
-    Info: Peak virtual memory: 1213 megabytes
-    Info: Processing ended: Wed Oct 29 13:26:54 2025
-    Info: Elapsed time: 00:04:51
-    Info: Total CPU time (on all processors): 00:04:56
+    Info (21061): Implemented 114707 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 29 warnings
+    Info: Peak virtual memory: 1211 megabytes
+    Info: Processing ended: Wed Oct 29 16:28:19 2025
+    Info: Elapsed time: 00:04:54
+    Info: Total CPU time (on all processors): 00:04:54
 
 

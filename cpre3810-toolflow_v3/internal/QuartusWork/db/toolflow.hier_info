@@ -585,8 +585,6 @@ ALUctrl[0] <= ALUctrl.DB_MAX_OUTPUT_PORT_TYPE
 ALUctrl[1] <= ALUctrl.DB_MAX_OUTPUT_PORT_TYPE
 ALUctrl[2] <= ALUctrl.DB_MAX_OUTPUT_PORT_TYPE
 ALUctrl[3] <= ALUctrl.DB_MAX_OUTPUT_PORT_TYPE
-ImmType[0] <= ImmType.DB_MAX_OUTPUT_PORT_TYPE
-ImmType[1] <= ImmType.DB_MAX_OUTPUT_PORT_TYPE
 AndLink[0] <= AndLink.DB_MAX_OUTPUT_PORT_TYPE
 AndLink[1] <= AndLink.DB_MAX_OUTPUT_PORT_TYPE
 MemWrite <= Equal12.DB_MAX_OUTPUT_PORT_TYPE
@@ -607,40 +605,40 @@ haltSignal <= Equal20.DB_MAX_OUTPUT_PORT_TYPE
 clock => pc_Reg:PC.CLK
 reset => pc_Reg:PC.RST
 conditionBJ => mux2t1_N:MUX_IMM.i_S
-jump => mux2t1_N:MUX_JUMP.i_S
-jumpWithRegister => mux2t1_N:MUX_PC.i_S
-immediate[0] => mux2t1_N:MUX_JUMP.i_D0[0]
-immediate[1] => mux2t1_N:MUX_JUMP.i_D0[1]
-immediate[2] => mux2t1_N:MUX_JUMP.i_D0[2]
-immediate[3] => mux2t1_N:MUX_JUMP.i_D0[3]
-immediate[4] => mux2t1_N:MUX_JUMP.i_D0[4]
-immediate[5] => mux2t1_N:MUX_JUMP.i_D0[5]
-immediate[6] => mux2t1_N:MUX_JUMP.i_D0[6]
-immediate[7] => mux2t1_N:MUX_JUMP.i_D0[7]
-immediate[8] => mux2t1_N:MUX_JUMP.i_D0[8]
-immediate[9] => mux2t1_N:MUX_JUMP.i_D0[9]
-immediate[10] => mux2t1_N:MUX_JUMP.i_D0[10]
-immediate[11] => mux2t1_N:MUX_JUMP.i_D0[11]
-immediate[12] => mux2t1_N:MUX_JUMP.i_D0[12]
-immediate[13] => mux2t1_N:MUX_JUMP.i_D0[13]
-immediate[14] => mux2t1_N:MUX_JUMP.i_D0[14]
-immediate[15] => mux2t1_N:MUX_JUMP.i_D0[15]
-immediate[16] => mux2t1_N:MUX_JUMP.i_D0[16]
-immediate[17] => mux2t1_N:MUX_JUMP.i_D0[17]
-immediate[18] => mux2t1_N:MUX_JUMP.i_D0[18]
-immediate[19] => mux2t1_N:MUX_JUMP.i_D0[19]
-immediate[20] => mux2t1_N:MUX_JUMP.i_D0[20]
-immediate[21] => mux2t1_N:MUX_JUMP.i_D0[21]
-immediate[22] => mux2t1_N:MUX_JUMP.i_D0[22]
-immediate[23] => mux2t1_N:MUX_JUMP.i_D0[23]
-immediate[24] => mux2t1_N:MUX_JUMP.i_D0[24]
-immediate[25] => mux2t1_N:MUX_JUMP.i_D0[25]
-immediate[26] => mux2t1_N:MUX_JUMP.i_D0[26]
-immediate[27] => mux2t1_N:MUX_JUMP.i_D0[27]
-immediate[28] => mux2t1_N:MUX_JUMP.i_D0[28]
-immediate[29] => mux2t1_N:MUX_JUMP.i_D0[29]
-immediate[30] => mux2t1_N:MUX_JUMP.i_D0[30]
-immediate[31] => mux2t1_N:MUX_JUMP.i_D0[31]
+jump => ~NO_FANOUT~
+jumpWithRegister => mux2t1_N:MUX_JUMP.i_S
+immediate[0] => nBit_LookaheadAdder:AddImm.i_B[0]
+immediate[1] => nBit_LookaheadAdder:AddImm.i_B[1]
+immediate[2] => nBit_LookaheadAdder:AddImm.i_B[2]
+immediate[3] => nBit_LookaheadAdder:AddImm.i_B[3]
+immediate[4] => nBit_LookaheadAdder:AddImm.i_B[4]
+immediate[5] => nBit_LookaheadAdder:AddImm.i_B[5]
+immediate[6] => nBit_LookaheadAdder:AddImm.i_B[6]
+immediate[7] => nBit_LookaheadAdder:AddImm.i_B[7]
+immediate[8] => nBit_LookaheadAdder:AddImm.i_B[8]
+immediate[9] => nBit_LookaheadAdder:AddImm.i_B[9]
+immediate[10] => nBit_LookaheadAdder:AddImm.i_B[10]
+immediate[11] => nBit_LookaheadAdder:AddImm.i_B[11]
+immediate[12] => nBit_LookaheadAdder:AddImm.i_B[12]
+immediate[13] => nBit_LookaheadAdder:AddImm.i_B[13]
+immediate[14] => nBit_LookaheadAdder:AddImm.i_B[14]
+immediate[15] => nBit_LookaheadAdder:AddImm.i_B[15]
+immediate[16] => nBit_LookaheadAdder:AddImm.i_B[16]
+immediate[17] => nBit_LookaheadAdder:AddImm.i_B[17]
+immediate[18] => nBit_LookaheadAdder:AddImm.i_B[18]
+immediate[19] => nBit_LookaheadAdder:AddImm.i_B[19]
+immediate[20] => nBit_LookaheadAdder:AddImm.i_B[20]
+immediate[21] => nBit_LookaheadAdder:AddImm.i_B[21]
+immediate[22] => nBit_LookaheadAdder:AddImm.i_B[22]
+immediate[23] => nBit_LookaheadAdder:AddImm.i_B[23]
+immediate[24] => nBit_LookaheadAdder:AddImm.i_B[24]
+immediate[25] => nBit_LookaheadAdder:AddImm.i_B[25]
+immediate[26] => nBit_LookaheadAdder:AddImm.i_B[26]
+immediate[27] => nBit_LookaheadAdder:AddImm.i_B[27]
+immediate[28] => nBit_LookaheadAdder:AddImm.i_B[28]
+immediate[29] => nBit_LookaheadAdder:AddImm.i_B[29]
+immediate[30] => nBit_LookaheadAdder:AddImm.i_B[30]
+immediate[31] => nBit_LookaheadAdder:AddImm.i_B[31]
 register_plusImm[0] => mux2t1_N:MUX_JUMP.i_D1[0]
 register_plusImm[1] => mux2t1_N:MUX_JUMP.i_D1[1]
 register_plusImm[2] => mux2t1_N:MUX_JUMP.i_D1[2]
@@ -1989,393 +1987,6 @@ OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_IMM|mux2t1_dataflow:\G_NBit_MUX:31:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC
-i_S => mux2t1_dataflow:G_NBit_MUX:0:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:1:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:2:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:3:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:4:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:5:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:6:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:7:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:8:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:9:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:10:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:11:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:12:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:13:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:14:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:15:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:16:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:17:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:18:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:19:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:20:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:21:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:22:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:23:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:24:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:25:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:26:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:27:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:28:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:29:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:30:MUXI.SEL
-i_S => mux2t1_dataflow:G_NBit_MUX:31:MUXI.SEL
-i_D0[0] => mux2t1_dataflow:G_NBit_MUX:0:MUXI.iA
-i_D0[1] => mux2t1_dataflow:G_NBit_MUX:1:MUXI.iA
-i_D0[2] => mux2t1_dataflow:G_NBit_MUX:2:MUXI.iA
-i_D0[3] => mux2t1_dataflow:G_NBit_MUX:3:MUXI.iA
-i_D0[4] => mux2t1_dataflow:G_NBit_MUX:4:MUXI.iA
-i_D0[5] => mux2t1_dataflow:G_NBit_MUX:5:MUXI.iA
-i_D0[6] => mux2t1_dataflow:G_NBit_MUX:6:MUXI.iA
-i_D0[7] => mux2t1_dataflow:G_NBit_MUX:7:MUXI.iA
-i_D0[8] => mux2t1_dataflow:G_NBit_MUX:8:MUXI.iA
-i_D0[9] => mux2t1_dataflow:G_NBit_MUX:9:MUXI.iA
-i_D0[10] => mux2t1_dataflow:G_NBit_MUX:10:MUXI.iA
-i_D0[11] => mux2t1_dataflow:G_NBit_MUX:11:MUXI.iA
-i_D0[12] => mux2t1_dataflow:G_NBit_MUX:12:MUXI.iA
-i_D0[13] => mux2t1_dataflow:G_NBit_MUX:13:MUXI.iA
-i_D0[14] => mux2t1_dataflow:G_NBit_MUX:14:MUXI.iA
-i_D0[15] => mux2t1_dataflow:G_NBit_MUX:15:MUXI.iA
-i_D0[16] => mux2t1_dataflow:G_NBit_MUX:16:MUXI.iA
-i_D0[17] => mux2t1_dataflow:G_NBit_MUX:17:MUXI.iA
-i_D0[18] => mux2t1_dataflow:G_NBit_MUX:18:MUXI.iA
-i_D0[19] => mux2t1_dataflow:G_NBit_MUX:19:MUXI.iA
-i_D0[20] => mux2t1_dataflow:G_NBit_MUX:20:MUXI.iA
-i_D0[21] => mux2t1_dataflow:G_NBit_MUX:21:MUXI.iA
-i_D0[22] => mux2t1_dataflow:G_NBit_MUX:22:MUXI.iA
-i_D0[23] => mux2t1_dataflow:G_NBit_MUX:23:MUXI.iA
-i_D0[24] => mux2t1_dataflow:G_NBit_MUX:24:MUXI.iA
-i_D0[25] => mux2t1_dataflow:G_NBit_MUX:25:MUXI.iA
-i_D0[26] => mux2t1_dataflow:G_NBit_MUX:26:MUXI.iA
-i_D0[27] => mux2t1_dataflow:G_NBit_MUX:27:MUXI.iA
-i_D0[28] => mux2t1_dataflow:G_NBit_MUX:28:MUXI.iA
-i_D0[29] => mux2t1_dataflow:G_NBit_MUX:29:MUXI.iA
-i_D0[30] => mux2t1_dataflow:G_NBit_MUX:30:MUXI.iA
-i_D0[31] => mux2t1_dataflow:G_NBit_MUX:31:MUXI.iA
-i_D1[0] => mux2t1_dataflow:G_NBit_MUX:0:MUXI.iB
-i_D1[1] => mux2t1_dataflow:G_NBit_MUX:1:MUXI.iB
-i_D1[2] => mux2t1_dataflow:G_NBit_MUX:2:MUXI.iB
-i_D1[3] => mux2t1_dataflow:G_NBit_MUX:3:MUXI.iB
-i_D1[4] => mux2t1_dataflow:G_NBit_MUX:4:MUXI.iB
-i_D1[5] => mux2t1_dataflow:G_NBit_MUX:5:MUXI.iB
-i_D1[6] => mux2t1_dataflow:G_NBit_MUX:6:MUXI.iB
-i_D1[7] => mux2t1_dataflow:G_NBit_MUX:7:MUXI.iB
-i_D1[8] => mux2t1_dataflow:G_NBit_MUX:8:MUXI.iB
-i_D1[9] => mux2t1_dataflow:G_NBit_MUX:9:MUXI.iB
-i_D1[10] => mux2t1_dataflow:G_NBit_MUX:10:MUXI.iB
-i_D1[11] => mux2t1_dataflow:G_NBit_MUX:11:MUXI.iB
-i_D1[12] => mux2t1_dataflow:G_NBit_MUX:12:MUXI.iB
-i_D1[13] => mux2t1_dataflow:G_NBit_MUX:13:MUXI.iB
-i_D1[14] => mux2t1_dataflow:G_NBit_MUX:14:MUXI.iB
-i_D1[15] => mux2t1_dataflow:G_NBit_MUX:15:MUXI.iB
-i_D1[16] => mux2t1_dataflow:G_NBit_MUX:16:MUXI.iB
-i_D1[17] => mux2t1_dataflow:G_NBit_MUX:17:MUXI.iB
-i_D1[18] => mux2t1_dataflow:G_NBit_MUX:18:MUXI.iB
-i_D1[19] => mux2t1_dataflow:G_NBit_MUX:19:MUXI.iB
-i_D1[20] => mux2t1_dataflow:G_NBit_MUX:20:MUXI.iB
-i_D1[21] => mux2t1_dataflow:G_NBit_MUX:21:MUXI.iB
-i_D1[22] => mux2t1_dataflow:G_NBit_MUX:22:MUXI.iB
-i_D1[23] => mux2t1_dataflow:G_NBit_MUX:23:MUXI.iB
-i_D1[24] => mux2t1_dataflow:G_NBit_MUX:24:MUXI.iB
-i_D1[25] => mux2t1_dataflow:G_NBit_MUX:25:MUXI.iB
-i_D1[26] => mux2t1_dataflow:G_NBit_MUX:26:MUXI.iB
-i_D1[27] => mux2t1_dataflow:G_NBit_MUX:27:MUXI.iB
-i_D1[28] => mux2t1_dataflow:G_NBit_MUX:28:MUXI.iB
-i_D1[29] => mux2t1_dataflow:G_NBit_MUX:29:MUXI.iB
-i_D1[30] => mux2t1_dataflow:G_NBit_MUX:30:MUXI.iB
-i_D1[31] => mux2t1_dataflow:G_NBit_MUX:31:MUXI.iB
-o_O[0] <= mux2t1_dataflow:G_NBit_MUX:0:MUXI.OUTPUT
-o_O[1] <= mux2t1_dataflow:G_NBit_MUX:1:MUXI.OUTPUT
-o_O[2] <= mux2t1_dataflow:G_NBit_MUX:2:MUXI.OUTPUT
-o_O[3] <= mux2t1_dataflow:G_NBit_MUX:3:MUXI.OUTPUT
-o_O[4] <= mux2t1_dataflow:G_NBit_MUX:4:MUXI.OUTPUT
-o_O[5] <= mux2t1_dataflow:G_NBit_MUX:5:MUXI.OUTPUT
-o_O[6] <= mux2t1_dataflow:G_NBit_MUX:6:MUXI.OUTPUT
-o_O[7] <= mux2t1_dataflow:G_NBit_MUX:7:MUXI.OUTPUT
-o_O[8] <= mux2t1_dataflow:G_NBit_MUX:8:MUXI.OUTPUT
-o_O[9] <= mux2t1_dataflow:G_NBit_MUX:9:MUXI.OUTPUT
-o_O[10] <= mux2t1_dataflow:G_NBit_MUX:10:MUXI.OUTPUT
-o_O[11] <= mux2t1_dataflow:G_NBit_MUX:11:MUXI.OUTPUT
-o_O[12] <= mux2t1_dataflow:G_NBit_MUX:12:MUXI.OUTPUT
-o_O[13] <= mux2t1_dataflow:G_NBit_MUX:13:MUXI.OUTPUT
-o_O[14] <= mux2t1_dataflow:G_NBit_MUX:14:MUXI.OUTPUT
-o_O[15] <= mux2t1_dataflow:G_NBit_MUX:15:MUXI.OUTPUT
-o_O[16] <= mux2t1_dataflow:G_NBit_MUX:16:MUXI.OUTPUT
-o_O[17] <= mux2t1_dataflow:G_NBit_MUX:17:MUXI.OUTPUT
-o_O[18] <= mux2t1_dataflow:G_NBit_MUX:18:MUXI.OUTPUT
-o_O[19] <= mux2t1_dataflow:G_NBit_MUX:19:MUXI.OUTPUT
-o_O[20] <= mux2t1_dataflow:G_NBit_MUX:20:MUXI.OUTPUT
-o_O[21] <= mux2t1_dataflow:G_NBit_MUX:21:MUXI.OUTPUT
-o_O[22] <= mux2t1_dataflow:G_NBit_MUX:22:MUXI.OUTPUT
-o_O[23] <= mux2t1_dataflow:G_NBit_MUX:23:MUXI.OUTPUT
-o_O[24] <= mux2t1_dataflow:G_NBit_MUX:24:MUXI.OUTPUT
-o_O[25] <= mux2t1_dataflow:G_NBit_MUX:25:MUXI.OUTPUT
-o_O[26] <= mux2t1_dataflow:G_NBit_MUX:26:MUXI.OUTPUT
-o_O[27] <= mux2t1_dataflow:G_NBit_MUX:27:MUXI.OUTPUT
-o_O[28] <= mux2t1_dataflow:G_NBit_MUX:28:MUXI.OUTPUT
-o_O[29] <= mux2t1_dataflow:G_NBit_MUX:29:MUXI.OUTPUT
-o_O[30] <= mux2t1_dataflow:G_NBit_MUX:30:MUXI.OUTPUT
-o_O[31] <= mux2t1_dataflow:G_NBit_MUX:31:MUXI.OUTPUT
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:0:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:1:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:2:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:3:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:4:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:5:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:6:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:7:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:8:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:9:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:10:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:11:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:12:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:13:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:14:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:15:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:16:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:17:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:18:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:19:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:20:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:21:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:22:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:23:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:24:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:25:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:26:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:27:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:28:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:29:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:30:MUXI
-SEL => OUTPUT.OUTPUTSELECT
-SEL => OUTPUT.OUTPUTSELECT
-iA => OUTPUT.DATAB
-iB => OUTPUT.DATAB
-OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|mux2t1_N:MUX_PC|mux2t1_dataflow:\G_NBit_MUX:31:MUXI
 SEL => OUTPUT.OUTPUTSELECT
 SEL => OUTPUT.OUTPUTSELECT
 iA => OUTPUT.DATAB

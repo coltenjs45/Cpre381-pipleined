@@ -68,22 +68,22 @@ begin
       outData => pcOut);
 
 	  MUX_JUMP: mux2t1_N port map(
-	    i_S     => jump,
-      i_D0    => immediate,
+	    i_S     => jumpWithRegister,
+      i_D0    => addImmOut,
       i_D1    => register_plusImm,
       o_O     => jumpAddress);
 
     MUX_IMM: mux2t1_N port map(
 	    i_S     => conditionBJ,
       i_D0    => add4Out,
-      i_D1    => addImmOut,
+      i_D1    => jumpAddress,
       o_O     => nextPC);
 
-    MUX_PC: mux2t1_N port map(
-	    i_S     => jumpWithRegister,
-      i_D0    => pcOut,
-      i_D1    => x"00000000",
-      o_O     => pcJALR);
+--    MUX_PC: mux2t1_N port map(
+--	    i_S     => jumpWithRegister,
+--      i_D0    => pcOut,
+--      i_D1    => x"00000000",
+--      o_O     => pcJALR);
 
     Add4: nBit_LookaheadAdder port map(
       in_C   	=> '0',
@@ -94,8 +94,8 @@ begin
 
     AddImm: nBit_LookaheadAdder port map(
       in_C    => '0',
-      i_A 	  => pcJALR,
-      i_B 	  => jumpAddress,
+      i_A 	  => pcOut,
+      i_B 	  => immediate,
       o_SUM 	=> addImmOut,
       out_C	  => ground);
 

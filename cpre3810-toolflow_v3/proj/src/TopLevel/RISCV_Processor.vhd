@@ -115,7 +115,6 @@ architecture structure of RISCV_Processor is
       funct7        : in std_logic_vector(6 downto 0);
       ALUsrc        : out std_logic;
       ALUctrl       : out std_logic_vector(3 downto 0);
-      ImmType       : out std_logic_vector(1 downto 0);
       AndLink       : out std_logic_vector(1 downto 0);
       MemWrite      : out std_logic;
       RegWrite      : out std_logic;
@@ -168,60 +167,79 @@ architecture structure of RISCV_Processor is
       o_O          : out std_logic_vector(N-1 downto 0));
   end component;
 
-component mux32x4t1 is
-  port(
-    sel       : in std_logic_vector(1 downto 0);
-    bus_in		: in t_bus_4x32;
-    o_output 	: out std_logic_vector(31 downto 0));
-end component;
+  component mux4t1
+    port(
+      i_D0 : in std_logic;
+      i_D1 : in std_logic;
+      i_D2 : in std_logic;
+      i_D3 : in std_logic;
+      i_S  : in std_logic_vector(1 downto 0);
+      o_Y  : out std_logic
+    );  
+  end component;
 
-component invg is
-  port(
-    i_A          : in std_logic;
-    o_F          : out std_logic);
-end component;
+  component mux32x4t1 is
+    port(
+      sel       : in std_logic_vector(1 downto 0);
+      bus_in		: in t_bus_4x32;
+      o_output 	: out std_logic_vector(31 downto 0));
+  end component;
 
-component andg2 is
-  port(i_A          : in std_logic;
-       i_B          : in std_logic;
-       o_F          : out std_logic);
-end component;
+  component invg is
+    port(
+      i_A          : in std_logic;
+      o_F          : out std_logic);
+  end component;
 
-component org2 is
-  port(i_A          : in std_logic;
-       i_B          : in std_logic;
-       o_F          : out std_logic);
-end component;
+  component andg2 is
+    port(i_A          : in std_logic;
+        i_B          : in std_logic;
+        o_F          : out std_logic);
+  end component;
 
-component zero_extender is
-  generic (OUT_WIDTH : natural := 32);
-    port (
-        input     : in std_logic;
-        output    : out std_logic_vector(OUT_WIDTH-1 downto 0));
-end component;
+  component org2 is
+    port(i_A          : in std_logic;
+        i_B          : in std_logic;
+        o_F          : out std_logic);
+  end component;
 
-component memorySlicer is
-    port (
-        funct3    : in std_logic_vector(2 downto 0);
-        addr      : in std_logic_vector(1 downto 0);
-        input     : in std_logic_vector(31 downto 0);
-        output    : out std_logic_vector(31 downto 0));
-end component;
+  component zero_extender is
+    generic (OUT_WIDTH : natural := 32);
+      port (
+          input     : in std_logic;
+          output    : out std_logic_vector(OUT_WIDTH-1 downto 0));
+  end component;
+
+  component memorySlicer is
+      port (
+          funct3    : in std_logic_vector(2 downto 0);
+          addr      : in std_logic_vector(1 downto 0);
+          input     : in std_logic_vector(31 downto 0);
+          output    : out std_logic_vector(31 downto 0));
+  end component;
+
+  component comparator is
+      port (
+          A       : in std_logic_vector(31 downto 0);
+          B       : in std_logic_vector(31 downto 0);
+          funct3  : in std_logic_vector(2 downto 0);
+          compare : out std_logic);
+  end component;
 
   --Control Unit signals
   signal s_ALUsrc, s_MemToReg, s_Branch, s_Jump, s_Shift, s_ALUorImmJump, s_FlagOrNFlag, s_JumpWReg : std_logic;
   signal s_ALUctrl : std_logic_vector(3 downto 0);
-  signal s_ImmType, s_AndLink, s_FlagMux: std_logic_vector(1 downto 0);
+  signal s_AndLink, s_FlagMux: std_logic_vector(1 downto 0);
 
   --Fetch Unit Signals
   signal s_pcUp4, s_pcUpImm : std_logic_vector(31 downto 0);
-  signal s_branchFlags, s_branchLogic, s_BranchOrJump : std_logic;
+  signal s_branchFlags, s_branchLogic, s_BranchOrJump, s_branchLogicOld : std_logic;
 
   --Immediate Generator Signals
   signal s_immediate : std_logic_vector(31 downto 0);
 
   --ALU Unit Signals
-  signal s_ALUresult, s_inputA, s_inputB : std_logic_vector(31 downto 0);
+  signal s_ALUresult, s_rOut1, s_inputB : std_logic_vector(31 downto 0);
   signal s_flag, s_notFlag : std_logic;
 
   --Barrel Shifter Signals
@@ -239,6 +257,9 @@ end component;
 
   -- Memory Slicer
   signal s_MemSlice : std_logic_vector(31 downto 0);
+
+  -- Comparator
+  signal s_GT, s_LT, s_EQ, s_NE, s_GTEQ, s_branchCompare : std_logic;
 
   -- ASSIGNMENTS
 begin
@@ -278,7 +299,6 @@ begin
       funct7        => s_Inst(31 downto 25),
       ALUsrc        => s_ALUsrc,
       ALUctrl       => s_ALUctrl,
-      ImmType       => s_ImmType,
       AndLink       => s_AndLink,
       MemWrite      => s_DMemWr,
       RegWrite      => s_RegWr,
@@ -314,7 +334,7 @@ begin
     port map(
       Alucontrol    => s_ALUctrl,
       flag_mux      => s_FlagMux,
-      input_A       => s_inputA,
+      input_A       => s_rOut1,
       input_B       => s_inputB,
       output_result => s_ALUresult,
       overflowFlag  => s_Ovfl,
@@ -326,7 +346,7 @@ begin
   lui_mux : mux2t1_N
     port map(
       i_S  => s_ALUctrl(3),
-      i_D0 => s_inputA,
+      i_D0 => s_rOut1,
       i_D1 => s_immediate,
       o_O  => s_barrelInput);
 
@@ -348,7 +368,7 @@ begin
       rs2		        => s_Inst(24 downto 20),
       rd		        => s_RegWrAddr,
       data		      => s_RegWrData,
-      rOut1		      => s_inputA,
+      rOut1		      => s_rOut1,
       rOut2		      => s_rOut2);  
       
   s_DMemData <= s_rOut2;
@@ -405,7 +425,7 @@ begin
   branchAnd : andg2
     port map(
       i_A => s_Branch,
-      i_B => s_branchFlags,
+      i_B => s_branchCompare,
       o_F => s_branchLogic);
 
   branchJump : org2
@@ -421,5 +441,12 @@ begin
       input  => s_DMemOut,
       output => s_MemSlice);
     
+  branchCompare : comparator
+    port map(
+      A       => s_rOut1,
+      B       => s_rOut2,
+      funct3  => s_Inst(14 downto 12),
+      compare => s_branchCompare);
 
+  
 end structure;
