@@ -1,0 +1,98 @@
+QuestaSim-64 vcom 2025.1_2 Compiler 2025.04 Apr  7 2025
+Start time: 13:20:05 on Oct 29,2025
+vcom -2008 -work internal/ModelSimContainer/work proj/src/RISCV_types.vhd internal/testpy/tb.vhd proj/src/RISCV_types.vhd proj/src/TopLevel/mem.vhd proj/src/TopLevel/RISCV_Processor.vhd proj/src/TopLevel/Components/nBit_LookaheadAdder.vhd proj/src/TopLevel/Components/nor_32t1bit.vhd proj/src/TopLevel/Components/invg.vhd proj/src/TopLevel/Components/mux32t1.vhd proj/src/TopLevel/Components/xorg2.vhd proj/src/TopLevel/Components/mux32x4t1.vhd proj/src/TopLevel/Components/mux2t1_2.vhd proj/src/TopLevel/Components/mux2t1_dataflow.vhd proj/src/TopLevel/Components/xor_32bit.vhd proj/src/TopLevel/Components/controlUnit.vhd proj/src/TopLevel/Components/memorySlicer.vhd proj/src/TopLevel/Components/imm_generator.vhd proj/src/TopLevel/Components/nBit_ALU.vhd proj/src/TopLevel/Components/OnesComp.vhd proj/src/TopLevel/Components/ALUUnit.vhd proj/src/TopLevel/Components/pcFetch.vhd proj/src/TopLevel/Components/mux2t1_N.vhd proj/src/TopLevel/Components/and_32bit.vhd proj/src/TopLevel/Components/Adder.vhd proj/src/TopLevel/Components/nBit_Reg.vhd proj/src/TopLevel/Components/barrel_shifter.vhd proj/src/TopLevel/Components/andg2.vhd proj/src/TopLevel/Components/RegFile.vhd proj/src/TopLevel/Components/org2.vhd proj/src/TopLevel/Components/pc_dffg.vhd proj/src/TopLevel/Components/dffg.vhd proj/src/TopLevel/Components/pc_Reg.vhd proj/src/TopLevel/Components/decoder5t32.vhd proj/src/TopLevel/Components/zero_extender.vhd proj/src/TopLevel/Components/sign_extender.vhd proj/src/TopLevel/Components/norg2.vhd proj/src/TopLevel/Components/or_32bit.vhd proj/src/TopLevel/Components/mux4t1 .vhd proj/src/TopLevel/Components/nBit_Adder.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+** Warning: proj/src/RISCV_types.vhd(15): (vcom-1615) Existing package 'RISCV_types' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/RISCV_types.vhd(15) will be overwritten.
+-- Compiling package RISCV_types
+-- Compiling package body RISCV_types
+-- Loading package RISCV_types
+-- Loading package std_logic_textio
+-- Loading package ENV
+** Warning: internal/testpy/tb.vhd(24): (vcom-1615) Existing entity 'tb' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/internal/testpy/tb.vhd(24) will be overwritten.
+-- Compiling entity tb
+** Warning: internal/testpy/tb.vhd(31): (vcom-1615) Existing architecture 'tb(mixed)' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/internal/testpy/tb.vhd(31) will be overwritten.
+-- Compiling architecture mixed of tb
+** Warning: proj/src/RISCV_types.vhd(15): (vcom-1615) Existing package 'RISCV_types' at line 22 will be overwritten.
+-- Compiling package RISCV_types
+** Warning: proj/src/RISCV_types.vhd(32): (vcom-1615) Existing package body 'RISCV_types(body)' at line 32 will be overwritten.
+-- Compiling package body RISCV_types
+-- Loading package RISCV_types
+-- Loading package NUMERIC_STD
+** Warning: proj/src/TopLevel/mem.vhd(8): (vcom-1615) Existing entity 'mem' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/mem.vhd(8) will be overwritten.
+-- Compiling entity mem
+** Warning: proj/src/TopLevel/mem.vhd(27): (vcom-1615) Existing architecture 'mem(rtl)' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/mem.vhd(27) will be overwritten.
+-- Compiling architecture rtl of mem
+-- Loading package RISCV_types
+** Warning: proj/src/TopLevel/RISCV_Processor.vhd(23): (vcom-1615) Existing entity 'RISCV_Processor' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd(23) will be overwritten.
+-- Compiling entity RISCV_Processor
+** Warning: proj/src/TopLevel/RISCV_Processor.vhd(37): (vcom-1615) Existing architecture 'RISCV_Processor(structure)' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd(37) will be overwritten.
+-- Compiling architecture structure of RISCV_Processor
+-- Compiling entity nBit_LookaheadAdder
+-- Compiling architecture lookahead of nBit_LookaheadAdder
+** Warning: proj/src/TopLevel/Components/nor_32t1bit.vhd(4): (vcom-1615) Existing entity 'nor_32t1bit' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/nor_32t1bit.vhd(4) will be overwritten.
+-- Compiling entity nor_32t1bit
+** Warning: proj/src/TopLevel/Components/nor_32t1bit.vhd(12): (vcom-1615) Existing architecture 'nor_32t1bit(behavioral)' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/nor_32t1bit.vhd(12) will be overwritten.
+-- Compiling architecture behavioral of nor_32t1bit
+** Warning: proj/src/TopLevel/Components/invg.vhd(23): (vcom-1615) Existing entity 'invg' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/invg.vhd(23) will be overwritten.
+-- Compiling entity invg
+** Warning: proj/src/TopLevel/Components/invg.vhd(30): (vcom-1615) Existing architecture 'invg(dataflow)' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/invg.vhd(30) will be overwritten.
+-- Compiling architecture dataflow of invg
+** Warning: proj/src/TopLevel/Components/mux32t1.vhd(7): (vcom-1615) Existing entity 'mux32t1' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/mux32t1.vhd(7) will be overwritten.
+-- Compiling entity mux32t1
+** Warning: proj/src/TopLevel/Components/mux32t1.vhd(15): (vcom-1615) Existing architecture 'mux32t1(dataflow)' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/mux32t1.vhd(15) will be overwritten.
+-- Compiling architecture dataflow of mux32t1
+** Warning: proj/src/TopLevel/Components/xorg2.vhd(23): (vcom-1615) Existing entity 'xorg2' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/xorg2.vhd(23) will be overwritten.
+-- Compiling entity xorg2
+** Warning: proj/src/TopLevel/Components/xorg2.vhd(31): (vcom-1615) Existing architecture 'xorg2(dataflow)' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/xorg2.vhd(31) will be overwritten.
+-- Compiling architecture dataflow of xorg2
+** Warning: proj/src/TopLevel/Components/mux32x4t1.vhd(7): (vcom-1615) Existing entity 'mux32x4t1' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/mux32x4t1.vhd(7) will be overwritten.
+-- Compiling entity mux32x4t1
+** Warning: proj/src/TopLevel/Components/mux32x4t1.vhd(15): (vcom-1615) Existing architecture 'mux32x4t1(dataflow)' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/mux32x4t1.vhd(15) will be overwritten.
+-- Compiling architecture dataflow of mux32x4t1
+** Warning: proj/src/TopLevel/Components/mux2t1_2.vhd(4): (vcom-1615) Existing entity 'mux2t1_2' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/mux2t1_2.vhd(4) will be overwritten.
+-- Compiling entity mux2t1_2
+** Warning: proj/src/TopLevel/Components/mux2t1_2.vhd(13): (vcom-1615) Existing architecture 'mux2t1_2(structural)' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/mux2t1_2.vhd(13) will be overwritten.
+-- Compiling architecture structural of mux2t1_2
+** Warning: proj/src/TopLevel/Components/mux2t1_dataflow.vhd(21): (vcom-1615) Existing entity 'mux2t1_dataflow' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/mux2t1_dataflow.vhd(21) will be overwritten.
+-- Compiling entity mux2t1_dataflow
+** Warning: proj/src/TopLevel/Components/mux2t1_dataflow.vhd(30): (vcom-1615) Existing architecture 'mux2t1_dataflow(dataflow)' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/mux2t1_dataflow.vhd(30) will be overwritten.
+-- Compiling architecture dataflow of mux2t1_dataflow
+** Warning: proj/src/TopLevel/Components/xor_32bit.vhd(4): (vcom-1615) Existing entity 'xor_32bit' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/xor_32bit.vhd(4) will be overwritten.
+-- Compiling entity xor_32bit
+** Warning: proj/src/TopLevel/Components/xor_32bit.vhd(14): (vcom-1615) Existing architecture 'xor_32bit(structural)' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/xor_32bit.vhd(14) will be overwritten.
+-- Compiling architecture structural of xor_32bit
+** Warning: proj/src/TopLevel/Components/controlUnit.vhd(6): (vcom-1615) Existing entity 'controlUnit' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/controlUnit.vhd(6) will be overwritten.
+-- Compiling entity controlUnit
+** Warning: proj/src/TopLevel/Components/controlUnit.vhd(31): (vcom-1615) Existing architecture 'controlUnit(dataflow)' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/controlUnit.vhd(31) will be overwritten.
+-- Compiling architecture dataflow of controlUnit
+** Warning: proj/src/TopLevel/Components/memorySlicer.vhd(5): (vcom-1615) Existing entity 'memorySlicer' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/memorySlicer.vhd(5) will be overwritten.
+-- Compiling entity memorySlicer
+** Warning: proj/src/TopLevel/Components/memorySlicer.vhd(14): (vcom-1615) Existing architecture 'memorySlicer(Behavioral)' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/memorySlicer.vhd(14) will be overwritten.
+-- Compiling architecture Behavioral of memorySlicer
+** Warning: proj/src/TopLevel/Components/imm_generator.vhd(6): (vcom-1615) Existing entity 'imm_generator' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/imm_generator.vhd(6) will be overwritten.
+-- Compiling entity imm_generator
+** Warning: proj/src/TopLevel/Components/imm_generator.vhd(13): (vcom-1615) Existing architecture 'imm_generator(Behavioral)' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/imm_generator.vhd(13) will be overwritten.
+-- Compiling architecture Behavioral of imm_generator
+** Warning: proj/src/TopLevel/Components/nBit_ALU.vhd(5): (vcom-1615) Existing entity 'nBit_ALU' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/nBit_ALU.vhd(5) will be overwritten.
+-- Compiling entity nBit_ALU
+** Warning: proj/src/TopLevel/Components/nBit_ALU.vhd(19): (vcom-1615) Existing architecture 'nBit_ALU(structure)' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/nBit_ALU.vhd(19) will be overwritten.
+-- Compiling architecture structure of nBit_ALU
+** Warning: proj/src/TopLevel/Components/OnesComp.vhd(6): (vcom-1615) Existing entity 'OnesComp' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/OnesComp.vhd(6) will be overwritten.
+-- Compiling entity OnesComp
+** Warning: proj/src/TopLevel/Components/OnesComp.vhd(15): (vcom-1615) Existing architecture 'OnesComp(structure)' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/OnesComp.vhd(15) will be overwritten.
+-- Compiling architecture structure of OnesComp
+** Warning: proj/src/TopLevel/Components/ALUUnit.vhd(6): (vcom-1615) Existing entity 'ALUUnit' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/ALUUnit.vhd(6) will be overwritten.
+-- Compiling entity ALUUnit
+** Warning: proj/src/TopLevel/Components/ALUUnit.vhd(19): (vcom-1615) Existing architecture 'ALUUnit(structural)' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/ALUUnit.vhd(19) will be overwritten.
+-- Compiling architecture structural of ALUUnit
+** Warning: proj/src/TopLevel/Components/pcFetch.vhd(6): (vcom-1615) Existing entity 'pcFetch' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/pcFetch.vhd(6) will be overwritten.
+-- Compiling entity pcFetch
+** Warning: proj/src/TopLevel/Components/pcFetch.vhd(24): (vcom-1615) Existing architecture 'pcFetch(mixed)' at /home/gmander5/cpre381/Project1/project1-riscv/cpre3810-toolflow_v3/proj/src/TopLevel/Components/pcFetch.vhd(24) will be overwritten.
+-- Compiling architecture mixed of pcFetch
+** Error (suppressible): proj/src/TopLevel/Components/pcFetch.vhd(88): (vcom-1141) Identifier "nBit_LookaheadAdder" does not identify a component declaration.
+** Error (suppressible): proj/src/TopLevel/Components/pcFetch.vhd(95): (vcom-1141) Identifier "nBit_LookaheadAdder" does not identify a component declaration.
+** Note: proj/src/TopLevel/Components/pcFetch.vhd(106): VHDL Compiler exiting
+End time: 13:20:05 on Oct 29,2025, Elapsed time: 0:00:00
+Errors: 2, Warnings: 39

@@ -31,7 +31,7 @@ architecture mixed of pcFetch is
       o_O              : out std_logic_vector(WIDTH-1 downto 0));
   end component;
 
-  component nBit_Adder
+  component nBit_LookaheadAdder
     port(
       in_C   		      : in std_logic;
       i_A 		        : in std_logic_vector(WIDTH-1 downto 0);
@@ -85,14 +85,14 @@ begin
       i_D1    => x"00000000",
       o_O     => pcJALR);
 
-    Add4: nBit_Adder port map(
+    Add4: nBit_LookaheadAdder port map(
       in_C   	=> '0',
       i_A 	  => pcOut,
       i_B 	  => x"00000004",
       o_SUM 	=> add4Out,
       out_C	  => ground);
 
-    AddImm: nBit_Adder port map(
+    AddImm: nBit_LookaheadAdder port map(
       in_C    => '0',
       i_A 	  => pcJALR,
       i_B 	  => jumpAddress,

@@ -18,7 +18,7 @@ end nBit_ALU;
 
 architecture structure of nBit_ALU is
   
-  component nBit_Adder
+  component nBit_LookaheadAdder
         port(in_C   	: in std_logic;
              i_A 	: in std_logic_vector(WIDTH-1 downto 0);
              i_B 	: in std_logic_vector(WIDTH-1 downto 0);
@@ -55,7 +55,7 @@ begin
 		i_D1	=> s_B_OnesComp,
 		o_O	=> s_mux_out);
 
-  g_Adder: nBit_Adder
+  g_Adder: nBit_LookaheadAdder
     port MAP(	in_C	=> nAdd_Sub,
 		i_A	=> input_A,
 		i_B	=> s_mux_out,

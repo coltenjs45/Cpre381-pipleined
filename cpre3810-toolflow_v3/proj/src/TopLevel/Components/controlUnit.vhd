@@ -12,7 +12,7 @@ entity controlUnit is
     funct7             : in std_logic_vector(6 downto 0);
     ALUsrc             : out std_logic;
     ALUctrl            : out std_logic_vector(3 downto 0);
-    ImmType            : out std_logic_vector(1 downto 0);
+--  ImmType            : out std_logic_vector(1 downto 0);
     AndLink            : out std_logic_vector(1 downto 0);
     MemWrite           : out std_logic;
     RegWrite           : out std_logic;
@@ -79,12 +79,12 @@ architecture dataflow of controlUnit is
                 "1000" when(opcode = lui_opcode) else -- LUI
                 "0000";              
     
-    ImmType <=  "00" when(opcode = I_type_aImm_opcode and (funct3 = "011" or funct3 = "001" or funct3 = "101")) else 
-                "00" when(opcode = SB_type_opcode and (funct3 = "110" or funct3 = "111")) else
-                "11" when(opcode = lui_opcode) else
-                "11" when(opcode = jal_opcode) else
-                "11" when(opcode = auipc_opcode) else         
-                "01";
+--  ImmType <=  "00" when(opcode = I_type_aImm_opcode and (funct3 = "011" or funct3 = "001" or funct3 = "101")) else 
+--              "00" when(opcode = SB_type_opcode and (funct3 = "110" or funct3 = "111")) else
+--              "11" when(opcode = lui_opcode) else
+--              "11" when(opcode = jal_opcode) else
+--              "11" when(opcode = auipc_opcode) else         
+--              "01";
               --"01" when(opcode = I_type_aImm_opcode and (funct3 = "000" or funct3 = "010" or funct3 = "100" or funct3 = "110" or funct3 = "111")) else
               --"01" when(opcode = I_type_load_opcode) else
               --"01" when(opcode = S_type_opcode) else

@@ -673,70 +673,70 @@ register_plusImm[28] => mux2t1_N:MUX_JUMP.i_D1[28]
 register_plusImm[29] => mux2t1_N:MUX_JUMP.i_D1[29]
 register_plusImm[30] => mux2t1_N:MUX_JUMP.i_D1[30]
 register_plusImm[31] => mux2t1_N:MUX_JUMP.i_D1[31]
-pcUp4[0] <= nBit_Adder:Add4.o_SUM[0]
-pcUp4[1] <= nBit_Adder:Add4.o_SUM[1]
-pcUp4[2] <= nBit_Adder:Add4.o_SUM[2]
-pcUp4[3] <= nBit_Adder:Add4.o_SUM[3]
-pcUp4[4] <= nBit_Adder:Add4.o_SUM[4]
-pcUp4[5] <= nBit_Adder:Add4.o_SUM[5]
-pcUp4[6] <= nBit_Adder:Add4.o_SUM[6]
-pcUp4[7] <= nBit_Adder:Add4.o_SUM[7]
-pcUp4[8] <= nBit_Adder:Add4.o_SUM[8]
-pcUp4[9] <= nBit_Adder:Add4.o_SUM[9]
-pcUp4[10] <= nBit_Adder:Add4.o_SUM[10]
-pcUp4[11] <= nBit_Adder:Add4.o_SUM[11]
-pcUp4[12] <= nBit_Adder:Add4.o_SUM[12]
-pcUp4[13] <= nBit_Adder:Add4.o_SUM[13]
-pcUp4[14] <= nBit_Adder:Add4.o_SUM[14]
-pcUp4[15] <= nBit_Adder:Add4.o_SUM[15]
-pcUp4[16] <= nBit_Adder:Add4.o_SUM[16]
-pcUp4[17] <= nBit_Adder:Add4.o_SUM[17]
-pcUp4[18] <= nBit_Adder:Add4.o_SUM[18]
-pcUp4[19] <= nBit_Adder:Add4.o_SUM[19]
-pcUp4[20] <= nBit_Adder:Add4.o_SUM[20]
-pcUp4[21] <= nBit_Adder:Add4.o_SUM[21]
-pcUp4[22] <= nBit_Adder:Add4.o_SUM[22]
-pcUp4[23] <= nBit_Adder:Add4.o_SUM[23]
-pcUp4[24] <= nBit_Adder:Add4.o_SUM[24]
-pcUp4[25] <= nBit_Adder:Add4.o_SUM[25]
-pcUp4[26] <= nBit_Adder:Add4.o_SUM[26]
-pcUp4[27] <= nBit_Adder:Add4.o_SUM[27]
-pcUp4[28] <= nBit_Adder:Add4.o_SUM[28]
-pcUp4[29] <= nBit_Adder:Add4.o_SUM[29]
-pcUp4[30] <= nBit_Adder:Add4.o_SUM[30]
-pcUp4[31] <= nBit_Adder:Add4.o_SUM[31]
-pcUpImm[0] <= nBit_Adder:AddImm.o_SUM[0]
-pcUpImm[1] <= nBit_Adder:AddImm.o_SUM[1]
-pcUpImm[2] <= nBit_Adder:AddImm.o_SUM[2]
-pcUpImm[3] <= nBit_Adder:AddImm.o_SUM[3]
-pcUpImm[4] <= nBit_Adder:AddImm.o_SUM[4]
-pcUpImm[5] <= nBit_Adder:AddImm.o_SUM[5]
-pcUpImm[6] <= nBit_Adder:AddImm.o_SUM[6]
-pcUpImm[7] <= nBit_Adder:AddImm.o_SUM[7]
-pcUpImm[8] <= nBit_Adder:AddImm.o_SUM[8]
-pcUpImm[9] <= nBit_Adder:AddImm.o_SUM[9]
-pcUpImm[10] <= nBit_Adder:AddImm.o_SUM[10]
-pcUpImm[11] <= nBit_Adder:AddImm.o_SUM[11]
-pcUpImm[12] <= nBit_Adder:AddImm.o_SUM[12]
-pcUpImm[13] <= nBit_Adder:AddImm.o_SUM[13]
-pcUpImm[14] <= nBit_Adder:AddImm.o_SUM[14]
-pcUpImm[15] <= nBit_Adder:AddImm.o_SUM[15]
-pcUpImm[16] <= nBit_Adder:AddImm.o_SUM[16]
-pcUpImm[17] <= nBit_Adder:AddImm.o_SUM[17]
-pcUpImm[18] <= nBit_Adder:AddImm.o_SUM[18]
-pcUpImm[19] <= nBit_Adder:AddImm.o_SUM[19]
-pcUpImm[20] <= nBit_Adder:AddImm.o_SUM[20]
-pcUpImm[21] <= nBit_Adder:AddImm.o_SUM[21]
-pcUpImm[22] <= nBit_Adder:AddImm.o_SUM[22]
-pcUpImm[23] <= nBit_Adder:AddImm.o_SUM[23]
-pcUpImm[24] <= nBit_Adder:AddImm.o_SUM[24]
-pcUpImm[25] <= nBit_Adder:AddImm.o_SUM[25]
-pcUpImm[26] <= nBit_Adder:AddImm.o_SUM[26]
-pcUpImm[27] <= nBit_Adder:AddImm.o_SUM[27]
-pcUpImm[28] <= nBit_Adder:AddImm.o_SUM[28]
-pcUpImm[29] <= nBit_Adder:AddImm.o_SUM[29]
-pcUpImm[30] <= nBit_Adder:AddImm.o_SUM[30]
-pcUpImm[31] <= nBit_Adder:AddImm.o_SUM[31]
+pcUp4[0] <= nBit_LookaheadAdder:Add4.o_SUM[0]
+pcUp4[1] <= nBit_LookaheadAdder:Add4.o_SUM[1]
+pcUp4[2] <= nBit_LookaheadAdder:Add4.o_SUM[2]
+pcUp4[3] <= nBit_LookaheadAdder:Add4.o_SUM[3]
+pcUp4[4] <= nBit_LookaheadAdder:Add4.o_SUM[4]
+pcUp4[5] <= nBit_LookaheadAdder:Add4.o_SUM[5]
+pcUp4[6] <= nBit_LookaheadAdder:Add4.o_SUM[6]
+pcUp4[7] <= nBit_LookaheadAdder:Add4.o_SUM[7]
+pcUp4[8] <= nBit_LookaheadAdder:Add4.o_SUM[8]
+pcUp4[9] <= nBit_LookaheadAdder:Add4.o_SUM[9]
+pcUp4[10] <= nBit_LookaheadAdder:Add4.o_SUM[10]
+pcUp4[11] <= nBit_LookaheadAdder:Add4.o_SUM[11]
+pcUp4[12] <= nBit_LookaheadAdder:Add4.o_SUM[12]
+pcUp4[13] <= nBit_LookaheadAdder:Add4.o_SUM[13]
+pcUp4[14] <= nBit_LookaheadAdder:Add4.o_SUM[14]
+pcUp4[15] <= nBit_LookaheadAdder:Add4.o_SUM[15]
+pcUp4[16] <= nBit_LookaheadAdder:Add4.o_SUM[16]
+pcUp4[17] <= nBit_LookaheadAdder:Add4.o_SUM[17]
+pcUp4[18] <= nBit_LookaheadAdder:Add4.o_SUM[18]
+pcUp4[19] <= nBit_LookaheadAdder:Add4.o_SUM[19]
+pcUp4[20] <= nBit_LookaheadAdder:Add4.o_SUM[20]
+pcUp4[21] <= nBit_LookaheadAdder:Add4.o_SUM[21]
+pcUp4[22] <= nBit_LookaheadAdder:Add4.o_SUM[22]
+pcUp4[23] <= nBit_LookaheadAdder:Add4.o_SUM[23]
+pcUp4[24] <= nBit_LookaheadAdder:Add4.o_SUM[24]
+pcUp4[25] <= nBit_LookaheadAdder:Add4.o_SUM[25]
+pcUp4[26] <= nBit_LookaheadAdder:Add4.o_SUM[26]
+pcUp4[27] <= nBit_LookaheadAdder:Add4.o_SUM[27]
+pcUp4[28] <= nBit_LookaheadAdder:Add4.o_SUM[28]
+pcUp4[29] <= nBit_LookaheadAdder:Add4.o_SUM[29]
+pcUp4[30] <= nBit_LookaheadAdder:Add4.o_SUM[30]
+pcUp4[31] <= nBit_LookaheadAdder:Add4.o_SUM[31]
+pcUpImm[0] <= nBit_LookaheadAdder:AddImm.o_SUM[0]
+pcUpImm[1] <= nBit_LookaheadAdder:AddImm.o_SUM[1]
+pcUpImm[2] <= nBit_LookaheadAdder:AddImm.o_SUM[2]
+pcUpImm[3] <= nBit_LookaheadAdder:AddImm.o_SUM[3]
+pcUpImm[4] <= nBit_LookaheadAdder:AddImm.o_SUM[4]
+pcUpImm[5] <= nBit_LookaheadAdder:AddImm.o_SUM[5]
+pcUpImm[6] <= nBit_LookaheadAdder:AddImm.o_SUM[6]
+pcUpImm[7] <= nBit_LookaheadAdder:AddImm.o_SUM[7]
+pcUpImm[8] <= nBit_LookaheadAdder:AddImm.o_SUM[8]
+pcUpImm[9] <= nBit_LookaheadAdder:AddImm.o_SUM[9]
+pcUpImm[10] <= nBit_LookaheadAdder:AddImm.o_SUM[10]
+pcUpImm[11] <= nBit_LookaheadAdder:AddImm.o_SUM[11]
+pcUpImm[12] <= nBit_LookaheadAdder:AddImm.o_SUM[12]
+pcUpImm[13] <= nBit_LookaheadAdder:AddImm.o_SUM[13]
+pcUpImm[14] <= nBit_LookaheadAdder:AddImm.o_SUM[14]
+pcUpImm[15] <= nBit_LookaheadAdder:AddImm.o_SUM[15]
+pcUpImm[16] <= nBit_LookaheadAdder:AddImm.o_SUM[16]
+pcUpImm[17] <= nBit_LookaheadAdder:AddImm.o_SUM[17]
+pcUpImm[18] <= nBit_LookaheadAdder:AddImm.o_SUM[18]
+pcUpImm[19] <= nBit_LookaheadAdder:AddImm.o_SUM[19]
+pcUpImm[20] <= nBit_LookaheadAdder:AddImm.o_SUM[20]
+pcUpImm[21] <= nBit_LookaheadAdder:AddImm.o_SUM[21]
+pcUpImm[22] <= nBit_LookaheadAdder:AddImm.o_SUM[22]
+pcUpImm[23] <= nBit_LookaheadAdder:AddImm.o_SUM[23]
+pcUpImm[24] <= nBit_LookaheadAdder:AddImm.o_SUM[24]
+pcUpImm[25] <= nBit_LookaheadAdder:AddImm.o_SUM[25]
+pcUpImm[26] <= nBit_LookaheadAdder:AddImm.o_SUM[26]
+pcUpImm[27] <= nBit_LookaheadAdder:AddImm.o_SUM[27]
+pcUpImm[28] <= nBit_LookaheadAdder:AddImm.o_SUM[28]
+pcUpImm[29] <= nBit_LookaheadAdder:AddImm.o_SUM[29]
+pcUpImm[30] <= nBit_LookaheadAdder:AddImm.o_SUM[30]
+pcUpImm[31] <= nBit_LookaheadAdder:AddImm.o_SUM[31]
 programCounter[0] <= pc_Reg:PC.outData[0]
 programCounter[1] <= pc_Reg:PC.outData[1]
 programCounter[2] <= pc_Reg:PC.outData[2]
@@ -2383,2830 +2383,336 @@ iB => OUTPUT.DATAB
 OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4
-in_C => Adder:nBit_Adder:0:ADDI.iCARRY
-i_A[0] => Adder:nBit_Adder:0:ADDI.iA
-i_A[1] => Adder:nBit_Adder:1:ADDI.iA
-i_A[2] => Adder:nBit_Adder:2:ADDI.iA
-i_A[3] => Adder:nBit_Adder:3:ADDI.iA
-i_A[4] => Adder:nBit_Adder:4:ADDI.iA
-i_A[5] => Adder:nBit_Adder:5:ADDI.iA
-i_A[6] => Adder:nBit_Adder:6:ADDI.iA
-i_A[7] => Adder:nBit_Adder:7:ADDI.iA
-i_A[8] => Adder:nBit_Adder:8:ADDI.iA
-i_A[9] => Adder:nBit_Adder:9:ADDI.iA
-i_A[10] => Adder:nBit_Adder:10:ADDI.iA
-i_A[11] => Adder:nBit_Adder:11:ADDI.iA
-i_A[12] => Adder:nBit_Adder:12:ADDI.iA
-i_A[13] => Adder:nBit_Adder:13:ADDI.iA
-i_A[14] => Adder:nBit_Adder:14:ADDI.iA
-i_A[15] => Adder:nBit_Adder:15:ADDI.iA
-i_A[16] => Adder:nBit_Adder:16:ADDI.iA
-i_A[17] => Adder:nBit_Adder:17:ADDI.iA
-i_A[18] => Adder:nBit_Adder:18:ADDI.iA
-i_A[19] => Adder:nBit_Adder:19:ADDI.iA
-i_A[20] => Adder:nBit_Adder:20:ADDI.iA
-i_A[21] => Adder:nBit_Adder:21:ADDI.iA
-i_A[22] => Adder:nBit_Adder:22:ADDI.iA
-i_A[23] => Adder:nBit_Adder:23:ADDI.iA
-i_A[24] => Adder:nBit_Adder:24:ADDI.iA
-i_A[25] => Adder:nBit_Adder:25:ADDI.iA
-i_A[26] => Adder:nBit_Adder:26:ADDI.iA
-i_A[27] => Adder:nBit_Adder:27:ADDI.iA
-i_A[28] => Adder:nBit_Adder:28:ADDI.iA
-i_A[29] => Adder:nBit_Adder:29:ADDI.iA
-i_A[30] => Adder:nBit_Adder:30:ADDI.iA
-i_A[31] => Adder:nBit_Adder:31:ADDI.iA
-i_B[0] => Adder:nBit_Adder:0:ADDI.iB
-i_B[1] => Adder:nBit_Adder:1:ADDI.iB
-i_B[2] => Adder:nBit_Adder:2:ADDI.iB
-i_B[3] => Adder:nBit_Adder:3:ADDI.iB
-i_B[4] => Adder:nBit_Adder:4:ADDI.iB
-i_B[5] => Adder:nBit_Adder:5:ADDI.iB
-i_B[6] => Adder:nBit_Adder:6:ADDI.iB
-i_B[7] => Adder:nBit_Adder:7:ADDI.iB
-i_B[8] => Adder:nBit_Adder:8:ADDI.iB
-i_B[9] => Adder:nBit_Adder:9:ADDI.iB
-i_B[10] => Adder:nBit_Adder:10:ADDI.iB
-i_B[11] => Adder:nBit_Adder:11:ADDI.iB
-i_B[12] => Adder:nBit_Adder:12:ADDI.iB
-i_B[13] => Adder:nBit_Adder:13:ADDI.iB
-i_B[14] => Adder:nBit_Adder:14:ADDI.iB
-i_B[15] => Adder:nBit_Adder:15:ADDI.iB
-i_B[16] => Adder:nBit_Adder:16:ADDI.iB
-i_B[17] => Adder:nBit_Adder:17:ADDI.iB
-i_B[18] => Adder:nBit_Adder:18:ADDI.iB
-i_B[19] => Adder:nBit_Adder:19:ADDI.iB
-i_B[20] => Adder:nBit_Adder:20:ADDI.iB
-i_B[21] => Adder:nBit_Adder:21:ADDI.iB
-i_B[22] => Adder:nBit_Adder:22:ADDI.iB
-i_B[23] => Adder:nBit_Adder:23:ADDI.iB
-i_B[24] => Adder:nBit_Adder:24:ADDI.iB
-i_B[25] => Adder:nBit_Adder:25:ADDI.iB
-i_B[26] => Adder:nBit_Adder:26:ADDI.iB
-i_B[27] => Adder:nBit_Adder:27:ADDI.iB
-i_B[28] => Adder:nBit_Adder:28:ADDI.iB
-i_B[29] => Adder:nBit_Adder:29:ADDI.iB
-i_B[30] => Adder:nBit_Adder:30:ADDI.iB
-i_B[31] => Adder:nBit_Adder:31:ADDI.iB
-o_SUM[0] <= Adder:nBit_Adder:0:ADDI.oSUM
-o_SUM[1] <= Adder:nBit_Adder:1:ADDI.oSUM
-o_SUM[2] <= Adder:nBit_Adder:2:ADDI.oSUM
-o_SUM[3] <= Adder:nBit_Adder:3:ADDI.oSUM
-o_SUM[4] <= Adder:nBit_Adder:4:ADDI.oSUM
-o_SUM[5] <= Adder:nBit_Adder:5:ADDI.oSUM
-o_SUM[6] <= Adder:nBit_Adder:6:ADDI.oSUM
-o_SUM[7] <= Adder:nBit_Adder:7:ADDI.oSUM
-o_SUM[8] <= Adder:nBit_Adder:8:ADDI.oSUM
-o_SUM[9] <= Adder:nBit_Adder:9:ADDI.oSUM
-o_SUM[10] <= Adder:nBit_Adder:10:ADDI.oSUM
-o_SUM[11] <= Adder:nBit_Adder:11:ADDI.oSUM
-o_SUM[12] <= Adder:nBit_Adder:12:ADDI.oSUM
-o_SUM[13] <= Adder:nBit_Adder:13:ADDI.oSUM
-o_SUM[14] <= Adder:nBit_Adder:14:ADDI.oSUM
-o_SUM[15] <= Adder:nBit_Adder:15:ADDI.oSUM
-o_SUM[16] <= Adder:nBit_Adder:16:ADDI.oSUM
-o_SUM[17] <= Adder:nBit_Adder:17:ADDI.oSUM
-o_SUM[18] <= Adder:nBit_Adder:18:ADDI.oSUM
-o_SUM[19] <= Adder:nBit_Adder:19:ADDI.oSUM
-o_SUM[20] <= Adder:nBit_Adder:20:ADDI.oSUM
-o_SUM[21] <= Adder:nBit_Adder:21:ADDI.oSUM
-o_SUM[22] <= Adder:nBit_Adder:22:ADDI.oSUM
-o_SUM[23] <= Adder:nBit_Adder:23:ADDI.oSUM
-o_SUM[24] <= Adder:nBit_Adder:24:ADDI.oSUM
-o_SUM[25] <= Adder:nBit_Adder:25:ADDI.oSUM
-o_SUM[26] <= Adder:nBit_Adder:26:ADDI.oSUM
-o_SUM[27] <= Adder:nBit_Adder:27:ADDI.oSUM
-o_SUM[28] <= Adder:nBit_Adder:28:ADDI.oSUM
-o_SUM[29] <= Adder:nBit_Adder:29:ADDI.oSUM
-o_SUM[30] <= Adder:nBit_Adder:30:ADDI.oSUM
-o_SUM[31] <= Adder:nBit_Adder:31:ADDI.oSUM
-out_C <= Adder:nBit_Adder:31:ADDI.oCARRY
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:0:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:0:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:0:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:0:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:0:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:0:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:1:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:1:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:1:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:1:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:1:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:1:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:2:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:2:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:2:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:2:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:2:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:2:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:3:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:3:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:3:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:3:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:3:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:3:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:4:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:4:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:4:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:4:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:4:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:4:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:5:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:5:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:5:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:5:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:5:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:5:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:6:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:6:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:6:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:6:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:6:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:6:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:7:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:7:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:7:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:7:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:7:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:7:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:8:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:8:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:8:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:8:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:8:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:8:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:9:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:9:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:9:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:9:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:9:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:9:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:10:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:10:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:10:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:10:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:10:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:10:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:11:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:11:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:11:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:11:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:11:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:11:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:12:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:12:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:12:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:12:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:12:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:12:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:13:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:13:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:13:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:13:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:13:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:13:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:14:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:14:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:14:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:14:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:14:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:14:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:15:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:15:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:15:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:15:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:15:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:15:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:16:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:16:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:16:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:16:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:16:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:16:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:17:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:17:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:17:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:17:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:17:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:17:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:18:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:18:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:18:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:18:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:18:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:18:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:19:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:19:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:19:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:19:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:19:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:19:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:20:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:20:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:20:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:20:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:20:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:20:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:21:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:21:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:21:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:21:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:21:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:21:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:22:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:22:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:22:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:22:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:22:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:22:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:23:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:23:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:23:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:23:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:23:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:23:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:24:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:24:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:24:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:24:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:24:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:24:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:25:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:25:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:25:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:25:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:25:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:25:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:26:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:26:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:26:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:26:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:26:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:26:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:27:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:27:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:27:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:27:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:27:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:27:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:28:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:28:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:28:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:28:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:28:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:28:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:29:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:29:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:29:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:29:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:29:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:29:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:30:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:30:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:30:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:30:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:30:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:30:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:31:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:31:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:31:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:31:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:31:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:Add4|Adder:\nBit_Adder:31:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm
-in_C => Adder:nBit_Adder:0:ADDI.iCARRY
-i_A[0] => Adder:nBit_Adder:0:ADDI.iA
-i_A[1] => Adder:nBit_Adder:1:ADDI.iA
-i_A[2] => Adder:nBit_Adder:2:ADDI.iA
-i_A[3] => Adder:nBit_Adder:3:ADDI.iA
-i_A[4] => Adder:nBit_Adder:4:ADDI.iA
-i_A[5] => Adder:nBit_Adder:5:ADDI.iA
-i_A[6] => Adder:nBit_Adder:6:ADDI.iA
-i_A[7] => Adder:nBit_Adder:7:ADDI.iA
-i_A[8] => Adder:nBit_Adder:8:ADDI.iA
-i_A[9] => Adder:nBit_Adder:9:ADDI.iA
-i_A[10] => Adder:nBit_Adder:10:ADDI.iA
-i_A[11] => Adder:nBit_Adder:11:ADDI.iA
-i_A[12] => Adder:nBit_Adder:12:ADDI.iA
-i_A[13] => Adder:nBit_Adder:13:ADDI.iA
-i_A[14] => Adder:nBit_Adder:14:ADDI.iA
-i_A[15] => Adder:nBit_Adder:15:ADDI.iA
-i_A[16] => Adder:nBit_Adder:16:ADDI.iA
-i_A[17] => Adder:nBit_Adder:17:ADDI.iA
-i_A[18] => Adder:nBit_Adder:18:ADDI.iA
-i_A[19] => Adder:nBit_Adder:19:ADDI.iA
-i_A[20] => Adder:nBit_Adder:20:ADDI.iA
-i_A[21] => Adder:nBit_Adder:21:ADDI.iA
-i_A[22] => Adder:nBit_Adder:22:ADDI.iA
-i_A[23] => Adder:nBit_Adder:23:ADDI.iA
-i_A[24] => Adder:nBit_Adder:24:ADDI.iA
-i_A[25] => Adder:nBit_Adder:25:ADDI.iA
-i_A[26] => Adder:nBit_Adder:26:ADDI.iA
-i_A[27] => Adder:nBit_Adder:27:ADDI.iA
-i_A[28] => Adder:nBit_Adder:28:ADDI.iA
-i_A[29] => Adder:nBit_Adder:29:ADDI.iA
-i_A[30] => Adder:nBit_Adder:30:ADDI.iA
-i_A[31] => Adder:nBit_Adder:31:ADDI.iA
-i_B[0] => Adder:nBit_Adder:0:ADDI.iB
-i_B[1] => Adder:nBit_Adder:1:ADDI.iB
-i_B[2] => Adder:nBit_Adder:2:ADDI.iB
-i_B[3] => Adder:nBit_Adder:3:ADDI.iB
-i_B[4] => Adder:nBit_Adder:4:ADDI.iB
-i_B[5] => Adder:nBit_Adder:5:ADDI.iB
-i_B[6] => Adder:nBit_Adder:6:ADDI.iB
-i_B[7] => Adder:nBit_Adder:7:ADDI.iB
-i_B[8] => Adder:nBit_Adder:8:ADDI.iB
-i_B[9] => Adder:nBit_Adder:9:ADDI.iB
-i_B[10] => Adder:nBit_Adder:10:ADDI.iB
-i_B[11] => Adder:nBit_Adder:11:ADDI.iB
-i_B[12] => Adder:nBit_Adder:12:ADDI.iB
-i_B[13] => Adder:nBit_Adder:13:ADDI.iB
-i_B[14] => Adder:nBit_Adder:14:ADDI.iB
-i_B[15] => Adder:nBit_Adder:15:ADDI.iB
-i_B[16] => Adder:nBit_Adder:16:ADDI.iB
-i_B[17] => Adder:nBit_Adder:17:ADDI.iB
-i_B[18] => Adder:nBit_Adder:18:ADDI.iB
-i_B[19] => Adder:nBit_Adder:19:ADDI.iB
-i_B[20] => Adder:nBit_Adder:20:ADDI.iB
-i_B[21] => Adder:nBit_Adder:21:ADDI.iB
-i_B[22] => Adder:nBit_Adder:22:ADDI.iB
-i_B[23] => Adder:nBit_Adder:23:ADDI.iB
-i_B[24] => Adder:nBit_Adder:24:ADDI.iB
-i_B[25] => Adder:nBit_Adder:25:ADDI.iB
-i_B[26] => Adder:nBit_Adder:26:ADDI.iB
-i_B[27] => Adder:nBit_Adder:27:ADDI.iB
-i_B[28] => Adder:nBit_Adder:28:ADDI.iB
-i_B[29] => Adder:nBit_Adder:29:ADDI.iB
-i_B[30] => Adder:nBit_Adder:30:ADDI.iB
-i_B[31] => Adder:nBit_Adder:31:ADDI.iB
-o_SUM[0] <= Adder:nBit_Adder:0:ADDI.oSUM
-o_SUM[1] <= Adder:nBit_Adder:1:ADDI.oSUM
-o_SUM[2] <= Adder:nBit_Adder:2:ADDI.oSUM
-o_SUM[3] <= Adder:nBit_Adder:3:ADDI.oSUM
-o_SUM[4] <= Adder:nBit_Adder:4:ADDI.oSUM
-o_SUM[5] <= Adder:nBit_Adder:5:ADDI.oSUM
-o_SUM[6] <= Adder:nBit_Adder:6:ADDI.oSUM
-o_SUM[7] <= Adder:nBit_Adder:7:ADDI.oSUM
-o_SUM[8] <= Adder:nBit_Adder:8:ADDI.oSUM
-o_SUM[9] <= Adder:nBit_Adder:9:ADDI.oSUM
-o_SUM[10] <= Adder:nBit_Adder:10:ADDI.oSUM
-o_SUM[11] <= Adder:nBit_Adder:11:ADDI.oSUM
-o_SUM[12] <= Adder:nBit_Adder:12:ADDI.oSUM
-o_SUM[13] <= Adder:nBit_Adder:13:ADDI.oSUM
-o_SUM[14] <= Adder:nBit_Adder:14:ADDI.oSUM
-o_SUM[15] <= Adder:nBit_Adder:15:ADDI.oSUM
-o_SUM[16] <= Adder:nBit_Adder:16:ADDI.oSUM
-o_SUM[17] <= Adder:nBit_Adder:17:ADDI.oSUM
-o_SUM[18] <= Adder:nBit_Adder:18:ADDI.oSUM
-o_SUM[19] <= Adder:nBit_Adder:19:ADDI.oSUM
-o_SUM[20] <= Adder:nBit_Adder:20:ADDI.oSUM
-o_SUM[21] <= Adder:nBit_Adder:21:ADDI.oSUM
-o_SUM[22] <= Adder:nBit_Adder:22:ADDI.oSUM
-o_SUM[23] <= Adder:nBit_Adder:23:ADDI.oSUM
-o_SUM[24] <= Adder:nBit_Adder:24:ADDI.oSUM
-o_SUM[25] <= Adder:nBit_Adder:25:ADDI.oSUM
-o_SUM[26] <= Adder:nBit_Adder:26:ADDI.oSUM
-o_SUM[27] <= Adder:nBit_Adder:27:ADDI.oSUM
-o_SUM[28] <= Adder:nBit_Adder:28:ADDI.oSUM
-o_SUM[29] <= Adder:nBit_Adder:29:ADDI.oSUM
-o_SUM[30] <= Adder:nBit_Adder:30:ADDI.oSUM
-o_SUM[31] <= Adder:nBit_Adder:31:ADDI.oSUM
-out_C <= Adder:nBit_Adder:31:ADDI.oCARRY
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:0:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:0:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:0:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:0:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:0:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:0:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:1:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:1:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:1:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:1:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:1:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:1:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:2:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:2:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:2:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:2:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:2:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:2:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:3:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:3:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:3:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:3:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:3:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:3:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:4:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:4:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:4:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:4:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:4:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:4:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:5:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:5:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:5:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:5:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:5:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:5:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:6:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:6:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:6:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:6:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:6:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:6:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:7:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:7:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:7:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:7:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:7:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:7:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:8:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:8:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:8:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:8:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:8:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:8:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:9:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:9:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:9:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:9:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:9:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:9:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:10:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:10:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:10:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:10:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:10:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:10:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:11:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:11:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:11:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:11:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:11:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:11:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:12:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:12:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:12:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:12:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:12:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:12:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:13:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:13:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:13:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:13:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:13:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:13:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:14:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:14:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:14:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:14:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:14:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:14:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:15:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:15:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:15:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:15:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:15:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:15:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:16:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:16:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:16:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:16:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:16:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:16:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:17:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:17:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:17:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:17:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:17:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:17:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:18:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:18:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:18:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:18:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:18:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:18:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:19:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:19:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:19:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:19:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:19:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:19:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:20:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:20:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:20:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:20:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:20:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:20:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:21:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:21:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:21:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:21:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:21:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:21:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:22:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:22:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:22:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:22:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:22:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:22:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:23:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:23:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:23:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:23:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:23:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:23:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:24:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:24:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:24:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:24:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:24:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:24:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:25:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:25:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:25:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:25:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:25:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:25:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:26:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:26:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:26:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:26:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:26:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:26:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:27:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:27:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:27:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:27:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:27:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:27:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:28:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:28:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:28:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:28:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:28:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:28:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:29:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:29:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:29:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:29:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:29:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:29:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:30:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:30:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:30:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:30:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:30:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:30:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:31:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:31:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:31:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:31:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:31:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|pcFetch:FetchUnit|nBit_Adder:AddImm|Adder:\nBit_Adder:31:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
+|RISCV_Processor|pcFetch:FetchUnit|nBit_LookaheadAdder:Add4
+in_C => C.IN1
+in_C => o_SUM.IN1
+i_A[0] => G[0].IN0
+i_A[0] => P[0].IN0
+i_A[1] => G[1].IN0
+i_A[1] => P[1].IN0
+i_A[2] => G[2].IN0
+i_A[2] => P[2].IN0
+i_A[3] => G[3].IN0
+i_A[3] => P[3].IN0
+i_A[4] => G[4].IN0
+i_A[4] => P[4].IN0
+i_A[5] => G[5].IN0
+i_A[5] => P[5].IN0
+i_A[6] => G[6].IN0
+i_A[6] => P[6].IN0
+i_A[7] => G[7].IN0
+i_A[7] => P[7].IN0
+i_A[8] => G[8].IN0
+i_A[8] => P[8].IN0
+i_A[9] => G[9].IN0
+i_A[9] => P[9].IN0
+i_A[10] => G[10].IN0
+i_A[10] => P[10].IN0
+i_A[11] => G[11].IN0
+i_A[11] => P[11].IN0
+i_A[12] => G[12].IN0
+i_A[12] => P[12].IN0
+i_A[13] => G[13].IN0
+i_A[13] => P[13].IN0
+i_A[14] => G[14].IN0
+i_A[14] => P[14].IN0
+i_A[15] => G[15].IN0
+i_A[15] => P[15].IN0
+i_A[16] => G[16].IN0
+i_A[16] => P[16].IN0
+i_A[17] => G[17].IN0
+i_A[17] => P[17].IN0
+i_A[18] => G[18].IN0
+i_A[18] => P[18].IN0
+i_A[19] => G[19].IN0
+i_A[19] => P[19].IN0
+i_A[20] => G[20].IN0
+i_A[20] => P[20].IN0
+i_A[21] => G[21].IN0
+i_A[21] => P[21].IN0
+i_A[22] => G[22].IN0
+i_A[22] => P[22].IN0
+i_A[23] => G[23].IN0
+i_A[23] => P[23].IN0
+i_A[24] => G[24].IN0
+i_A[24] => P[24].IN0
+i_A[25] => G[25].IN0
+i_A[25] => P[25].IN0
+i_A[26] => G[26].IN0
+i_A[26] => P[26].IN0
+i_A[27] => G[27].IN0
+i_A[27] => P[27].IN0
+i_A[28] => G[28].IN0
+i_A[28] => P[28].IN0
+i_A[29] => G[29].IN0
+i_A[29] => P[29].IN0
+i_A[30] => G[30].IN0
+i_A[30] => P[30].IN0
+i_A[31] => G[31].IN0
+i_A[31] => P[31].IN0
+i_B[0] => G[0].IN1
+i_B[0] => P[0].IN1
+i_B[1] => G[1].IN1
+i_B[1] => P[1].IN1
+i_B[2] => G[2].IN1
+i_B[2] => P[2].IN1
+i_B[3] => G[3].IN1
+i_B[3] => P[3].IN1
+i_B[4] => G[4].IN1
+i_B[4] => P[4].IN1
+i_B[5] => G[5].IN1
+i_B[5] => P[5].IN1
+i_B[6] => G[6].IN1
+i_B[6] => P[6].IN1
+i_B[7] => G[7].IN1
+i_B[7] => P[7].IN1
+i_B[8] => G[8].IN1
+i_B[8] => P[8].IN1
+i_B[9] => G[9].IN1
+i_B[9] => P[9].IN1
+i_B[10] => G[10].IN1
+i_B[10] => P[10].IN1
+i_B[11] => G[11].IN1
+i_B[11] => P[11].IN1
+i_B[12] => G[12].IN1
+i_B[12] => P[12].IN1
+i_B[13] => G[13].IN1
+i_B[13] => P[13].IN1
+i_B[14] => G[14].IN1
+i_B[14] => P[14].IN1
+i_B[15] => G[15].IN1
+i_B[15] => P[15].IN1
+i_B[16] => G[16].IN1
+i_B[16] => P[16].IN1
+i_B[17] => G[17].IN1
+i_B[17] => P[17].IN1
+i_B[18] => G[18].IN1
+i_B[18] => P[18].IN1
+i_B[19] => G[19].IN1
+i_B[19] => P[19].IN1
+i_B[20] => G[20].IN1
+i_B[20] => P[20].IN1
+i_B[21] => G[21].IN1
+i_B[21] => P[21].IN1
+i_B[22] => G[22].IN1
+i_B[22] => P[22].IN1
+i_B[23] => G[23].IN1
+i_B[23] => P[23].IN1
+i_B[24] => G[24].IN1
+i_B[24] => P[24].IN1
+i_B[25] => G[25].IN1
+i_B[25] => P[25].IN1
+i_B[26] => G[26].IN1
+i_B[26] => P[26].IN1
+i_B[27] => G[27].IN1
+i_B[27] => P[27].IN1
+i_B[28] => G[28].IN1
+i_B[28] => P[28].IN1
+i_B[29] => G[29].IN1
+i_B[29] => P[29].IN1
+i_B[30] => G[30].IN1
+i_B[30] => P[30].IN1
+i_B[31] => G[31].IN1
+i_B[31] => P[31].IN1
+o_SUM[0] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[1] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[2] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[3] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[4] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[5] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[6] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[7] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[8] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[9] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[10] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[11] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[12] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[13] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[14] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[15] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[16] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[17] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[18] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[19] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[20] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[21] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[22] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[23] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[24] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[25] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[26] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[27] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[28] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[29] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[30] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[31] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+out_C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|RISCV_Processor|pcFetch:FetchUnit|nBit_LookaheadAdder:AddImm
+in_C => C.IN1
+in_C => o_SUM.IN1
+i_A[0] => G[0].IN0
+i_A[0] => P[0].IN0
+i_A[1] => G[1].IN0
+i_A[1] => P[1].IN0
+i_A[2] => G[2].IN0
+i_A[2] => P[2].IN0
+i_A[3] => G[3].IN0
+i_A[3] => P[3].IN0
+i_A[4] => G[4].IN0
+i_A[4] => P[4].IN0
+i_A[5] => G[5].IN0
+i_A[5] => P[5].IN0
+i_A[6] => G[6].IN0
+i_A[6] => P[6].IN0
+i_A[7] => G[7].IN0
+i_A[7] => P[7].IN0
+i_A[8] => G[8].IN0
+i_A[8] => P[8].IN0
+i_A[9] => G[9].IN0
+i_A[9] => P[9].IN0
+i_A[10] => G[10].IN0
+i_A[10] => P[10].IN0
+i_A[11] => G[11].IN0
+i_A[11] => P[11].IN0
+i_A[12] => G[12].IN0
+i_A[12] => P[12].IN0
+i_A[13] => G[13].IN0
+i_A[13] => P[13].IN0
+i_A[14] => G[14].IN0
+i_A[14] => P[14].IN0
+i_A[15] => G[15].IN0
+i_A[15] => P[15].IN0
+i_A[16] => G[16].IN0
+i_A[16] => P[16].IN0
+i_A[17] => G[17].IN0
+i_A[17] => P[17].IN0
+i_A[18] => G[18].IN0
+i_A[18] => P[18].IN0
+i_A[19] => G[19].IN0
+i_A[19] => P[19].IN0
+i_A[20] => G[20].IN0
+i_A[20] => P[20].IN0
+i_A[21] => G[21].IN0
+i_A[21] => P[21].IN0
+i_A[22] => G[22].IN0
+i_A[22] => P[22].IN0
+i_A[23] => G[23].IN0
+i_A[23] => P[23].IN0
+i_A[24] => G[24].IN0
+i_A[24] => P[24].IN0
+i_A[25] => G[25].IN0
+i_A[25] => P[25].IN0
+i_A[26] => G[26].IN0
+i_A[26] => P[26].IN0
+i_A[27] => G[27].IN0
+i_A[27] => P[27].IN0
+i_A[28] => G[28].IN0
+i_A[28] => P[28].IN0
+i_A[29] => G[29].IN0
+i_A[29] => P[29].IN0
+i_A[30] => G[30].IN0
+i_A[30] => P[30].IN0
+i_A[31] => G[31].IN0
+i_A[31] => P[31].IN0
+i_B[0] => G[0].IN1
+i_B[0] => P[0].IN1
+i_B[1] => G[1].IN1
+i_B[1] => P[1].IN1
+i_B[2] => G[2].IN1
+i_B[2] => P[2].IN1
+i_B[3] => G[3].IN1
+i_B[3] => P[3].IN1
+i_B[4] => G[4].IN1
+i_B[4] => P[4].IN1
+i_B[5] => G[5].IN1
+i_B[5] => P[5].IN1
+i_B[6] => G[6].IN1
+i_B[6] => P[6].IN1
+i_B[7] => G[7].IN1
+i_B[7] => P[7].IN1
+i_B[8] => G[8].IN1
+i_B[8] => P[8].IN1
+i_B[9] => G[9].IN1
+i_B[9] => P[9].IN1
+i_B[10] => G[10].IN1
+i_B[10] => P[10].IN1
+i_B[11] => G[11].IN1
+i_B[11] => P[11].IN1
+i_B[12] => G[12].IN1
+i_B[12] => P[12].IN1
+i_B[13] => G[13].IN1
+i_B[13] => P[13].IN1
+i_B[14] => G[14].IN1
+i_B[14] => P[14].IN1
+i_B[15] => G[15].IN1
+i_B[15] => P[15].IN1
+i_B[16] => G[16].IN1
+i_B[16] => P[16].IN1
+i_B[17] => G[17].IN1
+i_B[17] => P[17].IN1
+i_B[18] => G[18].IN1
+i_B[18] => P[18].IN1
+i_B[19] => G[19].IN1
+i_B[19] => P[19].IN1
+i_B[20] => G[20].IN1
+i_B[20] => P[20].IN1
+i_B[21] => G[21].IN1
+i_B[21] => P[21].IN1
+i_B[22] => G[22].IN1
+i_B[22] => P[22].IN1
+i_B[23] => G[23].IN1
+i_B[23] => P[23].IN1
+i_B[24] => G[24].IN1
+i_B[24] => P[24].IN1
+i_B[25] => G[25].IN1
+i_B[25] => P[25].IN1
+i_B[26] => G[26].IN1
+i_B[26] => P[26].IN1
+i_B[27] => G[27].IN1
+i_B[27] => P[27].IN1
+i_B[28] => G[28].IN1
+i_B[28] => P[28].IN1
+i_B[29] => G[29].IN1
+i_B[29] => P[29].IN1
+i_B[30] => G[30].IN1
+i_B[30] => P[30].IN1
+i_B[31] => G[31].IN1
+i_B[31] => P[31].IN1
+o_SUM[0] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[1] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[2] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[3] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[4] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[5] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[6] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[7] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[8] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[9] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[10] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[11] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[12] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[13] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[14] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[15] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[16] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[17] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[18] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[19] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[20] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[21] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[22] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[23] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[24] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[25] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[26] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[27] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[28] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[29] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[30] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[31] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+out_C <= C.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |RISCV_Processor|imm_generator:ImmGen
@@ -6678,42 +4184,42 @@ o_O <= o_O.DB_MAX_OUTPUT_PORT_TYPE
 |RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub
 nAdd_Sub => output_Overflow.IN1
 nAdd_Sub => mux2t1_N:g_B_mux.i_S
-nAdd_Sub => nBit_Adder:g_Adder.in_C
+nAdd_Sub => nBit_LookaheadAdder:g_Adder.in_C
 nAdd_Sub => output_Overflow.IN1
-input_A[0] => nBit_Adder:g_Adder.i_A[0]
-input_A[1] => nBit_Adder:g_Adder.i_A[1]
-input_A[2] => nBit_Adder:g_Adder.i_A[2]
-input_A[3] => nBit_Adder:g_Adder.i_A[3]
-input_A[4] => nBit_Adder:g_Adder.i_A[4]
-input_A[5] => nBit_Adder:g_Adder.i_A[5]
-input_A[6] => nBit_Adder:g_Adder.i_A[6]
-input_A[7] => nBit_Adder:g_Adder.i_A[7]
-input_A[8] => nBit_Adder:g_Adder.i_A[8]
-input_A[9] => nBit_Adder:g_Adder.i_A[9]
-input_A[10] => nBit_Adder:g_Adder.i_A[10]
-input_A[11] => nBit_Adder:g_Adder.i_A[11]
-input_A[12] => nBit_Adder:g_Adder.i_A[12]
-input_A[13] => nBit_Adder:g_Adder.i_A[13]
-input_A[14] => nBit_Adder:g_Adder.i_A[14]
-input_A[15] => nBit_Adder:g_Adder.i_A[15]
-input_A[16] => nBit_Adder:g_Adder.i_A[16]
-input_A[17] => nBit_Adder:g_Adder.i_A[17]
-input_A[18] => nBit_Adder:g_Adder.i_A[18]
-input_A[19] => nBit_Adder:g_Adder.i_A[19]
-input_A[20] => nBit_Adder:g_Adder.i_A[20]
-input_A[21] => nBit_Adder:g_Adder.i_A[21]
-input_A[22] => nBit_Adder:g_Adder.i_A[22]
-input_A[23] => nBit_Adder:g_Adder.i_A[23]
-input_A[24] => nBit_Adder:g_Adder.i_A[24]
-input_A[25] => nBit_Adder:g_Adder.i_A[25]
-input_A[26] => nBit_Adder:g_Adder.i_A[26]
-input_A[27] => nBit_Adder:g_Adder.i_A[27]
-input_A[28] => nBit_Adder:g_Adder.i_A[28]
-input_A[29] => nBit_Adder:g_Adder.i_A[29]
-input_A[30] => nBit_Adder:g_Adder.i_A[30]
+input_A[0] => nBit_LookaheadAdder:g_Adder.i_A[0]
+input_A[1] => nBit_LookaheadAdder:g_Adder.i_A[1]
+input_A[2] => nBit_LookaheadAdder:g_Adder.i_A[2]
+input_A[3] => nBit_LookaheadAdder:g_Adder.i_A[3]
+input_A[4] => nBit_LookaheadAdder:g_Adder.i_A[4]
+input_A[5] => nBit_LookaheadAdder:g_Adder.i_A[5]
+input_A[6] => nBit_LookaheadAdder:g_Adder.i_A[6]
+input_A[7] => nBit_LookaheadAdder:g_Adder.i_A[7]
+input_A[8] => nBit_LookaheadAdder:g_Adder.i_A[8]
+input_A[9] => nBit_LookaheadAdder:g_Adder.i_A[9]
+input_A[10] => nBit_LookaheadAdder:g_Adder.i_A[10]
+input_A[11] => nBit_LookaheadAdder:g_Adder.i_A[11]
+input_A[12] => nBit_LookaheadAdder:g_Adder.i_A[12]
+input_A[13] => nBit_LookaheadAdder:g_Adder.i_A[13]
+input_A[14] => nBit_LookaheadAdder:g_Adder.i_A[14]
+input_A[15] => nBit_LookaheadAdder:g_Adder.i_A[15]
+input_A[16] => nBit_LookaheadAdder:g_Adder.i_A[16]
+input_A[17] => nBit_LookaheadAdder:g_Adder.i_A[17]
+input_A[18] => nBit_LookaheadAdder:g_Adder.i_A[18]
+input_A[19] => nBit_LookaheadAdder:g_Adder.i_A[19]
+input_A[20] => nBit_LookaheadAdder:g_Adder.i_A[20]
+input_A[21] => nBit_LookaheadAdder:g_Adder.i_A[21]
+input_A[22] => nBit_LookaheadAdder:g_Adder.i_A[22]
+input_A[23] => nBit_LookaheadAdder:g_Adder.i_A[23]
+input_A[24] => nBit_LookaheadAdder:g_Adder.i_A[24]
+input_A[25] => nBit_LookaheadAdder:g_Adder.i_A[25]
+input_A[26] => nBit_LookaheadAdder:g_Adder.i_A[26]
+input_A[27] => nBit_LookaheadAdder:g_Adder.i_A[27]
+input_A[28] => nBit_LookaheadAdder:g_Adder.i_A[28]
+input_A[29] => nBit_LookaheadAdder:g_Adder.i_A[29]
+input_A[30] => nBit_LookaheadAdder:g_Adder.i_A[30]
 input_A[31] => s_Overflow_Add.IN0
 input_A[31] => s_Overflow_Sub.IN0
-input_A[31] => nBit_Adder:g_Adder.i_A[31]
+input_A[31] => nBit_LookaheadAdder:g_Adder.i_A[31]
 input_A[31] => s_Overflow_Add.IN0
 input_A[31] => s_Overflow_Sub.IN0
 input_B[0] => OnesComp:g_B_OnesComp.INPUT[0]
@@ -6784,39 +4290,39 @@ input_B[31] => OnesComp:g_B_OnesComp.INPUT[31]
 input_B[31] => mux2t1_N:g_B_mux.i_D0[31]
 input_B[31] => s_Overflow_Add.IN1
 input_B[31] => s_Overflow_Sub.IN1
-output_Sum[0] <= nBit_Adder:g_Adder.o_SUM[0]
-output_Sum[1] <= nBit_Adder:g_Adder.o_SUM[1]
-output_Sum[2] <= nBit_Adder:g_Adder.o_SUM[2]
-output_Sum[3] <= nBit_Adder:g_Adder.o_SUM[3]
-output_Sum[4] <= nBit_Adder:g_Adder.o_SUM[4]
-output_Sum[5] <= nBit_Adder:g_Adder.o_SUM[5]
-output_Sum[6] <= nBit_Adder:g_Adder.o_SUM[6]
-output_Sum[7] <= nBit_Adder:g_Adder.o_SUM[7]
-output_Sum[8] <= nBit_Adder:g_Adder.o_SUM[8]
-output_Sum[9] <= nBit_Adder:g_Adder.o_SUM[9]
-output_Sum[10] <= nBit_Adder:g_Adder.o_SUM[10]
-output_Sum[11] <= nBit_Adder:g_Adder.o_SUM[11]
-output_Sum[12] <= nBit_Adder:g_Adder.o_SUM[12]
-output_Sum[13] <= nBit_Adder:g_Adder.o_SUM[13]
-output_Sum[14] <= nBit_Adder:g_Adder.o_SUM[14]
-output_Sum[15] <= nBit_Adder:g_Adder.o_SUM[15]
-output_Sum[16] <= nBit_Adder:g_Adder.o_SUM[16]
-output_Sum[17] <= nBit_Adder:g_Adder.o_SUM[17]
-output_Sum[18] <= nBit_Adder:g_Adder.o_SUM[18]
-output_Sum[19] <= nBit_Adder:g_Adder.o_SUM[19]
-output_Sum[20] <= nBit_Adder:g_Adder.o_SUM[20]
-output_Sum[21] <= nBit_Adder:g_Adder.o_SUM[21]
-output_Sum[22] <= nBit_Adder:g_Adder.o_SUM[22]
-output_Sum[23] <= nBit_Adder:g_Adder.o_SUM[23]
-output_Sum[24] <= nBit_Adder:g_Adder.o_SUM[24]
-output_Sum[25] <= nBit_Adder:g_Adder.o_SUM[25]
-output_Sum[26] <= nBit_Adder:g_Adder.o_SUM[26]
-output_Sum[27] <= nBit_Adder:g_Adder.o_SUM[27]
-output_Sum[28] <= nBit_Adder:g_Adder.o_SUM[28]
-output_Sum[29] <= nBit_Adder:g_Adder.o_SUM[29]
-output_Sum[30] <= nBit_Adder:g_Adder.o_SUM[30]
-output_Sum[31] <= nBit_Adder:g_Adder.o_SUM[31]
-output_Carry <= nBit_Adder:g_Adder.out_C
+output_Sum[0] <= nBit_LookaheadAdder:g_Adder.o_SUM[0]
+output_Sum[1] <= nBit_LookaheadAdder:g_Adder.o_SUM[1]
+output_Sum[2] <= nBit_LookaheadAdder:g_Adder.o_SUM[2]
+output_Sum[3] <= nBit_LookaheadAdder:g_Adder.o_SUM[3]
+output_Sum[4] <= nBit_LookaheadAdder:g_Adder.o_SUM[4]
+output_Sum[5] <= nBit_LookaheadAdder:g_Adder.o_SUM[5]
+output_Sum[6] <= nBit_LookaheadAdder:g_Adder.o_SUM[6]
+output_Sum[7] <= nBit_LookaheadAdder:g_Adder.o_SUM[7]
+output_Sum[8] <= nBit_LookaheadAdder:g_Adder.o_SUM[8]
+output_Sum[9] <= nBit_LookaheadAdder:g_Adder.o_SUM[9]
+output_Sum[10] <= nBit_LookaheadAdder:g_Adder.o_SUM[10]
+output_Sum[11] <= nBit_LookaheadAdder:g_Adder.o_SUM[11]
+output_Sum[12] <= nBit_LookaheadAdder:g_Adder.o_SUM[12]
+output_Sum[13] <= nBit_LookaheadAdder:g_Adder.o_SUM[13]
+output_Sum[14] <= nBit_LookaheadAdder:g_Adder.o_SUM[14]
+output_Sum[15] <= nBit_LookaheadAdder:g_Adder.o_SUM[15]
+output_Sum[16] <= nBit_LookaheadAdder:g_Adder.o_SUM[16]
+output_Sum[17] <= nBit_LookaheadAdder:g_Adder.o_SUM[17]
+output_Sum[18] <= nBit_LookaheadAdder:g_Adder.o_SUM[18]
+output_Sum[19] <= nBit_LookaheadAdder:g_Adder.o_SUM[19]
+output_Sum[20] <= nBit_LookaheadAdder:g_Adder.o_SUM[20]
+output_Sum[21] <= nBit_LookaheadAdder:g_Adder.o_SUM[21]
+output_Sum[22] <= nBit_LookaheadAdder:g_Adder.o_SUM[22]
+output_Sum[23] <= nBit_LookaheadAdder:g_Adder.o_SUM[23]
+output_Sum[24] <= nBit_LookaheadAdder:g_Adder.o_SUM[24]
+output_Sum[25] <= nBit_LookaheadAdder:g_Adder.o_SUM[25]
+output_Sum[26] <= nBit_LookaheadAdder:g_Adder.o_SUM[26]
+output_Sum[27] <= nBit_LookaheadAdder:g_Adder.o_SUM[27]
+output_Sum[28] <= nBit_LookaheadAdder:g_Adder.o_SUM[28]
+output_Sum[29] <= nBit_LookaheadAdder:g_Adder.o_SUM[29]
+output_Sum[30] <= nBit_LookaheadAdder:g_Adder.o_SUM[30]
+output_Sum[31] <= nBit_LookaheadAdder:g_Adder.o_SUM[31]
+output_Carry <= nBit_LookaheadAdder:g_Adder.out_C
 output_Overflow <= output_Overflow.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -7434,1417 +4940,170 @@ iB => OUTPUT.DATAB
 OUTPUT <= OUTPUT.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder
-in_C => Adder:nBit_Adder:0:ADDI.iCARRY
-i_A[0] => Adder:nBit_Adder:0:ADDI.iA
-i_A[1] => Adder:nBit_Adder:1:ADDI.iA
-i_A[2] => Adder:nBit_Adder:2:ADDI.iA
-i_A[3] => Adder:nBit_Adder:3:ADDI.iA
-i_A[4] => Adder:nBit_Adder:4:ADDI.iA
-i_A[5] => Adder:nBit_Adder:5:ADDI.iA
-i_A[6] => Adder:nBit_Adder:6:ADDI.iA
-i_A[7] => Adder:nBit_Adder:7:ADDI.iA
-i_A[8] => Adder:nBit_Adder:8:ADDI.iA
-i_A[9] => Adder:nBit_Adder:9:ADDI.iA
-i_A[10] => Adder:nBit_Adder:10:ADDI.iA
-i_A[11] => Adder:nBit_Adder:11:ADDI.iA
-i_A[12] => Adder:nBit_Adder:12:ADDI.iA
-i_A[13] => Adder:nBit_Adder:13:ADDI.iA
-i_A[14] => Adder:nBit_Adder:14:ADDI.iA
-i_A[15] => Adder:nBit_Adder:15:ADDI.iA
-i_A[16] => Adder:nBit_Adder:16:ADDI.iA
-i_A[17] => Adder:nBit_Adder:17:ADDI.iA
-i_A[18] => Adder:nBit_Adder:18:ADDI.iA
-i_A[19] => Adder:nBit_Adder:19:ADDI.iA
-i_A[20] => Adder:nBit_Adder:20:ADDI.iA
-i_A[21] => Adder:nBit_Adder:21:ADDI.iA
-i_A[22] => Adder:nBit_Adder:22:ADDI.iA
-i_A[23] => Adder:nBit_Adder:23:ADDI.iA
-i_A[24] => Adder:nBit_Adder:24:ADDI.iA
-i_A[25] => Adder:nBit_Adder:25:ADDI.iA
-i_A[26] => Adder:nBit_Adder:26:ADDI.iA
-i_A[27] => Adder:nBit_Adder:27:ADDI.iA
-i_A[28] => Adder:nBit_Adder:28:ADDI.iA
-i_A[29] => Adder:nBit_Adder:29:ADDI.iA
-i_A[30] => Adder:nBit_Adder:30:ADDI.iA
-i_A[31] => Adder:nBit_Adder:31:ADDI.iA
-i_B[0] => Adder:nBit_Adder:0:ADDI.iB
-i_B[1] => Adder:nBit_Adder:1:ADDI.iB
-i_B[2] => Adder:nBit_Adder:2:ADDI.iB
-i_B[3] => Adder:nBit_Adder:3:ADDI.iB
-i_B[4] => Adder:nBit_Adder:4:ADDI.iB
-i_B[5] => Adder:nBit_Adder:5:ADDI.iB
-i_B[6] => Adder:nBit_Adder:6:ADDI.iB
-i_B[7] => Adder:nBit_Adder:7:ADDI.iB
-i_B[8] => Adder:nBit_Adder:8:ADDI.iB
-i_B[9] => Adder:nBit_Adder:9:ADDI.iB
-i_B[10] => Adder:nBit_Adder:10:ADDI.iB
-i_B[11] => Adder:nBit_Adder:11:ADDI.iB
-i_B[12] => Adder:nBit_Adder:12:ADDI.iB
-i_B[13] => Adder:nBit_Adder:13:ADDI.iB
-i_B[14] => Adder:nBit_Adder:14:ADDI.iB
-i_B[15] => Adder:nBit_Adder:15:ADDI.iB
-i_B[16] => Adder:nBit_Adder:16:ADDI.iB
-i_B[17] => Adder:nBit_Adder:17:ADDI.iB
-i_B[18] => Adder:nBit_Adder:18:ADDI.iB
-i_B[19] => Adder:nBit_Adder:19:ADDI.iB
-i_B[20] => Adder:nBit_Adder:20:ADDI.iB
-i_B[21] => Adder:nBit_Adder:21:ADDI.iB
-i_B[22] => Adder:nBit_Adder:22:ADDI.iB
-i_B[23] => Adder:nBit_Adder:23:ADDI.iB
-i_B[24] => Adder:nBit_Adder:24:ADDI.iB
-i_B[25] => Adder:nBit_Adder:25:ADDI.iB
-i_B[26] => Adder:nBit_Adder:26:ADDI.iB
-i_B[27] => Adder:nBit_Adder:27:ADDI.iB
-i_B[28] => Adder:nBit_Adder:28:ADDI.iB
-i_B[29] => Adder:nBit_Adder:29:ADDI.iB
-i_B[30] => Adder:nBit_Adder:30:ADDI.iB
-i_B[31] => Adder:nBit_Adder:31:ADDI.iB
-o_SUM[0] <= Adder:nBit_Adder:0:ADDI.oSUM
-o_SUM[1] <= Adder:nBit_Adder:1:ADDI.oSUM
-o_SUM[2] <= Adder:nBit_Adder:2:ADDI.oSUM
-o_SUM[3] <= Adder:nBit_Adder:3:ADDI.oSUM
-o_SUM[4] <= Adder:nBit_Adder:4:ADDI.oSUM
-o_SUM[5] <= Adder:nBit_Adder:5:ADDI.oSUM
-o_SUM[6] <= Adder:nBit_Adder:6:ADDI.oSUM
-o_SUM[7] <= Adder:nBit_Adder:7:ADDI.oSUM
-o_SUM[8] <= Adder:nBit_Adder:8:ADDI.oSUM
-o_SUM[9] <= Adder:nBit_Adder:9:ADDI.oSUM
-o_SUM[10] <= Adder:nBit_Adder:10:ADDI.oSUM
-o_SUM[11] <= Adder:nBit_Adder:11:ADDI.oSUM
-o_SUM[12] <= Adder:nBit_Adder:12:ADDI.oSUM
-o_SUM[13] <= Adder:nBit_Adder:13:ADDI.oSUM
-o_SUM[14] <= Adder:nBit_Adder:14:ADDI.oSUM
-o_SUM[15] <= Adder:nBit_Adder:15:ADDI.oSUM
-o_SUM[16] <= Adder:nBit_Adder:16:ADDI.oSUM
-o_SUM[17] <= Adder:nBit_Adder:17:ADDI.oSUM
-o_SUM[18] <= Adder:nBit_Adder:18:ADDI.oSUM
-o_SUM[19] <= Adder:nBit_Adder:19:ADDI.oSUM
-o_SUM[20] <= Adder:nBit_Adder:20:ADDI.oSUM
-o_SUM[21] <= Adder:nBit_Adder:21:ADDI.oSUM
-o_SUM[22] <= Adder:nBit_Adder:22:ADDI.oSUM
-o_SUM[23] <= Adder:nBit_Adder:23:ADDI.oSUM
-o_SUM[24] <= Adder:nBit_Adder:24:ADDI.oSUM
-o_SUM[25] <= Adder:nBit_Adder:25:ADDI.oSUM
-o_SUM[26] <= Adder:nBit_Adder:26:ADDI.oSUM
-o_SUM[27] <= Adder:nBit_Adder:27:ADDI.oSUM
-o_SUM[28] <= Adder:nBit_Adder:28:ADDI.oSUM
-o_SUM[29] <= Adder:nBit_Adder:29:ADDI.oSUM
-o_SUM[30] <= Adder:nBit_Adder:30:ADDI.oSUM
-o_SUM[31] <= Adder:nBit_Adder:31:ADDI.oSUM
-out_C <= Adder:nBit_Adder:31:ADDI.oCARRY
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:0:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:0:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:0:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:0:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:0:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:0:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:1:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:1:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:1:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:1:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:1:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:1:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:2:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:2:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:2:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:2:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:2:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:2:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:3:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:3:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:3:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:3:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:3:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:3:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:4:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:4:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:4:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:4:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:4:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:4:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:5:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:5:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:5:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:5:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:5:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:5:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:6:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:6:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:6:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:6:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:6:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:6:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:7:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:7:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:7:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:7:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:7:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:7:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:8:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:8:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:8:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:8:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:8:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:8:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:9:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:9:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:9:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:9:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:9:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:9:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:10:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:10:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:10:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:10:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:10:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:10:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:11:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:11:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:11:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:11:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:11:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:11:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:12:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:12:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:12:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:12:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:12:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:12:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:13:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:13:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:13:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:13:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:13:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:13:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:14:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:14:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:14:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:14:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:14:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:14:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:15:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:15:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:15:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:15:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:15:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:15:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:16:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:16:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:16:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:16:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:16:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:16:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:17:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:17:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:17:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:17:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:17:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:17:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:18:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:18:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:18:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:18:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:18:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:18:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:19:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:19:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:19:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:19:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:19:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:19:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:20:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:20:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:20:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:20:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:20:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:20:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:21:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:21:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:21:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:21:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:21:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:21:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:22:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:22:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:22:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:22:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:22:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:22:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:23:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:23:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:23:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:23:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:23:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:23:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:24:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:24:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:24:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:24:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:24:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:24:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:25:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:25:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:25:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:25:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:25:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:25:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:26:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:26:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:26:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:26:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:26:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:26:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:27:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:27:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:27:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:27:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:27:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:27:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:28:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:28:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:28:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:28:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:28:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:28:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:29:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:29:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:29:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:29:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:29:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:29:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:30:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:30:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:30:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:30:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:30:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:30:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:31:ADDI
-iCARRY => xorg2:g_xorSUM.i_B
-iCARRY => andg2:g_and1.i_B
-iA => xorg2:g_xor1.i_A
-iA => andg2:g_and2.i_A
-iB => xorg2:g_xor1.i_B
-iB => andg2:g_and2.i_B
-oSUM <= xorg2:g_xorSUM.o_F
-oCARRY <= org2:g_orCARRY.o_F
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:31:ADDI|xorg2:g_xor1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:31:ADDI|xorg2:g_xorSUM
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:31:ADDI|andg2:g_and1
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:31:ADDI|andg2:g_and2
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_Adder:g_Adder|Adder:\nBit_Adder:31:ADDI|org2:g_orCARRY
-i_A => o_F.IN0
-i_B => o_F.IN1
-o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
+|RISCV_Processor|ALUUnit:ALU|nBit_ALU:addsub|nBit_LookaheadAdder:g_Adder
+in_C => C.IN1
+in_C => o_SUM.IN1
+i_A[0] => G[0].IN0
+i_A[0] => P[0].IN0
+i_A[1] => G[1].IN0
+i_A[1] => P[1].IN0
+i_A[2] => G[2].IN0
+i_A[2] => P[2].IN0
+i_A[3] => G[3].IN0
+i_A[3] => P[3].IN0
+i_A[4] => G[4].IN0
+i_A[4] => P[4].IN0
+i_A[5] => G[5].IN0
+i_A[5] => P[5].IN0
+i_A[6] => G[6].IN0
+i_A[6] => P[6].IN0
+i_A[7] => G[7].IN0
+i_A[7] => P[7].IN0
+i_A[8] => G[8].IN0
+i_A[8] => P[8].IN0
+i_A[9] => G[9].IN0
+i_A[9] => P[9].IN0
+i_A[10] => G[10].IN0
+i_A[10] => P[10].IN0
+i_A[11] => G[11].IN0
+i_A[11] => P[11].IN0
+i_A[12] => G[12].IN0
+i_A[12] => P[12].IN0
+i_A[13] => G[13].IN0
+i_A[13] => P[13].IN0
+i_A[14] => G[14].IN0
+i_A[14] => P[14].IN0
+i_A[15] => G[15].IN0
+i_A[15] => P[15].IN0
+i_A[16] => G[16].IN0
+i_A[16] => P[16].IN0
+i_A[17] => G[17].IN0
+i_A[17] => P[17].IN0
+i_A[18] => G[18].IN0
+i_A[18] => P[18].IN0
+i_A[19] => G[19].IN0
+i_A[19] => P[19].IN0
+i_A[20] => G[20].IN0
+i_A[20] => P[20].IN0
+i_A[21] => G[21].IN0
+i_A[21] => P[21].IN0
+i_A[22] => G[22].IN0
+i_A[22] => P[22].IN0
+i_A[23] => G[23].IN0
+i_A[23] => P[23].IN0
+i_A[24] => G[24].IN0
+i_A[24] => P[24].IN0
+i_A[25] => G[25].IN0
+i_A[25] => P[25].IN0
+i_A[26] => G[26].IN0
+i_A[26] => P[26].IN0
+i_A[27] => G[27].IN0
+i_A[27] => P[27].IN0
+i_A[28] => G[28].IN0
+i_A[28] => P[28].IN0
+i_A[29] => G[29].IN0
+i_A[29] => P[29].IN0
+i_A[30] => G[30].IN0
+i_A[30] => P[30].IN0
+i_A[31] => G[31].IN0
+i_A[31] => P[31].IN0
+i_B[0] => G[0].IN1
+i_B[0] => P[0].IN1
+i_B[1] => G[1].IN1
+i_B[1] => P[1].IN1
+i_B[2] => G[2].IN1
+i_B[2] => P[2].IN1
+i_B[3] => G[3].IN1
+i_B[3] => P[3].IN1
+i_B[4] => G[4].IN1
+i_B[4] => P[4].IN1
+i_B[5] => G[5].IN1
+i_B[5] => P[5].IN1
+i_B[6] => G[6].IN1
+i_B[6] => P[6].IN1
+i_B[7] => G[7].IN1
+i_B[7] => P[7].IN1
+i_B[8] => G[8].IN1
+i_B[8] => P[8].IN1
+i_B[9] => G[9].IN1
+i_B[9] => P[9].IN1
+i_B[10] => G[10].IN1
+i_B[10] => P[10].IN1
+i_B[11] => G[11].IN1
+i_B[11] => P[11].IN1
+i_B[12] => G[12].IN1
+i_B[12] => P[12].IN1
+i_B[13] => G[13].IN1
+i_B[13] => P[13].IN1
+i_B[14] => G[14].IN1
+i_B[14] => P[14].IN1
+i_B[15] => G[15].IN1
+i_B[15] => P[15].IN1
+i_B[16] => G[16].IN1
+i_B[16] => P[16].IN1
+i_B[17] => G[17].IN1
+i_B[17] => P[17].IN1
+i_B[18] => G[18].IN1
+i_B[18] => P[18].IN1
+i_B[19] => G[19].IN1
+i_B[19] => P[19].IN1
+i_B[20] => G[20].IN1
+i_B[20] => P[20].IN1
+i_B[21] => G[21].IN1
+i_B[21] => P[21].IN1
+i_B[22] => G[22].IN1
+i_B[22] => P[22].IN1
+i_B[23] => G[23].IN1
+i_B[23] => P[23].IN1
+i_B[24] => G[24].IN1
+i_B[24] => P[24].IN1
+i_B[25] => G[25].IN1
+i_B[25] => P[25].IN1
+i_B[26] => G[26].IN1
+i_B[26] => P[26].IN1
+i_B[27] => G[27].IN1
+i_B[27] => P[27].IN1
+i_B[28] => G[28].IN1
+i_B[28] => P[28].IN1
+i_B[29] => G[29].IN1
+i_B[29] => P[29].IN1
+i_B[30] => G[30].IN1
+i_B[30] => P[30].IN1
+i_B[31] => G[31].IN1
+i_B[31] => P[31].IN1
+o_SUM[0] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[1] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[2] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[3] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[4] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[5] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[6] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[7] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[8] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[9] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[10] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[11] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[12] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[13] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[14] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[15] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[16] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[17] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[18] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[19] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[20] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[21] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[22] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[23] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[24] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[25] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[26] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[27] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[28] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[29] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[30] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+o_SUM[31] <= o_SUM.DB_MAX_OUTPUT_PORT_TYPE
+out_C <= C.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |RISCV_Processor|ALUUnit:ALU|mux2t1_2:muxbeforeresult
@@ -31399,125 +27658,235 @@ o_F <= o_F.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |RISCV_Processor|memorySlicer:memSlicer
-funct3[0] => Equal0.IN1
-funct3[0] => Equal1.IN0
-funct3[0] => Equal2.IN2
-funct3[0] => Equal3.IN2
-funct3[0] => Equal4.IN2
-funct3[1] => Equal0.IN2
-funct3[1] => Equal1.IN2
-funct3[1] => Equal2.IN1
-funct3[1] => Equal3.IN1
-funct3[1] => Equal4.IN0
-funct3[2] => Equal0.IN0
-funct3[2] => Equal1.IN1
-funct3[2] => Equal2.IN0
+funct3[0] => Equal3.IN1
+funct3[0] => Equal4.IN0
+funct3[0] => Equal5.IN2
+funct3[0] => Equal6.IN2
+funct3[0] => Equal7.IN2
+funct3[1] => Equal3.IN2
+funct3[1] => Equal4.IN2
+funct3[1] => Equal5.IN1
+funct3[1] => Equal6.IN1
+funct3[1] => Equal7.IN0
 funct3[2] => Equal3.IN0
 funct3[2] => Equal4.IN1
-input[0] => output[0].DATAIN
-input[1] => output[1].DATAIN
-input[2] => output[2].DATAIN
-input[3] => output[3].DATAIN
-input[4] => output[4].DATAIN
-input[5] => output[5].DATAIN
-input[6] => output[6].DATAIN
+funct3[2] => Equal5.IN0
+funct3[2] => Equal6.IN0
+funct3[2] => Equal7.IN1
+addr[0] => Equal0.IN1
+addr[0] => Equal1.IN0
+addr[0] => Equal2.IN1
+addr[1] => Equal0.IN0
+addr[1] => Equal1.IN1
+addr[1] => Equal2.IN0
+addr[1] => extlh[15].OUTPUTSELECT
+addr[1] => lh[14].OUTPUTSELECT
+addr[1] => lh[13].OUTPUTSELECT
+addr[1] => lh[12].OUTPUTSELECT
+addr[1] => lh[11].OUTPUTSELECT
+addr[1] => lh[10].OUTPUTSELECT
+addr[1] => lh[9].OUTPUTSELECT
+addr[1] => lh[8].OUTPUTSELECT
+addr[1] => lh[7].OUTPUTSELECT
+addr[1] => lh[6].OUTPUTSELECT
+addr[1] => lh[5].OUTPUTSELECT
+addr[1] => lh[4].OUTPUTSELECT
+addr[1] => lh[3].OUTPUTSELECT
+addr[1] => lh[2].OUTPUTSELECT
+addr[1] => lh[1].OUTPUTSELECT
+addr[1] => lh[0].OUTPUTSELECT
+addr[1] => lhu[15].OUTPUTSELECT
+addr[1] => lhu[14].OUTPUTSELECT
+addr[1] => lhu[13].OUTPUTSELECT
+addr[1] => lhu[12].OUTPUTSELECT
+addr[1] => lhu[11].OUTPUTSELECT
+addr[1] => lhu[10].OUTPUTSELECT
+addr[1] => lhu[9].OUTPUTSELECT
+addr[1] => lhu[8].OUTPUTSELECT
+addr[1] => lhu[7].OUTPUTSELECT
+addr[1] => lhu[6].OUTPUTSELECT
+addr[1] => lhu[5].OUTPUTSELECT
+addr[1] => lhu[4].OUTPUTSELECT
+addr[1] => lhu[3].OUTPUTSELECT
+addr[1] => lhu[2].OUTPUTSELECT
+addr[1] => lhu[1].OUTPUTSELECT
+addr[1] => lhu[0].OUTPUTSELECT
+input[0] => lb[0].DATAB
+input[0] => lbu[0].DATAB
+input[0] => lh[0].DATAB
+input[0] => lhu[0].DATAB
+input[0] => output.DATAA
+input[0] => output.DATAB
+input[1] => lb[1].DATAB
+input[1] => lbu[1].DATAB
+input[1] => lh[1].DATAB
+input[1] => lhu[1].DATAB
+input[1] => output.DATAA
+input[1] => output.DATAB
+input[2] => lb[2].DATAB
+input[2] => lbu[2].DATAB
+input[2] => lh[2].DATAB
+input[2] => lhu[2].DATAB
+input[2] => output.DATAA
+input[2] => output.DATAB
+input[3] => lb[3].DATAB
+input[3] => lbu[3].DATAB
+input[3] => lh[3].DATAB
+input[3] => lhu[3].DATAB
+input[3] => output.DATAA
+input[3] => output.DATAB
+input[4] => lb[4].DATAB
+input[4] => lbu[4].DATAB
+input[4] => lh[4].DATAB
+input[4] => lhu[4].DATAB
+input[4] => output.DATAA
+input[4] => output.DATAB
+input[5] => lb[5].DATAB
+input[5] => lbu[5].DATAB
+input[5] => lh[5].DATAB
+input[5] => lhu[5].DATAB
+input[5] => output.DATAA
+input[5] => output.DATAB
+input[6] => lb[6].DATAB
+input[6] => lbu[6].DATAB
+input[6] => lh[6].DATAB
+input[6] => lhu[6].DATAB
+input[6] => output.DATAA
+input[6] => output.DATAB
+input[7] => extlb[7].DATAB
+input[7] => lbu[7].DATAB
+input[7] => lh[7].DATAB
+input[7] => lhu[7].DATAB
+input[7] => output.DATAA
 input[7] => output.DATAB
-input[7] => output.DATAB
-input[7] => output.DATAB
-input[7] => output.DATAB
-input[7] => output.DATAB
-input[7] => output.DATAB
-input[7] => output.DATAB
-input[7] => output.DATAB
-input[7] => output.DATAB
-input[7] => output.DATAB
-input[7] => output.DATAB
-input[7] => output.DATAB
-input[7] => output.DATAB
-input[7] => output.DATAB
-input[7] => output.DATAB
-input[7] => output.DATAB
-input[7] => output.DATAB
-input[7] => output.DATAB
-input[7] => output.DATAB
-input[7] => output.DATAB
-input[7] => output.DATAB
-input[7] => output.DATAB
-input[7] => output.DATAB
-input[7] => output.DATAB
-input[7] => output[7].DATAIN
-input[8] => output.DATAB
+input[8] => lbu.DATAB
+input[8] => lh[8].DATAB
+input[8] => lhu[8].DATAB
 input[8] => output.DATAA
-input[9] => output.DATAB
+input[8] => output.DATAB
+input[9] => lbu.DATAB
+input[9] => lh[9].DATAB
+input[9] => lhu[9].DATAB
 input[9] => output.DATAA
-input[10] => output.DATAB
+input[9] => output.DATAB
+input[10] => lbu.DATAB
+input[10] => lh[10].DATAB
+input[10] => lhu[10].DATAB
 input[10] => output.DATAA
-input[11] => output.DATAB
+input[10] => output.DATAB
+input[11] => lbu.DATAB
+input[11] => lh[11].DATAB
+input[11] => lhu[11].DATAB
 input[11] => output.DATAA
-input[12] => output.DATAB
+input[11] => output.DATAB
+input[12] => lbu.DATAB
+input[12] => lh[12].DATAB
+input[12] => lhu[12].DATAB
 input[12] => output.DATAA
-input[13] => output.DATAB
+input[12] => output.DATAB
+input[13] => lbu.DATAB
+input[13] => lh[13].DATAB
+input[13] => lhu[13].DATAB
 input[13] => output.DATAA
-input[14] => output.DATAB
+input[13] => output.DATAB
+input[14] => lbu.DATAB
+input[14] => lh[14].DATAB
+input[14] => lhu[14].DATAB
 input[14] => output.DATAA
-input[15] => output.DATAB
-input[15] => output.DATAB
-input[15] => output.DATAB
-input[15] => output.DATAB
-input[15] => output.DATAB
-input[15] => output.DATAB
-input[15] => output.DATAB
-input[15] => output.DATAB
-input[15] => output.DATAB
-input[15] => output.DATAB
-input[15] => output.DATAB
-input[15] => output.DATAB
-input[15] => output.DATAB
-input[15] => output.DATAB
-input[15] => output.DATAB
-input[15] => output.DATAB
-input[15] => output.DATAB
+input[14] => output.DATAB
+input[15] => lb.DATAB
+input[15] => extlh[15].DATAB
+input[15] => lhu[15].DATAB
 input[15] => output.DATAA
+input[15] => output.DATAB
+input[16] => lbu.DATAB
+input[16] => lh[0].DATAA
+input[16] => lhu[0].DATAA
 input[16] => output.DATAA
 input[16] => output.DATAB
+input[17] => lbu.DATAB
+input[17] => lh[1].DATAA
+input[17] => lhu[1].DATAA
 input[17] => output.DATAA
 input[17] => output.DATAB
+input[18] => lbu.DATAB
+input[18] => lh[2].DATAA
+input[18] => lhu[2].DATAA
 input[18] => output.DATAA
 input[18] => output.DATAB
+input[19] => lbu.DATAB
+input[19] => lh[3].DATAA
+input[19] => lhu[3].DATAA
 input[19] => output.DATAA
 input[19] => output.DATAB
+input[20] => lbu.DATAB
+input[20] => lh[4].DATAA
+input[20] => lhu[4].DATAA
 input[20] => output.DATAA
 input[20] => output.DATAB
+input[21] => lbu.DATAB
+input[21] => lh[5].DATAA
+input[21] => lhu[5].DATAA
 input[21] => output.DATAA
 input[21] => output.DATAB
+input[22] => lbu.DATAB
+input[22] => lh[6].DATAA
+input[22] => lhu[6].DATAA
 input[22] => output.DATAA
 input[22] => output.DATAB
+input[23] => lb.DATAB
+input[23] => lh[7].DATAA
+input[23] => lhu[7].DATAA
 input[23] => output.DATAA
 input[23] => output.DATAB
+input[24] => lbu.DATAA
+input[24] => lh[8].DATAA
+input[24] => lhu[8].DATAA
 input[24] => output.DATAA
 input[24] => output.DATAB
+input[25] => lbu.DATAA
+input[25] => lh[9].DATAA
+input[25] => lhu[9].DATAA
 input[25] => output.DATAA
 input[25] => output.DATAB
+input[26] => lbu.DATAA
+input[26] => lh[10].DATAA
+input[26] => lhu[10].DATAA
 input[26] => output.DATAA
 input[26] => output.DATAB
+input[27] => lbu.DATAA
+input[27] => lh[11].DATAA
+input[27] => lhu[11].DATAA
 input[27] => output.DATAA
 input[27] => output.DATAB
+input[28] => lbu.DATAA
+input[28] => lh[12].DATAA
+input[28] => lhu[12].DATAA
 input[28] => output.DATAA
 input[28] => output.DATAB
+input[29] => lbu.DATAA
+input[29] => lh[13].DATAA
+input[29] => lhu[13].DATAA
 input[29] => output.DATAA
 input[29] => output.DATAB
+input[30] => lbu.DATAA
+input[30] => lh[14].DATAA
+input[30] => lhu[14].DATAA
 input[30] => output.DATAA
 input[30] => output.DATAB
+input[31] => lb.DATAA
+input[31] => extlh[15].DATAA
+input[31] => lhu[15].DATAA
 input[31] => output.DATAA
 input[31] => output.DATAB
-output[0] <= input[0].DB_MAX_OUTPUT_PORT_TYPE
-output[1] <= input[1].DB_MAX_OUTPUT_PORT_TYPE
-output[2] <= input[2].DB_MAX_OUTPUT_PORT_TYPE
-output[3] <= input[3].DB_MAX_OUTPUT_PORT_TYPE
-output[4] <= input[4].DB_MAX_OUTPUT_PORT_TYPE
-output[5] <= input[5].DB_MAX_OUTPUT_PORT_TYPE
-output[6] <= input[6].DB_MAX_OUTPUT_PORT_TYPE
-output[7] <= input[7].DB_MAX_OUTPUT_PORT_TYPE
+output[0] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= output.DB_MAX_OUTPUT_PORT_TYPE
 output[8] <= output.DB_MAX_OUTPUT_PORT_TYPE
 output[9] <= output.DB_MAX_OUTPUT_PORT_TYPE
 output[10] <= output.DB_MAX_OUTPUT_PORT_TYPE
