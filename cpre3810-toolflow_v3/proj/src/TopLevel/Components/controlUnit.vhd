@@ -12,14 +12,12 @@ entity controlUnit is
     funct7             : in std_logic_vector(6 downto 0);
     ALUsrc             : out std_logic;
     ALUctrl            : out std_logic_vector(3 downto 0);
---  ImmType            : out std_logic_vector(1 downto 0);
     AndLink            : out std_logic_vector(1 downto 0);
     MemWrite           : out std_logic;
     RegWrite           : out std_logic;
     MemToReg           : out std_logic;
     Branch             : out std_logic;
     Jump               : out std_logic;
-    ALUorImmJump       : out std_logic;
     Shift              : out std_logic;
     FlagMux            : out std_logic_vector(1 downto 0);
     FlagOrNFlag        : out std_logic;
@@ -47,6 +45,7 @@ architecture dataflow of controlUnit is
     
     constant halt_opcode  : std_logic_vector(6 downto 0) := "1110011";
     begin
+    
     ALUsrc <= '0' when (opcode = R_type_opcode) else -- Register ALU operations
               '0' when (opcode = SB_type_opcode) else -- Branch Operations
               '1';
@@ -79,28 +78,12 @@ architecture dataflow of controlUnit is
                 "1000" when(opcode = lui_opcode) else -- LUI
                 "0000";              
     
---  ImmType <=  "00" when(opcode = I_type_aImm_opcode and (funct3 = "011" or funct3 = "001" or funct3 = "101")) else 
---              "00" when(opcode = SB_type_opcode and (funct3 = "110" or funct3 = "111")) else
---              "11" when(opcode = lui_opcode) else
---              "11" when(opcode = jal_opcode) else
---              "11" when(opcode = auipc_opcode) else         
---              "01";
-              --"01" when(opcode = I_type_aImm_opcode and (funct3 = "000" or funct3 = "010" or funct3 = "100" or funct3 = "110" or funct3 = "111")) else
-              --"01" when(opcode = I_type_load_opcode) else
-              --"01" when(opcode = S_type_opcode) else
-              --"01" when(opcode = jalr_opcode) else
-              --"01" when(opcode = SB_type_opcode and (funct3 = "000" or funct3 = "001" or funct3 = "100" or funct3 = "101")) else
-
     AndLink <=  "01" when(opcode = jal_opcode) else
                 "01" when(opcode = jalr_opcode) else         
                 "10" when(opcode = R_type_opcode and funct3 = "010") else
                 "10" when(opcode = I_type_aImm_opcode and (funct3 = "010" or funct3 = "011")) else
                 "11" when(opcode = auipc_opcode) else
                 "00";
-              --"00" when(opcode = R_type_opcode and (funct3 /= "010")) else
-              --"00" when(opcode = I_type_load_opcode) else
-              --"00" when(opcode = lui_opcode) else
-              --"00" when(opcode = I_type_aImm_opcode and (funct3 /= "010" or funct3 /= "011")) else
     
     MemWrite <= '1' when(opcode = S_type_opcode) else
                 '0';
@@ -116,21 +99,16 @@ architecture dataflow of controlUnit is
 
     Jump     <= '1' when(opcode = jal_opcode or opcode = jalr_opcode) else
                 '0';
-
-ALUorImmJump <= '1' when(opcode = jalr_opcode) else
-                '0';
-                
+             
     FlagMux  <= "01" when(opcode = R_type_opcode and funct3 = "010") else -- SLT
                 "10" when(opcode = I_type_aImm_opcode and funct3 = "011") else -- SLTIU
                 "10" when(opcode = SB_type_opcode and (funct3 = "111" or funct3 = "110")) else -- BLTU BGEU
                 "11" when(opcode = SB_type_opcode and (funct3 = "000" or funct3 = "001")) else -- BEQ BNE
                 "00";
-              --"00" when(((opcode = R_type_opcode or opcode = I_type_aImm_opcode) and funct3 = "010") or (opcode = SB_type_opcode and (funct3 /= "000" or funct3 /= "001"))) else -- SLT SLTI (SB except BEQ/BNE)
 
-FlagOrNFlag  <= '1' when(opcode = SB_type_opcode and (funct3 = "001" or funct3 = "101" or funct3 = "110")) else -- BNE BGE BGEU
-                '1' when(opcode = I_type_aImm_opcode and funct3 = "011") else
+FlagOrNFlag  <= '1' when(opcode = SB_type_opcode and (funct3 = "001" or funct3 = "101" or funct3 = "110")) else -- BNE BGE BLTU
+                '1' when(opcode = I_type_aImm_opcode and funct3 = "011") else -- SLTIU
                 '0';
-              --'0' when(opcode = SB_type_opcode and (funct3 = "000" or funct3 = "100" or funct3 = "110")) else
 
     JumpWReg <= '1' when(opcode = jalr_opcode) else
                 '0';

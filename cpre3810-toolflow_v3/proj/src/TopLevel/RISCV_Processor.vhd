@@ -78,7 +78,6 @@ architecture structure of RISCV_Processor is
       clock               : in std_logic;
       reset               : in std_logic;
       conditionBJ         : in std_logic;
-      jump                : in std_logic;
       jumpWithRegister    : in std_logic;
       immediate           : in std_logic_vector(WIDTH-1 downto 0);
       register_plusImm    : in std_logic_vector(WIDTH-1 downto 0);
@@ -122,7 +121,6 @@ architecture structure of RISCV_Processor is
       Branch        : out std_logic;
       Jump          : out std_logic;
       Shift         : out std_logic;
-      ALUorImmJump  : out std_logic;
       FlagMux       : out std_logic_vector(1 downto 0);
       FlagOrNFlag   : out std_logic;
       JumpWReg      : out std_logic;
@@ -306,7 +304,6 @@ begin
       Branch        => s_Branch,
       Jump          => s_Jump,
       Shift         => s_Shift,
-      ALUorImmJump  => s_ALUorImmJump,
       FlagMux       => s_FlagMux,
       FlagOrNFlag   => s_FlagOrNFlag,
       JumpWReg      => s_JumpWReg,
@@ -317,7 +314,6 @@ begin
       clock            => iCLK,
       reset            => iRST,
       conditionBJ      => s_BranchOrJump,
-      jump             => s_ALUorImmJump,
       jumpWithRegister => s_JumpWReg,
       immediate        => s_immediate,
       register_plusImm => s_ALUresult,

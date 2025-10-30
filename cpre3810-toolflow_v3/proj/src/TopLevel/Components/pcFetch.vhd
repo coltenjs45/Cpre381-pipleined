@@ -11,7 +11,6 @@ entity pcFetch is
     clock               : in std_logic;
     reset               : in std_logic;
     conditionBJ         : in std_logic;
-    jump                : in std_logic;
     jumpWithRegister    : in std_logic;
     immediate           : in std_logic_vector(WIDTH-1 downto 0);
     register_plusImm    : in std_logic_vector(WIDTH-1 downto 0);
@@ -79,12 +78,6 @@ begin
       i_D1    => jumpAddress,
       o_O     => nextPC);
 
---    MUX_PC: mux2t1_N port map(
---	    i_S     => jumpWithRegister,
---      i_D0    => pcOut,
---      i_D1    => x"00000000",
---      o_O     => pcJALR);
-
     Add4: nBit_LookaheadAdder port map(
       in_C   	=> '0',
       i_A 	  => pcOut,
@@ -98,9 +91,5 @@ begin
       i_B 	  => immediate,
       o_SUM 	=> addImmOut,
       out_C	  => ground);
-
-      
---      temp <= shift_left(unsigned(jumpAddress), 2);
---      shiftedAddend <= std_logic_vector(temp);
 
 end mixed;
