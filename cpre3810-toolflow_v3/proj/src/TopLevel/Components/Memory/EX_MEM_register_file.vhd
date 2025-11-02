@@ -47,12 +47,15 @@ entity EX_MEM_register_file is
         input_RegWrite      : in  std_logic;
         output_RegWrite     : out std_logic;
 
-        -- Data Path Signals
-        input_ALUWriteBack           : in  std_logic_vector(WIDTH-1 downto 0);
-        output_ALUWriteback         : out std_logic_vector(WIDTH-1 downto 0);
+        input_Halt          : in  std_logic;
+        output_Halt         : out std_logic;
 
-        input_MemOut           : in  std_logic_vector(WIDTH-1 downto 0);
-        output_MemOut         : out std_logic_vector(WIDTH-1 downto 0);
+        -- Data Path Signals
+        input_ALUBSout           : in  std_logic_vector(WIDTH-1 downto 0);
+        output_ALUBSout          : out std_logic_vector(WIDTH-1 downto 0);
+
+        input_writedata           : in  std_logic_vector(WIDTH-1 downto 0);
+        output_writedata          : out std_logic_vector(WIDTH-1 downto 0);
     );
 end entity EX_MEM_register_file;
 
@@ -174,25 +177,24 @@ begin
             outData => output_RegWrite
         );
     -- dataflow registers 
-    ALUWriteBack_reg : neg_edge_nBit_Reg
+    ALUBSout_reg : neg_edge_nBit_Reg
         generic map(WIDTH => WIDTH)
         port map(
             CLK     => sysCLK,
             RST     => sysRST,
             wEnable => write_enable,
-            inData  => input_ALUWriteBack,
-            outData => output_ALUWriteBack
+            inData  => input_ALUBSout,
+            outData => output_ALUBSout
         );
 
     
-    MemOut_reg : neg_edge_nBit_Reg
+    WriteData_reg : neg_edge_nBit_Reg
         generic map(WIDTH => WIDTH)
         port map(
             CLK     => sysCLK,
             RST     => sysRST,
             wEnable => write_enable,
-            inData  => input_MemOut,
-            outData => output_MemOut
+            inData  => input_writedata,
+            outData => output_writedata
         );
-    
 end architecture structure;

@@ -3,7 +3,7 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.RISCV_types.all;
 
-entity EX_MEM_register_file is
+entity ID_EX_register_file is
     generic (
         WIDTH : integer := 32
     );
@@ -47,16 +47,28 @@ entity EX_MEM_register_file is
         input_RegWrite      : in  std_logic;
         output_RegWrite     : out std_logic;
 
+        input_Halt          : in  std_logic;
+        output_Halt         : out std_logic;
+
         -- Data Path Signals
-        input_ALUBSout           : in  std_logic_vector(WIDTH-1 downto 0);
-        output_ALUBSout          : out std_logic_vector(WIDTH-1 downto 0);
+        input_rs1           : in  std_logic_vector(WIDTH-1 downto 0);
+        output_rs1          : out std_logic_vector(WIDTH-1 downto 0);
 
-        input_writedata           : in  std_logic_vector(WIDTH-1 downto 0);
-        output_writedata          : out std_logic_vector(WIDTH-1 downto 0);
+        input_rs2           : in  std_logic_vector(WIDTH-1 downto 0);
+        output_rs2          : out std_logic_vector(WIDTH-1 downto 0);
+
+        input_imm           : in  std_logic_vector(WIDTH-1 downto 0);
+        output_imm          : out std_logic_vector(WIDTH-1 downto 0);
+
+        input_pcUp4         : in  std_logic_vector(WIDTH-1 downto 0);
+        output_pcUp4        : out std_logic_vector(WIDTH-1 downto 0);
+
+        input_pcUpImm       : in  std_logic_vector(WIDTH-1 downto 0);
+        output_pcIpImm      : out std_logic_vector(WIDTH-1 downto 0);
     );
-end entity EX_MEM_register_file;
+end entity ID_EX_register_file;
 
-architecture structure of EX_MEM_register_file is
+architecture structure of ID_EX_register_file is
 
     component neg_edge_nBit_Reg is
         generic (
@@ -173,25 +185,56 @@ begin
             inData  => input_RegWrite,
             outData => output_RegWrite
         );
-    -- dataflow registers 
-    ALUBSout_reg : neg_edge_nBit_Reg
+
+    -- Data Path Registers
+    rs1_reg : neg_edge_nBit_Reg
         generic map(WIDTH => WIDTH)
         port map(
             CLK     => sysCLK,
             RST     => sysRST,
             wEnable => write_enable,
-            inData  => input_ALUBSout,
-            outData => output_ALUBSout
+            inData  => input_rs1,
+            outData => output_rs1
         );
 
-    
-    WriteData_reg : neg_edge_nBit_Reg
+    rs2_reg : neg_edge_nBit_Reg
         generic map(WIDTH => WIDTH)
         port map(
             CLK     => sysCLK,
             RST     => sysRST,
             wEnable => write_enable,
-            inData  => input_writedata,
-            outData => output_writedata
+            inData  => input_rs2,
+            outData => output_rs2
         );
+
+    imm_reg : neg_edge_nBit_Reg
+        generic map(WIDTH => WIDTH)
+        port map(
+            CLK     => sysCLK,
+            RST     => sysRST,
+            wEnable => write_enable,
+            inData  => input_imm,
+            outData => output_imm
+        );
+
+    pcUp4_reg : neg_edge_nBit_Reg
+        generic map(WIDTH => WIDTH)
+        port map(
+            CLK     => sysCLK,
+            RST     => sysRST,
+            wEnable => write_enable,
+            inData  => input_pcUp4,
+            outData => output_pcUp4
+        );
+
+    pcUpImm_reg : neg_edge_nBit_Reg
+        generic map(WIDTH => WIDTH)
+        port map(
+            CLK     => sysCLK,
+            RST     => sysRST,
+            wEnable => write_enable,
+            inData  => input_pcUpImm,
+            outData => output_pcUpImm
+        );
+
 end architecture structure;

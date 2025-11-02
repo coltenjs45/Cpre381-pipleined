@@ -3,7 +3,7 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 use work.RISCV_types.all;
 
-entity ID_EX_register_file is
+entity EX_MEM_register_file is
     generic (
         WIDTH : integer := 32
     );
@@ -47,19 +47,19 @@ entity ID_EX_register_file is
         input_RegWrite      : in  std_logic;
         output_RegWrite     : out std_logic;
 
+        input_Halt          : in  std_logic;
+        output_Halt         : out std_logic;
+
         -- Data Path Signals
-        input_rs1           : in  std_logic_vector(WIDTH-1 downto 0);
-        output_rs1          : out std_logic_vector(WIDTH-1 downto 0);
+        input_ALUWriteBack           : in  std_logic_vector(WIDTH-1 downto 0);
+        output_ALUWriteback         : out std_logic_vector(WIDTH-1 downto 0);
 
-        input_rs2           : in  std_logic_vector(WIDTH-1 downto 0);
-        output_rs2          : out std_logic_vector(WIDTH-1 downto 0);
-
-        input_imm           : in  std_logic_vector(WIDTH-1 downto 0);
-        output_imm          : out std_logic_vector(WIDTH-1 downto 0)
+        input_MemOut           : in  std_logic_vector(WIDTH-1 downto 0);
+        output_MemOut         : out std_logic_vector(WIDTH-1 downto 0);
     );
-end entity ID_EX_register_file;
+end entity EX_MEM_register_file;
 
-architecture structure of ID_EX_register_file is
+architecture structure of EX_MEM_register_file is
 
     component neg_edge_nBit_Reg is
         generic (
@@ -176,36 +176,26 @@ begin
             inData  => input_RegWrite,
             outData => output_RegWrite
         );
-
-    -- Data Path Registers
-    rs1_reg : neg_edge_nBit_Reg
+    -- dataflow registers 
+    ALUWriteBack_reg : neg_edge_nBit_Reg
         generic map(WIDTH => WIDTH)
         port map(
             CLK     => sysCLK,
             RST     => sysRST,
             wEnable => write_enable,
-            inData  => input_rs1,
-            outData => output_rs1
+            inData  => input_ALUWriteBack,
+            outData => output_ALUWriteBack
         );
 
-    rs2_reg : neg_edge_nBit_Reg
+    
+    MemOut_reg : neg_edge_nBit_Reg
         generic map(WIDTH => WIDTH)
         port map(
             CLK     => sysCLK,
             RST     => sysRST,
             wEnable => write_enable,
-            inData  => input_rs2,
-            outData => output_rs2
+            inData  => input_MemOut,
+            outData => output_MemOut
         );
-
-    imm_reg : neg_edge_nBit_Reg
-        generic map(WIDTH => WIDTH)
-        port map(
-            CLK     => sysCLK,
-            RST     => sysRST,
-            wEnable => write_enable,
-            inData  => input_imm,
-            outData => output_imm
-        );
-
+    
 end architecture structure;
