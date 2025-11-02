@@ -1,1 +1,0 @@
-cpre3810_test_suite_SW/bgeu_1.s

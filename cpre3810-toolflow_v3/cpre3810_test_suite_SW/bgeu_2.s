@@ -5,19 +5,18 @@
 
 main:
 
-# ensuring all registers are zero
+# Load Registers
+addi t0, zero, -1
+addi t1, zero, 0
 addi t2, zero, 0
 addi t3, zero, 0
 
-# Name: Warren Murphy
 # Reason: Unsigned Edge Cases : Unsigned Comparison / Ensuring the Unsigned part of the bgeU < unsigned works | basically proving unsigned arithmetic
 
 # Case 1: t0 = 0xFFFFFFFF [Reason for: should branch because t0 will NOT be -1 but a really big number comparatively to t1] / Proves we are using unsigned arithmetic.
-addi t0, zero, -1 # t0 = 0xFFFFFFFF < should be treated as a really big value
-addi t1, zero, 0
 
 bgeu t0, t1, skipOne
-
+nop
 addi t2, zero, 2
 
 skipOne: # the value of t2 should be zero after this runs, the branch should skip the addi t2 line
