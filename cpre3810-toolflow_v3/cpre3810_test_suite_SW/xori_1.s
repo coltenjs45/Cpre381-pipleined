@@ -5,27 +5,25 @@
 
 main:
 
-	#Start Test
-	
-	#Max positive immediate value
-	xori a0, zero, 2047
-	#Expected Result: 0x000007FF
-	
-	#Max negative immediate value
-	addi a0, zero, 0
-	li t0, 0xFFFFFFFF
-	xori a0, t0, -2048
-	#Expected Result: 0x000007FF
-	
-	#Check sign extension for positive
-	addi a0, zero, 0
-	xori a0, zero, 0x7FF
-	#Expected Result: 0x000007FF
-	
-	#Check sign extension for negative
-	addi a0, zero, 0
-	xori a0, zero, -2048
-	#Expected Result: 0xFFFFF800
-	
-    wfi               
+    # Start Test
+    xori a0, zero, 2047
+    addi a0, zero, 0            
+    lui t0, 0xFFFFF
+	nop
+	nop
+	nop
+    addi t0, t0, -1           
+    nop
+    nop
+    nop                  
+    xori a0, t0, -2048     
+    addi a0, zero, 0
+    nop
+    nop
+    nop              
+    xori a0, zero, 0x7FF  
+    addi a0, zero, 0             
+    xori a0, zero, -2048  
+
+    wfi
 
