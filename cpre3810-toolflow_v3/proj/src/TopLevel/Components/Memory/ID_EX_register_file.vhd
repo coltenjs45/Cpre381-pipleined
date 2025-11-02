@@ -64,8 +64,8 @@ entity ID_EX_register_file is
         output_pcUp4        : out std_logic_vector(WIDTH-1 downto 0);
 
         input_pcUpImm       : in  std_logic_vector(WIDTH-1 downto 0);
-        output_pcIpImm      : out std_logic_vector(WIDTH-1 downto 0);
-    );
+        output_pcUpImm      : out std_logic_vector(WIDTH-1 downto 0));
+
 end entity ID_EX_register_file;
 
 architecture structure of ID_EX_register_file is
@@ -83,6 +83,34 @@ architecture structure of ID_EX_register_file is
         );
     end component;
 
+    component control_register is
+      generic (WIDTH : integer := 32);
+      port(
+        CLK              : in  std_logic;
+        RST              : in  std_logic;
+        wr_en            : in  std_logic;
+        in_ALUsrc        : in  std_logic;
+        out_ALUsrc       : out std_logic;
+        in_ALUcontrol    : in  std_logic_vector(3 downto 0);
+        out_ALUcontrol   : out std_logic_vector(3 downto 0);
+        in_FlagMux       : in  std_logic_vector(1 downto 0);
+        out_FlagMux      : out std_logic_vector(1 downto 0);
+        in_FlagOrNFlag   : in  std_logic;
+        out_FlagOrNFlag  : out std_logic;
+        in_Shift         : in  std_logic;
+        out_Shift        : out std_logic;
+        in_AndLink       : in  std_logic_vector(1 downto 0);
+        out_AndLink      : out std_logic_vector(1 downto 0);
+        in_MemWrite      : in  std_logic;
+        out_MemWrite     : out std_logic;
+        in_MemtoReg      : in  std_logic;
+        out_MemtoReg     : out std_logic;
+        in_RegWrite      : in  std_logic;
+        out_RegWrite     : out std_logic;
+        in_Halt          : in  std_logic;
+        out_Halt         : out std_logic);
+    end component;
+
 begin
     -- Instruction Register
     instruction_reg : neg_edge_nBit_Reg
@@ -94,97 +122,32 @@ begin
             inData  => input_instruction,
             outData => output_instruction
         );
-
-    -- Control Path Registers
-    ALUsrc_reg : neg_edge_nBit_Reg
-        generic map(WIDTH => 1)
-        port map(
-            CLK     => sysCLK,
-            RST     => sysRST,
-            wEnable => write_enable,
-            inData  => input_ALUsrc,
-            outData => output_ALUsrc
-        );
-
-    ALUcontrol_reg : neg_edge_nBit_Reg
-        generic map(WIDTH => 4)
-        port map(
-            CLK     => sysCLK,
-            RST     => sysRST,
-            wEnable => write_enable,
-            inData  => input_ALUcontrol,
-            outData => output_ALUcontrol
-        );
-
-    FlagMux_reg : neg_edge_nBit_Reg
-        generic map(WIDTH => 2)
-        port map(
-            CLK     => sysCLK,
-            RST     => sysRST,
-            wEnable => write_enable,
-            inData  => input_FlagMux,
-            outData => output_FlagMux
-        );
-
-    FlagOrNFlag_reg : neg_edge_nBit_Reg
-        generic map(WIDTH => 1)
-        port map(
-            CLK     => sysCLK,
-            RST     => sysRST,
-            wEnable => write_enable,
-            inData  => input_FlagOrNFlag,
-            outData => output_FlagOrNFlag
-        );
-
-    Shift_reg : neg_edge_nBit_Reg
-        generic map(WIDTH => 1)
-        port map(
-            CLK     => sysCLK,
-            RST     => sysRST,
-            wEnable => write_enable,
-            inData  => input_Shift,
-            outData => output_Shift
-        );
-
-    AndLink_reg : neg_edge_nBit_Reg
-        generic map(WIDTH => 2)
-        port map(
-            CLK     => sysCLK,
-            RST     => sysRST,
-            wEnable => write_enable,
-            inData  => input_AndLink,
-            outData => output_AndLink
-        );
-
-    MemWrite_reg : neg_edge_nBit_Reg
-        generic map(WIDTH => 1)
-        port map(
-            CLK     => sysCLK,
-            RST     => sysRST,
-            wEnable => write_enable,
-            inData  => input_MemWrite,
-            outData => output_MemWrite
-        );
-
-    MemtoReg_reg : neg_edge_nBit_Reg
-        generic map(WIDTH => 1)
-        port map(
-            CLK     => sysCLK,
-            RST     => sysRST,
-            wEnable => write_enable,
-            inData  => input_MemtoReg,
-            outData => output_MemtoReg
-        );
-
-    RegWrite_reg : neg_edge_nBit_Reg
-        generic map(WIDTH => 1)
-        port map(
-            CLK     => sysCLK,
-            RST     => sysRST,
-            wEnable => write_enable,
-            inData  => input_RegWrite,
-            outData => output_RegWrite
-        );
+ 
+    Control_reg : control_register
+      port map(
+        CLK             => sysCLK,
+        RST             => sysRST,
+        wr_en           => write_enable,
+        in_ALUsrc       => input_ALUsrc,
+        out_ALUsrc      => output_ALUsrc,
+        in_ALUcontrol   => input_ALUcontrol,
+        out_ALUcontrol  => output_ALUcontrol,
+        in_FlagMux      => input_FlagMux,
+        out_FlagMux     => output_FlagMux,
+        in_FlagOrNFlag  => input_FlagOrNFlag,
+        out_FlagOrNFlag => output_FlagOrNFlag,
+        in_Shift        => input_Shift,
+        out_Shift       => output_Shift,
+        in_AndLink      => input_AndLink,
+        out_AndLink     => output_AndLink,
+        in_MemWrite     => input_MemWrite,
+        out_MemWrite    => output_MemWrite,
+        in_MemtoReg     => input_MemToReg,
+        out_MemtoReg    => output_MemToReg,
+        in_RegWrite     => input_RegWrite,
+        out_RegWrite    => output_RegWrite,
+        in_Halt         => input_Halt,
+        out_Halt        => output_Halt);
 
     -- Data Path Registers
     rs1_reg : neg_edge_nBit_Reg

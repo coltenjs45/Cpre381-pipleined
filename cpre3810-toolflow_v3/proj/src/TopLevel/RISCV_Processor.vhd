@@ -85,6 +85,7 @@ architecture structure of RISCV_Processor is
       output_pc           : out std_logic_vector(WIDTH-1 downto 0);
       output_instruction  : out std_logic_vector(WIDTH-1 downto 0)
     );
+  end component;
 
   component pcFetch is
     generic(WIDTH : integer := 32);
@@ -190,7 +191,7 @@ architecture structure of RISCV_Processor is
         input_pcUp4         : in  std_logic_vector(WIDTH-1 downto 0);
         output_pcUp4        : out std_logic_vector(WIDTH-1 downto 0);
         input_pcUpImm       : in  std_logic_vector(WIDTH-1 downto 0);
-        output_pcIpImm      : out std_logic_vector(WIDTH-1 downto 0));
+        output_pcUpImm      : out std_logic_vector(WIDTH-1 downto 0));
   end component;
 
 -------------------------------------------------------------------------EXECUTE COMPONENTS------------------------------------------------------------------------------------
@@ -377,7 +378,7 @@ architecture structure of RISCV_Processor is
 ----------------------------------------------------------------------INSTRUCTION FETCH SIGNALS----------------------------------------------------------------------------------
 
   --IF Register Signals
-  signal s_IDpc s_idInst : std_logic_vector(31 downto 0);
+  signal s_IDpc, s_idInst : std_logic_vector(31 downto 0);
 
   --Fetch Unit Signals
   signal s_IDpcUp4, s_IDpcUpImm, s_RegPlusImm : std_logic_vector(31 downto 0);
@@ -609,11 +610,11 @@ begin
       input_rs2          => s_IDrOut2,
       output_rs2         => s_exRS2,
       input_imm          => s_idImmediate,
-      output_imm         => s_exImmediate
+      output_imm         => s_exImmediate,
       input_pcUp4        => s_IDpcUp4,
       output_pcUp4       => s_EXpcUp4,
       input_pcUpImm      => s_IDpcUpImm,
-      output_pcIpImm     => s_EXpcUpImm);
+      output_pcUpImm     => s_EXpcUpImm);
 
 --------------------------------------------------------------------------EXECUTION STAGE COMPONENTS-----------------------------------------------------------------------------
 
@@ -773,6 +774,8 @@ begin
       output_MemtoReg     => s_wbMemToReg,
       input_RegWrite      => s_memRegWrite,
       output_RegWrite     => s_wbRegWrite,
+      input_Halt          => s_memHalt,
+      output_Halt         => s_wbHalt,
       input_ALUWriteBack  => s_memALUWriteBack,
       output_ALUWriteback => s_wbALUWriteBack,
       input_MemOut        => s_memMemOut,
