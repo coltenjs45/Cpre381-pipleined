@@ -136,8 +136,8 @@ begin
         i_CLK => CLK,
         i_RST => RST,
         i_WE  => wr_en,
-        i_D   => in_MemWrite,
-        o_Q   => out_MemWrite);
+        i_D   => in_MemtoReg,
+        o_Q   => out_MemtoReg);
 
     RegWrite_reg : negdffg
       port map(

@@ -12,6 +12,7 @@ entity pcFetch is
     reset               : in std_logic;
     conditionBJ         : in std_logic;
     jumpWithRegister    : in std_logic;
+    previousPC          : in std_logic_vector(WIDTH-1 downto 0); 
     immediate           : in std_logic_vector(WIDTH-1 downto 0);
     register_plusImm    : in std_logic_vector(WIDTH-1 downto 0);
     pcUp4               : out std_logic_vector(WIDTH-1 downto 0);
@@ -87,7 +88,7 @@ begin
 
     AddImm: nBit_LookaheadAdder port map(
       in_C    => '0',
-      i_A 	  => pcOut,
+      i_A 	  => previousPC,
       i_B 	  => immediate,
       o_SUM 	=> addImmOut,
       out_C	  => ground);

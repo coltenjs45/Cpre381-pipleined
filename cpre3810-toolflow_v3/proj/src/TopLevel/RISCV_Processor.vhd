@@ -94,6 +94,7 @@ architecture structure of RISCV_Processor is
       reset               : in std_logic;
       conditionBJ         : in std_logic;
       jumpWithRegister    : in std_logic;
+      previousPC          : in std_logic_vector(WIDTH-1 downto 0);
       immediate           : in std_logic_vector(WIDTH-1 downto 0);
       register_plusImm    : in std_logic_vector(WIDTH-1 downto 0);
       pcUp4               : out std_logic_vector(WIDTH-1 downto 0);
@@ -495,6 +496,7 @@ begin
       reset            => iRST,
       conditionBJ      => s_idBranchOrJump,
       jumpWithRegister => s_idJumpWReg,
+      previousPC       => s_IDpc,
       immediate        => s_idImmediate,
       register_plusImm => s_RegPlusImm,
       pcUp4            => s_IDpcUp4,
@@ -596,7 +598,7 @@ begin
       input_Shift        => s_idShift,
       output_Shift       => s_exShift,
       input_AndLink      => s_idAndLink,
-      output_AndLink     => s_idAndLink,
+      output_AndLink     => s_exAndLink,
       input_MemWrite     => s_idMemWrite,
       output_MemWrite    => s_exMemWrite,
       input_MemtoReg     => s_idMemToReg,
@@ -739,6 +741,7 @@ begin
 ----------------------------------------------------------------------------MEMORY STAGE COMPONENTS------------------------------------------------------------------------------
 
   s_DMemAddr <= s_memALUWriteBack;
+  s_DMemWr   <= s_memMemWrite;
 
   --MEM Stage
   --LB/LH/LW Segment Selector
@@ -792,6 +795,8 @@ begin
       o_O   => s_RegWrData); 
 
   --Writeback RegFile Address
+  s_RegWr <= s_wbRegWrite;
+  
   s_RegWrAddr <= s_wbInst(11 downto 7);
 
   s_Halt <= s_wbHalt;
