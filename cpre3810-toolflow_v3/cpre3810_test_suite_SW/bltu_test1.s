@@ -4,23 +4,23 @@
     .text
     .globl _start
 _start:
+	#Load Registers
+	addi t0, x0, 1
+	addi t1, x0, 2
+	addi t2, x0, 1
+
 	#test case 1: a0 < a1 (1 < 2)
-	addi a0, x0, 1        # a0 = 1
-	addi a1, x0, 2        # a1 = 2
-	bltu a0, a1, TAKEN1   # if (1 < 2) unsigned, then branch (EXPECT taken)
+	bltu t0, t1, TAKEN1   # if (1 < 2) unsigned, then branch (EXPECT taken)
+	nop
 	beq  x0, x0, FAIL1    # otherwise BLTU failed case 1, got o FAIL1 and loop
 
 TAKEN1:
 	#test case 2: a0 > a1 (2 < 1)
-	addi a0, x0, 2        # a0 = 2
-	addi a1, x0, 1        # a1 = 1
-	bltu a0, a1, FAIL2    # if (2 < 1), should NOT branch 
+	bltu t1, t0, FAIL2    # if (2 < 1), should NOT branch 
 	# fall-through = passed case 2
 	
 	#test case 3: a0 == a1 (5 == 5)
-	addi a0, x0, 5        # a0 = 5
-	addi a1, x0, 5        # a1 = 5
-	bltu a0, a1, FAIL3    # if (5 < 5), false (strict <), expect NOT taken
+	bltu t0, t0, FAIL3    # if (5 < 5), false (strict <), expect NOT taken
 
 PASS:
 	wfi

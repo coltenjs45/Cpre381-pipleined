@@ -12,9 +12,13 @@
     # Initialize registers
     addi x5, x0, 0         # x5 = 0x00000000
     addi x6, x0, 1         # x6 = 0x00000001
+    NOP
+    NOP
+    NOP
 
     # Test 1: bne with positive offset 
     bne x5, x6, far_target # Should branch to far_target
+    nop
     addi x28, x0, 0        # x28 = 0 if no branch 
     j skip_target
 
@@ -56,9 +60,11 @@ skip_target:
 backward_target:
     addi x29, x0, 1        # x29 = 1 if branch taken 
     j end
+    nop
 
 backward_test:
-    bne x5, x6, backward_target # Should branch backward 
+    bne x5, x6, backward_target # Should branch backward
+    nop
     addi x29, x0, 0        # x29 = 0 if no branch 
 
 end:

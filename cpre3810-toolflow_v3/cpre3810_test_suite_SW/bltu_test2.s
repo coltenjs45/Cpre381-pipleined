@@ -5,13 +5,18 @@
     .text
     .globl _start
 _start:
-	##case 1: 0<1
-    	addi a0, x0, -1       # a0 = 0xFFFF_FFFF (max 32-bit) via -1 immediate
+	# Register Loading
+    	lui  a4, 0x80000      # a4 = 0x8000_0000 (upper 20 set except MSB)
     	addi a1, x0, 0        # a1 = 0
     	addi a2, x0, 1        # a2 = 1
+	   	addi a0, x0, -1       # a0 = 0xFFFF_FFFF (max 32-bit) via -1 immediate
+    	addi a4, a4, -1    # a4 = 0x8000_0000 - 1 = 0x7FFF_FFFF via overflow 
+		lui  a3, 0x80000      # a3 = 0x8000_0000 (MSB = 1)
 
+	##case 1: 0<1
     	bltu a1, a2, OK1      # 0 < 1, branch. EXPECT taken
-    	beq  x0, x0, FAIL1    # not taken => BLTU failed small ascending.
+    	nop
+		beq  x0, x0, FAIL1    # not taken => BLTU failed small ascending.
     	
 FAIL1: #works even if program falls through
    	jal  x0, FAIL1    # loop here if failed 0<1 true case, jal in case beq brokeded
@@ -23,17 +28,16 @@ OK1:
 
 	##case 3: 0 < 0xFFFFFFFF
     	bltu a1, a0, OK3      # 0 < (max 32-bit), EXPECT taken
-   	beq  x0, x0, FAIL3    # not taken = BLTU failed 0 < max
+		nop
+   		beq  x0, x0, FAIL3    # not taken = BLTU failed 0 < max
 
 OK3:
 	##case 4: 0x7FFFFFFF < 0x80000000
 	
 	# build constant 0x7FF..FF:
-    	lui  a3, 0x80000      # a3 = 0x8000_0000 (MSB = 1)
-    	lui  a4, 0x80000      # a4 = 0x8000_0000 (upper 20 set except MSB)
-    	addi a4, a4, -1    # a4 = 0x8000_0000 - 1 = 0x7FFF_FFFF via overflow 
     	# case comparison:
     	bltu a4, a3, OK4      # 0x7FFF_FFFF < 0x8000_0000 (unsigned), EXPECT taken
+		nop
     	beq  x0, x0, FAIL4    # not taken => MSB boundary true-case failed
 
 OK4:

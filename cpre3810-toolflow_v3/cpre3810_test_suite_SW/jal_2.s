@@ -7,18 +7,23 @@
 step1:
 addi t1, t1, 1
 jal ra, step2
+nop
 # This shouldn't run
 addi t0, t0, 1
 
 step3:
+nop
 addi t1, t1, 1
 jal ra, step4
+nop
 # This shouldn't run
 addi t0, t0, 1
 
 step2:
+nop
 addi t1, t1, 1
 jal ra, step3
+nop
 # This shouldn't run
 addi t0, t0, 1
 
@@ -28,11 +33,14 @@ main:
 # Zeroing registers
 addi t0, zero, 0
 addi t1, zero, 0
+nop
 jal ra, step1
+nop
 # This shouldn't run
 addi t0, t0, 1
 
 step4:
+nop
 addi t1, t1, 1
 # t1 should be 4, t0 should be 0 by end
 wfi

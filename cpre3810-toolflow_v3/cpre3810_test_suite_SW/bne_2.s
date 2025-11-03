@@ -10,14 +10,15 @@
 
 .text
     # Initialize registers
-    lui  x5, 0x7FFFF       # Load upper 20 bits of 0x7FFFFFFF
-    addi x5, x5, -1        # x5 = 0x7FFFFFFF (max positive)
-    lui  x6, 0x80000       # x6 = 0x80000000 (min negative)
     lui  x7, 0x7FFFF       # Load upper 20 bits for x7
+    lui  x5, 0x7FFFF       # Load upper 20 bits of 0x7FFFFFFF
+    lui  x6, 0x80000       # x6 = 0x80000000 (min negative)
+    NOP
     addi x7, x7, -1        # x7 = 0x7FFFFFFF (same as x5)
+    addi x5, x5, -1        # x5 = 0x7FFFFFFF (max positive)
 
     # Test 1: bne with max positive vs min negative 
-    bne x5, x6, not_equal1 # Should branch to not_equal1
+    bne x5, x7, not_equal1 # Should branch to not_equal1
     addi x28, x0, 0        # x28 = 0 if no branch 
     j end1
 

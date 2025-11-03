@@ -402,7 +402,7 @@ architecture structure of RISCV_Processor is
   signal s_branchCompare : std_logic;
 
   --ID/EX Register Signals
-  signal s_exALUsrc, s_exRegWrite, s_exMemWrite, s_exMemToReg, s_exShift, s_exFlagOrNFlag, s_exJumpWReg, s_exHalt : std_logic;
+  signal s_exALUsrc, s_exRegWrite, s_exMemWrite, s_exMemToReg, s_exShift, s_exFlagOrNFlag, s_exHalt : std_logic;
   signal s_exALUctrl : std_logic_vector(3 downto 0);
   signal s_exAndLink, s_exFlagMux: std_logic_vector(1 downto 0);
   signal s_exImmediate, s_EXpcUp4, s_EXpcUpImm, s_exRS1, s_exRS2, s_exInst : std_logic_vector(31 downto 0);
@@ -425,7 +425,7 @@ architecture structure of RISCV_Processor is
   signal s_extFlagToWriteBack, s_exStageOut : std_logic_vector(31 downto 0);
 
   --EX/MEM Register Signals
-  signal s_memALUsrc, s_memRegWrite, s_memMemWrite, s_memMemToReg, s_memShift, s_memFlagOrNFlag, s_memJumpWReg, s_memHalt : std_logic;
+  signal s_memALUsrc, s_memRegWrite, s_memMemWrite, s_memMemToReg, s_memShift, s_memFlagOrNFlag, s_memHalt : std_logic;
   signal s_memALUctrl : std_logic_vector(3 downto 0);
   signal s_memAndLink, s_memFlagMux: std_logic_vector(1 downto 0);
   signal s_memALUWriteBack, s_memInst : std_logic_vector(31 downto 0);
@@ -436,7 +436,7 @@ architecture structure of RISCV_Processor is
   signal s_memMemOut : std_logic_vector(31 downto 0);
 
   --MEM/WB Register Signals
-  signal s_wbALUsrc, s_wbRegWrite, s_wbMemWrite, s_wbMemToReg, s_wbShift, s_wbFlagOrNFlag, s_wbJumpWReg, s_wbHalt : std_logic;
+  signal s_wbALUsrc, s_wbRegWrite, s_wbMemWrite, s_wbMemToReg, s_wbShift, s_wbFlagOrNFlag, s_wbHalt : std_logic;
   signal s_wbALUctrl : std_logic_vector(3 downto 0);
   signal s_wbAndLink, s_wbFlagMux: std_logic_vector(1 downto 0);
   signal s_wbInst, s_wbALUWriteBack, s_wbMemOut : std_logic_vector(31 downto 0);  

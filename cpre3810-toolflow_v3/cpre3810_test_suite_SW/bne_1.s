@@ -13,7 +13,9 @@
     addi x5, x0, 0         # x5 = 0x00000000
     addi x6, x0, 0         # x6 = 0x00000000
     addi x7, x0, 1         # x7 = 0x00000001
-
+    NOP
+    NOP
+    
     # Test 1: bne with equal registers 
     bne x5, x6, not_equal1 # Should not branch, continue to next instruction
     addi x28, x0, 1        # x28 = 1 if no branch 
@@ -25,6 +27,7 @@ not_equal1:
 end1:
     # Test 2: bne with unequal registers 
     bne x5, x7, not_equal2 # Should branch to not_equal2
+    nop
     addi x29, x0, 0        # x29 = 0 if no branch 
     j end2
 

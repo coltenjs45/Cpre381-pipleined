@@ -50,9 +50,8 @@ architecture mixed of pcFetch is
     end component;
 
     --SIGNALS--
-    signal nextPC, add4Out, addImmOut, pcOut, jumpAddress, pcJALR, shiftedAddend : std_logic_vector(WIDTH-1 downto 0);
+    signal nextPC, add4Out, addImmOut, pcOut, jumpAddress : std_logic_vector(WIDTH-1 downto 0);
     signal ground : std_logic;
-    signal temp : unsigned(WIDTH-1 downto 0);
 
 begin
     programCounter  <= pcOut;
@@ -81,7 +80,7 @@ begin
 
     Add4: nBit_LookaheadAdder port map(
       in_C   	=> '0',
-      i_A 	  => pcOut,
+      i_A 	  => previousPC,
       i_B 	  => x"00000004",
       o_SUM 	=> add4Out,
       out_C	  => ground);
