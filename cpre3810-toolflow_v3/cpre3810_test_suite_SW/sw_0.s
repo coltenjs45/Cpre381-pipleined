@@ -12,7 +12,8 @@
 main:
     lui s0, 0x10010 # Base address (0x10010000)
     addi t0, x0, 42  # Value to store (0x2A)
-    
+    nop
+    nop
     # Test positive offset storing 8 bit value
     sw t0, 0(s0) # MEM[0x10010000] = 0x2A
     sw t0, 4(s0) # MEM[0x10010004] = 0x2A
