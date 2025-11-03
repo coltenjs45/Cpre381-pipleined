@@ -62,6 +62,8 @@ mergesort:
     nop
     nop
     nop
+    nop
+
     addi a0, s3, 0          # Prepare args for left half
     nop
     nop
@@ -87,6 +89,8 @@ mergesort:
     nop
     nop
     nop
+    nop
+
     addi a0, s3, 0
     nop
     nop

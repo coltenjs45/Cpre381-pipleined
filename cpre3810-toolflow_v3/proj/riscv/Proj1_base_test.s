@@ -17,6 +17,8 @@ main:
     addi t1, zero, 10      # t1 = 0x0000000A
     addi t2, zero, 5       # t2 = 0x00000005
 
+    lui sp, 0x7FFFF
+
     #LOGICAL INSTRUCTIONS
     addi s0, zero, 0xFF
     addi s1, zero, 0xF0
