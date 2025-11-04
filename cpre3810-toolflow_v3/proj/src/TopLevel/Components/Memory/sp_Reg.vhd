@@ -2,14 +2,14 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity sc_Reg is
+entity sp_Reg is
   generic(WIDTH : integer := 32);
   port( CLK : in std_logic;
         RST : in std_logic;
         wEnable : in std_logic;
         inData : in std_logic_vector(WIDTH-1 downto 0);
         outData : out std_logic_vector(WIDTH-1 downto 0));
-end sc_Reg;
+end sp_Reg;
 
 architecture structure of sp_Reg is
 

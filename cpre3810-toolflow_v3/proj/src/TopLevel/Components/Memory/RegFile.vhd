@@ -51,7 +51,6 @@ architecture structure of RegFile is
       outData : out std_logic_vector(WIDTH-1 downto 0));
   end component;
 
-
   component decoder5t32
     port(
       SEL		 : in std_logic_vector(4 downto 0);
@@ -97,17 +96,17 @@ begin
         inData   => (others => '0'),
         outData  => read_reg(0)
       );
-    
-    SP_REG: sp_Reg
+
+    REG1: nbit_Reg
       port map(
         CLK      => sysCLK,
         RST      => sysRST,
-        wEnable  => write_reg_select(1),
+        wEnable  => write_reg_select(1),         -- never write to x0
         inData   => data,
         outData  => read_reg(1)
       );
-
-    GP_REG: gp_Reg
+    
+    REG2: sp_Reg
       port map(
         CLK      => sysCLK,
         RST      => sysRST,
@@ -116,7 +115,16 @@ begin
         outData  => read_reg(2)
       );
 
-    REG: for i in 3 to WIDTH-1 generate
+    REG3: gp_Reg
+      port map(
+        CLK      => sysCLK,
+        RST      => sysRST,
+        wEnable  => write_reg_select(3),
+        inData   => data,
+        outData  => read_reg(3)
+      );
+
+    REG: for i in 4 to WIDTH-1 generate
       REG: nbit_Reg port map(
 		    CLK      => sysCLK,
 		    RST      => sysRST,

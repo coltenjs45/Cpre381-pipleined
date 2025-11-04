@@ -81,8 +81,12 @@ jal_target:
     addi a1, zero, 7       # a1 = 7 (expected)
     
     # JALR: Jump and link register
-    la a2, jalr_target     # Load address of jalr_target
+    lasw a2, jalr_target     # Load address of jalr_target
+    nop
+    nop
+    nop
     jalr ra, a2, 0         # Jump to address in a2
+    nop
     addi a3, zero, 99      # This should be skipped
     
 jalr_target:
