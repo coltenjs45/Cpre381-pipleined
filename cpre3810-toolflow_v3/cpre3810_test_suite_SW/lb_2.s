@@ -4,6 +4,9 @@
     .globl main
 main:
     lui   t0, 0x10010       
+    nop
+    nop
+    nop
     lb    t1, 0(t0)         
     wfi
     .data

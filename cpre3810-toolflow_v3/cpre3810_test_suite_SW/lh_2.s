@@ -10,6 +10,9 @@ vals: .word 0x8000 0xFFFF 0xAAAA 0xD555
 main:
 
 lui x1, 0x10010
+nop
+nop
+nop
 
 lh x2, 0(x1)
 lh x3, 4(x1)

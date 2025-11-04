@@ -10,8 +10,15 @@ main:
     # Start Test
     #using lui (and addi above lw) to initialize some addresses for memory loading
     lui   t0, %hi(test_word)
+    nop
+    nop
+    nop
+
     addi  t0, t0, %lo(test_word)
-    
+    nop
+    nop
+    nop
+        
     lw x1, 0(t0)     # verify that one can load zero value from memory into registers (essentially clearing a register)
     lw x2, 0(t0)     # verify that one can load zero value from memory into registers (essentially clearing a register)
     lw x3, 0(t0)     # verify that one can load zero value from memory into registers (essentially clearing a register)

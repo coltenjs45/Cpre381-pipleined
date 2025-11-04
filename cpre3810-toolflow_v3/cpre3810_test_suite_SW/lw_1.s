@@ -18,6 +18,9 @@ value3: .word 0x33333333 # 0x10010008
 main:
 # start test
 lui t0, 0x10010  # load address 0x1001000 into t0
+nop
+nop
+nop
 
 lw t1, 0(t0) # load value 0x11111111 into t1 from addr 0x10010000 + 0 
 lw t2, 4(t0) # load value 0x22222222 into t2 from addr 0x10010000 + 4 

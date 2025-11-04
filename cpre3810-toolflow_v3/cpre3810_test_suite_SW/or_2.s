@@ -14,30 +14,81 @@ main:
 
     lui  t0, 0x80000        	# t0 = 0x80000000
     addi t1, x0, -1  		# t1 = 0xFFFFFFFF
+    nop
+    nop
+    nop
+
     xor  t3, t1, t0         	# t3 = 0x7FFFFFFF
+    nop
+    nop
+    nop
+    
 
     # (1) MSB + all-ones = 0xFFFFFFFF
     or   t4, t0, t3
+    nop
+    nop
+    nop
+
     xor  t5, t4, t1
+    nop
+    nop
+    nop
+    
     or   s7, s7, t5
 
     # (2) rd == rs1
     addi s1, x0, 0
+    nop
+    nop
+    nop
+    
     or   s1, s1, t0
+    nop
+    nop
+    nop
+    
     xor  s2, s1, t0
+    nop
+    nop
+    nop
+    
     or   s7, s7, s2
 
     # (3) rd == rs2
     addi s3, x0, 0
+    nop
+    nop
+    nop
+    
     or   s3, t3, s3
+    nop
+    nop
+    nop
+    
     xor  s4, s3, t3
+    nop
+    nop
+    nop
+    
     or   s7, s7, s4
 
     # (4) x | ~0 = ~0
     or   s5, t0, t1
+    nop
+    nop
+    nop
+    
     xor  s6, s5, t1
+    nop
+    nop
+    nop
+    
     or   s7, s7, s6
-
+    nop
+    nop
+    nop
+    
     add  x3, s7, x0         # x3 == 0 => PASS
 end:
     wfi                     # wait

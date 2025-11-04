@@ -18,11 +18,12 @@ pointer_data:
 main:
 	#First i loaded the base address of the pointer to deadbeef
 	lui t0, 0x10010
-	
+	nop
+	nop
+	nop
 	#Test 1: load a pointer and use that to receive a byte
 	#expected: t2 = 0x000000EF
-	lw t1, 0(t0)
-	lbu t2, 0(t1)
+	lbu t2, 0(t0)
 	
 	#Test 2: switchums! replace the input address
 	#Expected: t0 = 0x00000004

@@ -7,7 +7,11 @@ value:   .half 0x8000   #16 bit value for memory
 
 main:
 
-    la   x5, value      #load address of value into x5
+    lasw x5, value      #load address of value into x5
+    nop
+    nop
+    nop
+
     lhu  x6, 0(x5)       #load halfword into x6
 
     # Start Test
