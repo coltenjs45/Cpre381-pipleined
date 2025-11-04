@@ -7,390 +7,273 @@ temp:       .space 64          # Temporary array for merging (16 * 4 bytes)
 .globl main
 
 main:
-    lui a0, 0x10010         # Load address of array
-    lui sp, 0x7FFFF         # Initialize stack pointer (no hazard - different reg)
-    addi a1, x0, 16         # Load array size (a1 = 16)
-    nop
-    addi a0, a0, 0x000      # Finish loading array address (no hazard - 1 cycle gap)
-    addi a2, x0, 0          # Left index = 0
-    addi sp, sp, -12        # Adjust stack (no hazard - 1 cycle gap)
+    lui  a1, 0x10010
+    lui  a0, 0x10010 
     nop
     nop
-    addi a3, a1, -1         # Right index = size - 1 (2 NOPs after a1 write)
-    nop
+    addi a1, a1, 0x040
+    addi a0, a0, 0x000
     nop
     
-    jal ra, mergesort       # Call mergesort
+    addi a2, x0, 0
+    lw   a3, 0(a1)
     nop
     nop
     nop
+    addi a3, a3, -1 
     
-    # Exit program
-    addi a7, x0, 10
-    nop
-    nop
-    jal program_end
-
-# mergesort(array, size, left, right)
-# a0 = array address, a1 = array size, a2 = left, a3 = right
-mergesort:
-    bge a2, a3, mergesort_base_return  # if left >= right, return
-    nop
-
-    addi sp, sp, -20
     nop
     nop
     nop
-
-    sw ra, 16(sp)
-    sw s0, 12(sp)           # Save left
-    sw s1, 8(sp)            # Save right
-    sw s2, 4(sp)            # Save mid
-    sw s3, 0(sp)            # Save array addr
-    
-    sub t0, a3, a2          # t0 = right - left
-    addi s0, a2, 0          # s0 = left
-    addi s1, a3, 0          # s1 = right
-    nop
-    srli t0, t0, 1          # t0 = (right - left) / 2
-    addi s3, a0, 0          # s3 = array address
-    nop
-    add s2, s0, t0          # s2 = mid
-    nop
+    jal mergeSort
     nop
     
     nop
     nop
     nop
-    nop
+    j   program_end
 
-    addi a0, s3, 0          # Prepare args for left half
-    nop
-    nop
-    nop
-    nop
-    addi a2, s0, 0
-    nop
-    nop
-    nop
-    nop
-    addi a3, s2, 0          # a3 = mid
-    nop
-    nop
-    nop
-    nop
 
-    jal ra, mergesort       # Sort left half
+mergeSort:
     nop
     nop
+    nop
+    sub  t0, a3, a2
+    bge  a2, a3, mergeSortEnd
     nop
     
-    # Sort right half: mergesort(array, size, mid+1, right)
+    addi sp, sp, -16
     nop
     nop
     nop
-    nop
-
-    addi a0, s3, 0
-    nop
-    nop
-    nop
-    nop
-    addi a3, s1, 0
+    sw   ra, 12(sp)
+    sw   a3, 8(sp)
+    sw   a2, 4(sp)
+    
+    srli t0, t0, 1
     nop
     nop
     nop
-    nop
-    addi a2, s2, 1          # left = mid + 1
-    nop
+    add  t0, t0, a2
     nop
     nop
+    nop
+    sw   t0, 0(sp)
+    mv   a3, t0    
+    jal  mergeSort
     nop
     
-    jal ra, mergesort
+    lw   t0, 0(sp)
+    lw   a3, 8(sp)
+    nop
+    nop
+    addi a2, t0, 1
+    jal  mergeSort
+    nop
+    
+    lw   a2, 4(sp)
+    lw   a4, 0(sp)
+    lw   a3, 8(sp)
+    jal  merge
+    nop
+    
+    lw   ra, 12(sp)
+    addi sp, sp, 16
+    
+    mergeSortEnd:
     nop
     nop
     nop
+    ret             # Return to main or recursive function hits the snap-back
 
-    # Merge the two halves
-    nop
-    nop
-    nop
-    nop
-
-    addi a0, s3, 0
-    nop
-    nop
-    nop
-    nop
-    addi a2, s0, 0          # left
-    nop
-    nop
-    nop
-    nop
-    addi a3, s2, 0          # mid
-    nop
-    nop
-    nop
-    nop
-    addi a4, s1, 0          # right
-    nop
-    nop
-    nop
-    nop
-
-    jal ra, merge
-    nop
-    nop
-    nop
-
-mergesort_end:
-    lw ra, 16(sp)
-    nop
-    nop
-    lw s0, 12(sp)
-    nop
-    nop
-    lw s1, 8(sp)
-    nop
-    nop
-    lw s2, 4(sp)
-    nop
-    nop
-    lw s3, 0(sp)
-    nop
-    nop
-    addi sp, sp, 20
-    nop
-    nop
-    jalr x0, ra, 0
-    nop
-    nop
-    nop
-
-mergesort_base_return:
-    jalr x0, ra, 0              # Just return, don't touch stack
-    nop
-    nop
-    nop
-
-# merge(array, left, mid, right)
-# a0 = array, a1 = size, a2 = left, a3 = mid, a4 = right
 merge:
-    addi sp, sp, -32
-    sw ra, 28(sp)
-    sw s0, 24(sp)           # i (left pointer)
-    sw s1, 20(sp)           # j (right pointer)
-    sw s2, 16(sp)           # k (temp array index)
-    sw s3, 12(sp)           # array address
-    sw s4, 8(sp)            # left
-    sw s5, 4(sp)            # mid
-    sw s6, 0(sp)            # right
+    nop
+    nop
+    nop
+    addi sp, sp, -40
+    nop
+    nop
+    nop
+    sw   ra, 36(sp)
+    sw   s8, 32(sp)
+    sw   s7, 28(sp)
+    sw   s6, 24(sp)    
+    sw   s5, 20(sp)    
+    sw   s4, 16(sp)
+    sw   s3, 12(sp)
+    sw   s2, 8(sp)
+    sw   s1, 4(sp)
+    sw   s0, 0(sp)
     
-    addi s3, a0, 0          # Save array address
-    addi s4, a2, 0          # Save left
-    addi s5, a3, 0          # Save mid
-    addi s6, a4, 0          # Save right
-    addi s0, a2, 0          # i = left
-    lui t6, 0x10010         # Load temp array address
+    lui  s8, 0x10010
+    addi s5, a2, 0
+    addi s6, a4, 0
+    addi s7, a3, 0
+    addi s8, s8, 0x044
     nop
-    nop
-    addi s1, a3, 1          # j = mid + 1
-    addi s2, a2, 0          # k = left
-    addi t6, t6, 68         # temp offset = 16*4 + 4 = 68 bytes
+    
+    sub  s3, s6, s5	# Setup for n1
+    slli t0, s5, 2	# Base Address Precomputing
+    sub  s4, s7, s6	# s4 = n2
+    addi s0, x0, 0	# Copy left subarray (s0 = i = 0)
+    addi s3, s3, 1	# s3 = n1
+    add  t0, t0, a0	# t0 = &arr[left]
     nop
     nop
 
-merge_loop:
-    bgt s0, s5, copy_right  # if i > mid, copy remaining right
+    addi t2, s8, 0	# t2 = current dest address
+    addi t1, t0, 0	# t1 = current source address
+    
+    copyLeft:
     nop
     nop
+    nop
+    bge  s0, s3, copyRightInit
     nop
     
-    bgt s1, s6, copy_left   # if j > right, copy remaining left
+    lw   t3, 0(t1)
+    addi s0, s0, 1
     nop
     nop
+    sw   t3, 0(t2)
+    addi t1, t1, 4
+    addi t2, t2, 4
+    
+    j copyLeft
     nop
     
-    # Load array[i]
-    slli t0, s0, 2          # t0 = i * 4
+        
+    copyRightInit:
+    addi t0, s6, 1
     nop
     nop
-    add t0, s3, t0          # t0 = &array[i]
+    nop
+    slli t0, t0, 2
     nop
     nop
-    lw t1, 0(t0)            # t1 = array[i]
+    nop
+    add  t1, a0, t0	# t1 = &arr[mid + 1]
     
-    # Load array[j]
-    slli t0, s1, 2          # t0 = j * 4
+    slli t0, s3, 2
     nop
     nop
-    add t0, s3, t0          # t0 = &array[j]
+    nop
+    add  t2, s8, t0	# t2 = &temp[n1]
+    
+    addi s1, x0, 0
+    
+    copyRight:    
     nop
     nop
-    lw t2, 0(t0)            # t2 = array[j]
+    nop
+    bge  s1, s4, mergeArraysInit
+    
+    lw   t3, 0(t1)
+    addi s1, s1, 1
     nop
     nop
+    sw   t3, 0(t2)
+    addi t1, t1, 4
+    addi t2, t2, 4
+    j copyRight
+    nop
+    
+    mergeArraysInit:
+    slli t5, s3, 2
+    slli t6, s5, 2
+       
+    addi s0, x0, 0
+    addi s1, x0, 0
+    addi s2, s5, 0
+    addi t4, s8, 0
 
-    # Compare
-    blt t1, t2, store_left
+    add  t5, s8, t5
+    add  t6, a0, t6
+    
+    
+    mergeLoop:
     nop
-    jal x0, store_right_elem
+    nop
+    nop
+    bge  s0, s3, copyRemainingLeft
+    nop
+    bge  s1, s4, copyRemainingLeft
     nop
     
-store_right_elem:
-    slli t0, s2, 2          # Calculate temp[k] address
-    addi s1, s1, 1          # j++
-    nop
-    nop
-    nop
-    add t0, t6, t0
-    addi s2, s2, 1          # k++
-    nop
-    sw t2, 0(t0)            # temp[k] = array[j]
-
-    jal x0, merge_loop
-    nop
-    nop
-    nop
-
-store_left:
-    slli t0, s2, 2
-    addi s0, s0, 1          # i++
-    nop
-    nop
-    nop
-    add t0, t6, t0
-    addi s2, s2, 1          # k++
-    nop
-    sw t1, 0(t0)            # temp[k] = array[i]
-
-    jal x0, merge_loop
-    nop
-    nop
-    nop
-
-copy_left:
-    bgt s0, s5, copy_back   # if i > mid, done copying
+    lw   t0, 0(t4)
+    lw   t1, 0(t5)
     nop
     nop
     nop
     
-    slli t0, s0, 2
-    nop
-    nop
-    add t0, s3, t0
-    nop
-    nop
-    lw t1, 0(t0)            # t1 = array[i]
-    
-    slli t0, s2, 2
-    addi s0, s0, 1          # i++
-    nop
-    nop
-    add t0, t6, t0
-    addi s2, s2, 1          # k++
-    nop
-    sw t1, 0(t0)            # temp[k] = array[i]
-    
-    jal x0, copy_left
-    nop
-    nop
-    nop
-
-copy_right:
-    bgt s1, s6, copy_back   # if j > right, done copying
-    nop
-    nop
+    blt t1, t0, useRight
     nop
     
-    slli t0, s1, 2
-    nop
-    nop
-    add t0, s3, t0
-    nop
-    nop
-    lw t1, 0(t0)            # t1 = array[j]
-    
-    slli t0, s2, 2
-    addi s1, s1, 1          # j++
-    nop
-    nop
-    add t0, t6, t0
-    addi s2, s2, 1          # k++
-    nop
-    sw t1, 0(t0)            # temp[k] = array[j]
-    
-    jal x0, copy_right
-    nop
-    nop
-    nop
-
-copy_back:
-    addi t0, s4, 0          # t0 = left
-    nop
-    nop
-    nop
-
-copy_back_loop:
-    bgt t0, s6, merge_end   # if index > right, done
-    nop
-    nop
+    useLeft:
+    sw   t0, 0(t6)
+    addi t4, t4, 4
+    addi s0, s0, 1
+    j mergeContinue
     nop
     
-    slli t1, t0, 2
-    nop
-    nop
-    nop
-    add t2, t6, t1          # t2 = &temp[index]
-    nop
-    nop
-    nop
-    lw t3, 0(t2)            # t3 = temp[index]
+    useRight:
+    sw   t1, 0(t6)
+    addi t5, t5, 4
+    addi s1, s1, 1    
     
-    add t2, s3, t1          # t2 = &array[index]
-    addi t0, t0, 1          # index++
+    mergeContinue:
+    addi t6, t6, 4
+    addi s2, s2, 1
+    j mergeLoop
     nop
-    nop
-    sw t3, 0(t2)            # array[index] = temp[index]
     
-    jal x0, copy_back_loop
+    copyRemainingLeft:
     nop
     nop
     nop
-
-merge_end:
-    lw ra, 28(sp)
+    bge s0, s3, copyRemainingRight
+    nop
+    
+    lw   t0, 0(t4)
+    addi s0, s0, 1
+    addi t4, t4, 4
+    addi s2, s2, 1
+    sw	 t0, 0(t6)    
+    addi t6, t6, 4
+    j copyRemainingLeft
+    nop
+    
+    copyRemainingRight:
     nop
     nop
-    lw s0, 24(sp)
     nop
+    bge  s1, s4, mergeDone
     nop
-    lw s1, 20(sp)
+    
+    lw   t0, 0(t5)
+    addi s1, s1, 1
+    addi t5, t5, 4
+    addi s2, s2, 1
+    sw	 t0, 0(t6)
+    addi t6, t6, 4
+    j copyRemainingRight
     nop
-    nop
-    lw s2, 16(sp)
-    nop
-    nop
+    
+    
+    mergeDone:
+    lw ra, 36(sp)
+    lw s8, 32(sp)
+    lw s7, 28(sp)
+    lw s6, 24(sp)
+    lw s5, 20(sp)
+    lw s4, 16(sp)
     lw s3, 12(sp)
-    nop
-    nop
-    lw s4, 8(sp)
-    nop
-    nop
-    lw s5, 4(sp)
-    nop
-    nop
-    lw s6, 0(sp)
-    nop
-    nop
-    addi sp, sp, 32
-    nop
-    nop
-    jalr x0, ra, 0
-    nop
-    nop
-    nop
+    lw s2, 8(sp)
+    lw s1, 4(sp)
+    lw s0, 0(sp)
+    addi sp, sp, 40
+    ret    
+    
     
 program_end:
     wfi
