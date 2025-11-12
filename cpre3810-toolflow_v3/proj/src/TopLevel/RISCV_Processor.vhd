@@ -318,6 +318,21 @@ architecture structure of RISCV_Processor is
       out_C  : out std_logic);
   end component;
 
+---------------------------------------------------------------------------HAZARD CONTROLS-------------------------------------------------------------------------------------
+
+component dataHazard is
+  generic(WIDTH : integer := 32);
+  port(
+    idInst       : in std_logic_vector(WIDTH-1 downto 0); 
+    exInst       : in std_logic_vector(WIDTH-1 downto 0);
+    memInst      : in std_logic_vector(WIDTH-1 downto 0);
+    wbInst       : in std_logic_vector(WIDTH-1 downto 0);
+    exRegWrite   : in std_logic;
+    memRegWrite  : in std_logic;
+    wbRegWrite   : in std_logic;
+    outSignal    : out std_logic);
+end component;
+
 -----------------------------------------------------------------------------MULTIPLEXERS--------------------------------------------------------------------------------------
 
   component mux2t1_dataflow
@@ -401,6 +416,9 @@ architecture structure of RISCV_Processor is
   -- Comparator
   signal s_branchCompare : std_logic;
 
+  --Data Hazard Singals
+  signal s_DataHazardOutput, s_NotDHO, s_idExRst : std_logic;
+
   --ID/EX Register Signals
   signal s_exALUsrc, s_exRegWrite, s_exMemWrite, s_exMemToReg, s_exShift, s_exFlagOrNFlag, s_exHalt : std_logic;
   signal s_exALUctrl : std_logic_vector(3 downto 0);
@@ -443,7 +461,7 @@ architecture structure of RISCV_Processor is
 
 ---------------------------------------------------------------------------WRITEBACK SIGNALS-------------------------------------------------------------------------------------
 
-
+  
 
 begin
 ---------------------------------------------------------------------------MEMORY COMPONENTS-------------------------------------------------------------------------------------
@@ -479,18 +497,24 @@ begin
   
 --------------------------------------------------------------------INSTRUCTION FETCH STAGE COMPONENTS---------------------------------------------------------------------------
 
+  dataHazardInv : invg
+    port map(
+      i_A => s_DataHazardOutput,
+      o_F => s_NotDHO);
+
+
   IF_Register : IF_register_file
     port map(
       sysCLK             => iCLK,
       sysRST             => iRST,
-      write_enable       => '1',
+      write_enable       => s_NotDHO,
       input_pc           => s_NextInstAddr,
       input_instruction  => s_Inst,
       output_pc          => s_IDpc,
       output_instruction => s_idInst);
 
   --IF/ID Stages
-  FetchUnit : pcFetch
+  FetchUnit : pcFetch --ADD writeEnable to PC reg, wire to (NOT) data hazard output
     port map(
       clock            => iCLK,
       reset            => iRST,
@@ -580,10 +604,27 @@ begin
       i_B => s_idJump,
       o_F => s_idBranchOrJump);
 
+  dataHazardUnit : dataHazard
+    port map(
+      idInst       => s_idInst,
+      exInst       => s_exInst,
+      memInst      => s_memInst,
+      wbInst       => s_wbInst,
+      exRegWrite   => s_exRegWrite,
+      memRegWrite  => s_memRegWrite,
+      wbRegWrite   => s_wbRegWrite,
+      outSignal    => s_DataHazardOutput);
+
+  dataHazardRST : org2
+    port map(
+      i_A => iRST,
+      i_B => s_DataHazardOutput,
+      o_F => s_idExRst);    
+
   ID_EX_Register : ID_EX_register_file
     port map(
       sysCLK             => iCLK,
-      sysRST             => iRST,
+      sysRST             => s_idExRst,
       write_enable       => '1',
       input_instruction  => s_idInst,
       output_instruction => s_exInst,
