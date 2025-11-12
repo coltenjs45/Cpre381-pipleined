@@ -7,10 +7,6 @@ main:
     addi x4, x0, -3       # x4=-3 (available after 3 instructions)
     addi a7, x0, 93       # Load a7 early (independent)
     
-    # 3 independent operations to fill the pipeline gap
-    add x5, x0, x0        # x5=0 (gap 1)
-    add x6, x0, x0        # x6=0 (gap 2)
-    add x1, x0, x0        # x1=0 (gap 3)
     
     # Now x2 and x4 are available from WB stage
     add x3, x2, x0        # x3=7+0=7 (reads x2 - safe)

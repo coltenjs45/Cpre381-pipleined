@@ -15,6 +15,9 @@ entity ID_EX_register_file is
         -- Write Enable
         write_enable        : in  std_logic;
 
+        --Hazard
+        hazard              : in std_logic;
+
         -- Instruction
         input_instruction   : in  std_logic_vector(WIDTH-1 downto 0);
         output_instruction  : out std_logic_vector(WIDTH-1 downto 0);
@@ -111,7 +114,47 @@ architecture structure of ID_EX_register_file is
         out_Halt         : out std_logic);
     end component;
 
+    signal effective_instruction : std_logic_vector(WIDTH-1 downto 0);
+    signal effective_rs1         : std_logic_vector(WIDTH-1 downto 0);
+    signal effective_rs2         : std_logic_vector(WIDTH-1 downto 0);
+    signal effective_imm         : std_logic_vector(WIDTH-1 downto 0);
+    signal effective_pcUp4       : std_logic_vector(WIDTH-1 downto 0);
+    signal effective_pcUpImm     : std_logic_vector(WIDTH-1 downto 0);
+    
+    signal effective_ALUsrc      : std_logic;
+    signal effective_ALUcontrol  : std_logic_vector(3 downto 0);
+    signal effective_FlagMux     : std_logic_vector(1 downto 0);
+    signal effective_FlagOrNFlag : std_logic;
+    signal effective_Shift       : std_logic;
+    signal effective_AndLink     : std_logic_vector(1 downto 0);
+    signal effective_MemWrite    : std_logic;
+    signal effective_MemtoReg    : std_logic;
+    signal effective_RegWrite    : std_logic;
+    signal effective_Halt        : std_logic;
+
 begin
+
+    --TODO: Change effectives to be outputs, change outputs to be effectives
+
+    effective_instruction <= (others => '0') when hazard = '1' else input_instruction;
+    effective_rs1         <= (others => '0') when hazard = '1' else input_rs1;
+    effective_rs2         <= (others => '0') when hazard = '1' else input_rs2;
+    effective_imm         <= (others => '0') when hazard = '1' else input_imm;
+    effective_pcUp4       <= (others => '0') when hazard = '1' else input_pcUp4;
+    effective_pcUpImm     <= (others => '0') when hazard = '1' else input_pcUpImm;
+    
+    effective_ALUsrc      <= '0' when hazard = '1' else input_ALUsrc;
+    effective_ALUcontrol  <= (others => '0') when hazard = '1' else input_ALUcontrol;
+    effective_FlagMux     <= (others => '0') when hazard = '1' else input_FlagMux;
+    effective_FlagOrNFlag <= '0' when hazard = '1' else input_FlagOrNFlag;
+    effective_Shift       <= '0' when hazard = '1' else input_Shift;
+    effective_AndLink     <= (others => '0') when hazard = '1' else input_AndLink;
+    effective_MemWrite    <= '0' when hazard = '1' else input_MemWrite;
+    effective_MemtoReg    <= '0' when hazard = '1' else input_MemtoReg;
+    effective_RegWrite    <= '0' when hazard = '1' else input_RegWrite;
+    effective_Halt        <= '0' when hazard = '1' else input_Halt;
+
+
     -- Instruction Register
     instruction_reg : neg_edge_nBit_Reg
         generic map(WIDTH => WIDTH)

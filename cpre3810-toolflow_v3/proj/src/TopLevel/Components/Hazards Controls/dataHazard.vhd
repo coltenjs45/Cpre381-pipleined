@@ -25,6 +25,8 @@ architecture dataflow of dataHazard is
   signal idRS1, idRS2 : std_logic_vector(4 downto 0);
   signal exRD, memRD, wbRD : std_logic_vector(4 downto 0);
 
+  constant opcodeI : std_logic_vector(6 downto 0) := "0010011";
+
   begin
     idRS1 <= idInst(19 downto 15);
     idRS2 <= idInst(24 downto 20);
@@ -35,9 +37,9 @@ architecture dataflow of dataHazard is
     outSignal <= '1' when (idRS1 /= "00000") and (idRS1 = exRD) and exRegWrite = '1' else
                  '1' when (idRS1 /= "00000") and (idRS1 = memRD) and memRegWrite = '1' else
                  '1' when (idRS1 /= "00000") and (idRS1 = wbRD) and wbRegWrite = '1' else
-                 '1' when (idRS2 /= "00000") and (idRS2 = exRD) and exRegWrite = '1' else
-                 '1' when (idRS2 /= "00000") and (idRS2 = memRD) and memRegWrite = '1' else
-                 '1' when (idRS2 /= "00000") and (idRS2 = wbRD) and wbRegWrite = '1' else
+                 '1' when (idInst(6 downto 0) /= opcodeI) and (idRS2 /= "00000") and (idRS2 = exRD) and exRegWrite = '1' else
+                 '1' when (idInst(6 downto 0) /= opcodeI) and (idRS2 /= "00000") and (idRS2 = memRD) and memRegWrite = '1' else
+                 '1' when (idInst(6 downto 0) /= opcodeI) and (idRS2 /= "00000") and (idRS2 = wbRD) and wbRegWrite = '1' else
                  '0';
 
 

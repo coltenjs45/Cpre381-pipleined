@@ -10,6 +10,7 @@ entity pcFetch is
   port(
     clock               : in std_logic;
     reset               : in std_logic;
+    writeEnable         : in std_logic;
     conditionBJ         : in std_logic;
     jumpWithRegister    : in std_logic;
     previousPC          : in std_logic_vector(WIDTH-1 downto 0); 
@@ -62,7 +63,7 @@ begin
     PC: pc_Reg port map(
       CLK     => clock,
       RST     => reset,
-      wEnable => '1',
+      wEnable => writeEnable,
       inData  => nextPC,
       outData => pcOut);
 

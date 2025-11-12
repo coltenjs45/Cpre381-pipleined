@@ -92,6 +92,7 @@ architecture structure of RISCV_Processor is
     port(
       clock               : in std_logic;
       reset               : in std_logic;
+      writeEnable         : in std_logic;
       conditionBJ         : in std_logic;
       jumpWithRegister    : in std_logic;
       previousPC          : in std_logic_vector(WIDTH-1 downto 0);
@@ -518,6 +519,7 @@ begin
     port map(
       clock            => iCLK,
       reset            => iRST,
+      writeEnable      => s_NotDHO,
       conditionBJ      => s_idBranchOrJump,
       jumpWithRegister => s_idJumpWReg,
       previousPC       => s_IDpc,
@@ -615,17 +617,11 @@ begin
       wbRegWrite   => s_wbRegWrite,
       outSignal    => s_DataHazardOutput);
 
-  dataHazardRST : org2
-    port map(
-      i_A => iRST,
-      i_B => s_DataHazardOutput,
-      o_F => s_idExRst);    
-
   ID_EX_Register : ID_EX_register_file
     port map(
       sysCLK             => iCLK,
-      sysRST             => s_idExRst,
-      write_enable       => '1',
+      sysRST             => iRST,
+      write_enable       => s_NotDHO,
       input_instruction  => s_idInst,
       output_instruction => s_exInst,
       input_ALUsrc       => s_idALUsrc,
