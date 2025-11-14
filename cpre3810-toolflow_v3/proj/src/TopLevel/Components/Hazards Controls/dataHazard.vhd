@@ -15,7 +15,15 @@ entity dataHazard is
     exRegWrite   : in std_logic;
     memRegWrite  : in std_logic;
     wbRegWrite   : in std_logic;
-    outSignal    : out std_logic);
+    outSignal    : out std_logic;
+    forwardMemtoExRS1    : out std_logic;
+    forwardWbtoExRS1    : out std_logic;
+    bypassregfileWBtoRS1    : out std_logic;
+    forwardMemtoExRS2    : out std_logic;
+    forwardWbtoExRS2    : out std_logic;
+    bypassregfileWBtoRS2    : out std_logic);
+
+
 
 end dataHazard;
 
@@ -34,13 +42,13 @@ architecture dataflow of dataHazard is
     memRD <= memInst(11 downto 7);
     wbRD  <= wbInst(11 downto 7);
 
-    outSignal <= '1' when (idRS1 /= "00000") and (idRS1 = exRD) and exRegWrite = '1' else
-                 '1' when (idRS1 /= "00000") and (idRS1 = memRD) and memRegWrite = '1' else
-                 '1' when (idRS1 /= "00000") and (idRS1 = wbRD) and wbRegWrite = '1' else
-                 '1' when (idInst(6 downto 0) /= opcodeI) and (idRS2 /= "00000") and (idRS2 = exRD) and exRegWrite = '1' else
-                 '1' when (idInst(6 downto 0) /= opcodeI) and (idRS2 /= "00000") and (idRS2 = memRD) and memRegWrite = '1' else
-                 '1' when (idInst(6 downto 0) /= opcodeI) and (idRS2 /= "00000") and (idRS2 = wbRD) and wbRegWrite = '1' else
-                 '0';
+    forwardMemtoExRS1 <= '1' when (idRS1 /= "00000") and (idRS1 = exRD) and exRegWrite = '1' else '0';--1 instruction apart mem back to ex rs1
+    forwardWbtoExRS1 <='1' when (idRS1 /= "00000") and (idRS1 = memRD) and memRegWrite = '1' else '0'; -- 2 instructions apart wb to ex rs1
+    bypassregfileWBtoRS1 <='1' when (idRS1 /= "00000") and (idRS1 = wbRD) and wbRegWrite = '1' else '0';-- 3 instructions apart register bypass
+    forwardMemtoExRS2 <= '1' when (idInst(6 downto 0) /= opcodeI) and (idRS2 /= "00000") and (idRS2 = exRD) and exRegWrite = '1' else '0';--1 instruction apart mem back to ex rs2
+    forwardWbtoExRS2 <= '1' when (idInst(6 downto 0) /= opcodeI) and (idRS2 /= "00000") and (idRS2 = memRD) and memRegWrite = '1' else '0';-- 2 instructions apart wb to ex rs2
+    bypassregfileWBtoRS2 <='1' when (idInst(6 downto 0) /= opcodeI) and (idRS2 /= "00000") and (idRS2 = wbRD) and wbRegWrite = '1'else '0';-- 3 instructions apart register bypass
+    outSignal <=  '1' when ((forwardMemtoExRS1 = '1') or (forwardWbtoExRS1 = '1') or (bypassregfileWBtoRS1= '1') or (forwardMemtoExRS2= '1') or (forwardWbtoExRS2= '1') or (bypassregfileWBtoRS2 = '1')) else '0';
 
 
 end dataflow;
