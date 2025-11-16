@@ -55,7 +55,9 @@ entity EX_MEM_register_file is
         output_ALUBSout          : out std_logic_vector(WIDTH-1 downto 0);
 
         input_writedata           : in  std_logic_vector(WIDTH-1 downto 0);
-        output_writedata          : out std_logic_vector(WIDTH-1 downto 0));
+        output_writedata          : out std_logic_vector(WIDTH-1 downto 0);
+
+        forwardMemdata          : out std_logic_vector(WIDTH-1 downto 0));
 
 end entity EX_MEM_register_file;
 
@@ -148,7 +150,6 @@ begin
             inData  => input_ALUBSout,
             outData => output_ALUBSout);
 
-    
     WriteData_reg : neg_edge_nBit_Reg
         generic map(WIDTH => WIDTH)
         port map(
