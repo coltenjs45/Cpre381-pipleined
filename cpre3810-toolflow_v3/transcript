@@ -12,4 +12,5 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-add wave vsim:/tb/MyRiscv/*
+add wave vsim:/tb/MyRiscv/dataHazardUnit/*
+add wave -position end  vsim:/tb/MyRiscv/iCLK

@@ -162,6 +162,7 @@ architecture structure of RISCV_Processor is
         sysCLK              : in  std_logic;
         sysRST              : in  std_logic;
         write_enable        : in  std_logic;
+        hazard              : in  std_logic;
         input_instruction   : in  std_logic_vector(WIDTH-1 downto 0);
         output_instruction  : out std_logic_vector(WIDTH-1 downto 0);
         input_ALUsrc        : in  std_logic;
@@ -621,7 +622,8 @@ begin
     port map(
       sysCLK             => iCLK,
       sysRST             => iRST,
-      write_enable       => s_NotDHO,
+      write_enable       => '1',
+      hazard             => s_DataHazardOutput,
       input_instruction  => s_idInst,
       output_instruction => s_exInst,
       input_ALUsrc       => s_idALUsrc,

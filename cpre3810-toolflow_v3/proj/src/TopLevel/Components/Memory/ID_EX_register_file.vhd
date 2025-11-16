@@ -162,7 +162,7 @@ begin
             CLK     => sysCLK,
             RST     => sysRST,
             wEnable => write_enable,
-            inData  => input_instruction,
+            inData  => effective_instruction,
             outData => output_instruction
         );
  
@@ -171,25 +171,25 @@ begin
         CLK             => sysCLK,
         RST             => sysRST,
         wr_en           => write_enable,
-        in_ALUsrc       => input_ALUsrc,
+        in_ALUsrc       => effective_ALUsrc,
         out_ALUsrc      => output_ALUsrc,
-        in_ALUcontrol   => input_ALUcontrol,
+        in_ALUcontrol   => effective_ALUcontrol,
         out_ALUcontrol  => output_ALUcontrol,
-        in_FlagMux      => input_FlagMux,
+        in_FlagMux      => effective_FlagMux,
         out_FlagMux     => output_FlagMux,
-        in_FlagOrNFlag  => input_FlagOrNFlag,
+        in_FlagOrNFlag  => effective_FlagOrNFlag,
         out_FlagOrNFlag => output_FlagOrNFlag,
-        in_Shift        => input_Shift,
+        in_Shift        => effective_Shift,
         out_Shift       => output_Shift,
-        in_AndLink      => input_AndLink,
+        in_AndLink      => effective_AndLink,
         out_AndLink     => output_AndLink,
-        in_MemWrite     => input_MemWrite,
+        in_MemWrite     => effective_MemWrite,
         out_MemWrite    => output_MemWrite,
-        in_MemtoReg     => input_MemtoReg,
+        in_MemtoReg     => effective_MemtoReg,
         out_MemtoReg    => output_MemtoReg,
-        in_RegWrite     => input_RegWrite,
+        in_RegWrite     => effective_RegWrite,
         out_RegWrite    => output_RegWrite,
-        in_Halt         => input_Halt,
+        in_Halt         => effective_Halt,
         out_Halt        => output_Halt);
 
     -- Data Path Registers
@@ -199,7 +199,7 @@ begin
             CLK     => sysCLK,
             RST     => sysRST,
             wEnable => write_enable,
-            inData  => input_rs1,
+            inData  => effective_rs1,
             outData => output_rs1
         );
 
@@ -209,7 +209,7 @@ begin
             CLK     => sysCLK,
             RST     => sysRST,
             wEnable => write_enable,
-            inData  => input_rs2,
+            inData  => effective_rs2,
             outData => output_rs2
         );
 
@@ -219,7 +219,7 @@ begin
             CLK     => sysCLK,
             RST     => sysRST,
             wEnable => write_enable,
-            inData  => input_imm,
+            inData  => effective_imm,
             outData => output_imm
         );
 
@@ -229,7 +229,7 @@ begin
             CLK     => sysCLK,
             RST     => sysRST,
             wEnable => write_enable,
-            inData  => input_pcUp4,
+            inData  => effective_pcUp4,
             outData => output_pcUp4
         );
 
@@ -239,7 +239,7 @@ begin
             CLK     => sysCLK,
             RST     => sysRST,
             wEnable => write_enable,
-            inData  => input_pcUpImm,
+            inData  => effective_pcUpImm,
             outData => output_pcUpImm
         );
 

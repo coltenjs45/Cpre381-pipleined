@@ -5,8 +5,6 @@ main:
     # Load all immediate values first
     addi x2, x0, 7        # x2=7 (available after 3 instructions)
     addi x4, x0, -3       # x4=-3 (available after 3 instructions)
-    addi a7, x0, 93       # Load a7 early (independent)
-    
     
     # Now x2 and x4 are available from WB stage
     add x3, x2, x0        # x3=7+0=7 (reads x2 - safe)
