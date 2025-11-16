@@ -4,9 +4,7 @@ use IEEE.numeric_std.all;
 use work.RISCV_types.all;
 
 entity EX_MEM_register_file is
-    generic (
-        WIDTH : integer := 32
-    );
+    generic (WIDTH : integer := 32);
     port(
         -- Clock and Reset
         sysCLK              : in  std_logic;
@@ -51,13 +49,13 @@ entity EX_MEM_register_file is
         output_Halt         : out std_logic;
 
         -- Data Path Signals
-        input_ALUBSout           : in  std_logic_vector(WIDTH-1 downto 0);
-        output_ALUBSout          : out std_logic_vector(WIDTH-1 downto 0);
+        input_ALUBSout      : in  std_logic_vector(WIDTH-1 downto 0);
+        output_ALUBSout     : out std_logic_vector(WIDTH-1 downto 0);
 
-        input_writedata           : in  std_logic_vector(WIDTH-1 downto 0);
-        output_writedata          : out std_logic_vector(WIDTH-1 downto 0);
+        input_writedata     : in  std_logic_vector(WIDTH-1 downto 0);
+        output_writedata    : out std_logic_vector(WIDTH-1 downto 0);
 
-        forwardMemdata          : out std_logic_vector(WIDTH-1 downto 0));
+        forwardMemdata      : out std_logic_vector(WIDTH-1 downto 0));
 
 end entity EX_MEM_register_file;
 
