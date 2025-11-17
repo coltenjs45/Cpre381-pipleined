@@ -13,6 +13,8 @@ entity EX_MEM_register_file is
         -- Write Enable
         write_enable        : in  std_logic;
 
+        hazard              : in std_logic;
+
         -- Instruction
         input_instruction   : in  std_logic_vector(WIDTH-1 downto 0);
         output_instruction  : out std_logic_vector(WIDTH-1 downto 0);
@@ -101,7 +103,39 @@ architecture structure of EX_MEM_register_file is
         out_Halt         : out std_logic);
     end component;
     
+    signal effective_instruction : std_logic_vector(WIDTH-1 downto 0);
+    signal effective_ALUBSout    : std_logic_vector(WIDTH-1 downto 0);
+    signal effective_writedata   : std_logic_vector(WIDTH-1 downto 0);
+
+    
+    signal effective_ALUsrc      : std_logic;
+    signal effective_ALUcontrol  : std_logic_vector(3 downto 0);
+    signal effective_FlagMux     : std_logic_vector(1 downto 0);
+    signal effective_FlagOrNFlag : std_logic;
+    signal effective_Shift       : std_logic;
+    signal effective_AndLink     : std_logic_vector(1 downto 0);
+    signal effective_MemWrite    : std_logic;
+    signal effective_MemtoReg    : std_logic;
+    signal effective_RegWrite    : std_logic;
+    signal effective_Halt        : std_logic;
+
 begin
+
+    effective_instruction <= (others => '0') when hazard = '1' else input_instruction;
+    effective_ALUBSout    <= (others => '0') when hazard = '1' else input_ALUBSout;  
+    effective_writedata   <= (others => '0') when hazard = '1' else input_writedata;  
+
+    effective_ALUsrc      <= '0' when hazard = '1' else input_ALUsrc;
+    effective_ALUcontrol  <= (others => '0') when hazard = '1' else input_ALUcontrol;
+    effective_FlagMux     <= (others => '0') when hazard = '1' else input_FlagMux;
+    effective_FlagOrNFlag <= '0' when hazard = '1' else input_FlagOrNFlag;
+    effective_Shift       <= '0' when hazard = '1' else input_Shift;
+    effective_AndLink     <= (others => '0') when hazard = '1' else input_AndLink;
+    effective_MemWrite    <= '0' when hazard = '1' else input_MemWrite;
+    effective_MemtoReg    <= '0' when hazard = '1' else input_MemtoReg;
+    effective_RegWrite    <= '0' when hazard = '1' else input_RegWrite;
+    effective_Halt        <= '0' when hazard = '1' else input_Halt;
+
     -- Instruction Register
     instruction_reg : neg_edge_nBit_Reg
         generic map(WIDTH => WIDTH)
@@ -109,7 +143,7 @@ begin
             CLK     => sysCLK,
             RST     => sysRST,
             wEnable => write_enable,
-            inData  => input_instruction,
+            inData  => effective_instruction,
             outData => output_instruction);
 
     Control_reg : control_register
@@ -117,25 +151,25 @@ begin
         CLK             => sysCLK,
         RST             => sysRST,
         wr_en           => write_enable,
-        in_ALUsrc       => input_ALUsrc,
+        in_ALUsrc       => effective_ALUsrc,
         out_ALUsrc      => output_ALUsrc,
-        in_ALUcontrol   => input_ALUcontrol,
+        in_ALUcontrol   => effective_ALUcontrol,
         out_ALUcontrol  => output_ALUcontrol,
-        in_FlagMux      => input_FlagMux,
+        in_FlagMux      => effective_FlagMux,
         out_FlagMux     => output_FlagMux,
-        in_FlagOrNFlag  => input_FlagOrNFlag,
+        in_FlagOrNFlag  => effective_FlagOrNFlag,
         out_FlagOrNFlag => output_FlagOrNFlag,
-        in_Shift        => input_Shift,
+        in_Shift        => effective_Shift,
         out_Shift       => output_Shift,
-        in_AndLink      => input_AndLink,
+        in_AndLink      => effective_AndLink,
         out_AndLink     => output_AndLink,
-        in_MemWrite     => input_MemWrite,
+        in_MemWrite     => effective_MemWrite,
         out_MemWrite    => output_MemWrite,
-        in_MemtoReg     => input_MemToReg,
+        in_MemtoReg     => effective_MemToReg,
         out_MemtoReg    => output_MemToReg,
-        in_RegWrite     => input_RegWrite,
+        in_RegWrite     => effective_RegWrite,
         out_RegWrite    => output_RegWrite,
-        in_Halt         => input_Halt,
+        in_Halt         => effective_Halt,
         out_Halt        => output_Halt);
 
     -- dataflow registers 
@@ -145,7 +179,7 @@ begin
             CLK     => sysCLK,
             RST     => sysRST,
             wEnable => write_enable,
-            inData  => input_ALUBSout,
+            inData  => effective_ALUBSout,
             outData => output_ALUBSout);
 
     WriteData_reg : neg_edge_nBit_Reg
@@ -154,7 +188,7 @@ begin
             CLK     => sysCLK,
             RST     => sysRST,
             wEnable => write_enable,
-            inData  => input_writedata,
+            inData  => effective_writedata,
             outData => output_writedata);
 
 end architecture structure;

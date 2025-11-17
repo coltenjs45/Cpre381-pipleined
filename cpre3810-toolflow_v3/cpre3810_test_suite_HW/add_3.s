@@ -6,6 +6,8 @@ main:
     # checking wrap-around behavior
 
     addi x1, x0, 1        # x1=1
+    add  x2, x0, x0
+    add  x3, x0, x0
 
     # double x1 repeatedly to get 1 << 30
     add x1, x1, x1        # x1=2  (1<<1)

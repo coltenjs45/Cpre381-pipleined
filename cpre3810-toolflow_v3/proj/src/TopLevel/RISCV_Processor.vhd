@@ -225,6 +225,7 @@ architecture structure of RISCV_Processor is
         sysCLK              : in  std_logic;
         sysRST              : in  std_logic;
         write_enable        : in  std_logic;
+        hazard              : in std_logic;
         input_instruction   : in  std_logic_vector(WIDTH-1 downto 0);
         output_instruction  : out std_logic_vector(WIDTH-1 downto 0);
         input_ALUsrc        : in  std_logic;
@@ -332,11 +333,16 @@ component dataHazard is
     exRegWrite           : in std_logic;
     memRegWrite          : in std_logic;
     wbRegWrite           : in std_logic;
+    idBranch             : in std_logic;
+    idJump               : in std_logic;
     stallSignal          : out std_logic;
+    memoryStallSignal    : out std_logic;
+    forwardMemtoIdRS1    : out std_logic;
     forwardMemtoExRS1    : out std_logic;
     forwardWbtoExRS1     : out std_logic;
     loadHazardRS1        : out std_logic;
     bypassregfileWBtoRS1 : out std_logic;
+    forwardMemtoIdRS2    : out std_logic;
     forwardMemtoExRS2    : out std_logic;
     forwardWbtoExRS2     : out std_logic;
     loadHazardRS2        : out std_logic;
@@ -350,19 +356,21 @@ component Forwarding_Unit is
 
   generic(WIDTH : integer := 32);
     port(
+    forwardMemtoIdRS1       : in std_logic;
     forwardMemtoExRS1       : in std_logic;
     forwardWbtoExRS1        : in std_logic;
     loadHazardRS1           : in std_logic;
     bypassregfileWBtoRS1    : in std_logic;
+    forwardMemtoIdRS2       : in std_logic;
     forwardMemtoExRS2       : in std_logic;
     forwardWbtoExRS2        : in std_logic;
     loadHazardRS2           : in std_logic;
     bypassregfileWBtoRS2    : in std_logic;
-    selectline_rs1mux       : out std_logic_vector(1 downto 0);
-    selectline_rs2mux       : out std_logic_vector(1 downto 0);
-    selectline_rs1bypassmux : out std_logic;
-    selectline_rs2bypassmux : out std_logic);
-    
+    select_rs1mux       : out std_logic_vector(1 downto 0);
+    select_rs2mux       : out std_logic_vector(1 downto 0);
+    select_rs1bypassmux : out std_logic_vector(1 downto 0);
+    select_rs2bypassmux : out std_logic_vector(1 downto 0));
+
 end component;
 
 
@@ -464,16 +472,17 @@ end component;
   -- Comparator
   signal s_branchCompare : std_logic;
 
-  --Data Hazard Singals
-  signal s_DataHazardOutput, s_NotDHO,
+  --Data Hazard Signalss
+  signal s_stallSignal, s_invStall, s_memoryStall, s_invMemStall,
+         s_forwardMemtoIdRS1, s_forwardMemtoIdRS2,
          s_forwardMemtoExRS1, s_forwardWbtoExRS1,
          s_forwardWbtoExRS2, s_forwardMemtoExRS2,
          s_loadHazardRS1, s_loadHazardRS2, s_storeLoadHazardRS2,
          s_bypassregfileWBtoRS1, s_bypassregfileWBtoRS2 : std_logic;
 
   --Forwarding signals 
-  signal s_rs1mux, s_rs2mux : std_logic_vector(1 downto 0);
-  signal s_rs1bypass, s_rs2bypass: std_logic;
+  signal s_rs1mux, s_rs2mux, 
+         s_rs1bypass, s_rs2bypass: std_logic_vector(1 downto 0);
 
   --ID/EX Register Signals
   signal s_exALUsrc, s_exRegWrite, s_exMemWrite, s_exMemToReg, s_exShift, s_exFlagOrNFlag, s_exHalt : std_logic;
@@ -555,15 +564,20 @@ begin
 
   dataHazardInv : invg
     port map(
-      i_A => s_DataHazardOutput,
-      o_F => s_NotDHO);
+      i_A => s_stallSignal,
+      o_F => s_invStall);
 
+  
+  memortStallInv : invg
+    port map(
+      i_A => s_memoryStall,
+      o_F => s_invMemStall);
 
   IF_Register : IF_register_file
     port map(
       sysCLK             => iCLK,
       sysRST             => iRST,
-      write_enable       => s_NotDHO,
+      write_enable       => s_invStall,
       input_pc           => s_NextInstAddr,
       input_instruction  => s_Inst,
       output_pc          => s_IDpc,
@@ -574,7 +588,7 @@ begin
     port map(
       clock            => iCLK,
       reset            => iRST,
-      writeEnable      => s_NotDHO,
+      writeEnable      => s_invStall,
       conditionBJ      => s_idBranchOrJump,
       jumpWithRegister => s_idJumpWReg,
       previousPC       => s_IDpc,
@@ -620,18 +634,22 @@ begin
       rOut1		      => s_IDrOut1,
       rOut2		      => s_IDrOut2);  
 
-  registerBypassRS1 : mux2t1_N
+  registerBypassRS1 : mux4t1_N
     port map(
       i_S   => s_rs1bypass,
       i_D0  => s_IDrOut1,
       i_D1  => s_RegWrData,
+      i_D2  => s_memALUWriteBack,
+      i_D3  => s_memALUWriteBack,
       o_O   => s_bypassedRS1);
 
-  registerBypassRS2 : mux2t1_N
+  registerBypassRS2 : mux4t1_N
     port map(
       i_S   => s_rs2bypass,
       i_D0  => s_IDrOut2,
       i_D1  => s_RegWrData,
+      i_D2  => s_memALUWriteBack,
+      i_D3  => s_memALUWriteBack,
       o_O   => s_bypassedRS2);
 
   --ID Stage
@@ -684,11 +702,16 @@ begin
       exRegWrite            => s_exRegWrite,
       memRegWrite           => s_memRegWrite,
       wbRegWrite            => s_wbRegWrite,
-      stallSignal           => s_DataHazardOutput,
+      idBranch              => s_idBranch,
+      idJump                => s_idJump,
+      stallSignal           => s_stallSignal,
+      memoryStallSignal     => s_memoryStall,
+      forwardMemtoIdRS1     => s_forwardMemtoIdRS1,
       forwardMemtoExRS1     => s_forwardMemtoExRS1,
       forwardWbtoExRS1      => s_forwardWbtoExRS1,
       loadHazardRS1         => s_loadHazardRS1,
       bypassregfileWBtoRS1  => s_bypassregfileWBtoRS1,
+      forwardMemtoIdRS2     => s_forwardMemtoIdRS2,
       forwardMemtoExRS2     => s_forwardMemtoExRS2,
       forwardWbtoExRS2      => s_forwardWbtoExRS2,
       loadHazardRS2         => s_loadHazardRS2,
@@ -697,25 +720,27 @@ begin
   
   ForwardingUnit : Forwarding_Unit
     port map(
+      forwardMemtoIdRS1       => s_forwardMemtoIdRS1,
       forwardMemtoExRS1       => s_forwardMemtoExRS1,
       forwardWbtoExRS1        => s_forwardWbtoExRS1,
       loadHazardRS1           => s_loadHazardRS1,
       bypassregfileWBtoRS1    => s_bypassregfileWBtoRS1,
+      forwardMemtoIdRS2       => s_forwardMemtoIdRS2,
       forwardMemtoExRS2       => s_forwardMemtoExRS2,
       forwardWbtoExRS2        => s_forwardWbtoExRS2,
       loadHazardRS2           => s_loadHazardRS2,
       bypassregfileWBtoRS2    => s_bypassregfileWBtoRS2,
-      selectline_rs1mux       => s_rs1mux,
-      selectline_rs2mux       => s_rs2mux,
-      selectline_rs1bypassmux => s_rs1bypass,
-      selectline_rs2bypassmux => s_rs2bypass);
+      select_rs1mux           => s_rs1mux,
+      select_rs2mux           => s_rs2mux,
+      select_rs1bypassmux     => s_rs1bypass,
+      select_rs2bypassmux     => s_rs2bypass);
 
   ID_EX_Register : ID_EX_register_file
     port map(
       sysCLK             => iCLK,
       sysRST             => iRST,
-      write_enable       => '1',
-      hazard             => s_DataHazardOutput,
+      write_enable       => s_invMemStall,
+      hazard             => s_stallSignal,
       input_instruction  => s_idInst,
       output_instruction => s_exInst,
       input_ALUsrc       => s_idALUsrc,
@@ -784,7 +809,7 @@ begin
   lui_mux : mux2t1_N
     port map(
       i_S  => s_exALUctrl(3),
-      i_D0 => s_exRS1,
+      i_D0 => s_inputA,
       i_D1 => s_exImmediate,
       o_O  => s_barrelInput);
 
@@ -860,6 +885,7 @@ begin
       sysCLK             => iCLK,
       sysRST             => iRST,
       write_enable       => '1',
+      hazard             => s_memoryStall,
       input_instruction  => s_exInst,
       output_instruction => s_memInst,
       input_ALUsrc       => s_exALUsrc,
@@ -884,7 +910,7 @@ begin
       output_Halt        => s_memHalt,       
       input_ALUBSout     => s_exStageOut,
       output_ALUBSout    => s_memALUWriteBack,
-      input_writedata    => s_inputBRegister, --Will change in HW implementation -- changed
+      input_writedata    => s_inputBRegister,
       output_writedata   => s_DMemData);
 ----------------------------------------------------------------------------MEMORY STAGE COMPONENTS------------------------------------------------------------------------------
 

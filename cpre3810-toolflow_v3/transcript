@@ -67,3 +67,57 @@ add wave -position 19  vsim7:/tb/MyRiscv/s_rs2mux
 add wave -position end  vsim7:/tb/MyRiscv/s_inputA
 add wave -position end  vsim7:/tb/MyRiscv/s_inputB
 add wave -position end  vsim7:/tb/MyRiscv/s_memALUWriteBack
+add wave -position insertpoint  \
+vsim8:/tb/MyRiscv/iCLK
+add wave -position insertpoint vsim8:/tb/MyRiscv/ForwardingUnit/*
+add wave -position insertpoint  \
+vsim9:/tb/MyRiscv/iCLK
+add wave -position end vsim9:/tb/MyRiscv/dataHazardUnit/*
+add wave -position end vsim9:/tb/MyRiscv/ForwardingUnit/*
+add wave -position insertpoint  \
+vsim10:/tb/MyRiscv/oALUOut
+add wave -position end vsim10:/tb/MyRiscv/ALU/*
+add wave -position end vsim10:/tb/MyRiscv/dataHazardUnit/*
+add wave -position insertpoint  \
+vsim11:/tb/MyRiscv/s_inputA \
+vsim11:/tb/MyRiscv/s_inputB
+add wave -position end  vsim11:/tb/MyRiscv/s_ALUresult
+find drivers -source -time {341 ns} -cause vsim11:/tb/MyRiscv/s_ALUresult
+add wave -position end vsim11:/tb/MyRiscv/ForwardingUnit/*
+add wave -position insertpoint vsim12:/tb/MyRiscv/*
+add wave -position insertpoint  \
+vsim13:/tb/MyRiscv/iCLK
+add wave -position end vsim13:/tb/MyRiscv/dataHazardUnit/*
+add wave -position 22  vsim13:/tb/MyRiscv/DMem/addr
+add wave -position 22  vsim13:/tb/MyRiscv/EX_MEM_Register/output_writedata
+add wave -position 22  vsim13:/tb/MyRiscv/EX_MEM_Register/output_ALUBSout
+add wave -position 22  vsim13:/tb/MyRiscv/MEM_WB_Register/output_MemOut
+add wave -position 22  vsim13:/tb/MyRiscv/MEM_WB_Register/output_ALUWriteback
+add wave -position 22  vsim13:/tb/MyRiscv/DMem/addr
+add wave -position 22  vsim13:/tb/MyRiscv/s_DMemAddr
+add wave -position 0  vsim13:/tb/MyRiscv/Registers/read_reg
+# CheckMenuAccelerator: "follow context selection" .mBar.file.environment accelerator "s" already defined in this menu by "14 fix to dataset vsim13"
+add wave -position insertpoint  \
+vsim14:/tb/MyRiscv/iCLK
+add wave -position end vsim14:/tb/MyRiscv/dataHazardUnit/*
+add wave -position 1 vsim14:/tb/MyRiscv/ID_EX_Register/*
+add wave -position insertpoint  \
+vsim15:/tb/MyRiscv/iCLK
+add wave -position insertpoint vsim15:/tb/MyRiscv/dataHazardUnit/*
+add wave -position insertpoint  \
+vsim16:/tb/CLK
+add wave -position end vsim16:/tb/MyRiscv/dataHazardUnit/*
+add wave -position end vsim16:/tb/MyRiscv/*
+add wave -position insertpoint vsim17:/tb/MyRiscv/*
+add wave -position end vsim17:/tb/MyRiscv/dataHazardUnit/*
+add wave -position 0  vsim17:/tb/MyRiscv/Registers/read_reg
+add wave -position 55  vsim17:/tb/MyRiscv/ALU/input_A
+add wave -position 56  vsim17:/tb/MyRiscv/ALU/input_B
+add wave -position 55 vsim17:/tb/MyRiscv/InputAMUX/*
+add wave -position 61 vsim17:/tb/MyRiscv/InputBRegisterMux/*
+# ** Error: (vish-7) Failed to open info file "/home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/containers/sim_container_0/work/_info" in read mode.
+# No such file or directory. (errno = ENOENT)
+add wave -position end vsim17:/tb/MyRiscv/registerBypassRS1/*
+add wave -position end vsim17:/tb/MyRiscv/registerBypassRS2/*
+add wave -position end vsim17:/tb/MyRiscv/ALU/*
+add wave -position end vsim17:/tb/MyRiscv/ForwardingUnit/*
