@@ -42,7 +42,7 @@ architecture dataflow of dataHazard is
   signal exRS1, exRS2, memRS2 : std_logic_vector(4 downto 0);
   signal exRD, memRD, wbRD : std_logic_vector(4 downto 0);
 
-  signal controlHazardRS1, controlHazardRS2 : std_logic;
+  signal controlHazardExRS1, controlHazardExRS2, controlHazardMemRS1, controlHazardMemRS2 : std_logic;
   signal cStall, mStall : std_logic;
 
   constant opcodeI : std_logic_vector(6 downto 0) := "0010011";
@@ -79,16 +79,20 @@ architecture dataflow of dataHazard is
     forwardMemtoIdRS2 <= '1' when (idRS2 /= "00000") and (idRS2 = memRD) and memRegWrite = '1' else '0';
   
     --Control Hazard (Ex -> ID)
-    controlHazardRS1 <= '1' when (idRS1 /= "00000") and (idRS1 = exRD) and exRegWrite = '1' and (idBranch = '1' or idJump = '1') else '0'; 
-    controlHazardRS2 <= '1' when (idRS2 /= "00000") and (idRS2 = exRD) and exRegWrite = '1' and (idBranch = '1' or idJump = '1') else '0';
+    controlHazardExRS1 <= '1' when (idRS1 /= "00000") and (idRS1 = exRD) and exRegWrite = '1' and (idBranch = '1' or idJump = '1') else '0'; 
+    controlHazardExRS2 <= '1' when (idRS2 /= "00000") and (idRS2 = exRD) and exRegWrite = '1' and (idBranch = '1' or idJump = '1') else '0';
+    controlHazardMemRS1 <= '1' when (idRS1 /= "00000") and (idRS1 = memRD) and memRegWrite = '1' and (idBranch = '1' or idJump = '1') else '0'; 
+    controlHazardMemRS2 <= '1' when (idRS2 /= "00000") and (idRS2 = memRD) and memRegWrite = '1' and (idBranch = '1' or idJump = '1') else '0';
 
     -- Register File Bypass (WB -> ID)
-    bypassregfileWBtoRS1 <= '1' when (idRS1 /= "00000") and (idRS1 = wbRD) and wbRegWrite = '1' and (idBranch = '1' or idJump = '1') else '0';
-    bypassregfileWBtoRS2 <= '1' when (idRS2 /= "00000") and (idRS2 = wbRD) and wbRegWrite = '1' and (idBranch = '1' or idJump = '1') else '0';
+    bypassregfileWBtoRS1 <= '1' when (idRS1 /= "00000") and (idRS1 = wbRD) and wbRegWrite = '1' else '0';
+    bypassregfileWBtoRS2 <= '1' when (idRS2 /= "00000") and (idRS2 = wbRD) and wbRegWrite = '1' else '0';
   
 
-    cStall <= '1' when ((controlHazardRS1 = '1') or
-                        (controlHazardRS2 = '1')) else
+    cStall <= '1' when ((controlHazardExRS1 = '1') or
+                        (controlHazardExRS2 = '1') or
+                        (controlHazardMemRS1 = '1') or
+                        (controlHazardMemRS2 = '1')) else
               '0';
     
     mstall <= '1' when ((loadHazardRS1 = '1') or
