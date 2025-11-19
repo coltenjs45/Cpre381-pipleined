@@ -1,0 +1,293 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11e vcom 2025.1_2 2025.04, Apr  7 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/gmander5/cpre381/Project2/project-2-sw/testbenches/pipelineRegisters
+T_opt
+!s110 1763582123
+V@lIZozW^EXdm0oVGMN3h`1
+04 11 8 work register_tb behavior 1
+=1-000ae431a4f1-691e20aa-cfbd5-4bc4
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;2025.1_2;82
+Eex_mem_register_file
+Z2 w1763578108
+Z3 DPx4 work 11 riscv_types 0 22 HCD:32F]:05OMYOQZ5gDe1
+Z4 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R1
+Z7 8/home/gmander5/cpre381/Project2/project-2-sw/testbenches/pipelineRegisters/EX_MEM_register_file.vhd
+Z8 F/home/gmander5/cpre381/Project2/project-2-sw/testbenches/pipelineRegisters/EX_MEM_register_file.vhd
+l0
+L6 1
+V^e3h]93`Bk9:7Ga5QT4@Z3
+!s100 KNKb?Re^I98XB;BEU_d`R2
+Z9 OL;C;2025.1_2;82
+32
+Z10 !s110 1763581608
+!i10b 1
+Z11 !s108 1763581608.000000
+Z12 !s90 -reportprogress|300|-work|work|/home/gmander5/cpre381/Project2/project-2-sw/testbenches/pipelineRegisters/EX_MEM_register_file.vhd|
+Z13 !s107 /home/gmander5/cpre381/Project2/project-2-sw/testbenches/pipelineRegisters/EX_MEM_register_file.vhd|
+!i113 0
+Z14 o-work work
+Z15 tExplicit 1 CvgOpt 0
+Astructure
+R3
+R4
+R5
+R6
+DEx4 work 20 ex_mem_register_file 0 22 ^e3h]93`Bk9:7Ga5QT4@Z3
+!i122 1
+l122
+L64 131
+VlBmJWffB7H3_:_YH8`]AO2
+!s100 >D7b=o6k1jEc6imnU_8>63
+R9
+32
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R15
+Eid_ex_register_file
+R2
+R3
+R4
+R5
+R6
+!i122 2
+R1
+Z16 8/home/gmander5/cpre381/Project2/project-2-sw/testbenches/pipelineRegisters/ID_EX_register_file.vhd
+Z17 F/home/gmander5/cpre381/Project2/project-2-sw/testbenches/pipelineRegisters/ID_EX_register_file.vhd
+l0
+L6 1
+V17Hl:`8m]CYbnSSG[`o:_0
+!s100 e<]4W01IaUkh:H=Co@X761
+R9
+32
+R10
+!i10b 1
+R11
+Z18 !s90 -reportprogress|300|-work|work|/home/gmander5/cpre381/Project2/project-2-sw/testbenches/pipelineRegisters/ID_EX_register_file.vhd|
+Z19 !s107 /home/gmander5/cpre381/Project2/project-2-sw/testbenches/pipelineRegisters/ID_EX_register_file.vhd|
+!i113 0
+R14
+R15
+Astructure
+R3
+R4
+R5
+R6
+DEx4 work 19 id_ex_register_file 0 22 17Hl:`8m]CYbnSSG[`o:_0
+!i122 2
+l135
+L74 173
+VMBd5`ODjX_anb]?0egEI51
+!s100 7]?T4]U`H6MI3>39:ETJk3
+R9
+32
+R10
+!i10b 1
+R11
+R18
+R19
+!i113 0
+R14
+R15
+Eif_register_file
+R2
+R3
+R4
+R5
+R6
+!i122 3
+R1
+Z20 8/home/gmander5/cpre381/Project2/project-2-sw/testbenches/pipelineRegisters/IF_register_file.vhd
+Z21 F/home/gmander5/cpre381/Project2/project-2-sw/testbenches/pipelineRegisters/IF_register_file.vhd
+l0
+L6 1
+V>e0iUah<jPJk8:MU?`[Fn2
+!s100 iY;g^>;zB`oQbc7M@T28I0
+R9
+32
+R10
+!i10b 1
+R11
+Z22 !s90 -reportprogress|300|-work|work|/home/gmander5/cpre381/Project2/project-2-sw/testbenches/pipelineRegisters/IF_register_file.vhd|
+Z23 !s107 /home/gmander5/cpre381/Project2/project-2-sw/testbenches/pipelineRegisters/IF_register_file.vhd|
+!i113 0
+R14
+R15
+Astructure
+R3
+R4
+R5
+R6
+DEx4 work 16 if_register_file 0 22 >e0iUah<jPJk8:MU?`[Fn2
+!i122 3
+l36
+L21 36
+VedeY]N<9WDPHkDijc48@N2
+!s100 Zh2BLWDYOIAP=z=@g3FG^3
+R9
+32
+R10
+!i10b 1
+R11
+R22
+R23
+!i113 0
+R14
+R15
+Emem_wb_register_file
+R2
+R3
+R4
+R5
+R6
+!i122 4
+R1
+Z24 8/home/gmander5/cpre381/Project2/project-2-sw/testbenches/pipelineRegisters/MEM_WB_regsiter_file.vhd
+Z25 F/home/gmander5/cpre381/Project2/project-2-sw/testbenches/pipelineRegisters/MEM_WB_regsiter_file.vhd
+l0
+L6 1
+VR95V8dAROiZnDCK0CYIff3
+!s100 j7O]5:3n?R=i4z9mPbL=Q2
+R9
+32
+R10
+!i10b 1
+R11
+Z26 !s90 -reportprogress|300|-work|work|/home/gmander5/cpre381/Project2/project-2-sw/testbenches/pipelineRegisters/MEM_WB_regsiter_file.vhd|
+Z27 !s107 /home/gmander5/cpre381/Project2/project-2-sw/testbenches/pipelineRegisters/MEM_WB_regsiter_file.vhd|
+!i113 0
+R14
+R15
+Astructure
+R3
+R4
+R5
+R6
+DEx4 work 20 mem_wb_register_file 0 22 R95V8dAROiZnDCK0CYIff3
+!i122 4
+l105
+L62 104
+VbHX_BPhnZL9;UG?TSi4_f0
+!s100 e7m3>>fkd6HLlk_g5=YX`0
+R9
+32
+R10
+!i10b 1
+R11
+R26
+R27
+!i113 0
+R14
+R15
+Eregister_tb
+Z28 w1763582107
+R3
+R4
+R5
+R6
+!i122 11
+R1
+Z29 8/home/gmander5/cpre381/Project2/project-2-sw/testbenches/pipelineRegisters/register_TB.vhd
+Z30 F/home/gmander5/cpre381/Project2/project-2-sw/testbenches/pipelineRegisters/register_TB.vhd
+l0
+L6 1
+VJG57P:ZI0k1]::XLAB?JN1
+!s100 kYjggI=TXPX:fG6gbVdME3
+R9
+32
+Z31 !s110 1763582113
+!i10b 1
+Z32 !s108 1763582112.000000
+Z33 !s90 -reportprogress|300|-work|work|/home/gmander5/cpre381/Project2/project-2-sw/testbenches/pipelineRegisters/register_TB.vhd|
+Z34 !s107 /home/gmander5/cpre381/Project2/project-2-sw/testbenches/pipelineRegisters/register_TB.vhd|
+!i113 0
+R14
+R15
+Abehavior
+R3
+R4
+R5
+R6
+DEx4 work 11 register_tb 0 22 JG57P:ZI0k1]::XLAB?JN1
+!i122 11
+l167
+L10 337
+Vo^OR:k1_2EFFga[PFo@>a1
+!s100 bF3;]F4==Gg4@i`8PaloR0
+R9
+32
+R31
+!i10b 1
+R32
+R33
+R34
+!i113 0
+R14
+R15
+Priscv_types
+R5
+R6
+!i122 0
+Z35 w1763581599
+R1
+Z36 8/home/gmander5/cpre381/Project2/project-2-sw/testbenches/pipelineRegisters/RISCV_types.vhd
+Z37 F/home/gmander5/cpre381/Project2/project-2-sw/testbenches/pipelineRegisters/RISCV_types.vhd
+l0
+L15 16
+VHCD:32F]:05OMYOQZ5gDe1
+!s100 Lk;nE:IhY9RGSRCHkdzW41
+R9
+32
+Z38 !s110 1763581605
+!i10b 1
+Z39 !s108 1763581605.000000
+Z40 !s90 -reportprogress|300|-work|work|/home/gmander5/cpre381/Project2/project-2-sw/testbenches/pipelineRegisters/RISCV_types.vhd|
+Z41 !s107 /home/gmander5/cpre381/Project2/project-2-sw/testbenches/pipelineRegisters/RISCV_types.vhd|
+!i113 0
+R14
+R15
+Bbody
+R3
+R5
+R6
+!i122 0
+l0
+L32 3
+VzF@6B0[CWPBj6^Te;cY9R0
+!s100 ULD]OQgbo1Vdo^UiWe]CF0
+R9
+32
+R38
+!i10b 1
+R39
+R40
+R41
+!i113 0
+R14
+R15

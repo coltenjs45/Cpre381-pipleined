@@ -3,12 +3,12 @@
 # CprE 381 toolflow Timing dump
 #
 
-FMax: 31.59mhz Clk Constraint: 20.00ns Slack: -11.65ns
+FMax: 31.20mhz Clk Constraint: 20.00ns Slack: -12.05ns
 
 The path is given below
 
  ===================================================================
- From Node    : mem:IMem|altsyncram:ram_rtl_0|altsyncram_g8d1:auto_generated|ram_block1a7~portb_address_reg0
+ From Node    : mem:IMem|altsyncram:ram_rtl_0|altsyncram_02e1:auto_generated|ram_block1a16~portb_address_reg0
  To Node      : pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:30:pcDFFN|s_Q
  Launch Clock : iCLK (INVERTED)
  Latch Clock  : iCLK
@@ -16,92 +16,96 @@ The path is given below
  Total (ns)  Incr (ns)     Type  Element
  ==========  ========= ==  ====  ===================================
      10.000     10.000           launch edge time
-     13.493      3.493  F        clock network delay
-     13.756      0.263     uTco  mem:IMem|altsyncram:ram_rtl_0|altsyncram_g8d1:auto_generated|ram_block1a7~portb_address_reg0
-     16.646      2.890 FR  CELL  IMem|ram_rtl_0|auto_generated|ram_block1a7|portbdataout[1]
-     18.018      1.372 RR    IC  Registers|MUX1|Mux10~3|datad
-     18.173      0.155 RR  CELL  Registers|MUX1|Mux10~3|combout
-     18.967      0.794 RR    IC  Registers|MUX1|Mux31~5|datab
-     19.385      0.418 RR  CELL  Registers|MUX1|Mux31~5|combout
-     19.589      0.204 RR    IC  Registers|MUX1|Mux31~6|datad
-     19.744      0.155 RR  CELL  Registers|MUX1|Mux31~6|combout
-     20.684      0.940 RR    IC  Registers|MUX1|Mux31~9|datac
-     20.971      0.287 RR  CELL  Registers|MUX1|Mux31~9|combout
-     21.177      0.206 RR    IC  Registers|MUX1|Mux31~22|datad
-     21.332      0.155 RR  CELL  Registers|MUX1|Mux31~22|combout
-     22.071      0.739 RR    IC  addRegImmForJALR|C[2]~0|datad
-     22.226      0.155 RR  CELL  addRegImmForJALR|C[2]~0|combout
-     22.450      0.224 RR    IC  addRegImmForJALR|C[3]~2|datac
-     22.737      0.287 RR  CELL  addRegImmForJALR|C[3]~2|combout
-     22.967      0.230 RR    IC  addRegImmForJALR|C[5]~5|datad
-     23.122      0.155 RR  CELL  addRegImmForJALR|C[5]~5|combout
-     23.325      0.203 RR    IC  addRegImmForJALR|C[5]~6|datad
-     23.480      0.155 RR  CELL  addRegImmForJALR|C[5]~6|combout
-     23.707      0.227 RR    IC  addRegImmForJALR|C[6]~7|datad
-     23.862      0.155 RR  CELL  addRegImmForJALR|C[6]~7|combout
-     24.089      0.227 RR    IC  addRegImmForJALR|C[7]~8|datad
-     24.244      0.155 RR  CELL  addRegImmForJALR|C[7]~8|combout
-     24.471      0.227 RR    IC  addRegImmForJALR|C[8]~9|datad
-     24.626      0.155 RR  CELL  addRegImmForJALR|C[8]~9|combout
-     24.854      0.228 RR    IC  addRegImmForJALR|C[9]~10|datad
-     25.009      0.155 RR  CELL  addRegImmForJALR|C[9]~10|combout
-     25.235      0.226 RR    IC  addRegImmForJALR|C[10]~11|datad
-     25.390      0.155 RR  CELL  addRegImmForJALR|C[10]~11|combout
-     25.640      0.250 RR    IC  addRegImmForJALR|C[12]~14|datac
-     25.927      0.287 RR  CELL  addRegImmForJALR|C[12]~14|combout
-     26.133      0.206 RR    IC  addRegImmForJALR|C[12]~15|datad
-     26.288      0.155 RR  CELL  addRegImmForJALR|C[12]~15|combout
-     26.516      0.228 RR    IC  addRegImmForJALR|C[14]~18|datad
-     26.671      0.155 RR  CELL  addRegImmForJALR|C[14]~18|combout
-     26.875      0.204 RR    IC  addRegImmForJALR|C[14]~19|datad
-     27.030      0.155 RR  CELL  addRegImmForJALR|C[14]~19|combout
-     27.413      0.383 RR    IC  addRegImmForJALR|C[16]~23|datad
-     27.568      0.155 RR  CELL  addRegImmForJALR|C[16]~23|combout
-     27.773      0.205 RR    IC  addRegImmForJALR|C[16]~24|datad
-     27.928      0.155 RR  CELL  addRegImmForJALR|C[16]~24|combout
-     28.164      0.236 RR    IC  addRegImmForJALR|C[18]~27|datad
-     28.319      0.155 RR  CELL  addRegImmForJALR|C[18]~27|combout
-     28.524      0.205 RR    IC  addRegImmForJALR|C[18]~28|datad
-     28.679      0.155 RR  CELL  addRegImmForJALR|C[18]~28|combout
-     28.896      0.217 RR    IC  addRegImmForJALR|C[20]~31|datad
-     29.051      0.155 RR  CELL  addRegImmForJALR|C[20]~31|combout
-     29.255      0.204 RR    IC  addRegImmForJALR|C[20]~32|datad
-     29.410      0.155 RR  CELL  addRegImmForJALR|C[20]~32|combout
-     29.790      0.380 RR    IC  addRegImmForJALR|C[22]~35|datad
-     29.945      0.155 RR  CELL  addRegImmForJALR|C[22]~35|combout
-     30.151      0.206 RR    IC  addRegImmForJALR|C[22]~36|datad
-     30.306      0.155 RR  CELL  addRegImmForJALR|C[22]~36|combout
-     30.530      0.224 RR    IC  addRegImmForJALR|C[24]~39|datac
-     30.817      0.287 RR  CELL  addRegImmForJALR|C[24]~39|combout
-     31.020      0.203 RR    IC  addRegImmForJALR|C[24]~40|datad
-     31.175      0.155 RR  CELL  addRegImmForJALR|C[24]~40|combout
-     31.402      0.227 RR    IC  addRegImmForJALR|C[26]~43|datad
-     31.557      0.155 RR  CELL  addRegImmForJALR|C[26]~43|combout
-     31.761      0.204 RR    IC  addRegImmForJALR|C[26]~44|datad
-     31.916      0.155 RR  CELL  addRegImmForJALR|C[26]~44|combout
-     32.147      0.231 RR    IC  addRegImmForJALR|C[28]~47|datac
-     32.434      0.287 RR  CELL  addRegImmForJALR|C[28]~47|combout
-     32.636      0.202 RR    IC  addRegImmForJALR|C[28]~48|datac
-     32.923      0.287 RR  CELL  addRegImmForJALR|C[28]~48|combout
-     33.150      0.227 RR    IC  addRegImmForJALR|C[30]~51|datad
-     33.305      0.155 RR  CELL  addRegImmForJALR|C[30]~51|combout
-     33.508      0.203 RR    IC  addRegImmForJALR|C[30]~52|datad
-     33.663      0.155 RR  CELL  addRegImmForJALR|C[30]~52|combout
-     34.047      0.384 RR    IC  FetchUnit|PC|\pc_Reg:30:pcDFFN|s_Q~0|datad
-     34.202      0.155 RR  CELL  FetchUnit|PC|\pc_Reg:30:pcDFFN|s_Q~0|combout
-     34.407      0.205 RR    IC  FetchUnit|PC|\pc_Reg:30:pcDFFN|s_Q~feeder|datad
-     34.562      0.155 RR  CELL  FetchUnit|PC|\pc_Reg:30:pcDFFN|s_Q~feeder|combout
-     34.562      0.000 RR    IC  FetchUnit|PC|\pc_Reg:30:pcDFFN|s_Q|d
-     34.649      0.087 RR  CELL  pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:30:pcDFFN|s_Q
+     13.520      3.520  F        clock network delay
+     13.783      0.263     uTco  mem:IMem|altsyncram:ram_rtl_0|altsyncram_02e1:auto_generated|ram_block1a16~portb_address_reg0
+     16.673      2.890 RF  CELL  IMem|ram_rtl_0|auto_generated|ram_block1a16|portbdataout[1]
+     17.459      0.786 FF    IC  IMem|ram~57|datad
+     17.584      0.125 FF  CELL  IMem|ram~57|combout
+     18.595      1.011 FF    IC  registerBypassRS1|\G_NBit_MUX:0:MUXI|o_Y~20|datab
+     19.018      0.423 FR  CELL  registerBypassRS1|\G_NBit_MUX:0:MUXI|o_Y~20|combout
+     19.390      0.372 RR    IC  registerBypassRS1|\G_NBit_MUX:0:MUXI|o_Y~21|datad
+     19.545      0.155 RR  CELL  registerBypassRS1|\G_NBit_MUX:0:MUXI|o_Y~21|combout
+     20.308      0.763 RR    IC  registerBypassRS1|\G_NBit_MUX:0:MUXI|o_Y~22|datab
+     20.653      0.345 RR  CELL  registerBypassRS1|\G_NBit_MUX:0:MUXI|o_Y~22|combout
+     21.405      0.752 RR    IC  registerBypassRS1|\G_NBit_MUX:0:MUXI|o_Y~23|datad
+     21.560      0.155 RR  CELL  registerBypassRS1|\G_NBit_MUX:0:MUXI|o_Y~23|combout
+     21.789      0.229 RR    IC  registerBypassRS1|\G_NBit_MUX:0:MUXI|o_Y~26|datad
+     21.944      0.155 RR  CELL  registerBypassRS1|\G_NBit_MUX:0:MUXI|o_Y~26|combout
+     22.169      0.225 RR    IC  addRegImmForJALR|C[2]~0|datac
+     22.456      0.287 RR  CELL  addRegImmForJALR|C[2]~0|combout
+     22.668      0.212 RR    IC  addRegImmForJALR|C[3]~2|datad
+     22.823      0.155 RR  CELL  addRegImmForJALR|C[3]~2|combout
+     23.050      0.227 RR    IC  addRegImmForJALR|C[5]~6|datad
+     23.205      0.155 RR  CELL  addRegImmForJALR|C[5]~6|combout
+     23.410      0.205 RR    IC  addRegImmForJALR|C[5]~7|datad
+     23.565      0.155 RR  CELL  addRegImmForJALR|C[5]~7|combout
+     23.790      0.225 RR    IC  addRegImmForJALR|C[6]~8|datad
+     23.945      0.155 RR  CELL  addRegImmForJALR|C[6]~8|combout
+     24.171      0.226 RR    IC  addRegImmForJALR|C[7]~9|datad
+     24.326      0.155 RR  CELL  addRegImmForJALR|C[7]~9|combout
+     24.554      0.228 RR    IC  addRegImmForJALR|C[8]~10|datad
+     24.709      0.155 RR  CELL  addRegImmForJALR|C[8]~10|combout
+     25.132      0.423 RR    IC  addRegImmForJALR|C[9]~11|datad
+     25.287      0.155 RR  CELL  addRegImmForJALR|C[9]~11|combout
+     25.514      0.227 RR    IC  addRegImmForJALR|C[10]~12|datad
+     25.669      0.155 RR  CELL  addRegImmForJALR|C[10]~12|combout
+     25.897      0.228 RR    IC  addRegImmForJALR|C[12]~16|datad
+     26.052      0.155 RR  CELL  addRegImmForJALR|C[12]~16|combout
+     26.257      0.205 RR    IC  addRegImmForJALR|C[12]~17|datad
+     26.412      0.155 RR  CELL  addRegImmForJALR|C[12]~17|combout
+     26.639      0.227 RR    IC  addRegImmForJALR|C[14]~21|datad
+     26.794      0.155 RR  CELL  addRegImmForJALR|C[14]~21|combout
+     26.998      0.204 RR    IC  addRegImmForJALR|C[14]~22|datad
+     27.153      0.155 RR  CELL  addRegImmForJALR|C[14]~22|combout
+     27.380      0.227 RR    IC  addRegImmForJALR|C[16]~25|datad
+     27.535      0.155 RR  CELL  addRegImmForJALR|C[16]~25|combout
+     27.739      0.204 RR    IC  addRegImmForJALR|C[16]~26|datad
+     27.894      0.155 RR  CELL  addRegImmForJALR|C[16]~26|combout
+     28.127      0.233 RR    IC  addRegImmForJALR|C[18]~29|datac
+     28.414      0.287 RR  CELL  addRegImmForJALR|C[18]~29|combout
+     28.621      0.207 RR    IC  addRegImmForJALR|C[18]~30|datad
+     28.776      0.155 RR  CELL  addRegImmForJALR|C[18]~30|combout
+     29.014      0.238 RR    IC  addRegImmForJALR|C[20]~33|datad
+     29.169      0.155 RR  CELL  addRegImmForJALR|C[20]~33|combout
+     29.375      0.206 RR    IC  addRegImmForJALR|C[20]~34|datad
+     29.530      0.155 RR  CELL  addRegImmForJALR|C[20]~34|combout
+     29.961      0.431 RR    IC  addRegImmForJALR|C[22]~37|datad
+     30.116      0.155 RR  CELL  addRegImmForJALR|C[22]~37|combout
+     30.320      0.204 RR    IC  addRegImmForJALR|C[22]~38|datad
+     30.475      0.155 RR  CELL  addRegImmForJALR|C[22]~38|combout
+     30.710      0.235 RR    IC  addRegImmForJALR|C[24]~41|datad
+     30.865      0.155 RR  CELL  addRegImmForJALR|C[24]~41|combout
+     31.069      0.204 RR    IC  addRegImmForJALR|C[24]~42|datad
+     31.224      0.155 RR  CELL  addRegImmForJALR|C[24]~42|combout
+     31.452      0.228 RR    IC  addRegImmForJALR|C[26]~45|datad
+     31.607      0.155 RR  CELL  addRegImmForJALR|C[26]~45|combout
+     31.812      0.205 RR    IC  addRegImmForJALR|C[26]~46|datad
+     31.967      0.155 RR  CELL  addRegImmForJALR|C[26]~46|combout
+     32.204      0.237 RR    IC  addRegImmForJALR|C[28]~49|datad
+     32.359      0.155 RR  CELL  addRegImmForJALR|C[28]~49|combout
+     32.564      0.205 RR    IC  addRegImmForJALR|C[28]~50|datad
+     32.719      0.155 RR  CELL  addRegImmForJALR|C[28]~50|combout
+     32.953      0.234 RR    IC  addRegImmForJALR|C[30]~53|datad
+     33.108      0.155 RR  CELL  addRegImmForJALR|C[30]~53|combout
+     33.744      0.636 RR    IC  addRegImmForJALR|C[30]~54|datad
+     33.899      0.155 RR  CELL  addRegImmForJALR|C[30]~54|combout
+     34.103      0.204 RR    IC  FetchUnit|PC|\pc_Reg:30:pcDFFN|s_Q~3|datad
+     34.258      0.155 RR  CELL  FetchUnit|PC|\pc_Reg:30:pcDFFN|s_Q~3|combout
+     34.462      0.204 RR    IC  FetchUnit|PC|\pc_Reg:30:pcDFFN|s_Q~0|datad
+     34.617      0.155 RR  CELL  FetchUnit|PC|\pc_Reg:30:pcDFFN|s_Q~0|combout
+     34.822      0.205 RR    IC  FetchUnit|PC|\pc_Reg:30:pcDFFN|s_Q~feeder|datad
+     34.977      0.155 RR  CELL  FetchUnit|PC|\pc_Reg:30:pcDFFN|s_Q~feeder|combout
+     34.977      0.000 RR    IC  FetchUnit|PC|\pc_Reg:30:pcDFFN|s_Q|d
+     35.064      0.087 RR  CELL  pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:30:pcDFFN|s_Q
  Data Required Path:
  Total (ns)  Incr (ns)     Type  Element
  ==========  ========= ==  ====  ===================================
      20.000     20.000           latch edge time
-     22.967      2.967  R        clock network delay
-     22.999      0.032           clock pessimism removed
-     22.979     -0.020           clock uncertainty
-     22.997      0.018     uTsu  pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:30:pcDFFN|s_Q
- Data Arrival Time  :    34.649
- Data Required Time :    22.997
- Slack              :   -11.652 (VIOLATED)
+     22.982      2.982  R        clock network delay
+     23.014      0.032           clock pessimism removed
+     22.994     -0.020           clock uncertainty
+     23.012      0.018     uTsu  pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:30:pcDFFN|s_Q
+ Data Arrival Time  :    35.064
+ Data Required Time :    23.012
+ Slack              :   -12.052 (VIOLATED)
  ===================================================================

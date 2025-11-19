@@ -15,7 +15,7 @@ Info: Running Quartus Prime Analysis & Synthesis
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Tue Nov  4 16:04:44 2025
+    Info: Processing started: Wed Nov 19 12:23:35 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off toolflow -c toolflow
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -55,6 +55,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file /home/g
 Info (12021): Found 2 design units, including 1 entities, in source file /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/EX-StageComponents/barrel_shifter.vhd
     Info (12022): Found design unit 1: barrel_shifter-structural File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/EX-StageComponents/barrel_shifter.vhd Line: 15
     Info (12023): Found entity 1: barrel_shifter File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/EX-StageComponents/barrel_shifter.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Forwarding Unit/Forwarding_Unit.vhd
+    Info (12022): Found design unit 1: Forwarding_Unit-dataflow File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Forwarding Unit/Forwarding_Unit.vhd Line: 26
+    Info (12023): Found entity 1: Forwarding_Unit File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Forwarding Unit/Forwarding_Unit.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Gates/andg2.vhd
     Info (12022): Found design unit 1: andg2-dataflow File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Gates/andg2.vhd Line: 31
     Info (12023): Found entity 1: andg2 File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Gates/andg2.vhd Line: 23
@@ -76,6 +79,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file /home/g
 Info (12021): Found 2 design units, including 1 entities, in source file /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/GeneralComponents/zero_extender.vhd
     Info (12022): Found design unit 1: zero_extender-Behavioral File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/GeneralComponents/zero_extender.vhd Line: 15
     Info (12023): Found entity 1: zero_extender File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/GeneralComponents/zero_extender.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Hazards Controls/dataHazard.vhd
+    Info (12022): Found design unit 1: dataHazard-dataflow File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Hazards Controls/dataHazard.vhd Line: 39
+    Info (12023): Found entity 1: dataHazard File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Hazards Controls/dataHazard.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/ID-StageComponents/comparator.vhd
     Info (12022): Found design unit 1: comparator-mixed File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/ID-StageComponents/comparator.vhd Line: 14
     Info (12023): Found entity 1: comparator File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/ID-StageComponents/comparator.vhd Line: 5
@@ -86,16 +92,16 @@ Info (12021): Found 2 design units, including 1 entities, in source file /home/g
     Info (12022): Found design unit 1: imm_generator-Behavioral File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/ID-StageComponents/imm_generator.vhd Line: 13
     Info (12023): Found entity 1: imm_generator File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/ID-StageComponents/imm_generator.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/IF-StageComponents/pcFetch.vhd
-    Info (12022): Found design unit 1: pcFetch-mixed File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/IF-StageComponents/pcFetch.vhd Line: 24
+    Info (12022): Found design unit 1: pcFetch-mixed File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/IF-StageComponents/pcFetch.vhd Line: 25
     Info (12023): Found entity 1: pcFetch File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/IF-StageComponents/pcFetch.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/MEM-StageComponents/memorySlicer.vhd
     Info (12022): Found design unit 1: memorySlicer-Behavioral File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/MEM-StageComponents/memorySlicer.vhd Line: 14
     Info (12023): Found entity 1: memorySlicer File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/MEM-StageComponents/memorySlicer.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/EX_MEM_register_file.vhd
-    Info (12022): Found design unit 1: EX_MEM_register_file-structure File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/EX_MEM_register_file.vhd Line: 62
+    Info (12022): Found design unit 1: EX_MEM_register_file-structure File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/EX_MEM_register_file.vhd Line: 64
     Info (12023): Found entity 1: EX_MEM_register_file File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/EX_MEM_register_file.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/ID_EX_register_file.vhd
-    Info (12022): Found design unit 1: ID_EX_register_file-structure File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/ID_EX_register_file.vhd Line: 71
+    Info (12022): Found design unit 1: ID_EX_register_file-structure File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/ID_EX_register_file.vhd Line: 74
     Info (12023): Found entity 1: ID_EX_register_file File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/ID_EX_register_file.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/IF_register_file.vhd
     Info (12022): Found design unit 1: IF_register_file-structure File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/IF_register_file.vhd Line: 21
@@ -121,6 +127,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file /home/g
 Info (12021): Found 2 design units, including 1 entities, in source file /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/nBit_Reg.vhd
     Info (12022): Found design unit 1: nBit_Reg-structure File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/nBit_Reg.vhd Line: 18
     Info (12023): Found entity 1: nBit_Reg File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/nBit_Reg.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/negInit_dffg.vhd
+    Info (12022): Found design unit 1: negInit_dffg-mixed File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/negInit_dffg.vhd Line: 15
+    Info (12023): Found entity 1: negInit_dffg File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/negInit_dffg.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/neg_edge_nBit_Reg.vhd
     Info (12022): Found design unit 1: neg_edge_nBit_Reg-structure File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/neg_edge_nBit_Reg.vhd Line: 17
     Info (12023): Found entity 1: neg_edge_nBit_Reg File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/neg_edge_nBit_Reg.vhd Line: 5
@@ -155,8 +164,11 @@ Info (12021): Found 2 design units, including 1 entities, in source file /home/g
     Info (12022): Found design unit 1: mux32x4t1-dataflow File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Multiplexors/mux32x4t1.vhd Line: 15
     Info (12023): Found entity 1: mux32x4t1 File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Multiplexors/mux32x4t1.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Multiplexors/mux4t1 .vhd
-    Info (12022): Found design unit 1: mux4t1-structural File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Multiplexors/mux4t1 .vhd Line: 15
+    Info (12022): Found design unit 1: mux4t1-dataflow File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Multiplexors/mux4t1 .vhd Line: 15
     Info (12023): Found entity 1: mux4t1 File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Multiplexors/mux4t1 .vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Multiplexors/mux4t1_N.vhd
+    Info (12022): Found design unit 1: mux4t1_N-structural File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Multiplexors/mux4t1_N.vhd Line: 16
+    Info (12023): Found entity 1: mux4t1_N File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Multiplexors/mux4t1_N.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd
     Info (12022): Found design unit 1: RISCV_Processor-structure File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 37
     Info (12023): Found entity 1: RISCV_Processor File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 23
@@ -164,44 +176,48 @@ Info (12127): Elaborating entity "RISCV_Processor" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at RISCV_Processor.vhd(46): object "s_RegWr" assigned a value but never read File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 46
 Warning (10036): Verilog HDL or VHDL warning at RISCV_Processor.vhd(56): object "s_Halt" assigned a value but never read File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 56
 Warning (10036): Verilog HDL or VHDL warning at RISCV_Processor.vhd(59): object "s_Ovfl" assigned a value but never read File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 59
-Warning (10036): Verilog HDL or VHDL warning at RISCV_Processor.vhd(439): object "s_wbALUsrc" assigned a value but never read File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 439
-Warning (10036): Verilog HDL or VHDL warning at RISCV_Processor.vhd(439): object "s_wbMemWrite" assigned a value but never read File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 439
-Warning (10036): Verilog HDL or VHDL warning at RISCV_Processor.vhd(439): object "s_wbShift" assigned a value but never read File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 439
-Warning (10036): Verilog HDL or VHDL warning at RISCV_Processor.vhd(439): object "s_wbFlagOrNFlag" assigned a value but never read File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 439
-Warning (10036): Verilog HDL or VHDL warning at RISCV_Processor.vhd(440): object "s_wbALUctrl" assigned a value but never read File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 440
-Warning (10036): Verilog HDL or VHDL warning at RISCV_Processor.vhd(441): object "s_wbAndLink" assigned a value but never read File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 441
-Warning (10036): Verilog HDL or VHDL warning at RISCV_Processor.vhd(441): object "s_wbFlagMux" assigned a value but never read File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 441
-Info (12128): Elaborating entity "mem" for hierarchy "mem:IMem" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 457
-Info (12128): Elaborating entity "IF_register_file" for hierarchy "IF_register_file:IF_Register" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 482
+Warning (10036): Verilog HDL or VHDL warning at RISCV_Processor.vhd(480): object "s_storeLoadHazardRS2" assigned a value but never read File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 480
+Warning (10036): Verilog HDL or VHDL warning at RISCV_Processor.vhd(522): object "s_wbALUsrc" assigned a value but never read File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 522
+Warning (10036): Verilog HDL or VHDL warning at RISCV_Processor.vhd(522): object "s_wbMemWrite" assigned a value but never read File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 522
+Warning (10036): Verilog HDL or VHDL warning at RISCV_Processor.vhd(522): object "s_wbShift" assigned a value but never read File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 522
+Warning (10036): Verilog HDL or VHDL warning at RISCV_Processor.vhd(522): object "s_wbFlagOrNFlag" assigned a value but never read File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 522
+Warning (10036): Verilog HDL or VHDL warning at RISCV_Processor.vhd(523): object "s_wbALUctrl" assigned a value but never read File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 523
+Warning (10036): Verilog HDL or VHDL warning at RISCV_Processor.vhd(524): object "s_wbAndLink" assigned a value but never read File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 524
+Warning (10036): Verilog HDL or VHDL warning at RISCV_Processor.vhd(524): object "s_wbFlagMux" assigned a value but never read File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 524
+Info (12128): Elaborating entity "mem" for hierarchy "mem:IMem" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 540
+Info (12128): Elaborating entity "invg" for hierarchy "invg:dataHazardInv" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 565
+Info (12128): Elaborating entity "IF_register_file" for hierarchy "IF_register_file:IF_Register" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 576
 Info (12128): Elaborating entity "neg_edge_nBit_Reg" for hierarchy "IF_register_file:IF_Register|neg_edge_nBit_Reg:inst_reg" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/IF_register_file.vhd Line: 37
 Info (12128): Elaborating entity "negdffg" for hierarchy "IF_register_file:IF_Register|neg_edge_nBit_Reg:inst_reg|negdffg:\neg_edge_nBit_Reg:0:DFFN" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/neg_edge_nBit_Reg.vhd Line: 30
-Info (12128): Elaborating entity "pcFetch" for hierarchy "pcFetch:FetchUnit" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 493
-Warning (10036): Verilog HDL or VHDL warning at pcFetch.vhd(54): object "ground" assigned a value but never read File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/IF-StageComponents/pcFetch.vhd Line: 54
-Info (12128): Elaborating entity "pc_Reg" for hierarchy "pcFetch:FetchUnit|pc_Reg:PC" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/IF-StageComponents/pcFetch.vhd Line: 62
+Info (12128): Elaborating entity "pcFetch" for hierarchy "pcFetch:FetchUnit" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 587
+Warning (10036): Verilog HDL or VHDL warning at pcFetch.vhd(55): object "ground" assigned a value but never read File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/IF-StageComponents/pcFetch.vhd Line: 55
+Info (12128): Elaborating entity "pc_Reg" for hierarchy "pcFetch:FetchUnit|pc_Reg:PC" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/IF-StageComponents/pcFetch.vhd Line: 63
 Info (12128): Elaborating entity "pc_dffg" for hierarchy "pcFetch:FetchUnit|pc_Reg:PC|pc_dffg:\pc_Reg:0:pcDFFN" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/pc_Reg.vhd Line: 31
 Warning (10492): VHDL Process Statement warning at pc_dffg.vhd(36): signal "i_INIT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/pc_dffg.vhd Line: 36
-Info (12128): Elaborating entity "mux2t1_N" for hierarchy "pcFetch:FetchUnit|mux2t1_N:MUX_JUMP" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/IF-StageComponents/pcFetch.vhd Line: 69
+Info (12128): Elaborating entity "mux2t1_N" for hierarchy "pcFetch:FetchUnit|mux2t1_N:MUX_JUMP" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/IF-StageComponents/pcFetch.vhd Line: 70
 Info (12128): Elaborating entity "mux2t1_dataflow" for hierarchy "pcFetch:FetchUnit|mux2t1_N:MUX_JUMP|mux2t1_dataflow:\G_NBit_MUX:0:MUXI" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Multiplexors/mux2t1_N.vhd Line: 43
-Info (12128): Elaborating entity "nBit_LookaheadAdder" for hierarchy "pcFetch:FetchUnit|nBit_LookaheadAdder:Add4" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/IF-StageComponents/pcFetch.vhd Line: 81
-Info (12128): Elaborating entity "controlUnit" for hierarchy "controlUnit:CTRLunit" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 510
-Info (12128): Elaborating entity "RegFile" for hierarchy "RegFile:Registers" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 530
+Info (12128): Elaborating entity "nBit_LookaheadAdder" for hierarchy "pcFetch:FetchUnit|nBit_LookaheadAdder:Add4" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/IF-StageComponents/pcFetch.vhd Line: 82
+Info (12128): Elaborating entity "controlUnit" for hierarchy "controlUnit:CTRLunit" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 605
+Info (12128): Elaborating entity "RegFile" for hierarchy "RegFile:Registers" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 625
 Info (12128): Elaborating entity "decoder5t32" for hierarchy "RegFile:Registers|decoder5t32:DEC" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/RegFile.vhd Line: 73
 Info (12128): Elaborating entity "mux32t1" for hierarchy "RegFile:Registers|mux32t1:MUX1" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/RegFile.vhd Line: 79
 Info (12128): Elaborating entity "nBit_Reg" for hierarchy "RegFile:Registers|nBit_Reg:REG0" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/RegFile.vhd Line: 91
 Info (12128): Elaborating entity "dffg" for hierarchy "RegFile:Registers|nBit_Reg:REG0|dffg:\nBit_Reg:0:DFFN" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/nBit_Reg.vhd Line: 31
 Info (12128): Elaborating entity "sp_Reg" for hierarchy "RegFile:Registers|sp_Reg:REG2" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/RegFile.vhd Line: 109
 Info (12128): Elaborating entity "gp_Reg" for hierarchy "RegFile:Registers|gp_Reg:REG3" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/RegFile.vhd Line: 118
-Info (12128): Elaborating entity "imm_generator" for hierarchy "imm_generator:ImmGen" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 553
-Info (12128): Elaborating entity "comparator" for hierarchy "comparator:branchCompare" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 560
-Info (12128): Elaborating entity "mux4t1" for hierarchy "comparator:branchCompare|mux4t1:BranchSelect" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/ID-StageComponents/comparator.vhd Line: 46
-Info (12128): Elaborating entity "invg" for hierarchy "comparator:branchCompare|mux4t1:BranchSelect|invg:U_INV0" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Multiplexors/mux4t1 .vhd Line: 42
-Info (12128): Elaborating entity "andg2" for hierarchy "comparator:branchCompare|mux4t1:BranchSelect|andg2:U_AND6" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Multiplexors/mux4t1 .vhd Line: 46
-Info (12128): Elaborating entity "org2" for hierarchy "comparator:branchCompare|mux4t1:BranchSelect|org2:U_OR0" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Multiplexors/mux4t1 .vhd Line: 58
-Info (12128): Elaborating entity "ID_EX_register_file" for hierarchy "ID_EX_register_file:ID_EX_Register" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 583
-Info (12128): Elaborating entity "control_register" for hierarchy "ID_EX_register_file:ID_EX_Register|control_register:Control_reg" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/ID_EX_register_file.vhd Line: 126
+Info (12128): Elaborating entity "mux4t1_N" for hierarchy "mux4t1_N:registerBypassRS1" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 637
+Info (12128): Elaborating entity "mux4t1" for hierarchy "mux4t1_N:registerBypassRS1|mux4t1:\G_NBit_MUX:0:MUXI" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Multiplexors/mux4t1_N.vhd Line: 32
+Info (12128): Elaborating entity "imm_generator" for hierarchy "imm_generator:ImmGen" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 666
+Info (12128): Elaborating entity "comparator" for hierarchy "comparator:branchCompare" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 673
+Info (12128): Elaborating entity "andg2" for hierarchy "andg2:branchAnd" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 682
+Info (12128): Elaborating entity "org2" for hierarchy "org2:branchJump" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 690
+Info (12128): Elaborating entity "dataHazard" for hierarchy "dataHazard:dataHazardUnit" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 696
+Info (12128): Elaborating entity "Forwarding_Unit" for hierarchy "Forwarding_Unit:ForwardingUnit" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 721
+Info (12128): Elaborating entity "ID_EX_register_file" for hierarchy "ID_EX_register_file:ID_EX_Register" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 738
+Info (12128): Elaborating entity "control_register" for hierarchy "ID_EX_register_file:ID_EX_Register|control_register:Control_reg" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/ID_EX_register_file.vhd Line: 169
 Info (12128): Elaborating entity "neg_edge_nBit_Reg" for hierarchy "ID_EX_register_file:ID_EX_Register|control_register:Control_reg|neg_edge_nBit_Reg:ALUcontrol_reg" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/control_register.vhd Line: 83
 Info (12128): Elaborating entity "neg_edge_nBit_Reg" for hierarchy "ID_EX_register_file:ID_EX_Register|control_register:Control_reg|neg_edge_nBit_Reg:FlagMux_reg" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/control_register.vhd Line: 92
-Info (12128): Elaborating entity "ALUUnit" for hierarchy "ALUUnit:ALU" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 644
+Info (12128): Elaborating entity "ALUUnit" for hierarchy "ALUUnit:ALU" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 817
 Info (12128): Elaborating entity "and_32bit" for hierarchy "ALUUnit:ALU|and_32bit:andUnit" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/EX-StageComponents/ALUUnit.vhd Line: 105
 Info (12128): Elaborating entity "or_32bit" for hierarchy "ALUUnit:ALU|or_32bit:orUnit" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/EX-StageComponents/ALUUnit.vhd Line: 112
 Info (12128): Elaborating entity "xor_32bit" for hierarchy "ALUUnit:ALU|xor_32bit:xorUnit" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/EX-StageComponents/ALUUnit.vhd Line: 119
@@ -211,11 +227,12 @@ Info (12128): Elaborating entity "nBit_ALU" for hierarchy "ALUUnit:ALU|nBit_ALU:
 Info (12128): Elaborating entity "OnesComp" for hierarchy "ALUUnit:ALU|nBit_ALU:addsub|OnesComp:g_B_OnesComp" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Adders/nBit_ALU.vhd Line: 48
 Info (12128): Elaborating entity "mux2t1_2" for hierarchy "ALUUnit:ALU|mux2t1_2:muxbeforeresult" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/EX-StageComponents/ALUUnit.vhd Line: 142
 Info (12128): Elaborating entity "mux32x4t1" for hierarchy "ALUUnit:ALU|mux32x4t1:muxResult" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/EX-StageComponents/ALUUnit.vhd Line: 150
-Info (12128): Elaborating entity "barrel_shifter" for hierarchy "barrel_shifter:Shifter" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 657
-Info (12128): Elaborating entity "zero_extender" for hierarchy "zero_extender:flagExtender" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 690
-Info (12128): Elaborating entity "EX_MEM_register_file" for hierarchy "EX_MEM_register_file:EX_MEM_Register" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 710
-Info (12128): Elaborating entity "memorySlicer" for hierarchy "memorySlicer:memSlicer" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 748
-Info (12128): Elaborating entity "MEM_WB_register_file" for hierarchy "MEM_WB_register_file:MEM_WB_Register" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 755
+Info (12128): Elaborating entity "barrel_shifter" for hierarchy "barrel_shifter:Shifter" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 830
+Info (12128): Elaborating entity "zero_extender" for hierarchy "zero_extender:flagExtender" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 863
+Info (12128): Elaborating entity "EX_MEM_register_file" for hierarchy "EX_MEM_register_file:EX_MEM_Register" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 883
+Warning (10541): VHDL Signal Declaration warning at EX_MEM_register_file.vhd(60): used implicit default value for signal "forwardMemdata" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/EX_MEM_register_file.vhd Line: 60
+Info (12128): Elaborating entity "memorySlicer" for hierarchy "memorySlicer:memSlicer" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 922
+Info (12128): Elaborating entity "MEM_WB_register_file" for hierarchy "MEM_WB_register_file:MEM_WB_Register" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 929
 Warning (276027): Inferred dual-clock RAM node "mem:IMem|ram_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276007): RAM logic "mem:DMem|ram" is uninferred due to asynchronous read logic File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/mem.vhd Line: 35
@@ -251,8 +268,9 @@ Info (12133): Instantiated megafunction "mem:IMem|altsyncram:ram_rtl_0" with the
     Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK1"
     Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_g8d1.tdf
-    Info (12023): Found entity 1: altsyncram_g8d1 File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/internal/QuartusWork/db/altsyncram_g8d1.tdf Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_02e1.tdf
+    Info (12023): Found entity 1: altsyncram_02e1 File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/internal/QuartusWork/db/altsyncram_02e1.tdf Line: 28
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (13000): Registers with preset signals will power-up high File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/Components/Memory/pc_dffg.vhd Line: 35
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
@@ -281,16 +299,16 @@ Warning (21074): Design contains 22 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "iInstAddr[29]" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 30
     Warning (15610): No output dependent on input pin "iInstAddr[30]" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 30
     Warning (15610): No output dependent on input pin "iInstAddr[31]" File: /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/proj/src/TopLevel/RISCV_Processor.vhd Line: 30
-Info (21057): Implemented 59856 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 60286 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 67 input pins
     Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 59725 logic cells
+    Info (21061): Implemented 60155 logic cells
     Info (21064): Implemented 32 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 37 warnings
-    Info: Peak virtual memory: 962 megabytes
-    Info: Processing ended: Tue Nov  4 16:05:39 2025
-    Info: Elapsed time: 00:00:55
-    Info: Total CPU time (on all processors): 00:01:00
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 40 warnings
+    Info: Peak virtual memory: 967 megabytes
+    Info: Processing ended: Wed Nov 19 12:24:33 2025
+    Info: Elapsed time: 00:00:58
+    Info: Total CPU time (on all processors): 00:01:02
 Info: *******************************************************************
 Info: Running Quartus Prime Fitter
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
@@ -308,7 +326,7 @@ Info: Running Quartus Prime Fitter
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Tue Nov  4 16:05:40 2025
+    Info: Processing started: Wed Nov 19 12:24:33 2025
 Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off toolflow -c toolflow
 Info: qfit2_default_script.tcl version: #1
 Info: Project  = toolflow
@@ -370,14 +388,14 @@ Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:05
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:56
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:54
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 13% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 30% of the available device resources in the region that extends from location X81_Y37 to location X91_Y48
+    Info (170196): Router estimated peak interconnect usage is 28% of the available device resources in the region that extends from location X0_Y0 to location X10_Y11
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:01:04
-Info (11888): Total time spent on timing analysis during the Fitter is 21.33 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:01:05
+Info (11888): Total time spent on timing analysis during the Fitter is 21.97 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -385,10 +403,10 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:09
 Info (144001): Generated suppressed messages file /home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/internal/QuartusWork/output_files/toolflow.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 2577 megabytes
-    Info: Processing ended: Tue Nov  4 16:08:41 2025
+    Info: Peak virtual memory: 2546 megabytes
+    Info: Processing ended: Wed Nov 19 12:27:34 2025
     Info: Elapsed time: 00:03:01
-    Info: Total CPU time (on all processors): 00:07:48
+    Info: Total CPU time (on all processors): 00:07:49
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
@@ -406,13 +424,13 @@ Info: Running Quartus Prime Assembler
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Tue Nov  4 16:08:42 2025
+    Info: Processing started: Wed Nov 19 12:27:35 2025
 Info: Command: quartus_asm --read_settings_files=on --write_settings_files=off toolflow -c toolflow
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 694 megabytes
-    Info: Processing ended: Tue Nov  4 16:08:45 2025
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 693 megabytes
+    Info: Processing ended: Wed Nov 19 12:27:39 2025
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:03

@@ -566,7 +566,6 @@ begin
     port map(
       i_A => s_stallSignal,
       o_F => s_invStall);
-
   
   memortStallInv : invg
     port map(

@@ -1,0 +1,115 @@
+[N
+12
+6
+9 input_rs2
+10
+11 register_tb
+1
+79 /home/gmander5/cpre381/Project2/project-2-sw/testbenches/pipelineRegisters/work
+2
+16 if_register_file
+5
+19 id_ex_register_file
+11
+8 behavior
+4
+5 WIDTH
+3
+9 structure
+8
+20 ex_mem_register_file
+9
+20 mem_wb_register_file
+12
+9 gCLK_HPER
+7
+9 input_rs1
+]
+[G
+1
+5
+3
+1
+4
+1
+0
+32
+0
+0 0
+0
+0
+]
+[G
+1
+8
+3
+1
+4
+1
+0
+32
+0
+0 0
+0
+0
+]
+[G
+1
+10
+11
+1
+12
+0
+0
+0
+0
+8 8
+-128
+-16
+-6
+2
+0
+0
+0
+0
+0
+0
+]
+[G
+1
+9
+3
+1
+4
+1
+0
+32
+0
+0 0
+0
+0
+]
+[G
+1
+2
+3
+1
+4
+1
+0
+32
+0
+0 0
+0
+0
+]
+[P
+1
+5
+3
+6
+7
+1
+0
+0
+]
