@@ -14,7 +14,7 @@ Z1 w1762107930
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 273
+!i122 0
 R0
 Z5 8proj/src/TopLevel/Components/Adders/Adder.vhd
 Z6 Fproj/src/TopLevel/Components/Adders/Adder.vhd
@@ -24,44 +24,44 @@ V6^Uz><1NJd]hno=lZXJdE3
 !s100 Lmgi1RflXM7m5]3Bj_9<F2
 Z7 OL;C;2025.1_2;82
 33
-Z8 !s110 1763509548
+Z8 !s110 1764791555
 !i10b 1
-Z9 !s108 1763509548.000000
+Z9 !s108 1764791555.000000
 Z10 !s90 -2008|-work|internal/ModelSimContainer/work|proj/src/RISCV_types.vhd|internal/testpy/tb.vhd|proj/src/RISCV_types.vhd|proj/src/TopLevel/RISCV_Processor.vhd|proj/src/TopLevel/Components/IF-StageComponents/pcFetch.vhd|proj/src/TopLevel/Components/Forwarding Unit/Forwarding_Unit.vhd|proj/src/TopLevel/Components/Memory/EX_MEM_register_file.vhd|proj/src/TopLevel/Components/Memory/negdffg.vhd|proj/src/TopLevel/Components/Memory/mem.vhd|proj/src/TopLevel/Components/Memory/norg2.vhd|proj/src/TopLevel/Components/Memory/nBit_Reg.vhd|proj/src/TopLevel/Components/Memory/dffg.vhd|proj/src/TopLevel/Components/Memory/gp_Reg.vhd|proj/src/TopLevel/Components/Memory/IF_register_file.vhd|proj/src/TopLevel/Components/Memory/RegFile.vhd|proj/src/TopLevel/Components/Memory/MEM_WB_regsiter_file.vhd|proj/src/TopLevel/Components/Memory/control_register.vhd|proj/src/TopLevel/Components/Memory/pc_Reg.vhd|proj/src/TopLevel/Components/Memory/pc_dffg.vhd|proj/src/TopLevel/Components/Memory/ID_EX_register_file.vhd|proj/src/TopLevel/Components/Memory/neg_edge_nBit_Reg.vhd|proj/src/TopLevel/Components/Memory/negInit_dffg.vhd|proj/src/TopLevel/Components/Memory/sp_Reg.vhd|proj/src/TopLevel/Components/GeneralComponents/zero_extender.vhd|proj/src/TopLevel/Components/GeneralComponents/sign_extender.vhd|proj/src/TopLevel/Components/GeneralComponents/decoder5t32.vhd|proj/src/TopLevel/Components/ID-StageComponents/comparator.vhd|proj/src/TopLevel/Components/ID-StageComponents/controlUnit.vhd|proj/src/TopLevel/Components/ID-StageComponents/imm_generator.vhd|proj/src/TopLevel/Components/Hazards Controls/dataHazard.vhd|proj/src/TopLevel/Components/EX-StageComponents/ALUUnit.vhd|proj/src/TopLevel/Components/EX-StageComponents/barrel_shifter.vhd|proj/src/TopLevel/Components/Gates/invg.vhd|proj/src/TopLevel/Components/Gates/xorg2.vhd|proj/src/TopLevel/Components/Gates/andg2.vhd|proj/src/TopLevel/Components/Gates/org2.vhd|proj/src/TopLevel/Components/Adders/nBit_Adder.vhd|proj/src/TopLevel/Components/Adders/Adder.vhd|proj/src/TopLevel/Components/Adders/nBit_ALU.vhd|proj/src/TopLevel/Components/Adders/nBit_LookaheadAdder.vhd|proj/src/TopLevel/Components/Multiplexors/mux2t1_N.vhd|proj/src/TopLevel/Components/Multiplexors/mux2t1_dataflow.vhd|proj/src/TopLevel/Components/Multiplexors/mux32x4t1.vhd|proj/src/TopLevel/Components/Multiplexors/mux4t1 .vhd|proj/src/TopLevel/Components/Multiplexors/mux32t1.vhd|proj/src/TopLevel/Components/Multiplexors/mux2t1_2.vhd|proj/src/TopLevel/Components/Multiplexors/mux4t1_N.vhd|proj/src/TopLevel/Components/32BitGates/xor_32bit.vhd|proj/src/TopLevel/Components/32BitGates/OnesComp.vhd|proj/src/TopLevel/Components/32BitGates/nor_32t1bit.vhd|proj/src/TopLevel/Components/32BitGates/and_32bit.vhd|proj/src/TopLevel/Components/32BitGates/or_32bit.vhd|proj/src/TopLevel/Components/MEM-StageComponents/memorySlicer.vhd|
-Z11 !s107 proj/src/TopLevel/Components/MEM-StageComponents/memorySlicer.vhd|proj/src/TopLevel/Components/32BitGates/or_32bit.vhd|proj/src/TopLevel/Components/32BitGates/and_32bit.vhd|proj/src/TopLevel/Components/32BitGates/nor_32t1bit.vhd|proj/src/TopLevel/Components/32BitGates/OnesComp.vhd|proj/src/TopLevel/Components/32BitGates/xor_32bit.vhd|proj/src/TopLevel/Components/Multiplexors/mux4t1_N.vhd|proj/src/TopLevel/Components/Multiplexors/mux2t1_2.vhd|proj/src/TopLevel/Components/Multiplexors/mux32t1.vhd|proj/src/TopLevel/Components/Multiplexors/mux4t1 .vhd|proj/src/TopLevel/Components/Multiplexors/mux32x4t1.vhd|proj/src/TopLevel/Components/Multiplexors/mux2t1_dataflow.vhd|proj/src/TopLevel/Components/Multiplexors/mux2t1_N.vhd|proj/src/TopLevel/Components/Adders/nBit_LookaheadAdder.vhd|proj/src/TopLevel/Components/Adders/nBit_ALU.vhd|proj/src/TopLevel/Components/Adders/Adder.vhd|proj/src/TopLevel/Components/Adders/nBit_Adder.vhd|proj/src/TopLevel/Components/Gates/org2.vhd|proj/src/TopLevel/Components/Gates/andg2.vhd|proj/src/TopLevel/Components/Gates/xorg2.vhd|proj/src/TopLevel/Components/Gates/invg.vhd|proj/src/TopLevel/Components/EX-StageComponents/barrel_shifter.vhd|proj/src/TopLevel/Components/EX-StageComponents/ALUUnit.vhd|proj/src/TopLevel/Components/Hazards Controls/dataHazard.vhd|proj/src/TopLevel/Components/ID-StageComponents/imm_generator.vhd|proj/src/TopLevel/Components/ID-StageComponents/controlUnit.vhd|proj/src/TopLevel/Components/ID-StageComponents/comparator.vhd|proj/src/TopLevel/Components/GeneralComponents/decoder5t32.vhd|proj/src/TopLevel/Components/GeneralComponents/sign_extender.vhd|proj/src/TopLevel/Components/GeneralComponents/zero_extender.vhd|proj/src/TopLevel/Components/Memory/sp_Reg.vhd|proj/src/TopLevel/Components/Memory/negInit_dffg.vhd|proj/src/TopLevel/Components/Memory/neg_edge_nBit_Reg.vhd|proj/src/TopLevel/Components/Memory/ID_EX_register_file.vhd|proj/src/TopLevel/Components/Memory/pc_dffg.vhd|proj/src/TopLevel/Components/Memory/pc_Reg.vhd|proj/src/TopLevel/Components/Memory/control_register.vhd|proj/src/TopLevel/Components/Memory/MEM_WB_regsiter_file.vhd|proj/src/TopLevel/Components/Memory/RegFile.vhd|proj/src/TopLevel/Components/Memory/IF_register_file.vhd|proj/src/TopLevel/Components/Memory/gp_Reg.vhd|proj/src/TopLevel/Components/Memory/dffg.vhd|proj/src/TopLevel/Components/Memory/nBit_Reg.vhd|proj/src/TopLevel/Components/Memory/norg2.vhd|proj/src/TopLevel/Components/Memory/mem.vhd|proj/src/TopLevel/Components/Memory/negdffg.vhd|proj/src/TopLevel/Components/Memory/EX_MEM_register_file.vhd|proj/src/TopLevel/Components/Forwarding Unit/Forwarding_Unit.vhd|proj/src/TopLevel/Components/IF-StageComponents/pcFetch.vhd|proj/src/TopLevel/RISCV_Processor.vhd|internal/testpy/tb.vhd|proj/src/RISCV_types.vhd|
+!s107 proj/src/TopLevel/Components/MEM-StageComponents/memorySlicer.vhd|proj/src/TopLevel/Components/32BitGates/or_32bit.vhd|proj/src/TopLevel/Components/32BitGates/and_32bit.vhd|proj/src/TopLevel/Components/32BitGates/nor_32t1bit.vhd|proj/src/TopLevel/Components/32BitGates/OnesComp.vhd|proj/src/TopLevel/Components/32BitGates/xor_32bit.vhd|proj/src/TopLevel/Components/Multiplexors/mux4t1_N.vhd|proj/src/TopLevel/Components/Multiplexors/mux2t1_2.vhd|proj/src/TopLevel/Components/Multiplexors/mux32t1.vhd|proj/src/TopLevel/Components/Multiplexors/mux4t1 .vhd|proj/src/TopLevel/Components/Multiplexors/mux32x4t1.vhd|proj/src/TopLevel/Components/Multiplexors/mux2t1_dataflow.vhd|proj/src/TopLevel/Components/Multiplexors/mux2t1_N.vhd|proj/src/TopLevel/Components/Adders/nBit_LookaheadAdder.vhd|proj/src/TopLevel/Components/Adders/nBit_ALU.vhd|proj/src/TopLevel/Components/Adders/Adder.vhd|proj/src/TopLevel/Components/Adders/nBit_Adder.vhd|proj/src/TopLevel/Components/Gates/org2.vhd|proj/src/TopLevel/Components/Gates/andg2.vhd|proj/src/TopLevel/Components/Gates/xorg2.vhd|proj/src/TopLevel/Components/Gates/invg.vhd|proj/src/TopLevel/Components/EX-StageComponents/barrel_shifter.vhd|proj/src/TopLevel/Components/EX-StageComponents/ALUUnit.vhd|proj/src/TopLevel/Components/Hazards Controls/dataHazard.vhd|proj/src/TopLevel/Components/ID-StageComponents/imm_generator.vhd|proj/src/TopLevel/Components/ID-StageComponents/controlUnit.vhd|proj/src/TopLevel/Components/ID-StageComponents/comparator.vhd|proj/src/TopLevel/Components/GeneralComponents/decoder5t32.vhd|proj/src/TopLevel/Components/GeneralComponents/sign_extender.vhd|proj/src/TopLevel/Components/GeneralComponents/zero_extender.vhd|proj/src/TopLevel/Components/Memory/sp_Reg.vhd|proj/src/TopLevel/Components/Memory/negInit_dffg.vhd|proj/src/TopLevel/Components/Memory/neg_edge_nBit_Reg.vhd|proj/src/TopLevel/Components/Memory/ID_EX_register_file.vhd|proj/src/TopLevel/Components/Memory/pc_dffg.vhd|proj/src/TopLevel/Components/Memory/pc_Reg.vhd|proj/src/TopLevel/Components/Memory/control_register.vhd|proj/src/TopLevel/Components/Memory/MEM_WB_regsiter_file.vhd|proj/src/TopLevel/Components/Memory/RegFile.vhd|proj/src/TopLevel/Components/Memory/IF_register_file.vhd|proj/src/TopLevel/Components/Memory/gp_Reg.vhd|proj/src/TopLevel/Components/Memory/dffg.vhd|proj/src/TopLevel/Components/Memory/nBit_Reg.vhd|proj/src/TopLevel/Components/Memory/norg2.vhd|proj/src/TopLevel/Components/Memory/mem.vhd|proj/src/TopLevel/Components/Memory/negdffg.vhd|proj/src/TopLevel/Components/Memory/EX_MEM_register_file.vhd|proj/src/TopLevel/Components/Forwarding Unit/Forwarding_Unit.vhd|proj/src/TopLevel/Components/IF-StageComponents/pcFetch.vhd|proj/src/TopLevel/RISCV_Processor.vhd|internal/testpy/tb.vhd|proj/src/RISCV_types.vhd|
 !i113 0
-Z12 o-2008 -work internal/ModelSimContainer/work
-Z13 tExplicit 1 CvgOpt 0
+Z11 o-2008 -work internal/ModelSimContainer/work
+Z12 tExplicit 1 CvgOpt 0
 Astructure
 R2
 R3
 R4
-Z14 DEx4 work 5 adder 0 22 6^Uz><1NJd]hno=lZXJdE3
-!i122 273
+DEx4 work 5 adder 0 22 6^Uz><1NJd]hno=lZXJdE3
+!i122 0
 l61
-Z15 L36 54
-Z16 V=<^2>^STVTSiSUCWJ5Cza1
-Z17 !s100 `:Ez5O?>[352XOSOPK9^H1
+L36 54
+V=<^2>^STVTSiSUCWJ5Cza1
+!s100 `:Ez5O?>[352XOSOPK9^H1
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
+Z13 !s107 proj/src/TopLevel/Components/MEM-StageComponents/memorySlicer.vhd|proj/src/TopLevel/Components/32BitGates/or_32bit.vhd|proj/src/TopLevel/Components/32BitGates/and_32bit.vhd|proj/src/TopLevel/Components/32BitGates/nor_32t1bit.vhd|proj/src/TopLevel/Components/32BitGates/OnesComp.vhd|proj/src/TopLevel/Components/32BitGates/xor_32bit.vhd|proj/src/TopLevel/Components/Multiplexors/mux4t1_N.vhd|proj/src/TopLevel/Components/Multiplexors/mux2t1_2.vhd|proj/src/TopLevel/Components/Multiplexors/mux32t1.vhd|proj/src/TopLevel/Components/Multiplexors/mux4t1 .vhd|proj/src/TopLevel/Components/Multiplexors/mux32x4t1.vhd|proj/src/TopLevel/Components/Multiplexors/mux2t1_dataflow.vhd|proj/src/TopLevel/Components/Multiplexors/mux2t1_N.vhd|proj/src/TopLevel/Components/Adders/nBit_LookaheadAdder.vhd|proj/src/TopLevel/Components/Adders/nBit_ALU.vhd|proj/src/TopLevel/Components/Adders/Adder.vhd|proj/src/TopLevel/Components/Adders/nBit_Adder.vhd|proj/src/TopLevel/Components/Gates/org2.vhd|proj/src/TopLevel/Components/Gates/andg2.vhd|proj/src/TopLevel/Components/Gates/xorg2.vhd|proj/src/TopLevel/Components/Gates/invg.vhd|proj/src/TopLevel/Components/EX-StageComponents/barrel_shifter.vhd|proj/src/TopLevel/Components/EX-StageComponents/ALUUnit.vhd|proj/src/TopLevel/Components/Hazards Controls/dataHazard.vhd|proj/src/TopLevel/Components/ID-StageComponents/imm_generator.vhd|proj/src/TopLevel/Components/ID-StageComponents/controlUnit.vhd|proj/src/TopLevel/Components/ID-StageComponents/comparator.vhd|proj/src/TopLevel/Components/GeneralComponents/decoder5t32.vhd|proj/src/TopLevel/Components/GeneralComponents/sign_extender.vhd|proj/src/TopLevel/Components/GeneralComponents/zero_extender.vhd|proj/src/TopLevel/Components/Memory/sp_Reg.vhd|proj/src/TopLevel/Components/Memory/negInit_dffg.vhd|proj/src/TopLevel/Components/Memory/neg_edge_nBit_Reg.vhd|proj/src/TopLevel/Components/Memory/ID_EX_register_file.vhd|proj/src/TopLevel/Components/Memory/pc_dffg.vhd|proj/src/TopLevel/Components/Memory/pc_Reg.vhd|proj/src/TopLevel/Components/Memory/control_register.vhd|proj/src/TopLevel/Components/Memory/MEM_WB_regsiter_file.vhd|proj/src/TopLevel/Components/Memory/RegFile.vhd|proj/src/TopLevel/Components/Memory/IF_register_file.vhd|proj/src/TopLevel/Components/Memory/gp_Reg.vhd|proj/src/TopLevel/Components/Memory/dffg.vhd|proj/src/TopLevel/Components/Memory/nBit_Reg.vhd|proj/src/TopLevel/Components/Memory/norg2.vhd|proj/src/TopLevel/Components/Memory/mem.vhd|proj/src/TopLevel/Components/Memory/negdffg.vhd|proj/src/TopLevel/Components/Memory/EX_MEM_register_file.vhd|proj/src/TopLevel/Components/Forwarding Unit/Forwarding_Unit.vhd|proj/src/TopLevel/Components/IF-StageComponents/pcFetch.vhd|proj/src/TopLevel/RISCV_Processor.vhd|internal/testpy/tb.vhd|proj/src/RISCV_types.vhd|
 !i113 0
+R11
 R12
-R13
 Ealuunit
 R1
-Z18 DPx4 work 11 riscv_types 0 22 Z_cM4AcLI`GnC?Dk1DnK]3
+Z14 DPx4 work 11 riscv_types 0 22 Z_cM4AcLI`GnC?Dk1DnK]3
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z19 8proj/src/TopLevel/Components/EX-StageComponents/ALUUnit.vhd
-Z20 Fproj/src/TopLevel/Components/EX-StageComponents/ALUUnit.vhd
+Z15 8proj/src/TopLevel/Components/EX-StageComponents/ALUUnit.vhd
+Z16 Fproj/src/TopLevel/Components/EX-StageComponents/ALUUnit.vhd
 l0
 L6 1
 V>f<hCfa2S=YgWo:k1k0a22
@@ -72,39 +72,39 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Astructural
-R18
+R14
 R2
 R3
 R4
-Z21 DEx4 work 7 aluunit 0 22 >f<hCfa2S=YgWo:k1k0a22
-!i122 273
+DEx4 work 7 aluunit 0 22 >f<hCfa2S=YgWo:k1k0a22
+!i122 0
 l101
-Z22 L19 158
-Z23 V?1OLz?T<k4GJUj784Y2763
-Z24 !s100 h?ifXJMeFkJ7MzOMfP:C[3
+L19 158
+V?1OLz?T<k4GJUj784Y2763
+!s100 h?ifXJMeFkJ7MzOMfP:C[3
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Eand_32bit
 R1
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z25 8proj/src/TopLevel/Components/32BitGates/and_32bit.vhd
-Z26 Fproj/src/TopLevel/Components/32BitGates/and_32bit.vhd
+Z17 8proj/src/TopLevel/Components/32BitGates/and_32bit.vhd
+Z18 Fproj/src/TopLevel/Components/32BitGates/and_32bit.vhd
 l0
 L4 1
 VPNgSG_NXDKA<?GFVC5Y9k0
@@ -115,39 +115,39 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Astructural
 R3
 R4
-Z27 DEx4 work 9 and_32bit 0 22 PNgSG_NXDKA<?GFVC5Y9k0
-!i122 273
+DEx4 work 9 and_32bit 0 22 PNgSG_NXDKA<?GFVC5Y9k0
+!i122 0
 l21
-Z28 L14 17
-Z29 VUQo?0G62L]RCf@h:M5koU0
-Z30 !s100 _:l;K6J038GmdEc:c4ajk2
+Z19 L14 17
+VUQo?0G62L]RCf@h:M5koU0
+!s100 _:l;K6J038GmdEc:c4ajk2
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Eandg2
 R1
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z31 8proj/src/TopLevel/Components/Gates/andg2.vhd
-Z32 Fproj/src/TopLevel/Components/Gates/andg2.vhd
+Z20 8proj/src/TopLevel/Components/Gates/andg2.vhd
+Z21 Fproj/src/TopLevel/Components/Gates/andg2.vhd
 l0
-Z33 L23 1
+Z22 L23 1
 Vzkd6DAMQeJ>Gdbz_JED5>0
 !s100 YT?bGzEmcFo:DlnoC^B4_0
 R7
@@ -156,39 +156,39 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Adataflow
 R3
 R4
-Z34 DEx4 work 5 andg2 0 22 zkd6DAMQeJ>Gdbz_JED5>0
-!i122 273
+DEx4 work 5 andg2 0 22 zkd6DAMQeJ>Gdbz_JED5>0
+!i122 0
 l32
-Z35 L31 6
-Z36 ViHL2DEfeDAgY8?F@RAnWH0
-Z37 !s100 I`@Z@UBObS]<7m8bPgKUS1
+Z23 L31 6
+ViHL2DEfeDAgY8?F@RAnWH0
+!s100 I`@Z@UBObS]<7m8bPgKUS1
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Ebarrel_shifter
 R1
-R18
+R14
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z38 8proj/src/TopLevel/Components/EX-StageComponents/barrel_shifter.vhd
-Z39 Fproj/src/TopLevel/Components/EX-StageComponents/barrel_shifter.vhd
+Z24 8proj/src/TopLevel/Components/EX-StageComponents/barrel_shifter.vhd
+Z25 Fproj/src/TopLevel/Components/EX-StageComponents/barrel_shifter.vhd
 l0
 L6 1
 Va7NYGNNabK[MzT;17MIYY3
@@ -199,40 +199,40 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Astructural
-R18
+R14
 R2
 R3
 R4
-Z40 DEx4 work 14 barrel_shifter 0 22 a7NYGNNabK[MzT;17MIYY3
-!i122 273
+DEx4 work 14 barrel_shifter 0 22 a7NYGNNabK[MzT;17MIYY3
+!i122 0
 l58
-Z41 L15 153
-Z42 VSI1<V?cWD:l;B6MmB]F082
-Z43 !s100 IEdK34JkGBPEnZ6lS_E^?3
+L15 153
+VSI1<V?cWD:l;B6MmB]F082
+!s100 IEdK34JkGBPEnZ6lS_E^?3
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Ecomparator
 R1
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z44 8proj/src/TopLevel/Components/ID-StageComponents/comparator.vhd
-Z45 Fproj/src/TopLevel/Components/ID-StageComponents/comparator.vhd
+Z26 8proj/src/TopLevel/Components/ID-StageComponents/comparator.vhd
+Z27 Fproj/src/TopLevel/Components/ID-StageComponents/comparator.vhd
 l0
 L5 1
 VNanWnTbG=6hY[:LST1D3e3
@@ -243,40 +243,40 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Amixed
 R2
 R3
 R4
-Z46 DEx4 work 10 comparator 0 22 NanWnTbG=6hY[:LST1D3e3
-!i122 273
+DEx4 work 10 comparator 0 22 NanWnTbG=6hY[:LST1D3e3
+!i122 0
 l29
-Z47 L14 42
-Z48 V=@7OmVb>1jMZEH7J_L0ho0
-Z49 !s100 M<cYc<81bk3?RZZoEI?TF3
+L14 42
+V=@7OmVb>1jMZEH7J_L0ho0
+!s100 M<cYc<81bk3?RZZoEI?TF3
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Econtrol_register
-Z50 w1762372915
-R18
+Z28 w1762372915
+R14
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z51 8proj/src/TopLevel/Components/Memory/control_register.vhd
-Z52 Fproj/src/TopLevel/Components/Memory/control_register.vhd
+Z29 8proj/src/TopLevel/Components/Memory/control_register.vhd
+Z30 Fproj/src/TopLevel/Components/Memory/control_register.vhd
 l0
 L6 1
 ViDI2czb7aLl4gmBGkDAcR1
@@ -287,41 +287,41 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Astructure
-R18
+R14
 R2
 R3
 R4
-Z53 DEx4 work 16 control_register 0 22 iDI2czb7aLl4gmBGkDAcR1
-!i122 273
+DEx4 work 16 control_register 0 22 iDI2czb7aLl4gmBGkDAcR1
+!i122 0
 l72
-Z54 L51 108
-Z55 VW?6>n6cZ`BHh<1A^JgoLT2
-Z56 !s100 WcQg>Z;A7LiZ6RTAczab<3
+L51 108
+VW?6>n6cZ`BHh<1A^JgoLT2
+!s100 WcQg>Z;A7LiZ6RTAczab<3
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Econtrolunit
 R1
-R18
+R14
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z57 8proj/src/TopLevel/Components/ID-StageComponents/controlUnit.vhd
-Z58 Fproj/src/TopLevel/Components/ID-StageComponents/controlUnit.vhd
+Z31 8proj/src/TopLevel/Components/ID-StageComponents/controlUnit.vhd
+Z32 Fproj/src/TopLevel/Components/ID-StageComponents/controlUnit.vhd
 l0
 L6 1
 VSO<G[Cmd@OSnjIFO<LTSb2
@@ -332,41 +332,41 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Adataflow
-R18
+R14
 R2
 R3
 R4
-Z59 DEx4 work 11 controlunit 0 22 SO<G[Cmd@OSnjIFO<LTSb2
-!i122 273
+DEx4 work 11 controlunit 0 22 SO<G[Cmd@OSnjIFO<LTSb2
+!i122 0
 l47
-Z60 L29 96
-Z61 V;2=I[O06_zBmYdWF6<6?M1
-Z62 !s100 6RVACH=<RVfJeQTo9n:TV1
+L29 96
+V;2=I[O06_zBmYdWF6<6?M1
+!s100 6RVACH=<RVfJeQTo9n:TV1
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Edatahazard
-Z63 w1763509532
-R18
+Z33 w1763509532
+R14
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z64 8proj/src/TopLevel/Components/Hazards Controls/dataHazard.vhd
-Z65 Fproj/src/TopLevel/Components/Hazards Controls/dataHazard.vhd
+Z34 8proj/src/TopLevel/Components/Hazards Controls/dataHazard.vhd
+Z35 Fproj/src/TopLevel/Components/Hazards Controls/dataHazard.vhd
 l0
 L6 1
 Vgjf`7koa:9LaK_7IDfM632
@@ -377,40 +377,40 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Adataflow
-R18
+R14
 R2
 R3
 R4
-Z66 DEx4 work 10 datahazard 0 22 gjf`7koa:9LaK_7IDfM632
-!i122 273
+DEx4 work 10 datahazard 0 22 gjf`7koa:9LaK_7IDfM632
+!i122 0
 l52
-Z67 L39 67
-Z68 VE7@Gn^Ic=V19Y?o?a341C0
-Z69 !s100 aGH_h@1DiMM=zj8E0h]Z_3
+L39 67
+VE7@Gn^Ic=V19Y?o?a341C0
+!s100 aGH_h@1DiMM=zj8E0h]Z_3
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Edecoder5t32
 R1
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z70 8proj/src/TopLevel/Components/GeneralComponents/decoder5t32.vhd
-Z71 Fproj/src/TopLevel/Components/GeneralComponents/decoder5t32.vhd
+Z36 8proj/src/TopLevel/Components/GeneralComponents/decoder5t32.vhd
+Z37 Fproj/src/TopLevel/Components/GeneralComponents/decoder5t32.vhd
 l0
 L7 1
 Vz@Sg9_B9n3Id=4?ClK_8z0
@@ -421,40 +421,40 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Abehavioral
 R2
 R3
 R4
-Z72 DEx4 work 11 decoder5t32 0 22 z@Sg9_B9n3Id=4?ClK_8z0
-!i122 273
+DEx4 work 11 decoder5t32 0 22 z@Sg9_B9n3Id=4?ClK_8z0
+!i122 0
 l17
-Z73 L16 12
-Z74 VAcC0kY_E5@n;JSCLg5zmj1
-Z75 !s100 8D>27:4km0HMbfTdkk=Q>0
+L16 12
+VAcC0kY_E5@n;JSCLg5zmj1
+!s100 8D>27:4km0HMbfTdkk=Q>0
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Edffg
 R1
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z76 8proj/src/TopLevel/Components/Memory/dffg.vhd
-Z77 Fproj/src/TopLevel/Components/Memory/dffg.vhd
+Z38 8proj/src/TopLevel/Components/Memory/dffg.vhd
+Z39 Fproj/src/TopLevel/Components/Memory/dffg.vhd
 l0
-R33
+R22
 V>PZ[eHl^ZDc^T627=nThL3
 !s100 T4gcXQGMCgKJbn8XhBM;b0
 R7
@@ -463,39 +463,39 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Amixed
 R3
 R4
-Z78 DEx4 work 4 dffg 0 22 >PZ[eHl^ZDc^T627=nThL3
-!i122 273
+DEx4 work 4 dffg 0 22 >PZ[eHl^ZDc^T627=nThL3
+!i122 0
 l37
-Z79 L33 29
-Z80 VKI^@FPEc]eSB[32H4XI822
-Z81 !s100 iOdlTUid@@]UimFK_53^C1
+L33 29
+VKI^@FPEc]eSB[32H4XI822
+!s100 iOdlTUid@@]UimFK_53^C1
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Eex_mem_register_file
-Z82 w1763339414
-R18
+Z40 w1763339414
+R14
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z83 8proj/src/TopLevel/Components/Memory/EX_MEM_register_file.vhd
-Z84 Fproj/src/TopLevel/Components/Memory/EX_MEM_register_file.vhd
+Z41 8proj/src/TopLevel/Components/Memory/EX_MEM_register_file.vhd
+Z42 Fproj/src/TopLevel/Components/Memory/EX_MEM_register_file.vhd
 l0
 L6 1
 V9C^Ucz6aEkRk4HYO:HdY22
@@ -506,41 +506,41 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Astructure
-R18
+R14
 R2
 R3
 R4
-Z85 DEx4 work 20 ex_mem_register_file 0 22 9C^Ucz6aEkRk4HYO:HdY22
-!i122 273
+DEx4 work 20 ex_mem_register_file 0 22 9C^Ucz6aEkRk4HYO:HdY22
+!i122 0
 l122
-Z86 L64 131
-Z87 VWJ<^^J_S6RON_7E6LC:@l2
-Z88 !s100 >D7b=o6k1jEc6imnU_8>63
+L64 131
+VWJ<^^J_S6RON_7E6LC:@l2
+!s100 >D7b=o6k1jEc6imnU_8>63
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Eforwarding_unit
-Z89 w1763336872
-R18
+Z43 w1763336872
+R14
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z90 8proj/src/TopLevel/Components/Forwarding Unit/Forwarding_Unit.vhd
-Z91 Fproj/src/TopLevel/Components/Forwarding Unit/Forwarding_Unit.vhd
+Z44 8proj/src/TopLevel/Components/Forwarding Unit/Forwarding_Unit.vhd
+Z45 Fproj/src/TopLevel/Components/Forwarding Unit/Forwarding_Unit.vhd
 l0
 L6 1
 VFa>XP4_OY_;2?;B0b;7aQ1
@@ -551,40 +551,40 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Adataflow
-R18
+R14
 R2
 R3
 R4
-Z92 DEx4 work 15 forwarding_unit 0 22 Fa>XP4_OY_;2?;B0b;7aQ1
-!i122 273
+DEx4 work 15 forwarding_unit 0 22 Fa>XP4_OY_;2?;B0b;7aQ1
+!i122 0
 l27
-Z93 L26 22
-Z94 V__AKZgjaPZ_]C_4OMmL?i1
-Z95 !s100 S`lW?Dc_98CmEe;T;:F?70
+L26 22
+V__AKZgjaPZ_]C_4OMmL?i1
+!s100 S`lW?Dc_98CmEe;T;:F?70
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Egp_reg
-R50
+R28
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z96 8proj/src/TopLevel/Components/Memory/gp_Reg.vhd
-Z97 Fproj/src/TopLevel/Components/Memory/gp_Reg.vhd
+Z46 8proj/src/TopLevel/Components/Memory/gp_Reg.vhd
+Z47 Fproj/src/TopLevel/Components/Memory/gp_Reg.vhd
 l0
 L5 1
 V9cQPIh`I2VlW@`bEkU6671
@@ -595,40 +595,40 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Astructure
 R2
 R3
 R4
-Z98 DEx4 work 6 gp_reg 0 22 9cQPIh`I2VlW@`bEkU6671
-!i122 273
+DEx4 work 6 gp_reg 0 22 9cQPIh`I2VlW@`bEkU6671
+!i122 0
 l28
-Z99 L14 29
-Z100 V;Az[bi:_5n879g637CGCS2
-Z101 !s100 ;VglZN<R_]6Q`Oje1b2E83
+Z48 L14 29
+V;Az[bi:_5n879g637CGCS2
+!s100 ;VglZN<R_]6Q`Oje1b2E83
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Eid_ex_register_file
-Z102 w1762991740
-R18
+Z49 w1762991740
+R14
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z103 8proj/src/TopLevel/Components/Memory/ID_EX_register_file.vhd
-Z104 Fproj/src/TopLevel/Components/Memory/ID_EX_register_file.vhd
+Z50 8proj/src/TopLevel/Components/Memory/ID_EX_register_file.vhd
+Z51 Fproj/src/TopLevel/Components/Memory/ID_EX_register_file.vhd
 l0
 L6 1
 V:W=JE]nGhhCFjI@>Ga@Go1
@@ -639,41 +639,41 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Astructure
-R18
+R14
 R2
 R3
 R4
-Z105 DEx4 work 19 id_ex_register_file 0 22 :W=JE]nGhhCFjI@>Ga@Go1
-!i122 273
+DEx4 work 19 id_ex_register_file 0 22 :W=JE]nGhhCFjI@>Ga@Go1
+!i122 0
 l135
-Z106 L74 173
-Z107 VO`e6X<Z4GAh@j:h1mG@aB2
-Z108 !s100 7]?T4]U`H6MI3>39:ETJk3
+L74 173
+VO`e6X<Z4GAh@j:h1mG@aB2
+!s100 7]?T4]U`H6MI3>39:ETJk3
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Eif_register_file
-R50
-R18
+R28
+R14
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z109 8proj/src/TopLevel/Components/Memory/IF_register_file.vhd
-Z110 Fproj/src/TopLevel/Components/Memory/IF_register_file.vhd
+Z52 8proj/src/TopLevel/Components/Memory/IF_register_file.vhd
+Z53 Fproj/src/TopLevel/Components/Memory/IF_register_file.vhd
 l0
 L6 1
 V?ED7JRAZKXkBUbTPSB>oj0
@@ -684,41 +684,41 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Astructure
-R18
+R14
 R2
 R3
 R4
-Z111 DEx4 work 16 if_register_file 0 22 ?ED7JRAZKXkBUbTPSB>oj0
-!i122 273
+DEx4 work 16 if_register_file 0 22 ?ED7JRAZKXkBUbTPSB>oj0
+!i122 0
 l36
-Z112 L21 36
-Z113 VQ94X@0eBIfhWIb3CQgGN:3
-Z114 !s100 Zh2BLWDYOIAP=z=@g3FG^3
+L21 36
+VQ94X@0eBIfhWIb3CQgGN:3
+!s100 Zh2BLWDYOIAP=z=@g3FG^3
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Eimm_generator
 R1
-R18
+R14
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z115 8proj/src/TopLevel/Components/ID-StageComponents/imm_generator.vhd
-Z116 Fproj/src/TopLevel/Components/ID-StageComponents/imm_generator.vhd
+Z54 8proj/src/TopLevel/Components/ID-StageComponents/imm_generator.vhd
+Z55 Fproj/src/TopLevel/Components/ID-StageComponents/imm_generator.vhd
 l0
 L6 1
 V`P58J]37_<jkf:eQL_N>63
@@ -729,41 +729,41 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Abehavioral
-R18
+R14
 R2
 R3
 R4
-Z117 DEx4 work 13 imm_generator 0 22 `P58J]37_<jkf:eQL_N>63
-!i122 273
+DEx4 work 13 imm_generator 0 22 `P58J]37_<jkf:eQL_N>63
+!i122 0
 l31
-Z118 L13 56
-Z119 V5:B6<99WL@^NzHQ3<KTMM3
-Z120 !s100 B=zFfT@eoQTfX:VBXcnTM0
+L13 56
+V5:B6<99WL@^NzHQ3<KTMM3
+!s100 B=zFfT@eoQTfX:VBXcnTM0
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Einvg
 R1
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z121 8proj/src/TopLevel/Components/Gates/invg.vhd
-Z122 Fproj/src/TopLevel/Components/Gates/invg.vhd
+Z56 8proj/src/TopLevel/Components/Gates/invg.vhd
+Z57 Fproj/src/TopLevel/Components/Gates/invg.vhd
 l0
-R33
+R22
 VEIV8[cYGC3d^KTkcGjzd81
 !s100 _XK?_^5z0Rm1<k12?;5R?2
 R7
@@ -772,38 +772,38 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Adataflow
 R3
 R4
-Z123 DEx4 work 4 invg 0 22 EIV8[cYGC3d^KTkcGjzd81
-!i122 273
+DEx4 work 4 invg 0 22 EIV8[cYGC3d^KTkcGjzd81
+!i122 0
 l31
-Z124 L30 6
-Z125 VgCOFGMYmXN`?<=SMTD_mC1
-Z126 !s100 bk7I76o8e1LURdoZEQb8H0
+L30 6
+VgCOFGMYmXN`?<=SMTD_mC1
+!s100 bk7I76o8e1LURdoZEQb8H0
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Emem
 R1
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z127 8proj/src/TopLevel/Components/Memory/mem.vhd
-Z128 Fproj/src/TopLevel/Components/Memory/mem.vhd
+Z58 8proj/src/TopLevel/Components/Memory/mem.vhd
+Z59 Fproj/src/TopLevel/Components/Memory/mem.vhd
 l0
 L8 1
 V`DCP5]PX0@1FzLJ]HFPC51
@@ -814,40 +814,40 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Artl
 R2
 R3
 R4
-Z129 DEx4 work 3 mem 0 22 `DCP5]PX0@1FzLJ]HFPC51
-!i122 273
+DEx4 work 3 mem 0 22 `DCP5]PX0@1FzLJ]HFPC51
+!i122 0
 l37
-Z130 L27 24
-Z131 V7=z6;Jh7Kho4J>IEcD31I0
-Z132 !s100 OI8_3><BhDkT3l3n8`OXd3
+L27 24
+V7=z6;Jh7Kho4J>IEcD31I0
+!s100 OI8_3><BhDkT3l3n8`OXd3
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Emem_wb_register_file
-R50
-R18
+R28
+R14
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z133 8proj/src/TopLevel/Components/Memory/MEM_WB_regsiter_file.vhd
-Z134 Fproj/src/TopLevel/Components/Memory/MEM_WB_regsiter_file.vhd
+Z60 8proj/src/TopLevel/Components/Memory/MEM_WB_regsiter_file.vhd
+Z61 Fproj/src/TopLevel/Components/Memory/MEM_WB_regsiter_file.vhd
 l0
 L6 1
 VX?B`Xg;VoaB[X=;ej^dRe3
@@ -858,40 +858,40 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Astructure
-R18
+R14
 R2
 R3
 R4
-Z135 DEx4 work 20 mem_wb_register_file 0 22 X?B`Xg;VoaB[X=;ej^dRe3
-!i122 273
+DEx4 work 20 mem_wb_register_file 0 22 X?B`Xg;VoaB[X=;ej^dRe3
+!i122 0
 l105
-Z136 L62 104
-Z137 V>IaAfjE]C_b:[mof5f[b31
-Z138 !s100 e7m3>>fkd6HLlk_g5=YX`0
+L62 104
+V>IaAfjE]C_b:[mof5f[b31
+!s100 e7m3>>fkd6HLlk_g5=YX`0
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Ememoryslicer
 R1
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z139 8proj/src/TopLevel/Components/MEM-StageComponents/memorySlicer.vhd
-Z140 Fproj/src/TopLevel/Components/MEM-StageComponents/memorySlicer.vhd
+Z62 8proj/src/TopLevel/Components/MEM-StageComponents/memorySlicer.vhd
+Z63 Fproj/src/TopLevel/Components/MEM-StageComponents/memorySlicer.vhd
 l0
 L5 1
 VB<]N=@JgMJ<NzS48?FgT<1
@@ -902,38 +902,38 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Abehavioral
 R2
 R3
 R4
-Z141 DEx4 work 12 memoryslicer 0 22 B<]N=@JgMJ<NzS48?FgT<1
-!i122 273
+DEx4 work 12 memoryslicer 0 22 B<]N=@JgMJ<NzS48?FgT<1
+!i122 0
 l19
-Z142 L14 37
-Z143 V3H[@N1??`FWe8;Nf4lVBC0
-Z144 !s100 35QB<J]98:5_FDVE6WHKN0
+L14 37
+V3H[@N1??`FWe8;Nf4lVBC0
+!s100 35QB<J]98:5_FDVE6WHKN0
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Emux2t1_2
-Z145 w1762107931
+Z64 w1762107931
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z146 8proj/src/TopLevel/Components/Multiplexors/mux2t1_2.vhd
-Z147 Fproj/src/TopLevel/Components/Multiplexors/mux2t1_2.vhd
+Z65 8proj/src/TopLevel/Components/Multiplexors/mux2t1_2.vhd
+Z66 Fproj/src/TopLevel/Components/Multiplexors/mux2t1_2.vhd
 l0
 L4 1
 VNihMjLRSOMRD02=i=DZI@3
@@ -944,40 +944,40 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Astructural
 R3
 R4
-Z148 DEx4 work 8 mux2t1_2 0 22 NihMjLRSOMRD02=i=DZI@3
-!i122 273
+DEx4 work 8 mux2t1_2 0 22 NihMjLRSOMRD02=i=DZI@3
+!i122 0
 l22
-Z149 L13 21
-Z150 VLE0S6B^3cWHK8@4B6:zPT1
-Z151 !s100 9[JFPUGGkVo=cT>1C?PcE3
+L13 21
+VLE0S6B^3cWHK8@4B6:zPT1
+!s100 9[JFPUGGkVo=cT>1C?PcE3
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Emux2t1_dataflow
-Z152 w1763326532
+Z67 w1763326532
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z153 8proj/src/TopLevel/Components/Multiplexors/mux2t1_dataflow.vhd
-Z154 Fproj/src/TopLevel/Components/Multiplexors/mux2t1_dataflow.vhd
+Z68 8proj/src/TopLevel/Components/Multiplexors/mux2t1_dataflow.vhd
+Z69 Fproj/src/TopLevel/Components/Multiplexors/mux2t1_dataflow.vhd
 l0
-Z155 L21 1
+Z70 L21 1
 VlJAYLXT20GBE^g@kKoE2d0
 !s100 @[[jOkSDXnF?;Y0@d[eQb1
 R7
@@ -986,40 +986,40 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Adataflow
 R2
 R3
 R4
-Z156 DEx4 work 15 mux2t1_dataflow 0 22 lJAYLXT20GBE^g@kKoE2d0
-!i122 273
+DEx4 work 15 mux2t1_dataflow 0 22 lJAYLXT20GBE^g@kKoE2d0
+!i122 0
 l32
-Z157 L30 9
-Z158 V>VooAo9o55l]hcT2]3[V^2
-Z159 !s100 ?4Ye?TzCOM:5Vn:GJD`UW1
+L30 9
+V>VooAo9o55l]hcT2]3[V^2
+!s100 ?4Ye?TzCOM:5Vn:GJD`UW1
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Emux2t1_n
-R145
+R64
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z160 8proj/src/TopLevel/Components/Multiplexors/mux2t1_N.vhd
-Z161 Fproj/src/TopLevel/Components/Multiplexors/mux2t1_N.vhd
+Z71 8proj/src/TopLevel/Components/Multiplexors/mux2t1_N.vhd
+Z72 Fproj/src/TopLevel/Components/Multiplexors/mux2t1_N.vhd
 l0
-R155
+R70
 VGZ`>;oeU_8jndT_KOSU<31
 !s100 BKZeKCAB2i6lge3>7TA3d3
 R7
@@ -1028,39 +1028,39 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Astructural
 R3
 R4
-Z162 DEx4 work 8 mux2t1_n 0 22 GZ`>;oeU_8jndT_KOSU<31
-!i122 273
+DEx4 work 8 mux2t1_n 0 22 GZ`>;oeU_8jndT_KOSU<31
+!i122 0
 l39
-Z163 L30 21
-Z164 VX2SAS=<IeSCbaF]ccKHcJ1
-Z165 !s100 ;FfMW7ZlfN[z_1MlTbAaD0
+L30 21
+VX2SAS=<IeSCbaF]ccKHcJ1
+!s100 ;FfMW7ZlfN[z_1MlTbAaD0
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Emux32t1
-R145
-R18
+R64
+R14
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z166 8proj/src/TopLevel/Components/Multiplexors/mux32t1.vhd
-Z167 Fproj/src/TopLevel/Components/Multiplexors/mux32t1.vhd
+Z73 8proj/src/TopLevel/Components/Multiplexors/mux32t1.vhd
+Z74 Fproj/src/TopLevel/Components/Multiplexors/mux32t1.vhd
 l0
 L7 1
 VWcV]ZYTMka@f]efGm]4a80
@@ -1071,41 +1071,41 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Adataflow
-R18
+R14
 R2
 R3
 R4
-Z168 DEx4 work 7 mux32t1 0 22 WcV]ZYTMka@f]efGm]4a80
-!i122 273
+DEx4 work 7 mux32t1 0 22 WcV]ZYTMka@f]efGm]4a80
+!i122 0
 l17
-Z169 L15 6
-Z170 VDQAcfoZ?K<R?<Bzc;dO:J0
-Z171 !s100 cF[0`bfRTBNcWYK^?>hQT2
+Z75 L15 6
+VDQAcfoZ?K<R?<Bzc;dO:J0
+!s100 cF[0`bfRTBNcWYK^?>hQT2
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Emux32x4t1
-R145
-R18
+R64
+R14
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z172 8proj/src/TopLevel/Components/Multiplexors/mux32x4t1.vhd
-Z173 Fproj/src/TopLevel/Components/Multiplexors/mux32x4t1.vhd
+Z76 8proj/src/TopLevel/Components/Multiplexors/mux32x4t1.vhd
+Z77 Fproj/src/TopLevel/Components/Multiplexors/mux32x4t1.vhd
 l0
 L7 1
 VgjF6KRbj7AdoG0HdZXzjc2
@@ -1116,39 +1116,39 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Adataflow
-R18
+R14
 R2
 R3
 R4
-Z174 DEx4 work 9 mux32x4t1 0 22 gjF6KRbj7AdoG0HdZXzjc2
-!i122 273
+DEx4 work 9 mux32x4t1 0 22 gjF6KRbj7AdoG0HdZXzjc2
+!i122 0
 l17
-R169
-Z175 VCa7oiTc>fke`0gfOhWOTD0
-Z176 !s100 >KBaEQEo?4`lJA3V7bVUj3
+R75
+VCa7oiTc>fke`0gfOhWOTD0
+!s100 >KBaEQEo?4`lJA3V7bVUj3
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Emux4t1
-Z177 w1763327235
+Z78 w1763327235
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z178 8proj/src/TopLevel/Components/Multiplexors/mux4t1 .vhd
-Z179 Fproj/src/TopLevel/Components/Multiplexors/mux4t1 .vhd
+Z79 8proj/src/TopLevel/Components/Multiplexors/mux4t1 .vhd
+Z80 Fproj/src/TopLevel/Components/Multiplexors/mux4t1 .vhd
 l0
 L4 1
 VX2O[V4fVWfX1_5ENLNF912
@@ -1159,57 +1159,37 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Adataflow
 R3
 R4
-Z180 DEx4 work 6 mux4t1 0 22 X2O[V4fVWfX1_5ENLNF912
-!i122 273
+DEx4 work 6 mux4t1 0 22 X2O[V4fVWfX1_5ENLNF912
+!i122 0
 l17
-Z181 L15 10
-Z182 Va05;>TGX9GHLl[D[ei]zF1
-Z183 !s100 DI=a1g^LaG4TUO<c73zVR3
+L15 10
+Va05;>TGX9GHLl[D[ei]zF1
+!s100 DI=a1g^LaG4TUO<c73zVR3
 R7
 33
 R8
 !i10b 1
 R9
 R10
+R13
+!i113 0
 R11
-!i113 0
 R12
-R13
-Astructural
-R3
-R4
-R180
-!i122 158
-l40
-L15 48
-V=FD@IEl2CHdjCO]k]JSSP3
-!s100 YM>eL;`lFJ4^EJPc9UYFY1
-R7
-33
-R45
-!i10b 1
-!s108 1762992101.000000
-!s90 -2008|-work|internal/ModelSimContainer/work|proj/src/RISCV_types.vhd|internal/testpy/tb.vhd|proj/src/RISCV_types.vhd|proj/src/TopLevel/RISCV_Processor.vhd|proj/src/TopLevel/Components/IF-StageComponents/pcFetch.vhd|proj/src/TopLevel/Components/Memory/EX_MEM_register_file.vhd|proj/src/TopLevel/Components/Memory/negdffg.vhd|proj/src/TopLevel/Components/Memory/mem.vhd|proj/src/TopLevel/Components/Memory/norg2.vhd|proj/src/TopLevel/Components/Memory/nBit_Reg.vhd|proj/src/TopLevel/Components/Memory/dffg.vhd|proj/src/TopLevel/Components/Memory/gp_Reg.vhd|proj/src/TopLevel/Components/Memory/IF_register_file.vhd|proj/src/TopLevel/Components/Memory/RegFile.vhd|proj/src/TopLevel/Components/Memory/MEM_WB_regsiter_file.vhd|proj/src/TopLevel/Components/Memory/control_register.vhd|proj/src/TopLevel/Components/Memory/pc_Reg.vhd|proj/src/TopLevel/Components/Memory/pc_dffg.vhd|proj/src/TopLevel/Components/Memory/ID_EX_register_file.vhd|proj/src/TopLevel/Components/Memory/neg_edge_nBit_Reg.vhd|proj/src/TopLevel/Components/Memory/negInit_dffg.vhd|proj/src/TopLevel/Components/Memory/sp_Reg.vhd|proj/src/TopLevel/Components/GeneralComponents/zero_extender.vhd|proj/src/TopLevel/Components/GeneralComponents/sign_extender.vhd|proj/src/TopLevel/Components/GeneralComponents/decoder5t32.vhd|proj/src/TopLevel/Components/ID-StageComponents/comparator.vhd|proj/src/TopLevel/Components/ID-StageComponents/controlUnit.vhd|proj/src/TopLevel/Components/ID-StageComponents/imm_generator.vhd|proj/src/TopLevel/Components/Hazards Controls/dataHazard.vhd|proj/src/TopLevel/Components/EX-StageComponents/ALUUnit.vhd|proj/src/TopLevel/Components/EX-StageComponents/barrel_shifter.vhd|proj/src/TopLevel/Components/Gates/invg.vhd|proj/src/TopLevel/Components/Gates/xorg2.vhd|proj/src/TopLevel/Components/Gates/andg2.vhd|proj/src/TopLevel/Components/Gates/org2.vhd|proj/src/TopLevel/Components/Adders/nBit_Adder.vhd|proj/src/TopLevel/Components/Adders/Adder.vhd|proj/src/TopLevel/Components/Adders/nBit_ALU.vhd|proj/src/TopLevel/Components/Adders/nBit_LookaheadAdder.vhd|proj/src/TopLevel/Components/Multiplexors/mux2t1_N.vhd|proj/src/TopLevel/Components/Multiplexors/mux2t1_dataflow.vhd|proj/src/TopLevel/Components/Multiplexors/mux32x4t1.vhd|proj/src/TopLevel/Components/Multiplexors/mux4t1 .vhd|proj/src/TopLevel/Components/Multiplexors/mux32t1.vhd|proj/src/TopLevel/Components/Multiplexors/mux2t1_2.vhd|proj/src/TopLevel/Components/32BitGates/xor_32bit.vhd|proj/src/TopLevel/Components/32BitGates/OnesComp.vhd|proj/src/TopLevel/Components/32BitGates/nor_32t1bit.vhd|proj/src/TopLevel/Components/32BitGates/and_32bit.vhd|proj/src/TopLevel/Components/32BitGates/or_32bit.vhd|proj/src/TopLevel/Components/MEM-StageComponents/memorySlicer.vhd|
-!s107 proj/src/TopLevel/Components/MEM-StageComponents/memorySlicer.vhd|proj/src/TopLevel/Components/32BitGates/or_32bit.vhd|proj/src/TopLevel/Components/32BitGates/and_32bit.vhd|proj/src/TopLevel/Components/32BitGates/nor_32t1bit.vhd|proj/src/TopLevel/Components/32BitGates/OnesComp.vhd|proj/src/TopLevel/Components/32BitGates/xor_32bit.vhd|proj/src/TopLevel/Components/Multiplexors/mux2t1_2.vhd|proj/src/TopLevel/Components/Multiplexors/mux32t1.vhd|proj/src/TopLevel/Components/Multiplexors/mux4t1 .vhd|proj/src/TopLevel/Components/Multiplexors/mux32x4t1.vhd|proj/src/TopLevel/Components/Multiplexors/mux2t1_dataflow.vhd|proj/src/TopLevel/Components/Multiplexors/mux2t1_N.vhd|proj/src/TopLevel/Components/Adders/nBit_LookaheadAdder.vhd|proj/src/TopLevel/Components/Adders/nBit_ALU.vhd|proj/src/TopLevel/Components/Adders/Adder.vhd|proj/src/TopLevel/Components/Adders/nBit_Adder.vhd|proj/src/TopLevel/Components/Gates/org2.vhd|proj/src/TopLevel/Components/Gates/andg2.vhd|proj/src/TopLevel/Components/Gates/xorg2.vhd|proj/src/TopLevel/Components/Gates/invg.vhd|proj/src/TopLevel/Components/EX-StageComponents/barrel_shifter.vhd|proj/src/TopLevel/Components/EX-StageComponents/ALUUnit.vhd|proj/src/TopLevel/Components/Hazards Controls/dataHazard.vhd|proj/src/TopLevel/Components/ID-StageComponents/imm_generator.vhd|proj/src/TopLevel/Components/ID-StageComponents/controlUnit.vhd|proj/src/TopLevel/Components/ID-StageComponents/comparator.vhd|proj/src/TopLevel/Components/GeneralComponents/decoder5t32.vhd|proj/src/TopLevel/Components/GeneralComponents/sign_extender.vhd|proj/src/TopLevel/Components/GeneralComponents/zero_extender.vhd|proj/src/TopLevel/Components/Memory/sp_Reg.vhd|proj/src/TopLevel/Components/Memory/negInit_dffg.vhd|proj/src/TopLevel/Components/Memory/neg_edge_nBit_Reg.vhd|proj/src/TopLevel/Components/Memory/ID_EX_register_file.vhd|proj/src/TopLevel/Components/Memory/pc_dffg.vhd|proj/src/TopLevel/Components/Memory/pc_Reg.vhd|proj/src/TopLevel/Components/Memory/control_register.vhd|proj/src/TopLevel/Components/Memory/MEM_WB_regsiter_file.vhd|proj/src/TopLevel/Components/Memory/RegFile.vhd|proj/src/TopLevel/Components/Memory/IF_register_file.vhd|proj/src/TopLevel/Components/Memory/gp_Reg.vhd|proj/src/TopLevel/Components/Memory/dffg.vhd|proj/src/TopLevel/Components/Memory/nBit_Reg.vhd|proj/src/TopLevel/Components/Memory/norg2.vhd|proj/src/TopLevel/Components/Memory/mem.vhd|proj/src/TopLevel/Components/Memory/negdffg.vhd|proj/src/TopLevel/Components/Memory/EX_MEM_register_file.vhd|proj/src/TopLevel/Components/IF-StageComponents/pcFetch.vhd|proj/src/TopLevel/RISCV_Processor.vhd|internal/testpy/tb.vhd|proj/src/RISCV_types.vhd|
-!i113 0
-R12
-R13
-R145
 Emux4t1_n
-Z184 w1763327281
+Z81 w1763327281
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z185 8proj/src/TopLevel/Components/Multiplexors/mux4t1_N.vhd
-Z186 Fproj/src/TopLevel/Components/Multiplexors/mux4t1_N.vhd
+Z82 8proj/src/TopLevel/Components/Multiplexors/mux4t1_N.vhd
+Z83 Fproj/src/TopLevel/Components/Multiplexors/mux4t1_N.vhd
 l0
 L4 1
 VRkMf19X6U<ZaB3aUT7PCC1
@@ -1220,38 +1200,38 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Astructural
 R3
 R4
-Z187 DEx4 work 8 mux4t1_n 0 22 RkMf19X6U<ZaB3aUT7PCC1
-!i122 273
+DEx4 work 8 mux4t1_n 0 22 RkMf19X6U<ZaB3aUT7PCC1
+!i122 0
 l29
-Z188 L16 26
-Z189 VV@:GLdmWOMWdC1JhWUE>o3
-Z190 !s100 =Gfzkmh0E`EPJ2Fcnm4Kl2
+L16 26
+VV@:GLdmWOMWdC1JhWUE>o3
+!s100 =Gfzkmh0E`EPJ2Fcnm4Kl2
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Enbit_adder
 R1
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z191 8proj/src/TopLevel/Components/Adders/nBit_Adder.vhd
-Z192 Fproj/src/TopLevel/Components/Adders/nBit_Adder.vhd
+Z84 8proj/src/TopLevel/Components/Adders/nBit_Adder.vhd
+Z85 Fproj/src/TopLevel/Components/Adders/nBit_Adder.vhd
 l0
 L6 1
 VCg@VNeA8L:30[d^TnRBWS3
@@ -1262,39 +1242,39 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Astructure
 R2
 R3
 R4
-Z193 DEx4 work 10 nbit_adder 0 22 Cg@VNeA8L:30[d^TnRBWS3
-!i122 273
+DEx4 work 10 nbit_adder 0 22 Cg@VNeA8L:30[d^TnRBWS3
+!i122 0
 l31
-Z194 L18 29
-Z195 VITEChoj61F_?GmQ6i[oGe1
-Z196 !s100 aW@`22z0cjnI:EnZ?@=KY0
+L18 29
+VITEChoj61F_?GmQ6i[oGe1
+!s100 aW@`22z0cjnI:EnZ?@=KY0
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Enbit_alu
 R1
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z197 8proj/src/TopLevel/Components/Adders/nBit_ALU.vhd
-Z198 Fproj/src/TopLevel/Components/Adders/nBit_ALU.vhd
+Z86 8proj/src/TopLevel/Components/Adders/nBit_ALU.vhd
+Z87 Fproj/src/TopLevel/Components/Adders/nBit_ALU.vhd
 l0
 L5 1
 V<8LR_1_;;HUEzPTaaAn?D3
@@ -1305,39 +1285,39 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Astructure
 R2
 R3
 R4
-Z199 DEx4 work 8 nbit_alu 0 22 <8LR_1_;;HUEzPTaaAn?D3
-!i122 273
+DEx4 work 8 nbit_alu 0 22 <8LR_1_;;HUEzPTaaAn?D3
+!i122 0
 l46
-Z200 L19 62
-Z201 V`Og70D5;9i0m5OoclmUX:0
-Z202 !s100 c5T5agB8a2zQjQVO=`GXa1
+L19 62
+V`Og70D5;9i0m5OoclmUX:0
+!s100 c5T5agB8a2zQjQVO=`GXa1
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Enbit_lookaheadadder
 R1
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z203 8proj/src/TopLevel/Components/Adders/nBit_LookaheadAdder.vhd
-Z204 Fproj/src/TopLevel/Components/Adders/nBit_LookaheadAdder.vhd
+Z88 8proj/src/TopLevel/Components/Adders/nBit_LookaheadAdder.vhd
+Z89 Fproj/src/TopLevel/Components/Adders/nBit_LookaheadAdder.vhd
 l0
 L5 1
 VEKHz@>XeUORB<Qf0gO6Jn2
@@ -1348,39 +1328,39 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Alookahead
 R2
 R3
 R4
-Z205 DEx4 work 19 nbit_lookaheadadder 0 22 EKHz@>XeUORB<Qf0gO6Jn2
-!i122 273
+DEx4 work 19 nbit_lookaheadadder 0 22 EKHz@>XeUORB<Qf0gO6Jn2
+!i122 0
 l21
-Z206 L18 28
-Z207 VkE[2<GYa^<F0igh`:4P?31
-Z208 !s100 LYhO]_T@BQ@C`N2n8?_Om2
+L18 28
+VkE[2<GYa^<F0igh`:4P?31
+!s100 LYhO]_T@BQ@C`N2n8?_Om2
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Enbit_reg
 R1
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z209 8proj/src/TopLevel/Components/Memory/nBit_Reg.vhd
-Z210 Fproj/src/TopLevel/Components/Memory/nBit_Reg.vhd
+Z90 8proj/src/TopLevel/Components/Memory/nBit_Reg.vhd
+Z91 Fproj/src/TopLevel/Components/Memory/nBit_Reg.vhd
 l0
 L6 1
 V=iH0bZGn7Qj2CidOgMP_E3
@@ -1391,39 +1371,39 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Astructure
 R2
 R3
 R4
-Z211 DEx4 work 8 nbit_reg 0 22 =iH0bZGn7Qj2CidOgMP_E3
-!i122 273
+DEx4 work 8 nbit_reg 0 22 =iH0bZGn7Qj2CidOgMP_E3
+!i122 0
 l28
-Z212 L18 24
-Z213 VEUMCgBh8_HAVFQ7zYF=AF0
-Z214 !s100 E?UL:bhBgLJbR>knfb;[i1
+L18 24
+VEUMCgBh8_HAVFQ7zYF=AF0
+!s100 E?UL:bhBgLJbR>knfb;[i1
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Eneg_edge_nbit_reg
 R1
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z215 8proj/src/TopLevel/Components/Memory/neg_edge_nBit_Reg.vhd
-Z216 Fproj/src/TopLevel/Components/Memory/neg_edge_nBit_Reg.vhd
+Z92 8proj/src/TopLevel/Components/Memory/neg_edge_nBit_Reg.vhd
+Z93 Fproj/src/TopLevel/Components/Memory/neg_edge_nBit_Reg.vhd
 l0
 L5 1
 V8KaJ6THC3<nD3904Pmk8F0
@@ -1434,38 +1414,38 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Astructure
 R2
 R3
 R4
-Z217 DEx4 work 17 neg_edge_nbit_reg 0 22 8KaJ6THC3<nD3904Pmk8F0
-!i122 273
+DEx4 work 17 neg_edge_nbit_reg 0 22 8KaJ6THC3<nD3904Pmk8F0
+!i122 0
 l27
-Z218 L17 22
-Z219 VAIdZI8B9DMDgM<Qd3g=An2
-Z220 !s100 bZA4jS13bLC9QQ`CJ70E`3
+L17 22
+VAIdZI8B9DMDgM<Qd3g=An2
+!s100 bZA4jS13bLC9QQ`CJ70E`3
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Enegdffg
-Z221 w1762109560
+Z94 w1762109560
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z222 8proj/src/TopLevel/Components/Memory/negdffg.vhd
-Z223 Fproj/src/TopLevel/Components/Memory/negdffg.vhd
+Z95 8proj/src/TopLevel/Components/Memory/negdffg.vhd
+Z96 Fproj/src/TopLevel/Components/Memory/negdffg.vhd
 l0
 L5 1
 VV]bYI@P4EJR@Fihnbj9;_0
@@ -1476,37 +1456,37 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Amixed
 R3
 R4
-Z224 DEx4 work 7 negdffg 0 22 V]bYI@P4EJR@Fihnbj9;_0
-!i122 273
+DEx4 work 7 negdffg 0 22 V]bYI@P4EJR@Fihnbj9;_0
+!i122 0
 l19
-Z225 L15 29
-Z226 VeV6FhA177]0IWLF^0Ki:L0
-Z227 !s100 Y`omlj8d`42i^6cDNkb:@3
+Z97 L15 29
+VeV6FhA177]0IWLF^0Ki:L0
+!s100 Y`omlj8d`42i^6cDNkb:@3
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Eneginit_dffg
-Z228 w1762371488
+Z98 w1762371488
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z229 8proj/src/TopLevel/Components/Memory/negInit_dffg.vhd
-Z230 Fproj/src/TopLevel/Components/Memory/negInit_dffg.vhd
+Z99 8proj/src/TopLevel/Components/Memory/negInit_dffg.vhd
+Z100 Fproj/src/TopLevel/Components/Memory/negInit_dffg.vhd
 l0
 L4 1
 V3z>mg>8;@kMAiSZddGKY43
@@ -1517,37 +1497,37 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Amixed
 R3
 R4
-Z231 DEx4 work 12 neginit_dffg 0 22 3z>mg>8;@kMAiSZddGKY43
-!i122 273
+DEx4 work 12 neginit_dffg 0 22 3z>mg>8;@kMAiSZddGKY43
+!i122 0
 l19
-R225
-Z232 VbE`:`RBiM_6mPJdmoSBM]2
-Z233 !s100 WAZgI4_bMdd`B2LOM73NC0
+R97
+VbE`:`RBiM_6mPJdmoSBM]2
+!s100 WAZgI4_bMdd`B2LOM73NC0
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Enor_32t1bit
 R1
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z234 8proj/src/TopLevel/Components/32BitGates/nor_32t1bit.vhd
-Z235 Fproj/src/TopLevel/Components/32BitGates/nor_32t1bit.vhd
+Z101 8proj/src/TopLevel/Components/32BitGates/nor_32t1bit.vhd
+Z102 Fproj/src/TopLevel/Components/32BitGates/nor_32t1bit.vhd
 l0
 L4 1
 V[j@J[NUKho`hiQ<DKY9Oj2
@@ -1558,37 +1538,37 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Abehavioral
 R3
 R4
-Z236 DEx4 work 11 nor_32t1bit 0 22 [j@J[NUKho`hiQ<DKY9Oj2
-!i122 273
+DEx4 work 11 nor_32t1bit 0 22 [j@J[NUKho`hiQ<DKY9Oj2
+!i122 0
 l13
-Z237 L12 14
-Z238 VMf[o?:_bKZG7_JG>X[_`l1
-Z239 !s100 L`>4<SRk0N=CJO^nXh2;91
+L12 14
+VMf[o?:_bKZG7_JG>X[_`l1
+!s100 L`>4<SRk0N=CJO^nXh2;91
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Enorg2
-R145
+R64
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z240 8proj/src/TopLevel/Components/Memory/norg2.vhd
-Z241 Fproj/src/TopLevel/Components/Memory/norg2.vhd
+Z103 8proj/src/TopLevel/Components/Memory/norg2.vhd
+Z104 Fproj/src/TopLevel/Components/Memory/norg2.vhd
 l0
 L4 1
 VElYfi2g51^MJ2V]YAY_ic2
@@ -1599,38 +1579,38 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Adataflow
 R3
 R4
-Z242 DEx4 work 5 norg2 0 22 ElYfi2g51^MJ2V]YAY_ic2
-!i122 273
+DEx4 work 5 norg2 0 22 ElYfi2g51^MJ2V]YAY_ic2
+!i122 0
 l13
-Z243 L12 6
-Z244 VfXKH[75AC0JP`0b?`ZD?01
-Z245 !s100 XdWzo:goeGHS8:>jgS05H3
+L12 6
+VfXKH[75AC0JP`0b?`ZD?01
+!s100 XdWzo:goeGHS8:>jgS05H3
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Eonescomp
 R1
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z246 8proj/src/TopLevel/Components/32BitGates/OnesComp.vhd
-Z247 Fproj/src/TopLevel/Components/32BitGates/OnesComp.vhd
+Z105 8proj/src/TopLevel/Components/32BitGates/OnesComp.vhd
+Z106 Fproj/src/TopLevel/Components/32BitGates/OnesComp.vhd
 l0
 L6 1
 VmVNnXV[zYCR5Ea3__eJCm0
@@ -1641,38 +1621,38 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Astructure
 R2
 R3
 R4
-Z248 DEx4 work 8 onescomp 0 22 mVNnXV[zYCR5Ea3__eJCm0
-!i122 273
+DEx4 work 8 onescomp 0 22 mVNnXV[zYCR5Ea3__eJCm0
+!i122 0
 l22
-Z249 L15 18
-Z250 V1TZOVJa>oK5hAN4BZID093
-Z251 !s100 HzdU6W:b:Z3JL4C=9]4Xz2
+L15 18
+V1TZOVJa>oK5hAN4BZID093
+!s100 HzdU6W:b:Z3JL4C=9]4Xz2
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Eor_32bit
 R1
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z252 8proj/src/TopLevel/Components/32BitGates/or_32bit.vhd
-Z253 Fproj/src/TopLevel/Components/32BitGates/or_32bit.vhd
+Z107 8proj/src/TopLevel/Components/32BitGates/or_32bit.vhd
+Z108 Fproj/src/TopLevel/Components/32BitGates/or_32bit.vhd
 l0
 L4 1
 VVJki^ge<7lI45L;Z6X56d2
@@ -1683,39 +1663,39 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Astructural
 R3
 R4
-Z254 DEx4 work 8 or_32bit 0 22 VJki^ge<7lI45L;Z6X56d2
-!i122 273
+DEx4 work 8 or_32bit 0 22 VJki^ge<7lI45L;Z6X56d2
+!i122 0
 l21
-R28
-Z255 V`6J8Xg5[J=9FbeUfjmUM83
-Z256 !s100 n_J=@e6iS7okMIz0NzH>M2
+R19
+V`6J8Xg5[J=9FbeUfjmUM83
+!s100 n_J=@e6iS7okMIz0NzH>M2
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Eorg2
 R1
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z257 8proj/src/TopLevel/Components/Gates/org2.vhd
-Z258 Fproj/src/TopLevel/Components/Gates/org2.vhd
+Z109 8proj/src/TopLevel/Components/Gates/org2.vhd
+Z110 Fproj/src/TopLevel/Components/Gates/org2.vhd
 l0
-R33
+R22
 V?NH`3h?82EVlQHGfZGfFO0
 !s100 bGQ1F9eW^Q17OoL9h4g7z2
 R7
@@ -1724,37 +1704,37 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Adataflow
 R3
 R4
-Z259 DEx4 work 4 org2 0 22 ?NH`3h?82EVlQHGfZGfFO0
-!i122 273
+DEx4 work 4 org2 0 22 ?NH`3h?82EVlQHGfZGfFO0
+!i122 0
 l32
-R35
-Z260 V<Wo>dNlmZ7b3Bf:M>4HRk1
-Z261 !s100 h5_AzR3TdRA0a_K=dQ>mI2
+R23
+V<Wo>dNlmZ7b3Bf:M>4HRk1
+!s100 h5_AzR3TdRA0a_K=dQ>mI2
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Epc_dffg
-R145
+R64
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z262 8proj/src/TopLevel/Components/Memory/pc_dffg.vhd
-Z263 Fproj/src/TopLevel/Components/Memory/pc_dffg.vhd
+Z111 8proj/src/TopLevel/Components/Memory/pc_dffg.vhd
+Z112 Fproj/src/TopLevel/Components/Memory/pc_dffg.vhd
 l0
 L4 1
 VaFT5gD5ImZnnzoEGZfP`B0
@@ -1765,38 +1745,38 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Amixed
 R3
 R4
-Z264 DEx4 work 7 pc_dffg 0 22 aFT5gD5ImZnnzoEGZfP`B0
-!i122 273
+DEx4 work 7 pc_dffg 0 22 aFT5gD5ImZnnzoEGZfP`B0
+!i122 0
 l19
-R225
-Z265 VK8g6kgh0n?nD]Y?hM55LD1
-Z266 !s100 b[WfILX5ggnFikcQ1lCQc1
+R97
+VK8g6kgh0n?nD]Y?hM55LD1
+!s100 b[WfILX5ggnFikcQ1lCQc1
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Epc_reg
-R145
+R64
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z267 8proj/src/TopLevel/Components/Memory/pc_Reg.vhd
-Z268 Fproj/src/TopLevel/Components/Memory/pc_Reg.vhd
+Z113 8proj/src/TopLevel/Components/Memory/pc_Reg.vhd
+Z114 Fproj/src/TopLevel/Components/Memory/pc_Reg.vhd
 l0
 L5 1
 VMm]K<X[6KkMLFF`K;Iok32
@@ -1807,40 +1787,40 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Astructure
 R2
 R3
 R4
-Z269 DEx4 work 6 pc_reg 0 22 Mm]K<X[6KkMLFF`K;Iok32
-!i122 273
+DEx4 work 6 pc_reg 0 22 Mm]K<X[6KkMLFF`K;Iok32
+!i122 0
 l28
-R99
-Z270 VebEE^[;[?oz=gd7O[T;741
-Z271 !s100 i44kD6RRkSPzg]h_J2Q``2
+R48
+VebEE^[;[?oz=gd7O[T;741
+!s100 i44kD6RRkSPzg]h_J2Q``2
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Epcfetch
-Z272 w1762972597
-R18
+Z115 w1762972597
+R14
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z273 8proj/src/TopLevel/Components/IF-StageComponents/pcFetch.vhd
-Z274 Fproj/src/TopLevel/Components/IF-StageComponents/pcFetch.vhd
+Z116 8proj/src/TopLevel/Components/IF-StageComponents/pcFetch.vhd
+Z117 Fproj/src/TopLevel/Components/IF-StageComponents/pcFetch.vhd
 l0
 L6 1
 V[@K@RGMgh5[6;P^jQ=Dk]3
@@ -1851,41 +1831,41 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Amixed
-R18
+R14
 R2
 R3
 R4
-Z275 DEx4 work 7 pcfetch 0 22 [@K@RGMgh5[6;P^jQ=Dk]3
-!i122 273
+DEx4 work 7 pcfetch 0 22 [@K@RGMgh5[6;P^jQ=Dk]3
+!i122 0
 l57
-Z276 L25 73
-Z277 VAfUTnjlD:FzjA[OgH^HKm1
-Z278 !s100 Aiz7f08Vd]M6:1kZAe15g0
+L25 73
+VAfUTnjlD:FzjA[OgH^HKm1
+!s100 Aiz7f08Vd]M6:1kZAe15g0
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Eregfile
-R50
-R18
+R28
+R14
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z279 8proj/src/TopLevel/Components/Memory/RegFile.vhd
-Z280 Fproj/src/TopLevel/Components/Memory/RegFile.vhd
+Z118 8proj/src/TopLevel/Components/Memory/RegFile.vhd
+Z119 Fproj/src/TopLevel/Components/Memory/RegFile.vhd
 l0
 L6 1
 V8Xa9NKHCU=kh^GJUl66n43
@@ -1896,42 +1876,42 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Astructure
-R18
+R14
 R2
 R3
 R4
-Z281 DEx4 work 7 regfile 0 22 8Xa9NKHCU=kh^GJUl66n43
-!i122 273
+DEx4 work 7 regfile 0 22 8Xa9NKHCU=kh^GJUl66n43
+!i122 0
 l71
-Z282 L23 114
-Z283 VVYbChSM?MjLLJkM5`<nDa3
-Z284 !s100 4LzF5Wm[PFcIh>Gn?93Wh1
+L23 114
+VVYbChSM?MjLLJkM5`<nDa3
+!s100 4LzF5Wm[PFcIh>Gn?93Wh1
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Eriscv_processor
-Z285 w1763339767
-R18
+Z120 w1763576816
+R14
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z286 8proj/src/TopLevel/RISCV_Processor.vhd
-Z287 Fproj/src/TopLevel/RISCV_Processor.vhd
+Z121 8proj/src/TopLevel/RISCV_Processor.vhd
+Z122 Fproj/src/TopLevel/RISCV_Processor.vhd
 l0
-R33
+R22
 VQF=SlU>Q<TO9e6R`QG6<e2
 !s100 4JHRha[0g@dGMR?o070za2
 R7
@@ -1940,38 +1920,38 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Astructure
-R18
+R14
 R3
 R4
-Z288 DEx4 work 15 riscv_processor 0 22 QF=SlU>Q<TO9e6R`QG6<e2
-!i122 273
+DEx4 work 15 riscv_processor 0 22 QF=SlU>Q<TO9e6R`QG6<e2
+!i122 0
 l531
-Z289 L37 942
-Z290 VG<5zOhBlgRl3jbN2;[Jz@2
-Z291 !s100 T`7h@bCS?:B=2mmMW@94K3
+L37 941
+VSMVRRSBbm6LVMS[gkbck82
+!s100 h4eK<=ReHbGeNkA7;R^I52
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Priscv_types
 R3
 R4
-!i122 273
-Z292 w1761703334
+!i122 0
+Z123 w1761703334
 R0
-Z293 8proj/src/RISCV_types.vhd
-Z294 Fproj/src/RISCV_types.vhd
+Z124 8proj/src/RISCV_types.vhd
+Z125 Fproj/src/RISCV_types.vhd
 l0
 L15 16
 VZ_cM4AcLI`GnC?Dk1DnK]3
@@ -1982,38 +1962,38 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Bbody
-R18
+R14
 R3
 R4
-!i122 273
+!i122 0
 l0
-Z295 L32 3
-Z296 V7=cC@OfkR8QbIW1`KD0Oj0
-Z297 !s100 ULD]OQgbo1Vdo^UiWe]CF0
+Z126 L32 3
+Z127 V7=cC@OfkR8QbIW1`KD0Oj0
+Z128 !s100 ULD]OQgbo1Vdo^UiWe]CF0
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Esign_extender
 R1
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z298 8proj/src/TopLevel/Components/GeneralComponents/sign_extender.vhd
-Z299 Fproj/src/TopLevel/Components/GeneralComponents/sign_extender.vhd
+Z129 8proj/src/TopLevel/Components/GeneralComponents/sign_extender.vhd
+Z130 Fproj/src/TopLevel/Components/GeneralComponents/sign_extender.vhd
 l0
 L4 1
 VJXQzGh[iFO`Fz;JdXY]a^0
@@ -2024,39 +2004,39 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Abehavioral
 R2
 R3
 R4
-Z300 DEx4 work 13 sign_extender 0 22 JXQzGh[iFO`Fz;JdXY]a^0
-!i122 273
+DEx4 work 13 sign_extender 0 22 JXQzGh[iFO`Fz;JdXY]a^0
+!i122 0
 l16
-R169
-Z301 VbVfG9e2QnAmGEB3;n>UCL0
-Z302 !s100 _kXXMIHmmh9kFK8L?d2M91
+R75
+VbVfG9e2QnAmGEB3;n>UCL0
+!s100 _kXXMIHmmh9kFK8L?d2M91
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Esp_reg
-R50
+R28
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z303 8proj/src/TopLevel/Components/Memory/sp_Reg.vhd
-Z304 Fproj/src/TopLevel/Components/Memory/sp_Reg.vhd
+Z131 8proj/src/TopLevel/Components/Memory/sp_Reg.vhd
+Z132 Fproj/src/TopLevel/Components/Memory/sp_Reg.vhd
 l0
 L5 1
 V8FO<VlZ;ZzaTc`DNYRkiP0
@@ -2067,40 +2047,40 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Astructure
 R2
 R3
 R4
-Z305 DEx4 work 6 sp_reg 0 22 8FO<VlZ;ZzaTc`DNYRkiP0
-!i122 273
+DEx4 work 6 sp_reg 0 22 8FO<VlZ;ZzaTc`DNYRkiP0
+!i122 0
 l28
-R99
-Z306 Vn7Pz77FiJk<3]Am:mUaUE2
-Z307 !s100 ZlH8_8TQSDD^WZ9nb=Xik1
+R48
+Vn7Pz77FiJk<3]Am:mUaUE2
+!s100 ZlH8_8TQSDD^WZ9nb=Xik1
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Etb
-Z308 w1762124757
-Z309 DPx3 std 3 env 0 22 g[fj8WJKOa<0Y`zWY3UD70
-Z310 DPx4 ieee 16 std_logic_textio 0 22 8]8<fKiYoHe;_IDO3kmNH2
+Z133 w1760566782
+Z134 DPx3 std 3 env 0 22 g[fj8WJKOa<0Y`zWY3UD70
+Z135 DPx4 ieee 16 std_logic_textio 0 22 8]8<fKiYoHe;_IDO3kmNH2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z311 8internal/testpy/tb.vhd
-Z312 Finternal/testpy/tb.vhd
+Z136 8internal/testpy/tb.vhd
+Z137 Finternal/testpy/tb.vhd
 l0
 L24 1
 VVnzHcnmWmi<jE?5a3XOiF3
@@ -2111,39 +2091,39 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Amixed
-R309
-R310
+R134
+R135
 R3
 R4
-Z313 DEx4 work 2 tb 0 22 VnzHcnmWmi<jE?5a3XOiF3
-!i122 273
+DEx4 work 2 tb 0 22 VnzHcnmWmi<jE?5a3XOiF3
+!i122 0
 l56
-Z314 L31 127
-Z315 V5[oF0n<T4Z>Xdce12QbYh2
-Z316 !s100 ^B9]<VXY=N5NKKgkQI20c3
+L31 127
+V5[oF0n<T4Z>Xdce12QbYh2
+!s100 ^B9]<VXY=N5NKKgkQI20c3
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Exor_32bit
 R1
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z317 8proj/src/TopLevel/Components/32BitGates/xor_32bit.vhd
-Z318 Fproj/src/TopLevel/Components/32BitGates/xor_32bit.vhd
+Z138 8proj/src/TopLevel/Components/32BitGates/xor_32bit.vhd
+Z139 Fproj/src/TopLevel/Components/32BitGates/xor_32bit.vhd
 l0
 L4 1
 VRkXIG5HhdT_zg=@k7UzR=3
@@ -2154,39 +2134,39 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Astructural
 R3
 R4
-Z319 DEx4 work 9 xor_32bit 0 22 RkXIG5HhdT_zg=@k7UzR=3
-!i122 273
+DEx4 work 9 xor_32bit 0 22 RkXIG5HhdT_zg=@k7UzR=3
+!i122 0
 l21
-R28
-Z320 VeH=<e`E^Og0Q9V@ojM:>M3
-Z321 !s100 [OcLN=L_;X@8c1nGWC:CQ1
+R19
+VeH=<e`E^Og0Q9V@ojM:>M3
+!s100 [OcLN=L_;X@8c1nGWC:CQ1
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Exorg2
 R1
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z322 8proj/src/TopLevel/Components/Gates/xorg2.vhd
-Z323 Fproj/src/TopLevel/Components/Gates/xorg2.vhd
+Z140 8proj/src/TopLevel/Components/Gates/xorg2.vhd
+Z141 Fproj/src/TopLevel/Components/Gates/xorg2.vhd
 l0
-R33
+R22
 V5Q>VWC4f7j5KH:`2lLMTR0
 !s100 [hI[mXFH4_j16U;>U1Lfn2
 R7
@@ -2195,38 +2175,38 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Adataflow
 R3
 R4
-Z324 DEx4 work 5 xorg2 0 22 5Q>VWC4f7j5KH:`2lLMTR0
-!i122 273
+DEx4 work 5 xorg2 0 22 5Q>VWC4f7j5KH:`2lLMTR0
+!i122 0
 l32
-R35
-Z325 VfMT1QQS6a=jd=[j:an4<c2
-Z326 !s100 Z6[FAPS4fBLB`F?OO<AY72
+R23
+VfMT1QQS6a=jd=[j:an4<c2
+!s100 Z6[FAPS4fBLB`F?OO<AY72
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Ezero_extender
 R1
 R2
 R3
 R4
-!i122 273
+!i122 0
 R0
-Z327 8proj/src/TopLevel/Components/GeneralComponents/zero_extender.vhd
-Z328 Fproj/src/TopLevel/Components/GeneralComponents/zero_extender.vhd
+Z142 8proj/src/TopLevel/Components/GeneralComponents/zero_extender.vhd
+Z143 Fproj/src/TopLevel/Components/GeneralComponents/zero_extender.vhd
 l0
 L5 1
 VLAo9HoVFbRQbHRn4`A2Qh3
@@ -2237,27 +2217,27 @@ R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12
 Abehavioral
 R2
 R3
 R4
-Z329 DEx4 work 13 zero_extender 0 22 LAo9HoVFbRQbHRn4`A2Qh3
-!i122 273
+DEx4 work 13 zero_extender 0 22 LAo9HoVFbRQbHRn4`A2Qh3
+!i122 0
 l16
-R169
-Z330 VLHJLDfibf`d<I;]LS;L871
-Z331 !s100 :bKmf6NL@EzGh3kz0Y6aF0
+R75
+VLHJLDfibf`d<I;]LS;L871
+!s100 :bKmf6NL@EzGh3kz0Y6aF0
 R7
 33
 R8
 !i10b 1
 R9
 R10
-R11
-!i113 0
-R12
 R13
+!i113 0
+R11
+R12

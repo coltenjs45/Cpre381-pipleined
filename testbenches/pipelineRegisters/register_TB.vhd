@@ -137,32 +137,32 @@ architecture behavior of register_TB is
         output_MemOut       : out std_logic_vector(WIDTH-1 downto 0));
   end component;
 
-  signal s_IFpc, s_IDpc, s_Inst, s_idInst : std_logic_vector(31 downto 0);
+  signal s_IFpc, s_IDpc, s_Inst, s_idInst : std_logic_vector(31 downto 0) := (others => '0');
   
-  signal s_idALUsrc, s_idRegWrite, s_idMemWrite, s_idMemToReg, s_idShift, s_idFlagOrNFlag, s_idJumpWReg, s_idHalt : std_logic;
-  signal s_idALUctrl : std_logic_vector(3 downto 0);
-  signal s_idAndLink, s_idFlagMux: std_logic_vector(1 downto 0);
+  signal s_idALUsrc, s_idRegWrite, s_idMemWrite, s_idMemToReg, s_idShift, s_idFlagOrNFlag, s_idJumpWReg, s_idHalt : std_logic := '0';
+  signal s_idALUctrl : std_logic_vector(3 downto 0):= (others => '0');
+  signal s_idAndLink, s_idFlagMux: std_logic_vector(1 downto 0):= (others => '0');
 
-  signal s_idRS1, s_idRS2, s_idImmediate, s_IDpcUp4, s_IDpcUpImm : std_logic_vector(31 downto 0);
+  signal s_idRS1, s_idRS2, s_idImmediate, s_IDpcUp4, s_IDpcUpImm : std_logic_vector(31 downto 0):= (others => '0');
 
-  signal s_exALUsrc, s_exRegWrite, s_exMemWrite, s_exMemToReg, s_exShift, s_exFlagOrNFlag, s_exHalt : std_logic;
-  signal s_exALUctrl : std_logic_vector(3 downto 0);
-  signal s_exAndLink, s_exFlagMux: std_logic_vector(1 downto 0);
-  signal s_exImmediate, s_EXpcUp4, s_EXpcUpImm, s_exRS1, s_exRS2, s_exInst, s_exResult, s_exMemoryData : std_logic_vector(31 downto 0);
+  signal s_exALUsrc, s_exRegWrite, s_exMemWrite, s_exMemToReg, s_exShift, s_exFlagOrNFlag, s_exHalt : std_logic:= '0';
+  signal s_exALUctrl : std_logic_vector(3 downto 0):= (others => '0');
+  signal s_exAndLink, s_exFlagMux: std_logic_vector(1 downto 0):= (others => '0');
+  signal s_exImmediate, s_EXpcUp4, s_EXpcUpImm, s_exRS1, s_exRS2, s_exInst, s_exResult, s_exMemoryData : std_logic_vector(31 downto 0):= (others => '0');
 
-  signal s_memALUsrc, s_memRegWrite, s_memMemWrite, s_memMemToReg, s_memShift, s_memFlagOrNFlag, s_memHalt : std_logic;
-  signal s_memALUctrl : std_logic_vector(3 downto 0);
-  signal s_memAndLink, s_memFlagMux: std_logic_vector(1 downto 0);
-  signal s_memALUWriteBack, s_memInst, s_memMemoryData, s_memMemOut, s_memWriteback : std_logic_vector(31 downto 0);
+  signal s_memALUsrc, s_memRegWrite, s_memMemWrite, s_memMemToReg, s_memShift, s_memFlagOrNFlag, s_memHalt : std_logic:= '0';
+  signal s_memALUctrl : std_logic_vector(3 downto 0):= (others => '0');
+  signal s_memAndLink, s_memFlagMux: std_logic_vector(1 downto 0):= (others => '0');
+  signal s_memALUWriteBack, s_memInst, s_memMemoryData, s_memMemOut, s_memWriteback : std_logic_vector(31 downto 0):= (others => '0');
 
-  signal s_wbALUsrc, s_wbRegWrite, s_wbMemWrite, s_wbMemToReg, s_wbShift, s_wbFlagOrNFlag, s_wbHalt : std_logic;
-  signal s_wbALUctrl : std_logic_vector(3 downto 0);
-  signal s_wbAndLink, s_wbFlagMux: std_logic_vector(1 downto 0);
-  signal s_wbInst, s_wbALUWriteBack, s_wbMemOut : std_logic_vector(31 downto 0);  
+  signal s_wbALUsrc, s_wbRegWrite, s_wbMemWrite, s_wbMemToReg, s_wbShift, s_wbFlagOrNFlag, s_wbHalt : std_logic := '0';
+  signal s_wbALUctrl : std_logic_vector(3 downto 0):= (others => '0');
+  signal s_wbAndLink, s_wbFlagMux: std_logic_vector(1 downto 0):= (others => '0');
+  signal s_wbInst, s_wbALUWriteBack, s_wbMemOut : std_logic_vector(31 downto 0):= (others => '0');  
 
-  signal s_controlMaker : std_logic_vector(14 downto 0);
-  signal s_IDstall, s_EXstall, s_MEMstall, s_WBstall : std_logic;
-  signal s_EXnop, s_MEMnop : std_logic;
+  signal s_controlMaker : std_logic_vector(14 downto 0):= (others => '0');
+  signal s_IDstall, s_EXstall, s_MEMstall, s_WBstall : std_logic:= '0';
+  signal s_EXnop, s_MEMnop : std_logic := '0';
 
 begin
 
@@ -307,38 +307,168 @@ begin
     wait for gCLK_HPER/2;
     s_RST	<= '0';
     
-    --INITIALIZE
-    
-    --IF/ID Register
-    s_Inst          <= x"00000000";
-    s_IFpc          <= x"10010000";
-    s_IDstall       <= not '0';
+  --Tests generated using Claude AI, human edited for correctness
 
-    --ID/EX Register
-                    --"00 00 0000 0 0 0 0 0 0 0"  
-    s_controlMaker  <= "000000000000000";
+  ------------------------------------------------------------
+  -- TEST 1: NORMAL DATA PROPAGATION THROUGH ALL STAGES
+  ------------------------------------------------------------
+  
+  -- IF/ID Register inputs
+  s_Inst          <= x"12345678";  -- Test instruction
+  s_IFpc          <= x"10010000";  -- Initial PC
+  s_IDstall       <= '1';          -- Enable write (active high after NOT)
 
-    s_idRS1         <= x"00000000";
-    s_idRS2         <= x"00000000";
-    s_idImmediate   <= x"00000000";
-    s_IDpcUp4       <= x"10010004";
-    s_IDpcUpImm     <= x"10010000";
+  -- ID/EX Register inputs
+  s_controlMaker  <= "101010101010101";  -- All control bits mixed
+  s_idRS1         <= x"AAAA1111";
+  s_idRS2         <= x"BBBB2222";
+  s_idImmediate   <= x"CCCC3333";
+  s_IDpcUp4       <= x"10010004";
+  s_IDpcUpImm     <= x"10010100";
+  s_EXstall       <= '1';
+  s_EXnop         <= '0';
 
-    s_EXstall       <= not '0';
-    s_EXnop         <= '0';
+  -- EX/MEM Register inputs
+  s_exResult      <= x"DDDD4444";
+  s_exMemoryData  <= x"EEEE5555";
+  s_MEMstall      <= '1';
+  s_MEMnop        <= '0';
 
-    --EX/MEM Register
-    s_exResult      <= x"00000000";
-    s_exMemoryData  <= x"00000000";
+  -- MEM/WB Register inputs
+  s_memWriteBack  <= x"FFFF6666";
+  s_memMemOut     <= x"11117777";
+  s_WBstall       <= '1';
 
-    s_MEMstall      <= not'0';
-    s_MEMnop        <= '0';
+  wait for cCLK_PER * 2;  -- Wait 2 clock cycles
+   
+  ------------------------------------------------------------
+  -- TEST 2: IF/ID STALL TEST
+  ------------------------------------------------------------
 
-    --MEM/WB Register
-    s_memWriteBack  <= x"00000000";
-    s_memMemOut     <= x"00000000";
+  -- Change inputs
+  s_Inst          <= x"DEADBEEF";
+  s_IFpc          <= x"10010008";
+  s_IDstall       <= '0';  -- Disable write (stall the register)
+  
+  -- Keep other stages moving
+  s_idRS1         <= x"11112222";
+  s_EXstall       <= '1';
+  s_MEMstall      <= '1';
+  s_WBstall       <= '1';
+  
+  wait for cCLK_PER * 2;
+  
+  ------------------------------------------------------------
+  -- TEST 3: ID/EX STALL AND NOP INSERTION
+  ------------------------------------------------------------
+ 
+  s_IDstall       <= '1';  -- Re-enable IF/ID
+  s_EXstall       <= '0';  -- Stall ID/EX
+  s_EXnop         <= '1';  -- Insert NOP (bubble)
+  
+  s_controlMaker  <= "111111111111111";  -- Set all control signals
+  s_idRS1         <= x"99998888";
+  s_idRS2         <= x"77776666";
+  
+  wait for cCLK_PER * 2;
 
-    s_WBstall      <= not '0';
+  ------------------------------------------------------------
+  -- TEST 4: EX/MEM STALL AND NOP
+  ------------------------------------------------------------
+  
+  s_EXstall       <= '1';  -- Re-enable ID/EX
+  s_EXnop         <= '0';  -- Remove NOP from ID/EX
+  s_MEMstall      <= '0';  -- Stall EX/MEM
+  s_MEMnop        <= '1';  -- Insert NOP in EX/MEM
+  
+  s_exResult      <= x"ABCD1234";
+  s_exMemoryData  <= x"5678EFEF";
+  
+  wait for cCLK_PER * 2;
+
+  
+  ------------------------------------------------------------
+  -- TEST 5: FULL PIPELINE FLUSH
+  ------------------------------------------------------------
+  
+  s_EXnop         <= '1';   -- Flush ID/EX
+  s_MEMnop        <= '1';   -- Flush EX/MEM
+  s_MEMstall      <= '1';   -- Re-enable EX/MEM writes
+  
+  wait for cCLK_PER * 3;
+
+  ------------------------------------------------------------
+  -- TEST 6: RESET BEHAVIOR
+  ------------------------------------------------------------
+  
+  s_RST <= '1';
+  wait for cCLK_PER;
+  s_RST <= '0';
+   
+  ------------------------------------------------------------
+  -- TEST 7: CONTROL SIGNAL PROPAGATION
+  ------------------------------------------------------------
+  
+  s_IDstall       <= '1';
+  s_EXstall       <= '1';
+  s_MEMstall      <= '1';
+  s_WBstall       <= '1';
+  s_EXnop         <= '0';
+  s_MEMnop        <= '0';
+  
+  -- Test each control bit
+  -- Format: "FlagMux(2) AndLink(2) Halt Shift FlagOrNFlag ALUctrl(4) MemtoReg MemWrite RegWrite ALUsrc"
+  s_controlMaker  <= "110110101010101";
+  
+  wait for cCLK_PER;
+
+  
+  ------------------------------------------------------------
+  -- TEST 8: DATA PATH VERIFICATION
+  ------------------------------------------------------------
+  
+  -- Load unique values at each stage
+  s_Inst          <= x"FFFFFFFF";
+  s_IFpc          <= x"10020000";
+  
+  s_idRS1         <= x"00000001";
+  s_idRS2         <= x"00000002";
+  s_idImmediate   <= x"00000003";
+  s_IDpcUp4       <= x"10020004";
+  s_IDpcUpImm     <= x"10020100";
+  
+  s_exResult      <= x"00000004";
+  s_exMemoryData  <= x"00000005";
+  
+  s_memWriteBack  <= x"00000006";
+  s_memMemOut     <= x"00000007";
+  
+  wait for cCLK_PER * 5;  -- Let data propagate through entire pipeline
+  
+  ------------------------------------------------------------
+  -- TEST 9: ALTERNATING STALLS
+  ------------------------------------------------------------
+  
+  for i in 0 to 3 loop
+    if i mod 2 = 0 then
+      s_IDstall  <= '0';
+      s_MEMstall <= '1';
+    else
+      s_IDstall  <= '1';
+      s_MEMstall <= '0';
+    end if;
+    wait for cCLK_PER;
+  end loop;
+  
+  -- Reset to normal operation
+  s_IDstall       <= '1';
+  s_EXstall       <= '1';
+  s_MEMstall      <= '1';
+  s_WBstall       <= '1';
+  
+  wait for cCLK_PER;
+  
+  ------------------------------------------------------------
 
     wait;
   end process;
