@@ -1,0 +1,50 @@
+Challenges for our Group:
+
+    1. Barrel Shifter
+    When constructing our barrel shifter, we had several problems with understanding the instructions and with fully grasping the technical requirements of the unit.
+    During our initial construction of the unit, we failed to understand that it had to be written using structural VHDL. This required us to rewrite the unit,
+    and create the underlying logic for the unit. The barrel shifter was an easy trap to fall into, using the libraries to shortcut
+    writing the structural code for the unit also created a failure to understand the technical specifications necessary. Our shifter,
+    written with the more advanced libraires did not acutally fulfill the technical requirements, as it would not wrap around when given values over 32.
+    This situation could have been avoided, saving us time and effort by more thoroughly reading the project documentation and by understanding the 
+    technical requirements of the barrel shifter.
+
+    2. Writing the report for Project 2
+    In a similar situation to the barrel shifter, we did not read the project 2 documentation as thoroughly as we should have before
+    we started working. While this ultimately did not have as detrimental an effect on our processor's creation and functionality,
+    it became a much larger issue when we began writing the report. Once we finished both the SW and HW scheduled pipelines and we began
+    working on the reports, it very rapidly became apparent that we should have been working on the report throughout our development period.
+    Beginning work on the report after our processor was finished created several pros and cons. In favor of the approach, we were able to complete the
+    entire report in a single session, as we had all the data available to us. Against the approach, it slowed us down significantly when we had
+    to go back and develop testbenches and lists that would have been beneficial, if not necessary, in our development process.
+    This challenge could have been lessened by continuing the report in parallel with our development process, and although it wasn't necessary for
+    us as a group, it would have been helpful.
+
+    3. Rewriting the Grendel and Merge sort programs for software scheduling
+    A purely technical challenge that was more frustrating and annoying than difficult was rewriting the test programs to be software pipelined.
+    While attempting to the best of our abilities to follow the requirements and reduce the number of required NOP instructions, it became readily apparent
+    that rewriting the Mergesort program was the best option. While it was frustrating, it was not nearly as challenging as managing the provided
+    grendel program. After reviewing the grendel program and failing to modify it multiple times, we came to the conclusion that it was necessary\
+    to just use NOPs to avoid hazards. Grendel was challenging to rewrite due to its structure. The labels and program flow were difficult to understand, 
+    the code was written without much regard for proper ordering, and the usage of registers was strange to us. Ultimately, the challenge
+    was unavoidable and had to be perservered through. 
+
+Hardware Optimization
+
+    1. Single-Cycle
+        An improvement to the single-cycle pipeline that we applied to our scheduled-pipelines would be using faster adders like
+    lookahead adders or an even more advanced design. Our largest unit in our critical path was by far out Adders, whether that was
+    in the ALU or in the PC Fetch Unit. By improving the speed of these adders, we would be able to improve our critical path, 
+    provided that the new adder design was faster than ~14ns, the current speed of our adders.
+
+    2. SW-Scheduled Pipeline
+        ???? Unkown finish on Wendsday
+
+    3. HW-Scheduled Pipeline
+        An improvement to our HW-scheduled pipeline would be to implement another register between the ID and EX stages, to break
+    up our jumping and branching instructions. Our current critical path is heavily limited by the fact that our PC-updating instructions
+    are computed and completed inside of a singular ID stage. This operation, while it has its benefits, caps our maximum cycle time
+    and slows down our processor. By computing the PC/REG + IMM operation in the ID stage, and then updating the PC in our EX stage,
+    we would be able to split the largest functional unit into a seperate stage, hopefully improving our critical path. The improvement 
+    would be unknown, as it would be fully changing the critical path. This would likely change the processor's critical path to be the 
+    EX or MEM stage, depending on if DMem or the ALU as a longer cycle time.
