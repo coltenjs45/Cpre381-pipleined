@@ -13,36 +13,5 @@
 # // and may not be used in any way not expressly authorized by SISW.
 # //
 add wave -position insertpoint vsim:/tb/MyRiscv/dataHazardUnit/*
-add wave -position 0  vsim:/tb/MyRiscv/iCLK
-add wave -position insertpoint vsim1:/tb/MyRiscv/*
-add wave -position end vsim1:/tb/MyRiscv/dataHazardUnit/*
-add wave -position end vsim1:/tb/MyRiscv/CTRLunit/*
-add wave -position 4  vsim1:/tb/MyRiscv/MEM_WB_Register/output_MemWrite
-add wave -position 0  vsim1:/tb/MyRiscv/s_NextInstAddr
-add wave -position 5  vsim1:/tb/MyRiscv/s_wbALUWriteBack
-add wave -position 6  vsim1:/tb/MyRiscv/s_wbMemToReg
-add wave -position 8  vsim1:/tb/MyRiscv/s_memFlagMux
-add wave -position 8  vsim1:/tb/MyRiscv/s_memALUWriteBack
-add wave -position 9  vsim1:/tb/MyRiscv/s_memALUsrc
-add wave -position 9  vsim1:/tb/MyRiscv/s_result
-add wave -position 10  vsim1:/tb/MyRiscv/s_inputB
-add wave -position 10  vsim1:/tb/MyRiscv/s_inputA
-add wave -position 12  vsim1:/tb/MyRiscv/InputAMUX/o_O
-add wave -position 13  vsim1:/tb/MyRiscv/InputAMUX/i_D0
-add wave -position 14  vsim1:/tb/MyRiscv/InputAMUX/i_D1
-add wave -position 15  vsim1:/tb/MyRiscv/InputAMUX/i_D2
-add wave -position 16  vsim1:/tb/MyRiscv/InputAMUX/i_D3
-# ** Error: (vish-7) Failed to open info file "/home/gmander5/cpre381/Project2/project-2-sw/cpre3810-toolflow_v3/containers/sim_container_0/work/_info" in read mode.
-# No such file or directory. (errno = ENOENT)
-add wave -position 17  vsim1:/tb/MyRiscv/InputAMUX/i_S
-add wave -position 6  vsim1:/tb/MyRiscv/ForwardingUnit/forwardWbtoExRS2
-add wave -position 6  vsim1:/tb/MyRiscv/ForwardingUnit/forwardWbtoExRS1
-add wave -position 6  vsim1:/tb/MyRiscv/InputBMux/o_O
-add wave -position 7  vsim1:/tb/MyRiscv/InputAMUX/o_O
-add wave -position 5  vsim1:/tb/MyRiscv/InputAMUX/o_O
-add wave -position 6  vsim1:/tb/MyRiscv/InputBMux/o_O
-add wave -position 6  vsim1:/tb/MyRiscv/InputBRegisterMux/o_O
-add wave -position 7  vsim1:/tb/MyRiscv/InputAMUX/i_D0
-add wave -position 8  vsim1:/tb/MyRiscv/InputAMUX/i_D1
-add wave -position 9  vsim1:/tb/MyRiscv/InputAMUX/i_D2
-add wave -position 10  vsim1:/tb/MyRiscv/InputAMUX/i_D3
+add wave -position 4  vsim:/tb/MyRiscv/dataHazardUnit/idBranch
+add wave -position 5  vsim:/tb/MyRiscv/dataHazardUnit/idJump
