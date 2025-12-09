@@ -42,6 +42,7 @@ architecture dataflow of dataHazard is
   signal exRS1, exRS2, memRS2 : std_logic_vector(4 downto 0);
   signal exRD, memRD, wbRD : std_logic_vector(4 downto 0);
 
+  signal earlyLoadHazardRS1, earlyloadHazardRS2 : std_logic;
   signal controlHazardExRS1, controlHazardExRS2, controlHazardMemRS1, controlHazardMemRS2 : std_logic;
   signal cStall, mStall : std_logic;
 
@@ -70,6 +71,8 @@ architecture dataflow of dataHazard is
     -- Load-Use Hazard Detection (MEM stage load, EX stage use)
     loadHazardRS1 <= '1' when (memInst(6 downto 0) = loadOpcode) and (memRD /= "00000") and (exRS1 = memRD) and memRegWrite = '1' else '0';
     loadHazardRS2 <= '1' when (memInst(6 downto 0) = loadOpcode) and (memRD /= "00000") and (exRS2 = memRD) and memRegWrite = '1' else '0';
+    earlyLoadHazardRS1 <= '1' when (memInst(6 downto 0) = loadOpcode) and (memRD /= "00000") and (idRS1 = memRD) and memRegWrite = '1' else '0';
+    earlyloadHazardRS2 <= '1' when (memInst(6 downto 0) = loadOpcode) and (memRD /= "00000") and (idRS2 = memRD) and memRegWrite = '1' else '0';
 
     -- Store-Load Hazard (WB stage load, MEM stage store)
     storeLoadHazardRS2 <= '1' when (wbInst(6 downto 0) = loadOpcode) and (wbRD /= "00000") and (memRS2 = wbRD) and wbRegWrite = '1' else '0';
@@ -96,7 +99,9 @@ architecture dataflow of dataHazard is
               '0';
     
     mstall <= '1' when ((loadHazardRS1 = '1') or
-                        (loadHazardRS2 = '1')) else
+                        (loadHazardRS2 = '1') or
+                        (earlyLoadHazardRS1 = '1') or
+                        (earlyloadHazardRS2 = '1')) else
               '0';
 
     stallSignal <= cStall or mStall;
