@@ -15,7 +15,7 @@ The path is given below
  Data Arrival Path:
  Total (ns)  Incr (ns)     Type  Element
  ==========  ========= ==  ====  ===================================
-     10.000     10.000           launch edge time
+     10.000     10.000            launch edge time
      13.520      3.520  F        clock network delay
      13.783      0.263     uTco  mem:IMem|altsyncram:ram_rtl_0|altsyncram_02e1:auto_generated|ram_block1a16~portb_address_reg0
      16.673      2.890 RF  CELL  IMem|ram_rtl_0|auto_generated|ram_block1a16|portbdataout[1]
